@@ -1,62 +1,119 @@
-# gcpcliskills — gcloud CLI Skill
+# gcpcliskills
 
-A comprehensive [Claude](https://claude.com/claude-code) **skill** providing a complete `gcloud`
-command reference for **121 Google Cloud services** and **5,090 GA commands**. It is the GCP
-counterpart to [`awscliskills`](https://github.com/chrishuffman5/awscliskills).
+A [Claude Code](https://claude.com/claude-code) **plugin** bundling command-reference **skills** for
+Google's command-line tools. Each skill routes Claude to accurate, version-pinned command
+documentation sourced from each tool's own `--help` and official Google docs.
 
-The root [`SKILL.md`](SKILL.md) is a **router**: it indexes every service and routes a request to
-the right per-service reference, which contains exhaustive command documentation.
+| Skill | Tool | Scope |
+|-------|------|-------|
+| [`gcloud-cli`](skills/gcloud-cli/) | `gcloud` | 120+ GCP services, **5,090 GA commands** — exhaustive per-command flag tables, workflows, and official doc links |
+| [`adk`](skills/adk/) | `adk` (Python) | Agent Development Kit CLI: create/run/eval/deploy AI agents; launch the dev web UI |
+| [`adk-devtools`](skills/adk-devtools/) | `@google/adk-devtools` (TS/JS) | TypeScript ADK SDK + dev-tools CLI (`npx @google/adk-devtools`) |
+| [`adk-web`](skills/adk-web/) | ADK Web UI | The Angular developer UI — built-in `adk web` and the standalone `google/adk-web` app |
 
-## Structure
+Repository layout (Claude Code plugin):
 
 ```
-SKILL.md                       # Router: service index + official doc links + gcloud conventions
-references/<service>/
-  overview.md                  # Product summary, common-workflow recipes, tips, beta/alpha notes, citations
-  index.md                     # One-line index of every command in the service
-  sources.md                   # Verified official cloud.google.com documentation URLs
-  <command-group>.md           # Exhaustive per-command reference: synopsis + every flag
-                               #   (type, choices, default, description) + examples
+.claude-plugin/
+  plugin.json          # plugin manifest
+  marketplace.json     # lets the repo be added as a plugin marketplace
+skills/
+  gcloud-cli/          # SKILL.md (router) + references/<service>/...
+  adk/                 # SKILL.md
+  adk-devtools/        # SKILL.md
+  adk-web/             # SKILL.md
 ```
 
-Each command page mirrors the style of the AWS CLI skill: synopsis, a full flags table, positional
-arguments, real examples, and a link to the official `cloud.google.com/sdk/gcloud/reference` page.
+---
 
-## Using it
+## Installing the skills (the plugin)
 
-**Claude Code** — install the packaged skill, or drop this folder into your skills directory:
+In Claude Code, add this repo as a plugin marketplace, then install the plugin:
 
-```bash
-# from a packaged artifact
-# (the .skill file is a zip of this repo)
-
-# or as a local skill
-cp -r . ~/.claude/skills/gcloud-cli
+```text
+/plugin marketplace add chrishuffman5/gcpcliskills
+/plugin install gcpcliskills@gcpcliskills
 ```
 
-Then just ask Claude things like *"create a Cloud SQL Postgres instance with HA in us-central1"* or
-*"deploy this image to Cloud Run with auth required"* — the router triggers and consults the right
-reference.
+Once installed, the skills trigger automatically when you ask Claude about the relevant tool
+(e.g. *"create a Cloud SQL instance"*, *"deploy this agent to Cloud Run with adk"*).
+
+Alternatively, copy any single skill into your skills directory:
+
+```powershell
+Copy-Item -Recurse skills/gcloud-cli "$HOME/.claude/skills/gcloud-cli"
+```
+
+---
+
+## Installing the underlying CLIs
+
+Each tool installs differently. Verified install commands (Windows / PowerShell 7; the skills were
+built against the versions noted):
+
+### gcloud — Google Cloud CLI
+Not on npm/pip; use the dedicated installer.
+```powershell
+winget install Google.CloudSDK
+# or download the installer: https://cloud.google.com/sdk/docs/install
+gcloud init        # first-time auth + default project/region
+```
+Built against **Google Cloud SDK 552.0.0**.
+
+### adk — Agent Development Kit (Python)
+On PyPI. Requires Python 3.11+ (3.13 supported).
+```powershell
+pip install google-adk
+adk --version      # provides the `adk` command
+```
+Built against **google-adk 2.1.0**. Auth: either an AI Studio key (`GOOGLE_API_KEY`) or Vertex AI
+(`gcloud auth application-default login` + `GOOGLE_GENAI_USE_VERTEXAI=TRUE`).
+
+### adk-devtools — ADK for TypeScript / JavaScript
+On npm. Requires Node.js 24+. This is a **separate runtime** from the Python ADK (parallel
+implementations — pick one lane; they don't interoperate).
+```powershell
+npm install @google/adk            # the JS/TS SDK
+npm install -D @google/adk-devtools # the dev-tools CLI
+npx @google/adk-devtools --help    # run it via npx
+```
+> ⚠️ `@google/adk-devtools` registers a bin named **`adk`**, which collides with the Python `adk`
+> command. Always invoke the TypeScript CLI via `npx @google/adk-devtools …` (or
+> `./node_modules/.bin/adk`) — never a bare `adk` — so it doesn't clash on PATH.
+Built against **@google/adk / @google/adk-devtools 1.1.0**.
+
+### ADK Web UI
+Two paths:
+
+**Built-in (recommended)** — ships with the Python ADK:
+```powershell
+pip install google-adk
+adk web path/to/agents_dir          # serves the dev UI on http://localhost:8000
+```
+
+**Standalone from source** (to customize/contribute to the UI):
+```powershell
+git clone https://github.com/google/adk-web
+cd adk-web
+npm install
+# in one terminal — run an ADK backend:
+adk api_server --allow_origins=http://localhost:4200 --host=0.0.0.0
+# in another terminal — serve the Angular UI (then open http://localhost:4200):
+npm run serve --backend=http://localhost:8000
+```
+
+---
 
 ## Sourcing & accuracy
 
-All command and flag data is generated directly from the gcloud CLI's own help system
-(`gcloud <command> --help`), which is the canonical source Google publishes at
-`cloud.google.com/sdk/gcloud/reference`. The content was generated against **Google Cloud SDK
-552.0.0**. Per-service conceptual docs, quickstarts, and how-to guides are linked from each
-service's `overview.md` / `sources.md` (official Google sources only).
-
-Coverage is the **GA** command surface; each service notes where important capabilities are only
-available under `gcloud beta` / `gcloud alpha`.
-
-## Regenerating on a new SDK version
-
-The skill is generated, not hand-maintained. To refresh after a `gcloud components update`, re-run
-the dump → render → router pipeline (deterministic), then optionally re-run the research/authoring
-enrichment for services whose command surface changed.
+Command and flag data is generated from each tool's own help system (`gcloud … --help`,
+`adk … --help`, `npx @google/adk-devtools … --help`) — the canonical source behind the published
+references — and cross-checked against official `cloud.google.com` / `adk.dev` /
+`github.com/google` documentation, which each skill links in its `sources.md` / Official
+documentation section. Coverage is the **GA** surface; beta/alpha is noted where relevant.
 
 ## Attribution
 
-Command reference content is derived from Google Cloud's public documentation and the gcloud CLI
-help system. "Google Cloud", "gcloud", and product names are trademarks of Google LLC. This is an
+Reference content is derived from Google's public documentation and the tools' own help output.
+"Google Cloud", "gcloud", "ADK", and product names are trademarks of Google LLC. This is an
 unofficial, community reference and is not affiliated with or endorsed by Google.

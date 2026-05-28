@@ -1,0 +1,20 @@
+{
+  "name": "gcpcliskills",
+  "description": "Skills for Google's CLIs — gcloud and the Agent Development Kit (ADK) toolchain.",
+  "owner": {
+    "name": "chrishuffman5",
+    "email": "chris@huffmantech.net"
+  },
+  "plugins": [
+    {
+      "name": "gcpcliskills",
+      "description": "Command-reference skills for gcloud (120+ GCP services, 5,090 GA commands), the Python ADK CLI, the TypeScript ADK dev tools, and the ADK web UI.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "chrishuffman5",
+        "email": "chris@huffmantech.net"
+      }
+    }
+  ]
+}
