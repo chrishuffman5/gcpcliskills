@@ -1,0 +1,71 @@
+# gcloud gemini — command index
+
+manage resources associated with Gemini Code Assist and Gemini Cloud Assist
+
+- `gcloud gemini code-repository-indexes create` — create a code repository index instance
+- `gcloud gemini code-repository-indexes delete` — delete a code repository index instance
+- `gcloud gemini code-repository-indexes describe` — get details of a code repository index instance
+- `gcloud gemini code-repository-indexes list` — list all code repository index instances in a specified project and location
+- `gcloud gemini code-repository-indexes update` — update the configuration of a code repository index instance
+- `gcloud gemini code-repository-indexes repository-groups create` — create a repository group for a given code repository index instance
+- `gcloud gemini code-repository-indexes repository-groups delete` — delete a repository group from a given code repository index instance
+- `gcloud gemini code-repository-indexes repository-groups describe` — get details of a code repository index instance
+- `gcloud gemini code-repository-indexes repository-groups get-iam-policy` — get the IAM policy for a code repository index repository group
+- `gcloud gemini code-repository-indexes repository-groups list` — list all repository group for a given code repository index instance
+- `gcloud gemini code-repository-indexes repository-groups set-iam-policy` — get the IAM policy for a code repository index repository group
+- `gcloud gemini code-repository-indexes repository-groups update` — update the configuration of a repository group
+- `gcloud gemini code-tools-settings create` — create codeToolsSettings
+- `gcloud gemini code-tools-settings delete` — delete codeToolsSettings
+- `gcloud gemini code-tools-settings describe` — describe codeToolsSettings
+- `gcloud gemini code-tools-settings list` — list codeToolsSettings
+- `gcloud gemini code-tools-settings update` — update codeToolsSettings
+- `gcloud gemini code-tools-settings setting-bindings create` — create settingBindings
+- `gcloud gemini code-tools-settings setting-bindings delete` — delete settingBindings
+- `gcloud gemini code-tools-settings setting-bindings describe` — describe settingBindings
+- `gcloud gemini code-tools-settings setting-bindings list` — list settingBindings
+- `gcloud gemini code-tools-settings setting-bindings update` — update settingBindings
+- `gcloud gemini data-sharing-with-google-settings create` — create dataSharingWithGoogleSettings
+- `gcloud gemini data-sharing-with-google-settings delete` — delete dataSharingWithGoogleSettings
+- `gcloud gemini data-sharing-with-google-settings describe` — describe dataSharingWithGoogleSettings
+- `gcloud gemini data-sharing-with-google-settings list` — list dataSharingWithGoogleSettings
+- `gcloud gemini data-sharing-with-google-settings update` — update dataSharingWithGoogleSettings
+- `gcloud gemini data-sharing-with-google-settings setting-bindings create` — create settingBindings
+- `gcloud gemini data-sharing-with-google-settings setting-bindings delete` — delete settingBindings
+- `gcloud gemini data-sharing-with-google-settings setting-bindings describe` — describe settingBindings
+- `gcloud gemini data-sharing-with-google-settings setting-bindings list` — list settingBindings
+- `gcloud gemini data-sharing-with-google-settings setting-bindings update` — update settingBindings
+- `gcloud gemini gemini-gcp-enablement-settings create` — create geminiGcpEnablementSettings
+- `gcloud gemini gemini-gcp-enablement-settings delete` — delete geminiGcpEnablementSettings
+- `gcloud gemini gemini-gcp-enablement-settings describe` — describe geminiGcpEnablementSettings
+- `gcloud gemini gemini-gcp-enablement-settings list` — list geminiGcpEnablementSettings
+- `gcloud gemini gemini-gcp-enablement-settings update` — update geminiGcpEnablementSettings
+- `gcloud gemini gemini-gcp-enablement-settings setting-bindings create` — create settingBindings
+- `gcloud gemini gemini-gcp-enablement-settings setting-bindings delete` — delete settingBindings
+- `gcloud gemini gemini-gcp-enablement-settings setting-bindings describe` — describe settingBindings
+- `gcloud gemini gemini-gcp-enablement-settings setting-bindings list` — list settingBindings
+- `gcloud gemini gemini-gcp-enablement-settings setting-bindings update` — update settingBindings
+- `gcloud gemini logging-settings create` — create loggingSettings
+- `gcloud gemini logging-settings delete` — delete loggingSettings
+- `gcloud gemini logging-settings describe` — describe loggingSettings
+- `gcloud gemini logging-settings list` — list loggingSettings
+- `gcloud gemini logging-settings update` — update loggingSettings
+- `gcloud gemini logging-settings setting-bindings create` — create settingBindings
+- `gcloud gemini logging-settings setting-bindings delete` — delete settingBindings
+- `gcloud gemini logging-settings setting-bindings describe` — describe settingBindings
+- `gcloud gemini logging-settings setting-bindings list` — list settingBindings
+- `gcloud gemini logging-settings setting-bindings update` — update settingBindings
+- `gcloud gemini operations cancel` — cancel operations
+- `gcloud gemini operations delete` — delete operations
+- `gcloud gemini operations describe` — describe operations
+- `gcloud gemini operations list` — list operations
+- `gcloud gemini operations wait` — wait operations
+- `gcloud gemini release-channel-settings create` — create releaseChannelSettings
+- `gcloud gemini release-channel-settings delete` — delete releaseChannelSettings
+- `gcloud gemini release-channel-settings describe` — describe releaseChannelSettings
+- `gcloud gemini release-channel-settings list` — list releaseChannelSettings
+- `gcloud gemini release-channel-settings update` — update releaseChannelSettings
+- `gcloud gemini release-channel-settings setting-bindings create` — create settingBindings
+- `gcloud gemini release-channel-settings setting-bindings delete` — delete settingBindings
+- `gcloud gemini release-channel-settings setting-bindings describe` — describe settingBindings
+- `gcloud gemini release-channel-settings setting-bindings list` — list settingBindings
+- `gcloud gemini release-channel-settings setting-bindings update` — update settingBindings

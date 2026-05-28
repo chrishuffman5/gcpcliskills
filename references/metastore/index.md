@@ -1,0 +1,44 @@
+# gcloud metastore — command index
+
+manage Dataproc Metastore resources
+
+- `gcloud metastore federations add-iam-policy-binding` — add an IAM policy binding to a federation
+- `gcloud metastore federations create` — create a Dataproc Metastore federation
+- `gcloud metastore federations delete` — delete one or more Dataproc Metastore federations
+- `gcloud metastore federations describe` — describe a Dataproc Metastore federation
+- `gcloud metastore federations get-iam-policy` — get the IAM policy for the federation
+- `gcloud metastore federations list` — list Dataproc Metastore federations
+- `gcloud metastore federations remove-iam-policy-binding` — remove an IAM policy binding from a federation
+- `gcloud metastore federations set-iam-policy` — set the IAM policy for the federation
+- `gcloud metastore federations update` — update a Dataproc Metastore federation
+- `gcloud metastore locations describe` — show metadata for a Dataproc Metastore location
+- `gcloud metastore locations list` — list Dataproc Metastore locations
+- `gcloud metastore operations cancel` — cancel a Dataproc Metastore operation
+- `gcloud metastore operations delete` — delete one or more completed Dataproc Metastore operations
+- `gcloud metastore operations describe` — show metadata for a Dataproc Metastore operation
+- `gcloud metastore operations list` — list Dataproc Metastore operations
+- `gcloud metastore operations wait` — poll a long-running Dataproc Metastore operation until it completes
+- `gcloud metastore services add-iam-policy-binding` — add an IAM policy binding to a service
+- `gcloud metastore services alter-metadata-resource-location` — alter metadata resource location
+- `gcloud metastore services alter-table-properties` — alter metadata table properties
+- `gcloud metastore services create` — create a Dataproc Metastore service
+- `gcloud metastore services delete` — delete one or more Dataproc Metastore services
+- `gcloud metastore services describe` — describe a Dataproc Metastore service
+- `gcloud metastore services get-iam-policy` — get the IAM policy for the service
+- `gcloud metastore services list` — list Dataproc Metastore services
+- `gcloud metastore services move-table-to-database` — move table to another database
+- `gcloud metastore services query-metadata` — execute a SQL query against a Dataproc Metastore Service's metadata
+- `gcloud metastore services remove-iam-policy-binding` — remove an IAM policy binding from a service
+- `gcloud metastore services restore` — restore a Dataproc Metastore service
+- `gcloud metastore services set-iam-policy` — set the IAM policy for the service
+- `gcloud metastore services update` — update a Dataproc Metastore service
+- `gcloud metastore services backups add-iam-policy-binding` — add an IAM policy binding to a backup
+- `gcloud metastore services backups create` — backup a service
+- `gcloud metastore services backups delete` — delete a service backup
+- `gcloud metastore services backups describe` — describe a backup
+- `gcloud metastore services backups get-iam-policy` — get the IAM policy for the backup
+- `gcloud metastore services backups list` — list backups under a Dataproc Metastore service
+- `gcloud metastore services backups remove-iam-policy-binding` — remove an IAM policy binding from a backup
+- `gcloud metastore services backups set-iam-policy` — set the IAM policy for a backup
+- `gcloud metastore services export gcs` — export metadata from a Dataproc Metastore service to Google Cloud Storage
+- `gcloud metastore services import gcs` — import metadata into a Dataproc Metastore service from Google Cloud Storage

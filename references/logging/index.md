@@ -1,0 +1,51 @@
+# gcloud logging — command index
+
+manage Cloud Logging
+
+- `gcloud logging copy` — copy log entries
+- `gcloud logging read` — read log entries
+- `gcloud logging write` — write a log entry
+- `gcloud logging buckets create` — create a bucket
+- `gcloud logging buckets delete` — delete a bucket
+- `gcloud logging buckets describe` — display information about a bucket
+- `gcloud logging buckets list` — list the defined buckets
+- `gcloud logging buckets undelete` — undelete a bucket
+- `gcloud logging buckets update` — update a bucket
+- `gcloud logging links create` — create a linked dataset on an analytics log bucket
+- `gcloud logging links delete` — delete a linked dataset
+- `gcloud logging links describe` — display information about a linked dataset
+- `gcloud logging links list` — list created linked datasets on the specified bucket
+- `gcloud logging locations describe` — display information about a location
+- `gcloud logging locations list` — list the availables location
+- `gcloud logging logs delete` — delete all entries from a log in the global _Default log bucket
+- `gcloud logging logs list` — list your project's logs
+- `gcloud logging metrics create` — create a logs-based metric
+- `gcloud logging metrics delete` — delete a logs-based metric
+- `gcloud logging metrics describe` — display the definition of a logs-based metric
+- `gcloud logging metrics list` — display all logs-based metrics
+- `gcloud logging metrics update` — update the definition of a logs-based metric
+- `gcloud logging operations cancel` — cancel a long running operation
+- `gcloud logging operations describe` — display the information about a long running operation
+- `gcloud logging operations list` — list long running operations
+- `gcloud logging resource-descriptors list` — list all available resource descriptors
+- `gcloud logging scopes create` — create a log scope
+- `gcloud logging scopes delete` — delete a log scope
+- `gcloud logging scopes describe` — display information about a log scope
+- `gcloud logging scopes list` — list the defined log scopes
+- `gcloud logging scopes update` — update a log scope
+- `gcloud logging settings describe` — display the settings for the Cloud Logging Logs Router
+- `gcloud logging settings update` — update the settings for the Cloud Logging Logs Router
+- `gcloud logging sinks create` — create a log sink
+- `gcloud logging sinks delete` — delete a sink
+- `gcloud logging sinks describe` — display information about a sink
+- `gcloud logging sinks list` — list the defined sinks
+- `gcloud logging sinks update` — update a sink
+- `gcloud logging views add-iam-policy-binding` — add IAM policy binding to a log view
+- `gcloud logging views create` — create a log view on a log bucket
+- `gcloud logging views delete` — delete a view
+- `gcloud logging views describe` — display information about a view
+- `gcloud logging views get-iam-policy` — display the IAM policy for a view
+- `gcloud logging views list` — list the defined views
+- `gcloud logging views remove-iam-policy-binding` — remove IAM policy binding to a log view
+- `gcloud logging views set-iam-policy` — set IAM policy for a view
+- `gcloud logging views update` — update a view

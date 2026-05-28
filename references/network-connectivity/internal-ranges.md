@@ -1,0 +1,330 @@
+# gcloud network-connectivity internal-ranges
+
+manage internal ranges
+
+### `gcloud network-connectivity internal-ranges create`
+
+Create a new internal range
+
+Create a new internal range with the given name.
+
+**Synopsis:**
+```
+gcloud network-connectivity internal-ranges create
+    (INTERNAL_RANGE : --region=REGION) --network=NETWORK
+    (--ip-cidr-range=IP_CIDR_RANGE | [--prefix-length=PREFIX_LENGTH
+      : --allocation-strategy=ALLOCATION_STRATEGY
+      --exclude-cidr-ranges=[EXCLUDE_CIDR_RANGES,...]
+      --first-available-ranges-lookup-size=FIRST_AVAILABLE_RANGES_LOOKUP_SIZE --target-cidr-range=[TARGET_CIDR_RANGE,
+      ...]]) [--async] [--description=DESCRIPTION] [--immutable]
+    [--labels=[KEY=VALUE,...]] [--overlaps=[OVERLAPS,...]]
+    [--peering=PEERING; default="for-self"]
+    [--usage=USAGE; default="for-vpc"]
+    [--migration-source=MIGRATION_SOURCE
+      --migration-target=MIGRATION_TARGET] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Internal range resource - Name of the internal range to be created. The
+arguments in this group can be used to specify the attributes of this
+resource. (NOTE) Some attributes are not given arguments in this group but
+can be set in other ways.
+
+To set the project attribute:
+ * provide the argument internal_range on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  INTERNAL_RANGE
+     ID of the internal range or fully qualified identifier for the
+     internal range.
+
+     To set the internal_range attribute:
+     + provide the argument internal_range on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --region=REGION
+     The location ID.
+
+     To set the region attribute:
+     + provide the argument internal_range on the command line with a
+       fully specified name;
+     + provide the argument --region on the command line;
+     + use default global location .
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--network` | NETWORK |  | The URL or resource ID of the network in which to reserve the internal range. Legacy network is not supported. This can only be specified for a global internal address. For example: * https://www.googleapis.com/compute/v1/projects/my-project/locations/global/networks/my-network * /projects/my-project/locations/global/networks/my-network * my-network |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+| `--description` | DESCRIPTION |  | Description of the internal range to be created. |
+| `--immutable` |  |  | Mark the internal range as immutable. Then only non-semantic fields like description and labels could be modified after creation. |
+| `--labels` | [KEY=VALUE,...] |  | List of label KEY=VALUE pairs to add. |
+| `--overlaps` | one of: overlap-existing-subnet-range Allows for creation of internal ranges that overlap with existing subnets |  | Overlap specifications for the range being created. OVERLAPS must be one of: overlap-existing-subnet-range Allows for creation of internal ranges that overlap with existing subnets. overlap-route-range Allows for creation or existence of routes that have a more specific destination than the created range. |
+| `--peering` | one of: for-peer This behavior can be set when the internal range is being reserved for usage by the peers | for-self | The type of peering set for the internal range. PEERING must be one of: for-peer This behavior can be set when the internal range is being reserved for usage by the peers. This means that no resource within the VPC in which it is being created can use this to associate with a cloud resource, but one of the peers can. This represents "donating" a range for peers to use. for-self This beharior represents the case that the internal range is intended to be used in the VPC on which it is created and is accessible from its peers. This implies that peers or peer-of-peers cannot use this range. not-shared This behavior can be set when the internal range is being reserved for usage by the VPC on which it is created but not shared with the peers. In a sense it is local to the VPC. This can be used to create internal ranges for various purposes like HTTP_INTERNAL_LOAD_BALANCER or for interconnect routes that are not shared with peers. This also implies that peers cannot use this range in a way that is visible to this VPC, but can re-use this range as long as it is NOT_SHARED from the peer VPC too. |
+| `--usage` | one of: external-to-vpc Ranges created with EXTERNAL_TO_VPC cannot be associated with cloud resources and are meant to block out address ranges for various use cases, like for example, usage on-prem, with dynamic route announcements via interconnect | for-vpc | The type of usage set for the internal range. USAGE must be one of: external-to-vpc Ranges created with EXTERNAL_TO_VPC cannot be associated with cloud resources and are meant to block out address ranges for various use cases, like for example, usage on-prem, with dynamic route announcements via interconnect. for-migration Ranges created with FOR_MIGRATION are used as locks for migrating subnetworks between peered VPC networks. for-vpc A cloud resource can use the reserved CIDR block by associating it with the internal range resource if usage is set to FOR_VPC. |
+| `--usage` |  |  | _[Endpoints of a for-migration internal range. This is only applicable when]_ |
+
+
+**Examples:**
+```bash
+Create an internal range with name my-range and ip-cidr-range
+192.168.0.0/25 in network
+https://www.googleapis.com/compute/v1/projects/my-project/locations/global/networks/my-network:
+
+    $ gcloud network-connectivity internal-ranges create my-range \
+        --ip-cidr-range="192.168.0.0/25" \
+        --network="https://www.googleapis.com/compute/v1/projects/my-pro\
+    ject/locations/global/networks/my-network" --project=my-project
+
+Create an internal range with name my-range and auto-allocated /25 block
+(prefix-length 25) in network my-network:
+
+    $ gcloud network-connectivity internal-ranges create my-range \
+        --prefix-length=25 --network="my-network" --project=my-project
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/network-connectivity/internal-ranges/create)
+
+---
+### `gcloud network-connectivity internal-ranges delete`
+
+Delete an internal range
+
+Delete the specified internal range.
+
+**Synopsis:**
+```
+gcloud network-connectivity internal-ranges delete
+    (INTERNAL_RANGE : --region=REGION) [--async] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Internal range resource - Name of the internal range to be deleted. The
+arguments in this group can be used to specify the attributes of this
+resource. (NOTE) Some attributes are not given arguments in this group but
+can be set in other ways.
+
+To set the project attribute:
+ * provide the argument internal_range on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  INTERNAL_RANGE
+     ID of the internal range or fully qualified identifier for the
+     internal range.
+
+     To set the internal_range attribute:
+     + provide the argument internal_range on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --region=REGION
+     The location ID.
+
+     To set the region attribute:
+     + provide the argument internal_range on the command line with a
+       fully specified name;
+     + provide the argument --region on the command line;
+     + use default global location .
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+
+
+**Examples:**
+```bash
+Delete an internal range named my-range:
+
+    $ gcloud network-connectivity internal-ranges delete my-range
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/network-connectivity/internal-ranges/delete)
+
+---
+### `gcloud network-connectivity internal-ranges describe`
+
+Describe an internal range
+
+Retrieve and display details about an internal range.
+
+**Synopsis:**
+```
+gcloud network-connectivity internal-ranges describe
+    (INTERNAL_RANGE : --region=REGION) [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Internal range resource - Name of the internal range to be described. The
+arguments in this group can be used to specify the attributes of this
+resource. (NOTE) Some attributes are not given arguments in this group but
+can be set in other ways.
+
+To set the project attribute:
+ * provide the argument internal_range on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  INTERNAL_RANGE
+     ID of the internal range or fully qualified identifier for the
+     internal range.
+
+     To set the internal_range attribute:
+     + provide the argument internal_range on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --region=REGION
+     The location ID.
+
+     To set the region attribute:
+     + provide the argument internal_range on the command line with a
+       fully specified name;
+     + provide the argument --region on the command line;
+     + use default global location .
+```
+
+**Examples:**
+```bash
+Display details about an internal range named my-range:
+
+    $ gcloud network-connectivity internal-ranges describe my-range
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/network-connectivity/internal-ranges/describe)
+
+---
+### `gcloud network-connectivity internal-ranges list`
+
+List internal ranges
+
+Retrieve and display a list of all internal ranges in the specified
+project.
+
+**Synopsis:**
+```
+gcloud network-connectivity internal-ranges list [--region=REGION]
+    [--filter=EXPRESSION] [--limit=LIMIT] [--page-size=PAGE_SIZE]
+    [--sort-by=[FIELD,...]] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--region` | REGION |  | _[* set the property core/project.]_ ID of the region or fully qualified identifier for the region. To set the region attribute: + provide the argument --region on the command line; + use default global location . |
+
+
+**Examples:**
+```bash
+List all internal ranges:
+
+    $ gcloud network-connectivity internal-ranges list
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/network-connectivity/internal-ranges/list)
+
+---
+### `gcloud network-connectivity internal-ranges update`
+
+Update an internal range
+
+Update the details of an internal range.
+
+**Synopsis:**
+```
+gcloud network-connectivity internal-ranges update
+    (INTERNAL_RANGE : --region=REGION) [--async]
+    [--description=DESCRIPTION] [--clear-labels | --labels=[KEY=VALUE,...]]
+    [--clear-overlaps | --overlaps=[OVERLAPS,...]]
+    [--ip-cidr-range=IP_CIDR_RANGE | --prefix-length=PREFIX_LENGTH]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Internal range resource - Name of the internal range to be created. The
+arguments in this group can be used to specify the attributes of this
+resource. (NOTE) Some attributes are not given arguments in this group but
+can be set in other ways.
+
+To set the project attribute:
+ * provide the argument internal_range on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  INTERNAL_RANGE
+     ID of the internal range or fully qualified identifier for the
+     internal range.
+
+     To set the internal_range attribute:
+     + provide the argument internal_range on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --region=REGION
+     The location ID.
+
+     To set the region attribute:
+     + provide the argument internal_range on the command line with a
+       fully specified name;
+     + provide the argument --region on the command line;
+     + use default global location .
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+| `--description` | DESCRIPTION |  | Description of the Internal Range |
+
+
+**Examples:**
+```bash
+Update ip-cidr-range of an internal range named my-range:
+
+    $ gcloud network-connectivity internal-ranges update my-range \
+        --ip-cidr-range="192.168.0.0/24"
+
+Extend an internal range named my-range to an address block of /24:
+
+    $ gcloud network-connectivity internal-ranges update my-range \
+        --prefix-length=24
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/network-connectivity/internal-ranges/update)
+
+---

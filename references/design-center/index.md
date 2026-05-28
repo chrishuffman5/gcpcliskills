@@ -1,0 +1,73 @@
+# gcloud design-center — command index
+
+manage Application Design Center resources
+
+- `gcloud design-center locations describe` — describe a Design Center location
+- `gcloud design-center locations list` — list Design Center locations
+- `gcloud design-center operations cancel` — cancel operations
+- `gcloud design-center operations delete` — delete operations
+- `gcloud design-center operations describe` — describe operations
+- `gcloud design-center operations list` — list operations
+- `gcloud design-center operations wait` — wait for an operation to complete
+- `gcloud design-center spaces create` — create a space
+- `gcloud design-center spaces delete` — delete a space
+- `gcloud design-center spaces describe` — describe a space
+- `gcloud design-center spaces get-iam-policy` — get the IAM policy for a Design Center space
+- `gcloud design-center spaces list` — list spaces
+- `gcloud design-center spaces set-iam-policy` — set the IAM policy for a Design Center space as defined in a JSON/YAML file
+- `gcloud design-center spaces test-iam-permissions` — test IAM permissions for a Design Center space
+- `gcloud design-center spaces update` — update a space
+- `gcloud design-center spaces application-templates commit` — commit an application template
+- `gcloud design-center spaces application-templates create` — create an application template
+- `gcloud design-center spaces application-templates delete` — delete an application template
+- `gcloud design-center spaces application-templates describe` — describe an application template
+- `gcloud design-center spaces application-templates generate` — generate IaC for an application template
+- `gcloud design-center spaces application-templates import` — import to an application template
+- `gcloud design-center spaces application-templates import-iac` — import Infrastructure as Code (IaC) for an Application Template
+- `gcloud design-center spaces application-templates list` — list application templates
+- `gcloud design-center spaces application-templates update` — update an application template
+- `gcloud design-center spaces application-templates components create` — create a component
+- `gcloud design-center spaces application-templates components delete` — delete a component
+- `gcloud design-center spaces application-templates components describe` — describe a component
+- `gcloud design-center spaces application-templates components list` — list components
+- `gcloud design-center spaces application-templates components update` — update a component
+- `gcloud design-center spaces application-templates components connections create` — create a connection
+- `gcloud design-center spaces application-templates components connections delete` — delete a connection
+- `gcloud design-center spaces application-templates components connections describe` — describe a connection
+- `gcloud design-center spaces application-templates components connections list` — list connections
+- `gcloud design-center spaces application-templates components connections update` — update a connection
+- `gcloud design-center spaces application-templates revisions delete` — delete an application template revision
+- `gcloud design-center spaces application-templates revisions describe` — describe an application template revision
+- `gcloud design-center spaces application-templates revisions list` — list application template revisions
+- `gcloud design-center spaces applications create` — create an application
+- `gcloud design-center spaces applications delete` — delete an application
+- `gcloud design-center spaces applications deploy` — deploy an application
+- `gcloud design-center spaces applications describe` — describe an application
+- `gcloud design-center spaces applications generate` — generate IaC for an application
+- `gcloud design-center spaces applications import-iac` — import Infrastructure as Code (IaC) for an Application
+- `gcloud design-center spaces applications list` — list applications
+- `gcloud design-center spaces applications preview` — preview a Design Center application
+- `gcloud design-center spaces applications update` — update an application
+- `gcloud design-center spaces catalogs create` — create a catalog
+- `gcloud design-center spaces catalogs delete` — delete a catalog
+- `gcloud design-center spaces catalogs describe` — describe a catalog
+- `gcloud design-center spaces catalogs list` — list catalogs
+- `gcloud design-center spaces catalogs update` — update a catalog
+- `gcloud design-center spaces catalogs shares create` — create a share
+- `gcloud design-center spaces catalogs shares delete` — delete a share
+- `gcloud design-center spaces catalogs shares describe` — describe a share
+- `gcloud design-center spaces catalogs shares list` — list shares
+- `gcloud design-center spaces catalogs shares sync` — sync a share
+- `gcloud design-center spaces catalogs templates create` — create a catalog template
+- `gcloud design-center spaces catalogs templates delete` — delete a catalog template
+- `gcloud design-center spaces catalogs templates describe` — describe a catalog template
+- `gcloud design-center spaces catalogs templates list` — list catalog templates
+- `gcloud design-center spaces catalogs templates update` — update a catalog template
+- `gcloud design-center spaces catalogs templates revisions create` — create a new catalog template revision
+- `gcloud design-center spaces catalogs templates revisions delete` — delete a catalog template revision
+- `gcloud design-center spaces catalogs templates revisions describe` — describe a catalog template revision
+- `gcloud design-center spaces catalogs templates revisions list` — list catalog template revisions
+- `gcloud design-center spaces shared-templates describe` — describe a shared template
+- `gcloud design-center spaces shared-templates list` — list shared templates
+- `gcloud design-center spaces shared-templates revisions describe` — describe a shared template revision
+- `gcloud design-center spaces shared-templates revisions list` — list shared template revisions

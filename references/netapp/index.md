@@ -1,0 +1,74 @@
+# gcloud netapp — command index
+
+create and manipulate Cloud NetApp Files resources
+
+- `gcloud netapp active-directories create` — create a Cloud NetApp Active Directory
+- `gcloud netapp active-directories delete` — delete a Cloud NetApp Active Directory
+- `gcloud netapp active-directories describe` — show metadata for a Cloud NetApp Active Directory
+- `gcloud netapp active-directories list` — list Cloud NetApp Active Directories
+- `gcloud netapp active-directories update` — update a Cloud NetApp Active Directory
+- `gcloud netapp backup-policies create` — create a Cloud NetApp Backup Policy
+- `gcloud netapp backup-policies delete` — delete a Cloud NetApp Volumes Backup Policy
+- `gcloud netapp backup-policies describe` — show metadata for a Cloud NetApp Volumes Backup Policy
+- `gcloud netapp backup-policies list` — list Cloud NetApp Volumes Backup Policies
+- `gcloud netapp backup-policies update` — update a Cloud NetApp Volumes Backup Policies
+- `gcloud netapp backup-vaults create` — create a Cloud NetApp Backup Vault
+- `gcloud netapp backup-vaults delete` — delete a Cloud NetApp Volumes Backup Vault
+- `gcloud netapp backup-vaults describe` — show metadata for a Cloud NetApp Volumes Backup Vault
+- `gcloud netapp backup-vaults list` — list Cloud NetApp Volumes Backup Vaults
+- `gcloud netapp backup-vaults update` — update a Cloud NetApp Volumes Backup Vault
+- `gcloud netapp backup-vaults backups create` — create a Cloud NetApp Backup
+- `gcloud netapp backup-vaults backups delete` — delete a Cloud NetApp Backup
+- `gcloud netapp backup-vaults backups describe` — describe a Cloud NetApp Backup
+- `gcloud netapp backup-vaults backups list` — list Cloud NetApp Backups
+- `gcloud netapp backup-vaults backups update` — update a Cloud NetApp Backup
+- `gcloud netapp host-groups create` — create a Cloud NetApp Host Group
+- `gcloud netapp host-groups delete` — delete a Cloud NetApp Host Group
+- `gcloud netapp host-groups describe` — describe a Cloud NetApp Host Group
+- `gcloud netapp host-groups list` — list Cloud NetApp Host Groups
+- `gcloud netapp host-groups update` — update a Cloud NetApp Host Group
+- `gcloud netapp kms-configs create` — create a Cloud NetApp Volumes KMS Config
+- `gcloud netapp kms-configs delete` — delete a Cloud NetApp Volumes KMS Config
+- `gcloud netapp kms-configs describe` — show metadata for a Cloud NetApp Volumes KMS Config
+- `gcloud netapp kms-configs encrypt` — encrypt all existing volumes and storage pools in the same region with the desired Cloud NetApp Volumes KMS Config
+- `gcloud netapp kms-configs list` — list Cloud NetApp Volumes KMS Configs
+- `gcloud netapp kms-configs update` — update a Cloud NetApp Volumes KMS Config
+- `gcloud netapp kms-configs verify` — verify that the Cloud NetApp Volumes KMS Config is reachable
+- `gcloud netapp locations describe` — describe a Cloud NetApp Files location
+- `gcloud netapp locations list` — list all Cloud NetApp Files locations
+- `gcloud netapp operations describe` — describe a Cloud NetApp Files operation
+- `gcloud netapp operations list` — list Cloud NetApp Files operations
+- `gcloud netapp storage-pools create` — create a Cloud NetApp Storage Pool
+- `gcloud netapp storage-pools delete` — delete a Cloud NetApp Storage Pool
+- `gcloud netapp storage-pools describe` — show metadata for a Cloud NetApp Storage Pool
+- `gcloud netapp storage-pools list` — list Cloud NetApp Storage Pools
+- `gcloud netapp storage-pools switch` — switch a Regional Cloud NetApp Flex Storage Pool zone
+- `gcloud netapp storage-pools update` — update a Cloud NetApp Storage Pool
+- `gcloud netapp storage-pools validate-directory-service` — validate directory service for a Cloud Netapp storage pool
+- `gcloud netapp volumes create` — create a Cloud NetApp Volume
+- `gcloud netapp volumes delete` — delete a Cloud NetApp Volume
+- `gcloud netapp volumes describe` — show metadata for a Cloud NetApp Volume
+- `gcloud netapp volumes list` — list Cloud NetApp Volumes
+- `gcloud netapp volumes restore-backup-files` — restore specific files from a backup to a Volume
+- `gcloud netapp volumes revert` — revert a Cloud NetApp Volume back to a specified Snapshot
+- `gcloud netapp volumes update` — update a Cloud NetApp Volume
+- `gcloud netapp volumes quota-rules create` — create a Cloud NetApp Volume Quota Rule
+- `gcloud netapp volumes quota-rules delete` — delete a Cloud NetApp Volume QuotaRule
+- `gcloud netapp volumes quota-rules describe` — describe a Cloud NetApp Volume Quota Rule
+- `gcloud netapp volumes quota-rules list` — list Cloud NetApp Volume QuotaRules
+- `gcloud netapp volumes quota-rules update` — update a Cloud NetApp Volume QuotaRule
+- `gcloud netapp volumes replications create` — create a Cloud NetApp Volume Replication
+- `gcloud netapp volumes replications delete` — delete a Cloud NetApp Volume Replication
+- `gcloud netapp volumes replications describe` — describe a Cloud NetApp Volume Replication
+- `gcloud netapp volumes replications establish-peering` — establish peering for Hybrid replication
+- `gcloud netapp volumes replications list` — list Cloud NetApp Volume Replications
+- `gcloud netapp volumes replications resume` — resume a Cloud NetApp Volume Replication
+- `gcloud netapp volumes replications reverse` — reverse a Cloud NetApp Volume Replication's direction
+- `gcloud netapp volumes replications stop` — stop a Cloud NetApp Volume Replication
+- `gcloud netapp volumes replications sync` — sync a Cloud NetApp Volume Replication
+- `gcloud netapp volumes replications update` — update a Cloud NetApp Volume Replication
+- `gcloud netapp volumes snapshots create` — create a Cloud NetApp Volume Snapshot
+- `gcloud netapp volumes snapshots delete` — delete a Cloud NetApp Volume Snapshot
+- `gcloud netapp volumes snapshots describe` — describe a Cloud NetApp Volume Snapshot
+- `gcloud netapp volumes snapshots list` — list Cloud NetApp Volume Snapshots
+- `gcloud netapp volumes snapshots update` — update a Cloud NetApp Volume Snapshot

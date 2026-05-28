@@ -1,0 +1,104 @@
+# gcloud network-services — command index
+
+manage Network Services resources
+
+- `gcloud network-services endpoint-policies delete` — delete endpoint policy
+- `gcloud network-services endpoint-policies describe` — describe an endpoint policy
+- `gcloud network-services endpoint-policies export` — export endpoint policy
+- `gcloud network-services endpoint-policies import` — import endpoint policy
+- `gcloud network-services endpoint-policies list` — list endpoint policies
+- `gcloud network-services gateways delete` — delete a gateway
+- `gcloud network-services gateways describe` — describe a gateway
+- `gcloud network-services gateways export` — export the configuration for a gateway
+- `gcloud network-services gateways import` — import the configuration for a gateway
+- `gcloud network-services gateways list` — list gateways
+- `gcloud network-services grpc-routes delete` — delete grpc route
+- `gcloud network-services grpc-routes describe` — describe a grpc route
+- `gcloud network-services grpc-routes export` — export grpc route
+- `gcloud network-services grpc-routes import` — import grpc route
+- `gcloud network-services grpc-routes list` — list grpc routes
+- `gcloud network-services http-routes delete` — delete http route
+- `gcloud network-services http-routes describe` — describe a HTTP route
+- `gcloud network-services http-routes export` — export http route
+- `gcloud network-services http-routes import` — import http route
+- `gcloud network-services http-routes list` — list http routes
+- `gcloud network-services meshes delete` — delete a mesh
+- `gcloud network-services meshes describe` — describe a mesh
+- `gcloud network-services meshes export` — export a mesh
+- `gcloud network-services meshes import` — import a mesh
+- `gcloud network-services meshes list` — list meshes
+- `gcloud network-services multicast-consumer-associations create` — create a multicast consumer association
+- `gcloud network-services multicast-consumer-associations delete` — delete a multicast consumer association
+- `gcloud network-services multicast-consumer-associations describe` — describe a multicast consumer association
+- `gcloud network-services multicast-consumer-associations list` — list multicast consumer associations
+- `gcloud network-services multicast-consumer-associations update` — update a multicast consumer association
+- `gcloud network-services multicast-domain-activations create` — create a multicast domain activation
+- `gcloud network-services multicast-domain-activations delete` — delete a multicast domain activation
+- `gcloud network-services multicast-domain-activations describe` — describe a multicast domain activation
+- `gcloud network-services multicast-domain-activations list` — list multicast domain activations
+- `gcloud network-services multicast-domain-activations update` — update a multicast domain activation
+- `gcloud network-services multicast-domain-groups create` — create a multicast domain group
+- `gcloud network-services multicast-domain-groups delete` — delete a multicast domain group
+- `gcloud network-services multicast-domain-groups describe` — describe a multicast domain group
+- `gcloud network-services multicast-domain-groups list` — list multicast domain groups
+- `gcloud network-services multicast-domain-groups update` — update a multicast domain group
+- `gcloud network-services multicast-domains create` — create a multicast domain
+- `gcloud network-services multicast-domains delete` — delete a multicast domain
+- `gcloud network-services multicast-domains describe` — describe a multicast domain
+- `gcloud network-services multicast-domains list` — list multicast domains
+- `gcloud network-services multicast-domains update` — update a multicast domain
+- `gcloud network-services multicast-group-consumer-activations create` — create a multicast group consumer activation
+- `gcloud network-services multicast-group-consumer-activations delete` — delete a multicast group consumer activation
+- `gcloud network-services multicast-group-consumer-activations describe` — describe a multicast group consumer activation
+- `gcloud network-services multicast-group-consumer-activations list` — list multicast group consumer activations
+- `gcloud network-services multicast-group-consumer-activations update` — update a multicast group consumer activation
+- `gcloud network-services multicast-group-producer-activations create` — create a multicast group producer activation
+- `gcloud network-services multicast-group-producer-activations delete` — delete a multicast group producer activation
+- `gcloud network-services multicast-group-producer-activations describe` — describe a multicast group producer activation
+- `gcloud network-services multicast-group-producer-activations list` — list multicast group producer activations
+- `gcloud network-services multicast-group-producer-activations update` — update a multicast group producer activation
+- `gcloud network-services multicast-group-range-activations create` — create a multicast group range activation
+- `gcloud network-services multicast-group-range-activations delete` — delete a multicast group range activation
+- `gcloud network-services multicast-group-range-activations describe` — describe a multicast group range activations
+- `gcloud network-services multicast-group-range-activations list` — list multicast group range activations
+- `gcloud network-services multicast-group-range-activations update` — update a multicast group range activation
+- `gcloud network-services multicast-group-ranges create` — create a multicast group range
+- `gcloud network-services multicast-group-ranges delete` — delete a multicast group range
+- `gcloud network-services multicast-group-ranges describe` — describe a multicast group range
+- `gcloud network-services multicast-group-ranges list` — list multicast group ranges
+- `gcloud network-services multicast-group-ranges update` — update a multicast group range
+- `gcloud network-services multicast-producer-associations create` — create a multicast producer association
+- `gcloud network-services multicast-producer-associations delete` — delete a multicast producer association
+- `gcloud network-services multicast-producer-associations describe` — describe a multicast producer associations
+- `gcloud network-services multicast-producer-associations list` — list multicast producer associations
+- `gcloud network-services multicast-producer-associations update` — update a multicast producer association
+- `gcloud network-services operations cancel` — cancel a Network Services long running operation
+- `gcloud network-services operations describe` — show details of a Network Services long running operation
+- `gcloud network-services operations list` — list all Network Services long running operations
+- `gcloud network-services operations wait` — poll a Network Services long running operation
+- `gcloud network-services route-views describe` — route View for a Mesh or Gateway
+- `gcloud network-services route-views list` — route View for a Mesh or Gateway
+- `gcloud network-services service-bindings create` — create a service binding
+- `gcloud network-services service-bindings delete` — delete service binding
+- `gcloud network-services service-bindings describe` — describe a service binding
+- `gcloud network-services service-bindings export` — export a service binding
+- `gcloud network-services service-bindings import` — import a service binding
+- `gcloud network-services service-bindings list` — list service bindings
+- `gcloud network-services service-bindings update` — update a service binding
+- `gcloud network-services service-lb-policies create` — create a service LB policy
+- `gcloud network-services service-lb-policies delete` — delete service LB policy
+- `gcloud network-services service-lb-policies describe` — describe a service LB policy
+- `gcloud network-services service-lb-policies export` — export service LB policy
+- `gcloud network-services service-lb-policies import` — import service LB policy
+- `gcloud network-services service-lb-policies list` — list ServiceLbPolicies
+- `gcloud network-services service-lb-policies update` — update a service LB policy
+- `gcloud network-services tcp-routes delete` — delete tcp route
+- `gcloud network-services tcp-routes describe` — describe a TCP route
+- `gcloud network-services tcp-routes export` — export tcp route
+- `gcloud network-services tcp-routes import` — import tcp route
+- `gcloud network-services tcp-routes list` — list tcp routes
+- `gcloud network-services tls-routes delete` — delete tls route
+- `gcloud network-services tls-routes describe` — describe a tls route
+- `gcloud network-services tls-routes export` — export tls route
+- `gcloud network-services tls-routes import` — import tls route
+- `gcloud network-services tls-routes list` — list tls routes

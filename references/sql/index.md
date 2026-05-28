@@ -1,0 +1,74 @@
+# gcloud sql — command index
+
+create and manage Google Cloud SQL databases
+
+- `gcloud sql connect` — connects to a Cloud SQL instance
+- `gcloud sql generate-login-token` — generate an IAM login token for Cloud SQL
+- `gcloud sql reschedule-maintenance` — reschedule a Cloud SQL instance's maintenance
+- `gcloud sql backups create` — creates a backup of a Cloud SQL instance
+- `gcloud sql backups delete` — delete a backup of a Cloud SQL instance
+- `gcloud sql backups describe` — retrieves information about a backup
+- `gcloud sql backups list` — lists all backups associated with the project or a given instance
+- `gcloud sql backups patch` — update the Final backup of a Cloud SQL project
+- `gcloud sql backups restore` — restores a backup of a Cloud SQL instance
+- `gcloud sql databases create` — creates a database for a Cloud SQL instance
+- `gcloud sql databases delete` — deletes a Cloud SQL database
+- `gcloud sql databases describe` — displays configuration and metadata about a Cloud SQL database
+- `gcloud sql databases list` — lists databases for a Cloud SQL instance
+- `gcloud sql databases patch` — patches the settings of a Cloud SQL database
+- `gcloud sql export bak` — export data from a Cloud SQL instance to a BAK file
+- `gcloud sql export csv` — exports data from a Cloud SQL instance to a CSV file
+- `gcloud sql export sql` — exports data from a Cloud SQL instance to a SQL file
+- `gcloud sql export tde` — export a TDE certificate from a Cloud SQL for SQL Server instance
+- `gcloud sql flags list` — list customizable flags for Google Cloud SQL instances
+- `gcloud sql import bak` — import data into a Cloud SQL instance from a BAK file
+- `gcloud sql import csv` — imports data into a Cloud SQL instance from a CSV file
+- `gcloud sql import sql` — imports data into a Cloud SQL instance from a SQL dump file
+- `gcloud sql import tde` — import TDE certificate into a Cloud SQL for SQL Server instance
+- `gcloud sql instances acquire-ssrs-lease` — acquires a SQL Server Reporting Services lease on a Cloud SQL instance
+- `gcloud sql instances clone` — clones a Cloud SQL instance
+- `gcloud sql instances create` — creates a new Cloud SQL instance
+- `gcloud sql instances delete` — deletes a Cloud SQL instance
+- `gcloud sql instances describe` — displays configuration and metadata about a Cloud SQL instance
+- `gcloud sql instances export` — exports data from a Cloud SQL instance
+- `gcloud sql instances failover` — causes a high-availability Cloud SQL instance to failover
+- `gcloud sql instances get-latest-recovery-time` — displays the latest recovery time to which a Cloud SQL instance can be restored to
+- `gcloud sql instances import` — imports data into a Cloud SQL instance from Google Cloud Storage
+- `gcloud sql instances list` — lists Cloud SQL instances in a given project
+- `gcloud sql instances patch` — updates the settings of a Cloud SQL instance
+- `gcloud sql instances point-in-time-restore` — performs a point in time restore for a Cloud SQL instance managed by Google Cloud Backup and Disaster Recovery Service
+- `gcloud sql instances pre-check-major-version-upgrade` — performs pre-checks for a major version upgrade of a Cloud SQL instance
+- `gcloud sql instances promote-replica` — promotes Cloud SQL read replica to a stand-alone instance
+- `gcloud sql instances reencrypt` — reencrypts a Cloud SQL CMEK instance
+- `gcloud sql instances release-ssrs-lease` — releases a SQL Server Reporting Services lease on a Cloud SQL instance
+- `gcloud sql instances reset-ssl-config` — reset SSL materials according to the reset SSL mode
+- `gcloud sql instances restart` — restarts a Cloud SQL instance
+- `gcloud sql instances restore-backup` — restores a backup of a Cloud SQL instance
+- `gcloud sql instances switchover` — switches over a Cloud SQL instance to one of its replicas
+- `gcloud sql operations cancel` — cancels a Cloud SQL instance operation
+- `gcloud sql operations describe` — retrieves information about a Cloud SQL instance operation
+- `gcloud sql operations list` — lists all instance operations for the given Cloud SQL instance
+- `gcloud sql operations wait` — waits for one or more operations to complete
+- `gcloud sql ssl client-certs create` — create a client certificate for a Cloud SQL instance
+- `gcloud sql ssl client-certs delete` — delete a client certificate for a Cloud SQL instance
+- `gcloud sql ssl client-certs describe` — retrieve information about a client cert for a Cloud SQL instance
+- `gcloud sql ssl client-certs list` — list all client certs for a Cloud SQL instance
+- `gcloud sql ssl server-ca-certs create` — create a server CA cert for a Cloud SQL instance
+- `gcloud sql ssl server-ca-certs list` — list all server CA certs for a Cloud SQL instance
+- `gcloud sql ssl server-ca-certs rollback` — roll back to the previous server CA cert for a Cloud SQL instance
+- `gcloud sql ssl server-ca-certs rotate` — rotate in the upcoming server CA cert for a Cloud SQL instance
+- `gcloud sql ssl server-certs create` — create a server certificate for a Cloud SQL instance
+- `gcloud sql ssl server-certs list` — list all server certificates for a Cloud SQL instance
+- `gcloud sql ssl server-certs rollback` — roll back to the previous server certificate for a Cloud SQL instance
+- `gcloud sql ssl server-certs rotate` — rotate in the upcoming server certificate for a Cloud SQL instance
+- `gcloud sql ssl-certs create` — creates an SSL certificate for a Cloud SQL instance
+- `gcloud sql ssl-certs delete` — deletes an SSL certificate for a Cloud SQL instance
+- `gcloud sql ssl-certs describe` — retrieves information about an SSL cert for a Cloud SQL instance
+- `gcloud sql ssl-certs list` — lists all SSL certs for a Cloud SQL instance
+- `gcloud sql tiers list` — lists all available service tiers for Google Cloud SQL
+- `gcloud sql users create` — creates a user in a given instance
+- `gcloud sql users delete` — deletes a Cloud SQL user in a given instance
+- `gcloud sql users describe` — retrieves information about a Cloud SQL user in a given instance
+- `gcloud sql users list` — lists Cloud SQL users in a given instance
+- `gcloud sql users set-password` — changes a user's password in a given instance
+- `gcloud sql users set-password-policy` — replaces a user's password policy in a given instance

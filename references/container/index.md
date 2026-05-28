@@ -1,0 +1,385 @@
+# gcloud container — command index
+
+deploy and manage clusters of machines for running containers
+
+- `gcloud container get-server-config` — get Kubernetes Engine server config
+- `gcloud container ai profiles list` — list compatible accelerator profiles
+- `gcloud container ai profiles benchmarks list` — list benchmarks for a given model and model server
+- `gcloud container ai profiles manifests create` — generate ready-to-deploy Kubernetes manifests with compute, load balancing, and autoscaling capabilities
+- `gcloud container ai profiles model-server-versions list` — list supported model server versions
+- `gcloud container ai profiles model-servers list` — list supported model servers for a given model
+- `gcloud container ai profiles models list` — list supported models
+- `gcloud container ai profiles serving-stack-versions list` — list supported serving stack versions that were used to generate the inference profiles
+- `gcloud container ai profiles serving-stacks list` — list supported serving stacks that were used to generate the inference profiles
+- `gcloud container ai profiles use-case list` — list supported use cases that were used to generate the inference profiles
+- `gcloud container attached get-server-config` — get Anthos Multi-Cloud server configuration for Attached clusters
+- `gcloud container attached clusters delete` — delete a registered AttachedCluster resource
+- `gcloud container attached clusters describe` — describe an Attached cluster
+- `gcloud container attached clusters generate-install-manifest` — generate Install Manifest for an Attached cluster
+- `gcloud container attached clusters get-credentials` — get credentials of an Attached cluster
+- `gcloud container attached clusters import` — import fleet membership for an Attached cluster
+- `gcloud container attached clusters list` — list Attached clusters
+- `gcloud container attached clusters register` — register an Attached cluster
+- `gcloud container attached clusters update` — update an Attached cluster
+- `gcloud container attached operations describe` — describe an operation
+- `gcloud container attached operations list` — list operations
+- `gcloud container attached operations wait` — wait for an operation to complete
+- `gcloud container aws get-server-config` — get Anthos Multi-Cloud server configuration for AWS
+- `gcloud container aws clusters create` — create an Anthos cluster on AWS
+- `gcloud container aws clusters delete` — delete an Anthos cluster on AWS
+- `gcloud container aws clusters describe` — describe an Anthos cluster on AWS
+- `gcloud container aws clusters get-credentials` — get credentials of an Anthos cluster on AWS
+- `gcloud container aws clusters list` — list Anthos clusters on AWS
+- `gcloud container aws clusters update` — update an Anthos cluster on AWS
+- `gcloud container aws node-pools create` — create a node pool in an Anthos cluster on AWS
+- `gcloud container aws node-pools delete` — delete a node pool in an Anthos cluster on AWS
+- `gcloud container aws node-pools describe` — describe a node pool in an Anthos cluster on AWS
+- `gcloud container aws node-pools list` — list node pools in an Anthos cluster on AWS
+- `gcloud container aws node-pools rollback` — rollback a node pool in an Anthos cluster on AWS
+- `gcloud container aws node-pools update` — update a node pool in an Anthos cluster on AWS
+- `gcloud container aws operations cancel` — cancel an operation
+- `gcloud container aws operations describe` — describe an operation
+- `gcloud container aws operations list` — list operations
+- `gcloud container aws operations wait` — wait for an operation to complete
+- `gcloud container azure get-server-config` — get Anthos Multi-Cloud server configuration for Azure
+- `gcloud container azure clients create` — create an Azure client
+- `gcloud container azure clients delete` — delete an Azure client
+- `gcloud container azure clients describe` — describe an Azure client
+- `gcloud container azure clients get-public-cert` — get the public certificate of an Azure client
+- `gcloud container azure clients list` — list Azure clients
+- `gcloud container azure clusters create` — create an Anthos cluster on Azure
+- `gcloud container azure clusters delete` — delete an Anthos cluster on Azure
+- `gcloud container azure clusters describe` — describe an Anthos cluster on Azure
+- `gcloud container azure clusters get-credentials` — get credentials of an Anthos cluster on Azure
+- `gcloud container azure clusters list` — list Anthos clusters on Azure
+- `gcloud container azure clusters update` — update an Anthos cluster on Azure
+- `gcloud container azure node-pools create` — create a node pool in an Anthos cluster on Azure
+- `gcloud container azure node-pools delete` — delete a node pool in an Anthos cluster on Azure
+- `gcloud container azure node-pools describe` — describe a node pool in an Anthos cluster on Azure
+- `gcloud container azure node-pools list` — list node pools in an Anthos cluster on Azure
+- `gcloud container azure node-pools update` — update a node pool in an Anthos cluster on Azure
+- `gcloud container azure operations cancel` — cancel an operation
+- `gcloud container azure operations describe` — describe an operation
+- `gcloud container azure operations list` — list operations
+- `gcloud container azure operations wait` — wait for an operation to complete
+- `gcloud container bare-metal admin-clusters create` — create an Anthos on bare metal admin cluster
+- `gcloud container bare-metal admin-clusters describe` — describe an Anthos on bare metal admin cluster
+- `gcloud container bare-metal admin-clusters enroll` — enroll an Anthos on bare metal admin cluster
+- `gcloud container bare-metal admin-clusters list` — list Anthos on bare metal admin clusters
+- `gcloud container bare-metal admin-clusters query-version-config` — query versions for creating or upgrading an Anthos on bare metal admin cluster
+- `gcloud container bare-metal admin-clusters unenroll` — unenroll an Anthos on bare metal admin cluster so that it is no longer managed by the Anthos On-Prem API
+- `gcloud container bare-metal admin-clusters update` — update an Anthos on bare metal admin cluster
+- `gcloud container bare-metal clusters create` — create an Anthos cluster on bare metal
+- `gcloud container bare-metal clusters delete` — delete an Anthos cluster on bare metal
+- `gcloud container bare-metal clusters describe` — describe an Anthos cluster on bare metal
+- `gcloud container bare-metal clusters enroll` — enroll an Anthos cluster on bare metal
+- `gcloud container bare-metal clusters list` — list Anthos clusters on bare metal
+- `gcloud container bare-metal clusters query-version-config` — query versions for creating or upgrading an Anthos on bare metal user cluster
+- `gcloud container bare-metal clusters update` — update an Anthos cluster on bare metal
+- `gcloud container bare-metal node-pools create` — create a node pool in an Anthos cluster on bare metal
+- `gcloud container bare-metal node-pools delete` — delete a node pool in an Anthos cluster on bare metal
+- `gcloud container bare-metal node-pools describe` — describe a node pool in an Anthos cluster on bare metal
+- `gcloud container bare-metal node-pools enroll` — enroll a node pool of a user cluster in Anthos on bare metal
+- `gcloud container bare-metal node-pools list` — list node pools in an Anthos cluster on bare metal
+- `gcloud container bare-metal node-pools update` — update a node pool in an Anthos cluster on bare metal
+- `gcloud container bare-metal operations describe` — describe an operation
+- `gcloud container bare-metal operations list` — list operations
+- `gcloud container bare-metal operations wait` — poll an operation for completion
+- `gcloud container binauthz create-signature-payload` — create a JSON container image signature object
+- `gcloud container binauthz attestations create` — create a Binary Authorization attestation
+- `gcloud container binauthz attestations list` — list Binary Authorization attestations
+- `gcloud container binauthz attestors add-iam-policy-binding` — add IAM policy binding to a Binary Authorization attestor
+- `gcloud container binauthz attestors create` — create an Attestor
+- `gcloud container binauthz attestors delete` — delete an Attestor
+- `gcloud container binauthz attestors describe` — describe an Attestor
+- `gcloud container binauthz attestors get-iam-policy` — get the IAM policy for an attestor
+- `gcloud container binauthz attestors list` — list Attestors associated with the current project
+- `gcloud container binauthz attestors remove-iam-policy-binding` — remove IAM policy binding of a Binary Authorization attestor
+- `gcloud container binauthz attestors set-iam-policy` — set the IAM policy for an attestor
+- `gcloud container binauthz attestors update` — update an existing Attestor
+- `gcloud container binauthz attestors public-keys add` — add a public key to an Attestor
+- `gcloud container binauthz attestors public-keys remove` — remove a public key from an Attestor
+- `gcloud container binauthz attestors public-keys update` — update a public key on an Attestor
+- `gcloud container binauthz policy add-iam-policy-binding` — add IAM policy binding to a Binary Authorization policy
+- `gcloud container binauthz policy export` — export the Binary Authorization policy for the current project
+- `gcloud container binauthz policy get-iam-policy` — get the IAM policy for a Binary Authorization policy
+- `gcloud container binauthz policy import` — import a Binary Authorization policy to the current project
+- `gcloud container binauthz policy remove-iam-policy-binding` — remove IAM policy binding of a Binary Authorization policy
+- `gcloud container binauthz policy set-iam-policy` — set the IAM policy for a Binary Authorization policy
+- `gcloud container clusters check-autopilot-compatibility` — check autopilot compatibility of a running cluster
+- `gcloud container clusters create` — create a cluster for running containers
+- `gcloud container clusters create-auto` — create an Autopilot cluster for running containers
+- `gcloud container clusters delete` — delete an existing cluster for running containers
+- `gcloud container clusters describe` — describe an existing cluster for running containers
+- `gcloud container clusters get-credentials` — fetch credentials for a running cluster
+- `gcloud container clusters get-upgrade-info` — get information about upgrades for existing clusters including auto upgrade status, upgrade history, upgrade targets, and end of support timelines
+- `gcloud container clusters list` — list existing clusters for running containers
+- `gcloud container clusters resize` — resizes an existing cluster for running containers
+- `gcloud container clusters update` — update cluster settings for an existing container cluster
+- `gcloud container clusters upgrade` — upgrade the Kubernetes version of an existing container cluster
+- `gcloud container fleet create` — create a fleet
+- `gcloud container fleet delete` — delete a fleet
+- `gcloud container fleet describe` — show fleet info
+- `gcloud container fleet list` — list fleets visible to the user in an organization
+- `gcloud container fleet update` — update a fleet
+- `gcloud container fleet cloudrun apply` — deploy or update the CloudRun feature
+- `gcloud container fleet cloudrun describe` — describe the status of the CloudRun feature
+- `gcloud container fleet cloudrun disable` — disable the CloudRun feature
+- `gcloud container fleet cloudrun enable` — enable the CloudRun feature
+- `gcloud container fleet clusterupgrade create` — create the clusterupgrade feature for a fleet within a given project
+- `gcloud container fleet clusterupgrade describe` — describe the clusterupgrade feature for a fleet within a given project
+- `gcloud container fleet clusterupgrade update` — update the clusterupgrade feature for a fleet within a given project
+- `gcloud container fleet config-management describe` — describe the Config Management feature
+- `gcloud container fleet config-management disable` — disable the Config Management feature
+- `gcloud container fleet dataplane-v2-encryption describe` — describes the status of the Dataplane V2 Encryption Feature resource
+- `gcloud container fleet dataplane-v2-encryption disable` — disables the Dataplane V2 Encryption Feature
+- `gcloud container fleet dataplane-v2-encryption enable` — enables the Dataplane V2 Encryption Feature
+- `gcloud container fleet features list` — list enabled features
+- `gcloud container fleet fleetobservability describe` — describes the status of the Fleet Observability Feature resource
+- `gcloud container fleet fleetobservability disable` — disables the Fleet Observability Feature
+- `gcloud container fleet fleetobservability enable` — enables the Fleet Observability Feature
+- `gcloud container fleet fleetobservability update` — updates the Fleet Observability Feature resource
+- `gcloud container fleet identity-service apply` — update the Identity Service Feature
+- `gcloud container fleet identity-service delete` — delete a resource from the Identity Service Feature
+- `gcloud container fleet identity-service describe` — prints the status of all clusters with Identity Service installed
+- `gcloud container fleet identity-service disable` — disable Identity Service Feature
+- `gcloud container fleet identity-service enable` — enable the Identity Service Feature
+- `gcloud container fleet ingress describe` — describe the status of Multi-cluster Ingress Feature resource
+- `gcloud container fleet ingress disable` — disable Multi-cluster Ingress Feature
+- `gcloud container fleet ingress enable` — enable Multi-cluster Ingress Feature
+- `gcloud container fleet ingress update` — update Multi-cluster Ingress Feature
+- `gcloud container fleet memberships delete` — delete a membership
+- `gcloud container fleet memberships describe` — describe a membership
+- `gcloud container fleet memberships generate-gateway-rbac` — generate RBAC policy files for connected clusters by the user
+- `gcloud container fleet memberships get-credentials` — fetch credentials for a fleet-registered cluster to be used in Connect Gateway
+- `gcloud container fleet memberships list` — list memberships
+- `gcloud container fleet memberships register` — register a cluster with a fleet
+- `gcloud container fleet memberships unregister` — unregister a cluster from a fleet
+- `gcloud container fleet memberships update` — update a membership
+- `gcloud container fleet memberships bindings create` — create a Membership Binding
+- `gcloud container fleet memberships bindings delete` — delete a Membership Binding
+- `gcloud container fleet memberships bindings describe` — show Membership-Binding info
+- `gcloud container fleet memberships bindings list` — list Bindings in a Membership
+- `gcloud container fleet memberships bindings update` — update the Binding in a Membership
+- `gcloud container fleet memberships support-access describe` — describe support access for the specified membership
+- `gcloud container fleet memberships support-access disable` — disable support access for the specified membership
+- `gcloud container fleet memberships support-access enable` — enable support access for the specified membership
+- `gcloud container fleet memberships support-access get-yaml` — generates YAML for anthos support RBAC policies
+- `gcloud container fleet mesh describe` — describe the status of Service Mesh Feature resource
+- `gcloud container fleet mesh disable` — disable Service Mesh Feature
+- `gcloud container fleet mesh enable` — enable Service Mesh Feature
+- `gcloud container fleet mesh update` — update the configuration of the Service Mesh Feature
+- `gcloud container fleet multi-cluster-services describe` — describe the status of the Multi-cluster Services Feature resource
+- `gcloud container fleet multi-cluster-services disable` — disable the Multi-cluster Services Feature
+- `gcloud container fleet multi-cluster-services enable` — enable the Multi-cluster Services Feature
+- `gcloud container fleet operations describe` — describe a long-running operation
+- `gcloud container fleet operations list` — list long-running operations
+- `gcloud container fleet operations wait` — poll a long-running operation for completion
+- `gcloud container fleet packages create` — create Package Rollouts Fleet Package
+- `gcloud container fleet packages delete` — delete Package Rollouts Fleet Package
+- `gcloud container fleet packages describe` — describe Package Rollouts Fleet Package
+- `gcloud container fleet packages list` — list Package Rollouts Fleet Packages
+- `gcloud container fleet packages update` — update Package Rollouts Fleet Package
+- `gcloud container fleet packages resource-bundles create` — create Package Rollouts Resource Bundle
+- `gcloud container fleet packages resource-bundles delete` — delete Package Rollouts Resource Bundle
+- `gcloud container fleet packages resource-bundles describe` — describe Package Rollouts Resource Bundle
+- `gcloud container fleet packages resource-bundles list` — list Package Rollouts Resource Bundles
+- `gcloud container fleet packages resource-bundles update` — update Package Rollouts Resource Bundle
+- `gcloud container fleet packages resource-bundles releases create` — create Package Rollouts Release
+- `gcloud container fleet packages resource-bundles releases delete` — delete Package Rollouts Release
+- `gcloud container fleet packages resource-bundles releases describe` — describe Package Rollouts Release
+- `gcloud container fleet packages resource-bundles releases list` — list Releases of a Resource Bundle
+- `gcloud container fleet packages resource-bundles releases update` — update Package Rollouts Release
+- `gcloud container fleet packages rollouts abort` — abort Rollout resource
+- `gcloud container fleet packages rollouts describe` — describe Rollout resource
+- `gcloud container fleet packages rollouts list` — list Rollouts of a Fleet Package
+- `gcloud container fleet packages rollouts resume` — resume suspended Rollout
+- `gcloud container fleet packages rollouts suspend` — suspend in-progress Rollout
+- `gcloud container fleet policycontroller describe` — describe Policy Controller feature
+- `gcloud container fleet policycontroller detach` — detach Policy Controller Feature
+- `gcloud container fleet policycontroller disable` — disable (Uninstall) Policy Controller
+- `gcloud container fleet policycontroller enable` — enable Policy Controller Feature
+- `gcloud container fleet policycontroller suspend` — suspend Policy Controller Feature
+- `gcloud container fleet policycontroller update` — updates the configuration of Policy Controller Feature
+- `gcloud container fleet policycontroller content bundles remove` — removes a bundle installation for Policy Controller content
+- `gcloud container fleet policycontroller content bundles set` — sets bundle installation for Policy Controller content
+- `gcloud container fleet policycontroller content templates disable` — disable template installation for Policy Controller content
+- `gcloud container fleet policycontroller content templates enable` — installs the template library for Policy Controller
+- `gcloud container fleet policycontroller deployment remove` — removes configuration properties from Policy Controller components
+- `gcloud container fleet policycontroller deployment set` — sets configuration of the Policy Controller components
+- `gcloud container fleet rbacrolebindingactuation describe` — describe the status of the RbacRoleBinding Actuation Feature in a fleet
+- `gcloud container fleet rbacrolebindingactuation update` — update RbacRoleBinding Actuation Feature
+- `gcloud container fleet scopes add-iam-policy-binding` — add IAM policy binding to a Fleet Scope
+- `gcloud container fleet scopes create` — create a new fleet scope
+- `gcloud container fleet scopes delete` — delete a fleet scope
+- `gcloud container fleet scopes describe` — describe a fleet scope
+- `gcloud container fleet scopes get-iam-policy` — get the IAM policy for a Fleet Scope
+- `gcloud container fleet scopes list` — list fleet scopes in a project permitted to be viewed by the caller
+- `gcloud container fleet scopes list-memberships` — list memberships bound to a fleet scope
+- `gcloud container fleet scopes remove-iam-policy-binding` — remove IAM policy binding of a Fleet Scope
+- `gcloud container fleet scopes update` — update a scope
+- `gcloud container fleet scopes namespaces create` — create a fleet namespace
+- `gcloud container fleet scopes namespaces delete` — delete a fleet namespace
+- `gcloud container fleet scopes namespaces describe` — show fleet namespace info
+- `gcloud container fleet scopes namespaces get-credentials` — fetch credentials for a membership with a particular namespace
+- `gcloud container fleet scopes namespaces list` — list fleet namespaces in a project
+- `gcloud container fleet scopes namespaces update` — update a fleet namespace
+- `gcloud container fleet scopes rbacrolebindings create` — create an RBAC RoleBinding
+- `gcloud container fleet scopes rbacrolebindings delete` — delete a fleet scope RBAC RoleBinding
+- `gcloud container fleet scopes rbacrolebindings describe` — show fleet scope RBAC RoleBinding information
+- `gcloud container fleet scopes rbacrolebindings list` — list RBAC RoleBindings in a fleet scope
+- `gcloud container fleet scopes rbacrolebindings update` — update a fleet scope RBAC RoleBinding
+- `gcloud container hub create` — create a fleet
+- `gcloud container hub delete` — delete a fleet
+- `gcloud container hub describe` — show fleet info
+- `gcloud container hub list` — list fleets visible to the user in an organization
+- `gcloud container hub update` — update a fleet
+- `gcloud container hub cloudrun apply` — deploy or update the CloudRun feature
+- `gcloud container hub cloudrun describe` — describe the status of the CloudRun feature
+- `gcloud container hub cloudrun disable` — disable the CloudRun feature
+- `gcloud container hub cloudrun enable` — enable the CloudRun feature
+- `gcloud container hub clusterupgrade create` — create the clusterupgrade feature for a fleet within a given project
+- `gcloud container hub clusterupgrade describe` — describe the clusterupgrade feature for a fleet within a given project
+- `gcloud container hub clusterupgrade update` — update the clusterupgrade feature for a fleet within a given project
+- `gcloud container hub config-management describe` — describe the Config Management feature
+- `gcloud container hub config-management disable` — disable the Config Management feature
+- `gcloud container hub dataplane-v2-encryption describe` — describes the status of the Dataplane V2 Encryption Feature resource
+- `gcloud container hub dataplane-v2-encryption disable` — disables the Dataplane V2 Encryption Feature
+- `gcloud container hub dataplane-v2-encryption enable` — enables the Dataplane V2 Encryption Feature
+- `gcloud container hub features list` — list enabled features
+- `gcloud container hub fleetobservability describe` — describes the status of the Fleet Observability Feature resource
+- `gcloud container hub fleetobservability disable` — disables the Fleet Observability Feature
+- `gcloud container hub fleetobservability enable` — enables the Fleet Observability Feature
+- `gcloud container hub fleetobservability update` — updates the Fleet Observability Feature resource
+- `gcloud container hub identity-service apply` — update the Identity Service Feature
+- `gcloud container hub identity-service delete` — delete a resource from the Identity Service Feature
+- `gcloud container hub identity-service describe` — prints the status of all clusters with Identity Service installed
+- `gcloud container hub identity-service disable` — disable Identity Service Feature
+- `gcloud container hub identity-service enable` — enable the Identity Service Feature
+- `gcloud container hub ingress describe` — describe the status of Multi-cluster Ingress Feature resource
+- `gcloud container hub ingress disable` — disable Multi-cluster Ingress Feature
+- `gcloud container hub ingress enable` — enable Multi-cluster Ingress Feature
+- `gcloud container hub ingress update` — update Multi-cluster Ingress Feature
+- `gcloud container hub memberships delete` — delete a membership
+- `gcloud container hub memberships describe` — describe a membership
+- `gcloud container hub memberships generate-gateway-rbac` — generate RBAC policy files for connected clusters by the user
+- `gcloud container hub memberships get-credentials` — fetch credentials for a fleet-registered cluster to be used in Connect Gateway
+- `gcloud container hub memberships list` — list memberships
+- `gcloud container hub memberships register` — register a cluster with a fleet
+- `gcloud container hub memberships unregister` — unregister a cluster from a fleet
+- `gcloud container hub memberships update` — update a membership
+- `gcloud container hub memberships bindings create` — create a Membership Binding
+- `gcloud container hub memberships bindings delete` — delete a Membership Binding
+- `gcloud container hub memberships bindings describe` — show Membership-Binding info
+- `gcloud container hub memberships bindings list` — list Bindings in a Membership
+- `gcloud container hub memberships bindings update` — update the Binding in a Membership
+- `gcloud container hub memberships support-access describe` — describe support access for the specified membership
+- `gcloud container hub memberships support-access disable` — disable support access for the specified membership
+- `gcloud container hub memberships support-access enable` — enable support access for the specified membership
+- `gcloud container hub memberships support-access get-yaml` — generates YAML for anthos support RBAC policies
+- `gcloud container hub mesh describe` — describe the status of Service Mesh Feature resource
+- `gcloud container hub mesh disable` — disable Service Mesh Feature
+- `gcloud container hub mesh enable` — enable Service Mesh Feature
+- `gcloud container hub mesh update` — update the configuration of the Service Mesh Feature
+- `gcloud container hub multi-cluster-services describe` — describe the status of the Multi-cluster Services Feature resource
+- `gcloud container hub multi-cluster-services disable` — disable the Multi-cluster Services Feature
+- `gcloud container hub multi-cluster-services enable` — enable the Multi-cluster Services Feature
+- `gcloud container hub operations describe` — describe a long-running operation
+- `gcloud container hub operations list` — list long-running operations
+- `gcloud container hub operations wait` — poll a long-running operation for completion
+- `gcloud container hub packages create` — create Package Rollouts Fleet Package
+- `gcloud container hub packages delete` — delete Package Rollouts Fleet Package
+- `gcloud container hub packages describe` — describe Package Rollouts Fleet Package
+- `gcloud container hub packages list` — list Package Rollouts Fleet Packages
+- `gcloud container hub packages update` — update Package Rollouts Fleet Package
+- `gcloud container hub packages resource-bundles create` — create Package Rollouts Resource Bundle
+- `gcloud container hub packages resource-bundles delete` — delete Package Rollouts Resource Bundle
+- `gcloud container hub packages resource-bundles describe` — describe Package Rollouts Resource Bundle
+- `gcloud container hub packages resource-bundles list` — list Package Rollouts Resource Bundles
+- `gcloud container hub packages resource-bundles update` — update Package Rollouts Resource Bundle
+- `gcloud container hub packages resource-bundles releases create` — create Package Rollouts Release
+- `gcloud container hub packages resource-bundles releases delete` — delete Package Rollouts Release
+- `gcloud container hub packages resource-bundles releases describe` — describe Package Rollouts Release
+- `gcloud container hub packages resource-bundles releases list` — list Releases of a Resource Bundle
+- `gcloud container hub packages resource-bundles releases update` — update Package Rollouts Release
+- `gcloud container hub packages rollouts abort` — abort Rollout resource
+- `gcloud container hub packages rollouts describe` — describe Rollout resource
+- `gcloud container hub packages rollouts list` — list Rollouts of a Fleet Package
+- `gcloud container hub packages rollouts resume` — resume suspended Rollout
+- `gcloud container hub packages rollouts suspend` — suspend in-progress Rollout
+- `gcloud container hub policycontroller describe` — describe Policy Controller feature
+- `gcloud container hub policycontroller detach` — detach Policy Controller Feature
+- `gcloud container hub policycontroller disable` — disable (Uninstall) Policy Controller
+- `gcloud container hub policycontroller enable` — enable Policy Controller Feature
+- `gcloud container hub policycontroller suspend` — suspend Policy Controller Feature
+- `gcloud container hub policycontroller update` — updates the configuration of Policy Controller Feature
+- `gcloud container hub policycontroller content bundles remove` — removes a bundle installation for Policy Controller content
+- `gcloud container hub policycontroller content bundles set` — sets bundle installation for Policy Controller content
+- `gcloud container hub policycontroller content templates disable` — disable template installation for Policy Controller content
+- `gcloud container hub policycontroller content templates enable` — installs the template library for Policy Controller
+- `gcloud container hub policycontroller deployment remove` — removes configuration properties from Policy Controller components
+- `gcloud container hub policycontroller deployment set` — sets configuration of the Policy Controller components
+- `gcloud container hub rbacrolebindingactuation describe` — describe the status of the RbacRoleBinding Actuation Feature in a fleet
+- `gcloud container hub rbacrolebindingactuation update` — update RbacRoleBinding Actuation Feature
+- `gcloud container hub scopes add-iam-policy-binding` — add IAM policy binding to a Fleet Scope
+- `gcloud container hub scopes create` — create a new fleet scope
+- `gcloud container hub scopes delete` — delete a fleet scope
+- `gcloud container hub scopes describe` — describe a fleet scope
+- `gcloud container hub scopes get-iam-policy` — get the IAM policy for a Fleet Scope
+- `gcloud container hub scopes list` — list fleet scopes in a project permitted to be viewed by the caller
+- `gcloud container hub scopes list-memberships` — list memberships bound to a fleet scope
+- `gcloud container hub scopes remove-iam-policy-binding` — remove IAM policy binding of a Fleet Scope
+- `gcloud container hub scopes update` — update a scope
+- `gcloud container hub scopes namespaces create` — create a fleet namespace
+- `gcloud container hub scopes namespaces delete` — delete a fleet namespace
+- `gcloud container hub scopes namespaces describe` — show fleet namespace info
+- `gcloud container hub scopes namespaces get-credentials` — fetch credentials for a membership with a particular namespace
+- `gcloud container hub scopes namespaces list` — list fleet namespaces in a project
+- `gcloud container hub scopes namespaces update` — update a fleet namespace
+- `gcloud container hub scopes rbacrolebindings create` — create an RBAC RoleBinding
+- `gcloud container hub scopes rbacrolebindings delete` — delete a fleet scope RBAC RoleBinding
+- `gcloud container hub scopes rbacrolebindings describe` — show fleet scope RBAC RoleBinding information
+- `gcloud container hub scopes rbacrolebindings list` — list RBAC RoleBindings in a fleet scope
+- `gcloud container hub scopes rbacrolebindings update` — update a fleet scope RBAC RoleBinding
+- `gcloud container images add-tag` — adds tags to existing image
+- `gcloud container images delete` — delete existing images
+- `gcloud container images describe` — lists information about the specified image
+- `gcloud container images list` — list existing images
+- `gcloud container images list-gcr-usage` — list Container Registry usage
+- `gcloud container images list-tags` — list tags and digests for the specified image
+- `gcloud container images untag` — remove existing image tags
+- `gcloud container node-pools complete-upgrade` — complete a node pool upgrade
+- `gcloud container node-pools create` — create a node pool in a running cluster
+- `gcloud container node-pools delete` — delete an existing node pool in a running cluster
+- `gcloud container node-pools describe` — describe an existing node pool for a cluster
+- `gcloud container node-pools get-upgrade-info` — get upgrade information for an existing node pool for a cluster
+- `gcloud container node-pools list` — list existing node pools for a cluster
+- `gcloud container node-pools rollback` — rollback a node-pool upgrade
+- `gcloud container node-pools update` — updates a node pool in a running cluster
+- `gcloud container operations cancel` — cancel a running operation
+- `gcloud container operations describe` — describe an operation
+- `gcloud container operations list` — list operations for container clusters
+- `gcloud container operations wait` — poll an operation for completion
+- `gcloud container subnets list-usable` — list subnets usable for cluster creation in a specific project
+- `gcloud container vmware admin-clusters describe` — describe an Anthos on VMware admin cluster
+- `gcloud container vmware admin-clusters enroll` — enroll an Anthos on VMware admin cluster
+- `gcloud container vmware admin-clusters list` — list Anthos on VMware admin clusters
+- `gcloud container vmware admin-clusters unenroll` — unenroll an Anthos on VMware admin cluster
+- `gcloud container vmware admin-clusters update` — update an Anthos on VMware admin cluster
+- `gcloud container vmware clusters create` — create an Anthos cluster on VMware
+- `gcloud container vmware clusters delete` — delete an Anthos cluster on VMware
+- `gcloud container vmware clusters describe` — describe an Anthos cluster on VMware
+- `gcloud container vmware clusters enroll` — enroll an Anthos cluster on VMware
+- `gcloud container vmware clusters list` — list Anthos clusters on VMware
+- `gcloud container vmware clusters query-version-config` — query versions for creating or upgrading an Anthos on VMware user cluster
+- `gcloud container vmware clusters update` — update an Anthos cluster on VMware
+- `gcloud container vmware clusters upgrade` — centrally upgrade an Anthos cluster on VMware
+- `gcloud container vmware node-pools create` — create a node pool in an Anthos cluster on VMware
+- `gcloud container vmware node-pools delete` — delete a node pool in an Anthos cluster on VMware
+- `gcloud container vmware node-pools describe` — describe a node pool in an Anthos cluster on VMware
+- `gcloud container vmware node-pools enroll` — enroll a node pool in an Anthos cluster on VMware
+- `gcloud container vmware node-pools list` — list node pools in an Anthos cluster on VMware
+- `gcloud container vmware node-pools update` — update a node pool in an Anthos cluster on VMware
+- `gcloud container vmware operations describe` — describe an operation
+- `gcloud container vmware operations list` — list operations
+- `gcloud container vmware operations wait` — poll an operation for completion

@@ -1,0 +1,58 @@
+# gcloud builds — command index
+
+create and manage builds for Google Cloud Build
+
+- `gcloud builds cancel` — cancel an ongoing build
+- `gcloud builds describe` — get information about a particular build
+- `gcloud builds get-default-service-account` — get the default service account for a project
+- `gcloud builds list` — list builds
+- `gcloud builds log` — stream the logs for a build
+- `gcloud builds submit` — submit a build using Cloud Build
+- `gcloud builds connections add-iam-policy-binding` — add IAM policy binding to a Cloud Build connection
+- `gcloud builds connections delete` — delete a Cloud Build Connection
+- `gcloud builds connections describe` — describe a Cloud Build Connection
+- `gcloud builds connections get-iam-policy` — get the IAM policy for a Cloud Build connection
+- `gcloud builds connections list` — list all Cloud Build connections for a project and region
+- `gcloud builds connections set-iam-policy` — set the IAM policy for a Cloud Build connection
+- `gcloud builds connections create bitbucket-cloud` — create a Cloud Build Connection for Bitbucket Cloud
+- `gcloud builds connections create bitbucket-data-center` — create a Cloud Build Connection for Bitbucket Data Center
+- `gcloud builds connections create github` — create a Cloud Build Connection of type GitHub
+- `gcloud builds connections create github-enterprise` — create a Cloud Build Connection of type GitHub Enterprise
+- `gcloud builds connections create gitlab` — create a Cloud Build Connection for gitlab.com or GitLab Enterprise
+- `gcloud builds connections update bitbucket-cloud` — update a Cloud Build Connection of type Bitbucket Cloud
+- `gcloud builds connections update bitbucket-data-center` — update a Cloud Build Connection of type Bitbucket Data Center
+- `gcloud builds connections update github` — update a Cloud Build Connection of type GitHub
+- `gcloud builds connections update github-enterprise` — update a Cloud Build Connection of type GitHub Enterprise
+- `gcloud builds connections update gitlab` — update a Cloud Build Connection of type gitlab.com or GitLab Enterprise
+- `gcloud builds repositories create` — create a Cloud Build repository
+- `gcloud builds repositories delete` — delete a Cloud Build Repository
+- `gcloud builds repositories describe` — describe a Cloud Build Repository
+- `gcloud builds repositories list` — list all Cloud Build repositories in a connection
+- `gcloud builds triggers delete` — delete a build trigger
+- `gcloud builds triggers describe` — get information about a particular trigger
+- `gcloud builds triggers import` — import a build trigger
+- `gcloud builds triggers list` — list Cloud Build triggers for a project
+- `gcloud builds triggers run` — run a build trigger
+- `gcloud builds triggers create bitbucket-cloud` — create a build trigger for a 2nd-gen Bitbucket Cloud repository
+- `gcloud builds triggers create bitbucket-data-center` — create a build trigger for a 2nd-gen Bitbucket Data Center repository
+- `gcloud builds triggers create bitbucketserver` — create a build trigger for a Bitbucket Server repository
+- `gcloud builds triggers create cloud-source-repositories` — create a build trigger from a Cloud Source Repository
+- `gcloud builds triggers create github` — create a build trigger for a GitHub repository
+- `gcloud builds triggers create gitlab` — create a build trigger for a 2nd-gen GitLab repository
+- `gcloud builds triggers create manual` — create a build trigger with a manual trigger event
+- `gcloud builds triggers create pubsub` — create a build trigger with a Pub/Sub trigger event
+- `gcloud builds triggers create webhook` — create a build trigger with a Webhook trigger event
+- `gcloud builds triggers update bitbucket-cloud` — updates Bitbucket Cloud trigger used by Cloud Build
+- `gcloud builds triggers update bitbucket-data-center` — updates Bitbucket Data Center trigger used by Cloud Build
+- `gcloud builds triggers update bitbucketserver` — updates Bitbucket Server trigger used by Cloud Build
+- `gcloud builds triggers update cloud-source-repositories` — updates Cloud Source Repositories trigger used by Cloud Build
+- `gcloud builds triggers update github` — update GitHub trigger used by Cloud Build
+- `gcloud builds triggers update gitlab` — updates GitLab trigger used by Cloud Build
+- `gcloud builds triggers update manual` — updates a manual trigger used by Cloud Build
+- `gcloud builds triggers update pubsub` — update a Pub/Sub trigger used by Cloud Build
+- `gcloud builds triggers update webhook` — update a Webhook trigger used by Cloud Build
+- `gcloud builds worker-pools create` — create a worker pool for use by Google Cloud Build
+- `gcloud builds worker-pools delete` — delete a worker pool from Cloud Build
+- `gcloud builds worker-pools describe` — describe a worker pool used by Cloud Build
+- `gcloud builds worker-pools list` — list all worker pools in a Google Cloud project
+- `gcloud builds worker-pools update` — update a worker pool used by Cloud Build

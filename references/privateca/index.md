@@ -1,0 +1,49 @@
+# gcloud privateca — command index
+
+manage private Certificate Authorities on Google Cloud
+
+- `gcloud privateca certificates create` — create a new certificate
+- `gcloud privateca certificates describe` — get metadata for a certificate
+- `gcloud privateca certificates export` — export a pem-encoded certificate to a file
+- `gcloud privateca certificates list` — list certificates within a project
+- `gcloud privateca certificates revoke` — revoke a certificate
+- `gcloud privateca certificates update` — update an existing certificate
+- `gcloud privateca locations list` — list supported locations for the Private CA GA API
+- `gcloud privateca pools add-iam-policy-binding` — add IAM policy binding for a CA pool
+- `gcloud privateca pools create` — create a new CA Pool
+- `gcloud privateca pools delete` — delete a CA pool
+- `gcloud privateca pools describe` — get metadata for a CA pool
+- `gcloud privateca pools get-ca-certs` — get the root CA certs for all active CAs in the CA pool
+- `gcloud privateca pools get-iam-policy` — get the IAM policy for a CA pool
+- `gcloud privateca pools list` — list CA pools within a project
+- `gcloud privateca pools remove-iam-policy-binding` — remove IAM policy binding for a CA pool
+- `gcloud privateca pools set-iam-policy` — set the IAM policy for a CA pool
+- `gcloud privateca pools update` — update an existing CA Pool
+- `gcloud privateca roots create` — create a new root certificate authority
+- `gcloud privateca roots delete` — delete a Root Certificate Authority
+- `gcloud privateca roots describe` — get metadata for a root Certificate Authority
+- `gcloud privateca roots disable` — disable a root certificate authority
+- `gcloud privateca roots enable` — enable a root certificate authority
+- `gcloud privateca roots list` — list root certificate authorities
+- `gcloud privateca roots undelete` — undelete a root Certificate Authority
+- `gcloud privateca roots update` — update an existing root certificate authority
+- `gcloud privateca subordinates activate` — activate a subordinate certificate authority awaiting user activation
+- `gcloud privateca subordinates create` — create a new subordinate certificate authority
+- `gcloud privateca subordinates delete` — delete a subordinate certificate authority
+- `gcloud privateca subordinates describe` — get metadata for a subordinate certificate authority
+- `gcloud privateca subordinates disable` — disable a subordinate certificate authority
+- `gcloud privateca subordinates enable` — enable a subordinate certificate authority
+- `gcloud privateca subordinates get-csr` — get the CSR for a subordinate certificate authority that has not yet been activated
+- `gcloud privateca subordinates list` — list subordinate certificate authorities
+- `gcloud privateca subordinates undelete` — undelete a subordinate certificate authority
+- `gcloud privateca subordinates update` — update an existing subordinate certificate authority
+- `gcloud privateca templates add-iam-policy-binding` — add IAM policy binding for a certificate template
+- `gcloud privateca templates create` — create a new certificate template
+- `gcloud privateca templates delete` — delete a certificate template
+- `gcloud privateca templates describe` — show details about a certificate template
+- `gcloud privateca templates get-iam-policy` — get the IAM policy for a certificate template
+- `gcloud privateca templates list` — list certificate templates within a project
+- `gcloud privateca templates remove-iam-policy-binding` — remove IAM policy binding for a certificate template
+- `gcloud privateca templates replicate` — replicate a certificate template to multiple locations
+- `gcloud privateca templates set-iam-policy` — set the IAM policy for a certificate template
+- `gcloud privateca templates update` — update a certificate template

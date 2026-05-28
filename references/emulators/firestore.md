@@ -1,0 +1,61 @@
+# gcloud emulators firestore
+
+manage your local Firestore emulator
+
+### `gcloud emulators firestore start`
+
+Start a local Firestore emulator
+
+This command starts a local Firestore emulator.
+
+**Synopsis:**
+```
+gcloud emulators firestore start [--database-mode=DATABASE_MODE]
+    [--export-on-exit=EXPORT_ON_EXIT] [--host-port=HOST_PORT]
+    [--import-data=IMPORT_DATA] [--licenses] [--rules=RULES]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--database-mode` | DATABASE_MODE |  | The database mode to start the Firestore Emulator in. The valid options are: `firestore-native` (default): start the emulator in Firestore Native `datastore-mode`: start the emulator in Datastore Mode |
+| `--export-on-exit` | EXPORT_ON_EXIT |  | Directory path in which emulator data will be saved upon shutdown. Example:/home/user/myexports/2024-03-26/ |
+| `--host-port` | HOST_PORT |  | The host:port to which the emulator should be bound. Can take the form of a single address (hostname, IPv4, or IPv6) and/or port: [ADDRESS][:PORT] In this format you must enclose IPv6 addresses in square brackets: e.g. [2001:db8:0:0:0:ff00:42:8329]:8080 The default value is localhost:8080. |
+| `--import-data` | IMPORT_DATA |  | File path to the data to be loaded into the emulator upon start up. Example:/home/user/myexports/sampleExport/sampleExport.overall_export_metadata. |
+| `--licenses` |  |  | If set, the emulator will print open-source dependencies and licenses, then exit. |
+| `--rules` | RULES |  | If set, all projects will use the security rules in this file. More information on Firebase Rules and the syntax for this file is available at https://firebase.google.com/docs/rules. |
+
+
+**Examples:**
+```bash
+To start the local Firestore emulator, run:
+
+    $ gcloud emulators firestore start
+
+To bind to a specific host and port, run:
+
+    $ gcloud emulators firestore start --host-port=0.0.0.0:8080
+
+To run the local Firestore emulator with a Firebase Rules set, run:
+
+    $ gcloud emulators firestore start --rules=firestore.rules
+
+To run the local Firestore emulator in Datastore Mode, run:
+
+    $ gcloud emulators firestore start --database-mode=datastore-mode
+
+To import data at the start of the Firestore emulator, run:
+
+    $ gcloud emulators firestore start --import-data=<path/to/file>
+
+To export emulator data upon emulator shutdown, run:
+
+    $ gcloud emulators firestore start \
+        --export-on-exit=<path/to/directory>
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/emulators/firestore/start)
+
+---

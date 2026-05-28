@@ -1,0 +1,84 @@
+# gcloud scc — command index
+
+manage Cloud SCC resources
+
+- `gcloud scc assets describe` — describe an asset given its resource name or asset id
+- `gcloud scc assets get-parent` — get the Parent for an asset given its resource name or asset id
+- `gcloud scc assets get-project` — get the Project for an asset given its resource name or asset id
+- `gcloud scc assets list` — list Cloud Security Command Center assets
+- `gcloud scc assets list-marks` — list an assets's security marks
+- `gcloud scc assets run-discovery` — scan an organization for new/modified/deleted assets
+- `gcloud scc assets update-marks` — update Cloud Security Command Center asset's security marks
+- `gcloud scc bqexports create` — create a Security Command Center BigQuery export
+- `gcloud scc bqexports delete` — delete a Security Command Center BigQuery export
+- `gcloud scc bqexports get` — get a Security Command Center BigQuery export
+- `gcloud scc bqexports list` — list Security Command Center BigQuery exports
+- `gcloud scc bqexports update` — update a Security Command Center BigQuery export
+- `gcloud scc custom-modules sha create` — create a Security Health Analytics custom module
+- `gcloud scc custom-modules sha delete` — delete a Security Health Analytics custom module
+- `gcloud scc custom-modules sha get` — get the details of a Security Health Analytics custom module
+- `gcloud scc custom-modules sha get-effective` — get the details of a Security Health Analytics custom module with effective enablement state
+- `gcloud scc custom-modules sha list` — list the details of Security Health Analytics custom modules
+- `gcloud scc custom-modules sha list-descendant` — list the details of the resident and descendant Security Health Analytics custom modules
+- `gcloud scc custom-modules sha list-effective` — list the details of Security Health Analytics custom modules with effective enablement states
+- `gcloud scc custom-modules sha simulate` — validates a Security Health Analytics custom module
+- `gcloud scc custom-modules sha update` — update a Security Health Analytics custom module
+- `gcloud scc findings bulk-mute` — bulk mute Security Command Center findings based on a filter
+- `gcloud scc findings create` — create a Security Command Center finding
+- `gcloud scc findings export-to-bigquery` — export Security Command Center findings to bigquery
+- `gcloud scc findings list` — list an organization or source's findings
+- `gcloud scc findings list-marks` — list a finding's security marks
+- `gcloud scc findings set-mute` — update a Security Command Center finding's mute state
+- `gcloud scc findings update` — update a Security Command Center finding
+- `gcloud scc findings update-marks` — update Security Command Center finding's security marks
+- `gcloud scc iac-validation-reports create` — create a Cloud Security Command Center IaC Validation Report
+- `gcloud scc iac-validation-reports describe` — describe a Cloud Security Command Center IaC Validation Report
+- `gcloud scc iac-validation-reports list` — lists all the Cloud Security Command Center IaC validation reports for an organization
+- `gcloud scc manage custom-modules etd create` — create an Event Threat Detection custom module
+- `gcloud scc manage custom-modules etd delete` — delete an Event Threat Detection custom module
+- `gcloud scc manage custom-modules etd describe` — get the details of a Event Threat Detection custom module
+- `gcloud scc manage custom-modules etd describe-effective` — get the effective details of a Event Threat Detection effective custom module
+- `gcloud scc manage custom-modules etd list` — list details of resident and inherited Event Threat Detection Custom Modules
+- `gcloud scc manage custom-modules etd list-descendant` — list the details of the resident and descendant Event Threat Detection custom modules
+- `gcloud scc manage custom-modules etd list-effective` — list the details of an Event Threat Detection effective custom module
+- `gcloud scc manage custom-modules etd update` — update an Event Threat Detection custom module
+- `gcloud scc manage custom-modules etd validate` — command to validate an ETD custom module
+- `gcloud scc manage custom-modules sha create` — create an Security Health Analytics custom module
+- `gcloud scc manage custom-modules sha delete` — delete a Security Health Analytics custom module
+- `gcloud scc manage custom-modules sha describe` — get the details of a Security Health Analytics custom module
+- `gcloud scc manage custom-modules sha describe-effective` — get effective the details of a Security Health Analytics effective custom module
+- `gcloud scc manage custom-modules sha list` — list the details of Security Health Analyics custom modules
+- `gcloud scc manage custom-modules sha list-descendant` — list the details of the resident and descendant Security Health Analytics custom modules
+- `gcloud scc manage custom-modules sha list-effective` — list the details of an Security Health Analytics effective custom module
+- `gcloud scc manage custom-modules sha simulate` — command to simulate a SHA custom module
+- `gcloud scc manage custom-modules sha update` — update a Security Health Analytics custom module
+- `gcloud scc manage services describe` — get the details of a Security Command Center service
+- `gcloud scc manage services list` — list the details of Security Command Center services
+- `gcloud scc manage services update` — update a Security Command Center service
+- `gcloud scc muteconfigs create` — create a Security Command Center mute config
+- `gcloud scc muteconfigs delete` — delete a Security Command Center mute config
+- `gcloud scc muteconfigs get` — get a Security Command Center mute config
+- `gcloud scc muteconfigs list` — listSecurity Command Center mute configs
+- `gcloud scc muteconfigs update` — update a Security Command Center mute config
+- `gcloud scc notifications create` — create a Security Command Center notification config
+- `gcloud scc notifications delete` — delete a Security Command Center notification config
+- `gcloud scc notifications describe` — describe a Security Command Center notification config
+- `gcloud scc notifications list` — list Security Command Center notification configs
+- `gcloud scc notifications update` — update a Security Command Center notification config
+- `gcloud scc operations describe` — describe a Cloud SCC's long running scan operation
+- `gcloud scc posture-deployments create` — create a Cloud Security Command Center posture deployment
+- `gcloud scc posture-deployments delete` — delete a Cloud Security Command Center posture deployment
+- `gcloud scc posture-deployments describe` — describe a Cloud Security Command Center posture deployment
+- `gcloud scc posture-deployments list` — list the details of the Cloud Security Command Center posture deployments
+- `gcloud scc posture-deployments update` — update the given Cloud Security Command Center posture deployment
+- `gcloud scc posture-operations describe` — describe a Cloud Security Command Center posture long running operation
+- `gcloud scc posture-templates describe` — describe a Cloud Security Command Center posture template
+- `gcloud scc posture-templates list` — list the details of the Cloud Security Command Center posture templates
+- `gcloud scc postures create` — create a Cloud Security Command Center posture
+- `gcloud scc postures delete` — delete a Cloud Security Command Center posture
+- `gcloud scc postures describe` — describe a Cloud Security Command Center posture
+- `gcloud scc postures extract` — extract a Cloud Security Command Center posture from a workload
+- `gcloud scc postures list` — lists all the Cloud Security Command Center postures for an organization
+- `gcloud scc postures list-revisions` — list the revisions of a Cloud Security Command Center posture
+- `gcloud scc postures update` — update the given Cloud Security Command Center posture
+- `gcloud scc sources describe` — describe a source given its display name or source id

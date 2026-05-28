@@ -1,0 +1,42 @@
+# gcloud bms — command index
+
+manage Bare Metal Solution resources
+
+- `gcloud bms instances describe` — describe a Bare Metal solution instance
+- `gcloud bms instances disable-serial-console` — disable interactive serial console for a Bare Metal Solution instance
+- `gcloud bms instances enable-serial-console` — enable interactive serial console for a Bare Metal Solution instance
+- `gcloud bms instances list` — list Bare Metal Solution instances in a project
+- `gcloud bms instances rename` — rename a Bare Metal Solution instance
+- `gcloud bms instances reset` — reset a Bare Metal Solution instance
+- `gcloud bms instances start` — start a Bare Metal Solution instance
+- `gcloud bms instances stop` — stop a Bare Metal Solution instance
+- `gcloud bms instances update` — update a Bare Metal Solution instance
+- `gcloud bms networks describe` — describe a Bare Metal solution network
+- `gcloud bms networks list` — list Bare Metal Solution networks in a project
+- `gcloud bms networks list-ip-reservations` — list IP range reservations for Bare Metal Solution networks in a project
+- `gcloud bms networks rename` — rename a Bare Metal Solution network
+- `gcloud bms networks update` — update a Bare Metal Solution network
+- `gcloud bms nfs-shares create` — create a Bare Metal Solution NFS share
+- `gcloud bms nfs-shares delete` — delete a Bare Metal Solution NFS share
+- `gcloud bms nfs-shares describe` — describe a Bare Metal solution NFS share
+- `gcloud bms nfs-shares list` — list Bare Metal Solution NFS shares in a project
+- `gcloud bms nfs-shares rename` — rename a Bare Metal Solution nfs-share
+- `gcloud bms nfs-shares update` — update a Bare Metal Solution NFS share
+- `gcloud bms operations describe` — show metadata for a Bare Metal Solution operation
+- `gcloud bms operations wait` — poll a long-running Bare Metal Solution operation until it completes
+- `gcloud bms os-images describe` — describe Bare Metal Solution OS images in a project
+- `gcloud bms os-images list` — list Bare Metal Solution OS images in a project
+- `gcloud bms ssh-keys add` — add a public SSH key to the project in Bare Metal Solution
+- `gcloud bms ssh-keys list` — list the SSH keys added to the project in Bare Metal Solution
+- `gcloud bms ssh-keys remove` — remove an SSH key in Bare Metal Solution given its name
+- `gcloud bms volumes describe` — describe a Bare Metal Solution volume
+- `gcloud bms volumes list` — list Bare Metal Solution volumes in a project
+- `gcloud bms volumes rename` — rename a Bare Metal Solution volume
+- `gcloud bms volumes restore` — restore a Bare Metal Solution boot volume from an existing snapshot
+- `gcloud bms volumes snapshot` — create a snapshot of a Bare Metal Solution boot volume
+- `gcloud bms volumes update` — update a Bare Metal Solution volume
+- `gcloud bms volumes luns describe` — describe a Bare Metal Solution LUN
+- `gcloud bms volumes luns list` — list Bare Metal Solution LUNs in a project
+- `gcloud bms volumes snapshots delete` — delete a Bare Metal Solution boot volume snapshot
+- `gcloud bms volumes snapshots describe` — describe a Bare Metal Solution boot volume snapshot
+- `gcloud bms volumes snapshots list` — list snapshots for a Bare Metal Solution boot volume

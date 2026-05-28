@@ -1,0 +1,138 @@
+# gcloud network-security — command index
+
+manage Network Security resources
+
+- `gcloud network-security address-groups add-items` — add items to an address group
+- `gcloud network-security address-groups clone-items` — clone items from source address group
+- `gcloud network-security address-groups create` — create an address group
+- `gcloud network-security address-groups delete` — delete address group
+- `gcloud network-security address-groups describe` — describe an address group
+- `gcloud network-security address-groups list` — list address groups
+- `gcloud network-security address-groups list-references` — lists References of an Address Group
+- `gcloud network-security address-groups remove-items` — remove items from an address group
+- `gcloud network-security address-groups update` — update an address group
+- `gcloud network-security authorization-policies delete` — delete authorization policy
+- `gcloud network-security authorization-policies export` — export authorization policy
+- `gcloud network-security authorization-policies import` — import authorization policy
+- `gcloud network-security authorization-policies list` — list authorization policies
+- `gcloud network-security authz-policies delete` — delete an AuthzPolicy resource
+- `gcloud network-security authz-policies describe` — describe an AuthzPolicy resource
+- `gcloud network-security authz-policies import` — import an AuthzPolicy resource
+- `gcloud network-security authz-policies list` — list AuthzPolicy resources
+- `gcloud network-security backend-authentication-configs create` — create a BackendAuthenticationConfig
+- `gcloud network-security backend-authentication-configs delete` — delete BackendAuthenticationConfig
+- `gcloud network-security backend-authentication-configs describe` — describe BackendAuthenticationConfig
+- `gcloud network-security backend-authentication-configs export` — export BackendAuthenticationConfig
+- `gcloud network-security backend-authentication-configs import` — import BackendAuthenticationConfigs
+- `gcloud network-security backend-authentication-configs list` — list BackendAuthenticationConfigs
+- `gcloud network-security client-tls-policies delete` — delete ClientTlsPolicy
+- `gcloud network-security client-tls-policies export` — export ClientTlsPolicy
+- `gcloud network-security client-tls-policies import` — import ClientTlsPolicy
+- `gcloud network-security client-tls-policies list` — list ClientTlsPolicies
+- `gcloud network-security dns-threat-detectors create` — create a DnsThreatDetector resource
+- `gcloud network-security dns-threat-detectors delete` — delete a DnsThreatDetector resource
+- `gcloud network-security dns-threat-detectors describe` — describe a DnsThreatDetector resource
+- `gcloud network-security dns-threat-detectors list` — list DnsThreatDetector resources
+- `gcloud network-security dns-threat-detectors update` — update a DnsThreatDetector resource
+- `gcloud network-security firewall-endpoint-associations create` — create a Firewall Plus endpoint association
+- `gcloud network-security firewall-endpoint-associations delete` — delete a Firewall Plus endpoint association
+- `gcloud network-security firewall-endpoint-associations describe` — describe a Firewall Plus endpoint association
+- `gcloud network-security firewall-endpoint-associations list` — list Firewall Plus endpoint associations
+- `gcloud network-security firewall-endpoint-associations update` — update a Firewall Plus endpoint association
+- `gcloud network-security firewall-endpoints create` — create a Firewall Plus endpoint
+- `gcloud network-security firewall-endpoints delete` — delete a Firewall Plus endpoint
+- `gcloud network-security firewall-endpoints describe` — describe a Firewall Plus endpoint
+- `gcloud network-security firewall-endpoints list` — list Firewall Plus endpoints
+- `gcloud network-security firewall-endpoints update` — update a Firewall Plus endpoint
+- `gcloud network-security gateway-security-policies delete` — delete Gateway Security Policy
+- `gcloud network-security gateway-security-policies export` — export Gateway Security Policy
+- `gcloud network-security gateway-security-policies import` — import Gateway Security Policy
+- `gcloud network-security gateway-security-policies list` — list Gateway Security Policies
+- `gcloud network-security gateway-security-policies rules delete` — delete Gateway Security Policy Rule
+- `gcloud network-security gateway-security-policies rules export` — export Gateway Security Policy Rule
+- `gcloud network-security gateway-security-policies rules import` — import Gateway Security Policy Rule
+- `gcloud network-security gateway-security-policies rules list` — list Gateway Security Policy Rules
+- `gcloud network-security intercept-deployment-groups create` — create an Intercept Deployment Group
+- `gcloud network-security intercept-deployment-groups delete` — delete an Intercept Deployment Group
+- `gcloud network-security intercept-deployment-groups describe` — describe an Intercept Deployment Group
+- `gcloud network-security intercept-deployment-groups list` — list Intercept Deployment Groups
+- `gcloud network-security intercept-deployment-groups update` — update an Intercept Deployment Group
+- `gcloud network-security intercept-deployments create` — create an Intercept Deployment
+- `gcloud network-security intercept-deployments delete` — delete an Intercept Deployment
+- `gcloud network-security intercept-deployments describe` — describe an Intercept Deployment
+- `gcloud network-security intercept-deployments list` — list Intercept Deployments
+- `gcloud network-security intercept-deployments update` — update an Intercept Deployment
+- `gcloud network-security intercept-endpoint-group-associations create` — create an Intercept Endpoint Group Association
+- `gcloud network-security intercept-endpoint-group-associations delete` — delete an Intercept Endpoint Group Association
+- `gcloud network-security intercept-endpoint-group-associations describe` — describe an Intercept Endpoint Group Association
+- `gcloud network-security intercept-endpoint-group-associations list` — list Intercept Endpoint Group Associations
+- `gcloud network-security intercept-endpoint-group-associations update` — update an Intercept Endpoint Group Association
+- `gcloud network-security intercept-endpoint-groups create` — create a Intercept Endpoint Group
+- `gcloud network-security intercept-endpoint-groups delete` — delete a Intercept Endpoint Group
+- `gcloud network-security intercept-endpoint-groups describe` — describe a Intercept Endpoint Group
+- `gcloud network-security intercept-endpoint-groups list` — list Intercept Endpoint Groups
+- `gcloud network-security intercept-endpoint-groups update` — update a Intercept Endpoint Group
+- `gcloud network-security mirroring-deployment-groups create` — create a Mirroring Deployment Group
+- `gcloud network-security mirroring-deployment-groups delete` — delete a Mirroring Deployment Group
+- `gcloud network-security mirroring-deployment-groups describe` — describe a Mirroring Deployment Group
+- `gcloud network-security mirroring-deployment-groups list` — list Mirroring Deployment Groups
+- `gcloud network-security mirroring-deployment-groups update` — update a Mirroring Deployment Group
+- `gcloud network-security mirroring-deployments create` — create a Mirroring Deployment
+- `gcloud network-security mirroring-deployments delete` — delete a Mirroring Deployment
+- `gcloud network-security mirroring-deployments describe` — describe a Mirroring Deployment
+- `gcloud network-security mirroring-deployments list` — list Mirroring Deployments
+- `gcloud network-security mirroring-deployments update` — update a Mirroring Deployment
+- `gcloud network-security mirroring-endpoint-group-associations create` — create a Mirroring Endpoint Group Association
+- `gcloud network-security mirroring-endpoint-group-associations delete` — delete a Mirroring Endpoint Group Association
+- `gcloud network-security mirroring-endpoint-group-associations describe` — describe a Mirroring Endpoint Group Association
+- `gcloud network-security mirroring-endpoint-group-associations list` — list Mirroring Endpoint Group Associations
+- `gcloud network-security mirroring-endpoint-group-associations update` — update a Mirroring Endpoint Group Association
+- `gcloud network-security mirroring-endpoint-groups create` — create a Mirroring Endpoint Group
+- `gcloud network-security mirroring-endpoint-groups delete` — delete a Mirroring Endpoint Group
+- `gcloud network-security mirroring-endpoint-groups describe` — describe a Mirroring Endpoint Group
+- `gcloud network-security mirroring-endpoint-groups list` — list Mirroring Endpoint Groups
+- `gcloud network-security mirroring-endpoint-groups update` — update a Mirroring Endpoint Group
+- `gcloud network-security org-address-groups add-items` — add items to an address group of organization
+- `gcloud network-security org-address-groups clone-items` — clone items from source address group of organization
+- `gcloud network-security org-address-groups create` — create an address group
+- `gcloud network-security org-address-groups delete` — delete address group
+- `gcloud network-security org-address-groups describe` — describe an address group
+- `gcloud network-security org-address-groups list` — list address groups
+- `gcloud network-security org-address-groups list-references` — lists References of an Organization Address Group
+- `gcloud network-security org-address-groups remove-items` — remove items from an address group of organization
+- `gcloud network-security org-address-groups update` — update an address group
+- `gcloud network-security security-profile-groups create` — create a new Security Profile Group
+- `gcloud network-security security-profile-groups delete` — delete a Security Profile Group
+- `gcloud network-security security-profile-groups describe` — describe a Security Profile Group
+- `gcloud network-security security-profile-groups list` — list Security Profile groups
+- `gcloud network-security security-profile-groups update` — update a Security Profile Group
+- `gcloud network-security security-profiles custom-intercept create` — create a new Custom Intercept Profile
+- `gcloud network-security security-profiles custom-intercept delete` — delete a Security Profile
+- `gcloud network-security security-profiles custom-intercept describe` — describe a Custom InterceptSecurity Profile
+- `gcloud network-security security-profiles custom-intercept list` — list Custom Intercept Security Profiles
+- `gcloud network-security security-profiles custom-intercept update` — updates a Custom Intercept Profile
+- `gcloud network-security security-profiles custom-mirroring create` — create a new Custom Mirroring Profile
+- `gcloud network-security security-profiles custom-mirroring delete` — delete a Security Profile
+- `gcloud network-security security-profiles custom-mirroring describe` — describe a Custom MirroringSecurity Profile
+- `gcloud network-security security-profiles custom-mirroring list` — list Custom Mirroring Security Profiles
+- `gcloud network-security security-profiles custom-mirroring update` — updates a Custom Mirroring Profile
+- `gcloud network-security security-profiles threat-prevention add-override` — add overrides to Threat Prevention Profile
+- `gcloud network-security security-profiles threat-prevention create` — create a new Threat Prevention Profile
+- `gcloud network-security security-profiles threat-prevention delete` — delete a Security Profile
+- `gcloud network-security security-profiles threat-prevention delete-override` — delete overrides of Threat Prevention Profile
+- `gcloud network-security security-profiles threat-prevention list` — list Threat Prevention Security Profiles
+- `gcloud network-security security-profiles threat-prevention list-overrides` — list overrides of Threat Prevention Profile
+- `gcloud network-security security-profiles threat-prevention update-override` — update Overrides of Threat Prevention Profile
+- `gcloud network-security server-tls-policies delete` — delete ServerTlsPolicy
+- `gcloud network-security server-tls-policies describe` — describe ServerTlsPolicy
+- `gcloud network-security server-tls-policies export` — export ServerTlsPolicy
+- `gcloud network-security server-tls-policies import` — import ServerTlsPolicy
+- `gcloud network-security server-tls-policies list` — list ServerTlsPolicies
+- `gcloud network-security tls-inspection-policies delete` — delete TLS Inspection Policy
+- `gcloud network-security tls-inspection-policies export` — export TLS Inspection Policy
+- `gcloud network-security tls-inspection-policies import` — import TLS Inspection Policy
+- `gcloud network-security tls-inspection-policies list` — list TLS Inspection Policies
+- `gcloud network-security url-lists delete` — delete Url List
+- `gcloud network-security url-lists export` — export Url List
+- `gcloud network-security url-lists import` — import Url List
+- `gcloud network-security url-lists list` — list Url Lists

@@ -1,0 +1,73 @@
+# gcloud ai — command index
+
+manage entities in Vertex AI
+
+- `gcloud ai custom-jobs cancel` — cancel a running custom job
+- `gcloud ai custom-jobs create` — create a new custom job
+- `gcloud ai custom-jobs describe` — get detailed information about the custom job by given id
+- `gcloud ai custom-jobs list` — lists the existing custom jobs
+- `gcloud ai custom-jobs local-run` — run a custom training locally
+- `gcloud ai custom-jobs stream-logs` — show stream logs from a running custom job
+- `gcloud ai endpoints create` — create a new Vertex AI endpoint
+- `gcloud ai endpoints delete` — delete an existing Vertex AI endpoint
+- `gcloud ai endpoints deploy-model` — deploy a model to an existing Vertex AI endpoint
+- `gcloud ai endpoints describe` — describe an existing Vertex AI endpoint
+- `gcloud ai endpoints direct-predict` — run Vertex AI online direct prediction
+- `gcloud ai endpoints direct-raw-predict` — run Vertex AI online direct raw prediction
+- `gcloud ai endpoints explain` — request an online explanation from an Vertex AI endpoint
+- `gcloud ai endpoints list` — list existing Vertex AI endpoints
+- `gcloud ai endpoints predict` — run Vertex AI online prediction
+- `gcloud ai endpoints raw-predict` — run Vertex AI online raw prediction
+- `gcloud ai endpoints stream-direct-predict` — run Vertex AI online stream direct prediction
+- `gcloud ai endpoints stream-direct-raw-predict` — run Vertex AI online stream direct raw prediction
+- `gcloud ai endpoints stream-raw-predict` — run Vertex AI online stream raw prediction
+- `gcloud ai endpoints undeploy-model` — undeploy a model from an existing Vertex AI endpoint
+- `gcloud ai endpoints update` — update an existing Vertex AI endpoint
+- `gcloud ai hp-tuning-jobs cancel` — cancel a running hyperparameter tuning job
+- `gcloud ai hp-tuning-jobs create` — create a hyperparameter tuning job
+- `gcloud ai hp-tuning-jobs describe` — get detail information about the hyperparameter tuning job by given id
+- `gcloud ai hp-tuning-jobs list` — list existing hyperparameter tuning jobs
+- `gcloud ai hp-tuning-jobs stream-logs` — stream logs from a running Vertex AI hyperparameter tuning job
+- `gcloud ai index-endpoints create` — create a new Vertex AI index endpoint
+- `gcloud ai index-endpoints delete` — delete an existing Vertex AI index endpoint
+- `gcloud ai index-endpoints deploy-index` — deploy an index to a Vertex AI index endpoint
+- `gcloud ai index-endpoints describe` — gets detailed index endpoint information about the given index endpoint id
+- `gcloud ai index-endpoints list` — lists the index endpoints of the given project and region
+- `gcloud ai index-endpoints mutate-deployed-index` — mutate an existing deployed index from a Vertex AI index endpoint
+- `gcloud ai index-endpoints undeploy-index` — undeploy an index from a Vertex AI index endpoint
+- `gcloud ai index-endpoints update` — update an Vertex AI index endpoint
+- `gcloud ai indexes create` — create a new Vertex AI index
+- `gcloud ai indexes delete` — delete an existing Vertex AI index
+- `gcloud ai indexes describe` — gets detailed index information about the given index id
+- `gcloud ai indexes list` — lists the indexes of the given project and region
+- `gcloud ai indexes remove-datapoints` — remove data points from the specified index
+- `gcloud ai indexes update` — update an Vertex AI index
+- `gcloud ai indexes upsert-datapoints` — upsert data points into the specified index
+- `gcloud ai model-garden models deploy` — deploy a model in Model Garden to a Vertex AI endpoint
+- `gcloud ai model-garden models list` — list the publisher models in Model Garden
+- `gcloud ai model-garden models list-deployment-config` — list the machine specifications supported by and verified for a model in Model Garden
+- `gcloud ai model-monitoring-jobs create` — create a new Vertex AI model monitoring job
+- `gcloud ai model-monitoring-jobs delete` — delete an existing Vertex AI model deployment monitoring job
+- `gcloud ai model-monitoring-jobs describe` — get detailed model deployment monitoring job information about the given job id
+- `gcloud ai model-monitoring-jobs list` — list the model deployment monitoring jobs of the given project and region
+- `gcloud ai model-monitoring-jobs pause` — pause a running Vertex AI model deployment monitoring job
+- `gcloud ai model-monitoring-jobs resume` — resume a paused Vertex AI model deployment monitoring job
+- `gcloud ai model-monitoring-jobs update` — update an Vertex AI model deployment monitoring job
+- `gcloud ai models copy` — copy a model
+- `gcloud ai models delete` — delete an existing Vertex AI model
+- `gcloud ai models delete-version` — delete an existing Vertex AI model version
+- `gcloud ai models describe` — get detailed model information about the given model id
+- `gcloud ai models list` — list the models of the given project and region
+- `gcloud ai models list-version` — list the model versions of the given region and model
+- `gcloud ai models upload` — upload a new model
+- `gcloud ai operations describe` — gets detailed index information about the given operation id
+- `gcloud ai persistent-resources create` — create a new persistent resource
+- `gcloud ai persistent-resources delete` — delete an active Persistent Resource
+- `gcloud ai persistent-resources describe` — get detailed information about a PersistentResource with a given id
+- `gcloud ai persistent-resources list` — lists the active persistent resources
+- `gcloud ai persistent-resources reboot` — reboot a Persistent Resource
+- `gcloud ai tensorboards create` — create a new Vertex AI Tensorboard
+- `gcloud ai tensorboards delete` — delete an existing Vertex AI Tensorboard
+- `gcloud ai tensorboards describe` — gets detailed Tensorboard information about the given Tensorboard id
+- `gcloud ai tensorboards list` — lists the Tensorboards of the given project and region
+- `gcloud ai tensorboards update` — update an existing Vertex AI Tensorboard

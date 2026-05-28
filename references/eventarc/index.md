@@ -1,0 +1,47 @@
+# gcloud eventarc — command index
+
+manage Eventarc resources
+
+- `gcloud eventarc audit-logs-provider method-names list` — list values for the methodName attribute for event type google.cloud.audit.log.v1.written
+- `gcloud eventarc audit-logs-provider service-names list` — list values for the serviceName attribute for event type google.cloud.audit.log.v1.written
+- `gcloud eventarc channel-connections create` — create an Eventarc channel connection
+- `gcloud eventarc channel-connections delete` — delete an Eventarc channel connection
+- `gcloud eventarc channel-connections describe` — describe an Eventarc channel connection
+- `gcloud eventarc channel-connections list` — list Eventarc channel connections
+- `gcloud eventarc channels create` — create an Eventarc channel
+- `gcloud eventarc channels delete` — delete an Eventarc channel
+- `gcloud eventarc channels describe` — describe an Eventarc channel
+- `gcloud eventarc channels list` — list Eventarc channels
+- `gcloud eventarc channels update` — update an Eventarc channel
+- `gcloud eventarc enrollments create` — create an Eventarc enrollment
+- `gcloud eventarc enrollments delete` — delete an Eventarc enrollment
+- `gcloud eventarc enrollments describe` — describe an Eventarc enrollment
+- `gcloud eventarc enrollments list` — list Eventarc enrollments
+- `gcloud eventarc enrollments update` — update an Eventarc enrollment
+- `gcloud eventarc google-api-sources create` — create an Eventarc Google API source
+- `gcloud eventarc google-api-sources delete` — delete an Eventarc Google API source
+- `gcloud eventarc google-api-sources describe` — describe an Eventarc Google API source
+- `gcloud eventarc google-api-sources list` — list Eventarc Google API sources
+- `gcloud eventarc google-api-sources update` — update an Eventarc Google API source
+- `gcloud eventarc google-channels describe` — describe an Eventarc Google channel
+- `gcloud eventarc google-channels update` — update an Eventarc Google channel
+- `gcloud eventarc locations list` — list locations available for Eventarc
+- `gcloud eventarc message-buses create` — create an Eventarc message bus
+- `gcloud eventarc message-buses delete` — delete an Eventarc message bus
+- `gcloud eventarc message-buses describe` — describe an Eventarc message bus
+- `gcloud eventarc message-buses list` — list Eventarc message buses
+- `gcloud eventarc message-buses list-enrollments` — list Eventarc enrollments attached to an Eventarc message bus
+- `gcloud eventarc message-buses publish` — publish to an Eventarc message bus
+- `gcloud eventarc message-buses update` — update an Eventarc message bus
+- `gcloud eventarc pipelines create` — create an Eventarc pipeline
+- `gcloud eventarc pipelines delete` — delete an Eventarc pipeline
+- `gcloud eventarc pipelines describe` — describe an Eventarc pipeline
+- `gcloud eventarc pipelines list` — list Eventarc pipelines
+- `gcloud eventarc pipelines update` — update an Eventarc pipeline
+- `gcloud eventarc providers describe` — describe an Eventarc event provider
+- `gcloud eventarc providers list` — list event providers available in Eventarc
+- `gcloud eventarc triggers create` — create an Eventarc trigger
+- `gcloud eventarc triggers delete` — delete an Eventarc trigger
+- `gcloud eventarc triggers describe` — describe an Eventarc trigger
+- `gcloud eventarc triggers list` — list Eventarc triggers
+- `gcloud eventarc triggers update` — update an Eventarc trigger

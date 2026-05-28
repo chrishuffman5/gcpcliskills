@@ -1,0 +1,49 @@
+# gcloud run — command index
+
+manage your Cloud Run applications
+
+- `gcloud run deploy` — create or update a Cloud Run service
+- `gcloud run domain-mappings create` — create domain mappings for Cloud Run for Anthos
+- `gcloud run domain-mappings delete` — delete domain mappings for Cloud Run for Anthos
+- `gcloud run domain-mappings describe` — describe domain mappings for Cloud Run for Anthos
+- `gcloud run domain-mappings list` — lists domain mappings for Cloud Run for Anthos
+- `gcloud run jobs add-iam-policy-binding` — add IAM policy binding to a Cloud Run job
+- `gcloud run jobs create` — create a Cloud Run job
+- `gcloud run jobs delete` — delete a job
+- `gcloud run jobs deploy` — create or update a Cloud Run job
+- `gcloud run jobs describe` — obtain details about jobs
+- `gcloud run jobs execute` — execute a job
+- `gcloud run jobs get-iam-policy` — get the IAM policy for a Cloud Run job
+- `gcloud run jobs list` — list jobs
+- `gcloud run jobs remove-iam-policy-binding` — remove IAM policy binding of a Cloud Run job
+- `gcloud run jobs replace` — create or replace a job from a YAML job specification
+- `gcloud run jobs set-iam-policy` — set the IAM policy for a job
+- `gcloud run jobs update` — update a Cloud Run Job
+- `gcloud run jobs executions cancel` — cancel an execution
+- `gcloud run jobs executions delete` — delete an execution
+- `gcloud run jobs executions describe` — obtain details about executions
+- `gcloud run jobs executions list` — list executions
+- `gcloud run jobs executions tasks describe` — obtain details about tasks
+- `gcloud run jobs executions tasks list` — list tasks
+- `gcloud run jobs logs read` — read logs for Cloud Run jobs
+- `gcloud run multi-region-services delete` — deletes a multi-region service
+- `gcloud run multi-region-services describe` — command to describe a multi-region service
+- `gcloud run multi-region-services list` — list available multi-region services
+- `gcloud run multi-region-services replace` — create or Update multi-region service from YAML
+- `gcloud run multi-region-services update` — update environment variables, add/remove regions, and other configuration settings in Multi-Region Services
+- `gcloud run regions list` — list available Cloud Run (fully managed) regions
+- `gcloud run revisions delete` — delete a revision
+- `gcloud run revisions describe` — obtain details about revisions
+- `gcloud run revisions list` — list available revisions
+- `gcloud run services add-iam-policy-binding` — add IAM policy binding to a Cloud Run service
+- `gcloud run services delete` — delete a service
+- `gcloud run services describe` — obtain details about a given service
+- `gcloud run services get-iam-policy` — get the IAM policy for a Cloud Run service
+- `gcloud run services list` — list available services
+- `gcloud run services proxy` — proxy a service to localhost authenticating as the active account or with the specified token
+- `gcloud run services remove-iam-policy-binding` — remove IAM policy binding of a Cloud Run service
+- `gcloud run services replace` — create or replace a service from a YAML service specification
+- `gcloud run services set-iam-policy` — set the IAM policy for a service
+- `gcloud run services update` — update Cloud Run environment variables and other configuration settings
+- `gcloud run services update-traffic` — adjust the traffic assignments for a Cloud Run service
+- `gcloud run services logs read` — read logs for a Cloud Run service

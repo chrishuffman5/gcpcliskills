@@ -1,0 +1,69 @@
+# gcloud pubsub — command index
+
+manage Cloud Pub/Sub topics, subscriptions, and snapshots
+
+- `gcloud pubsub lite-operations describe` — describe a Pub/Sub Lite operation
+- `gcloud pubsub lite-operations list` — list Pub/Sub Lite operations
+- `gcloud pubsub lite-reservations create` — create a Pub/Sub Lite reservation
+- `gcloud pubsub lite-reservations delete` — delete a Pub/Sub Lite reservation
+- `gcloud pubsub lite-reservations describe` — describe a Pub/Sub Lite reservation
+- `gcloud pubsub lite-reservations list` — list Pub/Sub Lite reservations
+- `gcloud pubsub lite-reservations list-topics` — list Pub/Sub Lite topics for a given Lite reservation
+- `gcloud pubsub lite-reservations update` — update a Pub/Sub Lite reservation
+- `gcloud pubsub lite-subscriptions ack-up-to` — acknowledge messages on a Pub/Sub Lite subscription
+- `gcloud pubsub lite-subscriptions create` — create a Pub/Sub Lite subscription
+- `gcloud pubsub lite-subscriptions delete` — delete a Pub/Sub Lite subscription
+- `gcloud pubsub lite-subscriptions describe` — describe a Pub/Sub Lite subscription
+- `gcloud pubsub lite-subscriptions list` — list Pub/Sub Lite subscriptions
+- `gcloud pubsub lite-subscriptions seek` — seek a Pub/Sub Lite subscription
+- `gcloud pubsub lite-subscriptions subscribe` — stream messages from a Pub/Sub Lite subscription
+- `gcloud pubsub lite-subscriptions update` — update a Pub/Sub Lite subscription
+- `gcloud pubsub lite-topics create` — create a Pub/Sub Lite topic
+- `gcloud pubsub lite-topics delete` — delete a Pub/Sub Lite topic
+- `gcloud pubsub lite-topics describe` — describe a Pub/Sub Lite topic
+- `gcloud pubsub lite-topics list` — list Pub/Sub Lite topics
+- `gcloud pubsub lite-topics list-subscriptions` — list Pub/Sub Lite subscriptions for a given Lite topic
+- `gcloud pubsub lite-topics publish` — publish Pub/Sub Lite messages
+- `gcloud pubsub lite-topics update` — update a Pub/Sub Lite topic
+- `gcloud pubsub message-transforms test` — tests message transforms against a given message
+- `gcloud pubsub message-transforms validate` — validates a message transform
+- `gcloud pubsub schemas commit` — commit a Pub/Sub schema revision
+- `gcloud pubsub schemas create` — create a Pub/Sub schema
+- `gcloud pubsub schemas delete` — delete a Pub/Sub schema
+- `gcloud pubsub schemas delete-revision` — delete a Pub/Sub schema revision
+- `gcloud pubsub schemas describe` — show details of a Pub/Sub schema
+- `gcloud pubsub schemas list` — list Pub/Sub schemas
+- `gcloud pubsub schemas list-revisions` — list revisions of a Pub/Sub schema
+- `gcloud pubsub schemas rollback` — roll back a Pub/Sub schema to a specified revision
+- `gcloud pubsub schemas validate-message` — validate a message against a Pub/Sub schema
+- `gcloud pubsub schemas validate-schema` — validate a Pub/Sub schema
+- `gcloud pubsub snapshots create` — creates one or more Cloud Pub/Sub snapshots
+- `gcloud pubsub snapshots delete` — deletes one or more Cloud Pub/Sub snapshots
+- `gcloud pubsub snapshots describe` — describes a Cloud Pub/Sub snapshot
+- `gcloud pubsub snapshots list` — lists all the snapshots in a given project
+- `gcloud pubsub subscriptions ack` — acknowledges one or more messages on the specified subscription
+- `gcloud pubsub subscriptions add-iam-policy-binding` — add IAM policy binding to a subscription
+- `gcloud pubsub subscriptions create` — creates one or more Cloud Pub/Sub subscriptions
+- `gcloud pubsub subscriptions delete` — deletes one or more Cloud Pub/Sub subscriptions
+- `gcloud pubsub subscriptions describe` — describes a Cloud Pub/Sub subscription
+- `gcloud pubsub subscriptions get-iam-policy` — get the IAM policy for a Cloud Pub/Sub Subscription
+- `gcloud pubsub subscriptions list` — lists Cloud Pub/Sub subscriptions
+- `gcloud pubsub subscriptions modify-message-ack-deadline` — modifies the ACK deadline for a specific Cloud Pub/Sub message
+- `gcloud pubsub subscriptions modify-push-config` — modifies the push configuration of a Cloud Pub/Sub subscription
+- `gcloud pubsub subscriptions pull` — pulls one or more Cloud Pub/Sub messages from a subscription
+- `gcloud pubsub subscriptions remove-iam-policy-binding` — remove IAM policy binding of a subscription
+- `gcloud pubsub subscriptions seek` — resets a subscription's backlog to a point in time or to a given snapshot
+- `gcloud pubsub subscriptions set-iam-policy` — set IAM policy for a subscription
+- `gcloud pubsub subscriptions update` — updates an existing Cloud Pub/Sub subscription
+- `gcloud pubsub topics add-iam-policy-binding` — add IAM policy binding to a topic
+- `gcloud pubsub topics create` — creates one or more Cloud Pub/Sub topics
+- `gcloud pubsub topics delete` — deletes one or more Cloud Pub/Sub topics
+- `gcloud pubsub topics describe` — describes a Cloud Pub/Sub topic
+- `gcloud pubsub topics detach-subscription` — detaches one or more Cloud Pub/Sub subscriptions
+- `gcloud pubsub topics get-iam-policy` — get the IAM policy for a Cloud Pub/Sub Topic
+- `gcloud pubsub topics list` — lists Cloud Pub/Sub topics within a project
+- `gcloud pubsub topics list-subscriptions` — lists Cloud Pub/Sub subscriptions from a given topic
+- `gcloud pubsub topics publish` — publishes a message to the specified topic
+- `gcloud pubsub topics remove-iam-policy-binding` — remove IAM policy binding of a topic
+- `gcloud pubsub topics set-iam-policy` — set IAM policy for a topic
+- `gcloud pubsub topics update` — updates an existing Cloud Pub/Sub topic

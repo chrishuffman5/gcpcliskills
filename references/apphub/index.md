@@ -1,0 +1,41 @@
+# gcloud apphub — command index
+
+manage App Hub resources
+
+- `gcloud apphub applications add-iam-policy-binding` — add IAM policy binding to an Apphub application
+- `gcloud apphub applications create` — create an Apphub application
+- `gcloud apphub applications delete` — delete an Apphub application
+- `gcloud apphub applications describe` — describe an Apphub application
+- `gcloud apphub applications get-iam-policy` — get the IAM policy for an Apphub application
+- `gcloud apphub applications list` — list Apphub applications
+- `gcloud apphub applications remove-iam-policy-binding` — remove IAM policy binding from an Apphub application
+- `gcloud apphub applications set-iam-policy` — set the IAM policy for an Apphub application as defined in a JSON/YAML file
+- `gcloud apphub applications update` — update an Apphub application
+- `gcloud apphub applications services create` — create an Apphub application service
+- `gcloud apphub applications services delete` — delete an Apphub application service
+- `gcloud apphub applications services describe` — describe an Apphub application service
+- `gcloud apphub applications services list` — list Apphub application services
+- `gcloud apphub applications services update` — update an Apphub application service
+- `gcloud apphub applications workloads create` — create an Apphub application workload
+- `gcloud apphub applications workloads delete` — delete an Apphub application workload
+- `gcloud apphub applications workloads describe` — describe an Apphub application workload
+- `gcloud apphub applications workloads list` — list Apphub application workloads
+- `gcloud apphub applications workloads update` — update an Apphub application workload
+- `gcloud apphub boundary describe` — show metadata for an App Hub boundary
+- `gcloud apphub boundary update` — update an App Hub boundary
+- `gcloud apphub discovered-services describe` — describe an Apphub discovered service
+- `gcloud apphub discovered-services list` — list Apphub discovered services
+- `gcloud apphub discovered-services lookup` — lookup an Apphub discovered service with URI
+- `gcloud apphub discovered-workloads describe` — describe an Apphub discovered workload
+- `gcloud apphub discovered-workloads list` — list Apphub discovered workloads that could be added to an application
+- `gcloud apphub discovered-workloads lookup` — lookup an Apphub discovered workload with URI
+- `gcloud apphub locations describe` — describe an Apphub location
+- `gcloud apphub locations list` — list Apphub locations
+- `gcloud apphub operations describe` — describe an Apphub operation (long-running operation)
+- `gcloud apphub operations list` — list Apphub operations (long-running operations)
+- `gcloud apphub service-projects add` — add an Apphub service project
+- `gcloud apphub service-projects describe` — describe an Apphub service project
+- `gcloud apphub service-projects detach` — detach an Apphub service project
+- `gcloud apphub service-projects list` — list Apphub service projects
+- `gcloud apphub service-projects lookup` — lookup an Apphub service project
+- `gcloud apphub service-projects remove` — remove an Apphub service project

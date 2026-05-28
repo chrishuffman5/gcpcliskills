@@ -1,0 +1,87 @@
+# gcloud bigtable — command index
+
+manage your Cloud Bigtable storage
+
+- `gcloud bigtable app-profiles create` — create a new Bigtable app profile
+- `gcloud bigtable app-profiles delete` — delete a Bigtable app profile
+- `gcloud bigtable app-profiles describe` — describe an existing Bigtable app profile
+- `gcloud bigtable app-profiles list` — list Bigtable app profiles
+- `gcloud bigtable app-profiles update` — update a Bigtable app profile
+- `gcloud bigtable authorized-views add-iam-policy-binding` — add an IAM policy binding to a Cloud Bigtable authorized view
+- `gcloud bigtable authorized-views create` — create a new Cloud Bigtable authorized view
+- `gcloud bigtable authorized-views delete` — delete a Cloud Bigtable authorized view
+- `gcloud bigtable authorized-views describe` — describe a Cloud Bigtable authorized view
+- `gcloud bigtable authorized-views get-iam-policy` — get an IAM policy on a Cloud Bigtable authorized view
+- `gcloud bigtable authorized-views list` — list all authorized views of a Cloud Bigtable table
+- `gcloud bigtable authorized-views remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Bigtable authorized view
+- `gcloud bigtable authorized-views set-iam-policy` — set an IAM policy on a Cloud Bigtable authorized view
+- `gcloud bigtable authorized-views update` — update an existing Cloud Bigtable authorized view
+- `gcloud bigtable backups add-iam-policy-binding` — add an IAM policy binding to a Cloud Bigtable Backup
+- `gcloud bigtable backups copy` — copy a Cloud Bigtable backup to a new backup
+- `gcloud bigtable backups create` — creates a backup of a Cloud Bigtable table
+- `gcloud bigtable backups delete` — delete an existing backup
+- `gcloud bigtable backups describe` — retrieves information about a backup
+- `gcloud bigtable backups get-iam-policy` — get an IAM policy on a Cloud Bigtable Backup
+- `gcloud bigtable backups list` — list existing Bigtable backups
+- `gcloud bigtable backups remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Bigtable Backup
+- `gcloud bigtable backups set-iam-policy` — set an IAM policy on a Cloud Bigtable Backup
+- `gcloud bigtable backups update` — update a backup, only supported for the following fields: --expiration-date and --retention-period
+- `gcloud bigtable clusters create` — create a bigtable cluster
+- `gcloud bigtable clusters delete` — delete a bigtable cluster
+- `gcloud bigtable clusters describe` — describe an existing Bigtable cluster
+- `gcloud bigtable clusters list` — list existing Bigtable clusters
+- `gcloud bigtable clusters update` — update a Bigtable cluster's number of nodes
+- `gcloud bigtable hot-tablets list` — list hot tablets in a Cloud Bigtable cluster
+- `gcloud bigtable instances add-iam-policy-binding` — add an IAM policy binding to a Cloud Bigtable instance
+- `gcloud bigtable instances create` — create a new Bigtable instance
+- `gcloud bigtable instances delete` — delete an existing Bigtable instance
+- `gcloud bigtable instances describe` — describe an existing Bigtable instance
+- `gcloud bigtable instances get-iam-policy` — get the IAM policy for a Cloud Bigtable instance
+- `gcloud bigtable instances list` — list existing Bigtable instances
+- `gcloud bigtable instances remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Bigtable instance
+- `gcloud bigtable instances set-iam-policy` — set IAM policy for an instance
+- `gcloud bigtable instances update` — modify an existing Bigtable instance
+- `gcloud bigtable instances upgrade` — upgrade an existing instance's type from development to production
+- `gcloud bigtable instances tables add-iam-policy-binding` — add an IAM policy binding to a Cloud Bigtable table
+- `gcloud bigtable instances tables create` — create a new Cloud Bigtable table
+- `gcloud bigtable instances tables delete` — delete a Cloud Bigtable table
+- `gcloud bigtable instances tables describe` — retrieve information about a table
+- `gcloud bigtable instances tables get-iam-policy` — get an IAM policy on a Cloud Bigtable table
+- `gcloud bigtable instances tables list` — list existing Bigtable instance tables
+- `gcloud bigtable instances tables remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Bigtable table
+- `gcloud bigtable instances tables restore` — restore a Cloud Bigtable backup to a new table
+- `gcloud bigtable instances tables set-iam-policy` — set an IAM policy on a Cloud Bigtable table
+- `gcloud bigtable instances tables undelete` — undelete a previously deleted Cloud Bigtable table
+- `gcloud bigtable instances tables update` — update an existing Cloud Bigtable table
+- `gcloud bigtable logical-views create` — create a new Bigtable logical view
+- `gcloud bigtable logical-views delete` — delete a Bigtable logical view
+- `gcloud bigtable logical-views describe` — describe an existing Bigtable logical view
+- `gcloud bigtable logical-views list` — list existing Bigtable logical views
+- `gcloud bigtable logical-views update` — update a Bigtable logical view
+- `gcloud bigtable materialized-views create` — create a new Bigtable materialized view
+- `gcloud bigtable materialized-views delete` — delete a Bigtable materialized view
+- `gcloud bigtable materialized-views describe` — describe an existing Bigtable materialized view
+- `gcloud bigtable materialized-views list` — list existing Bigtable materialized views
+- `gcloud bigtable materialized-views update` — update a Bigtable materialized view
+- `gcloud bigtable operations describe` — describe a Cloud Bigtable operation
+- `gcloud bigtable operations list` — list Cloud Bigtable operations
+- `gcloud bigtable schema-bundles add-iam-policy-binding` — add an IAM policy binding to a Bigtable schema bundle
+- `gcloud bigtable schema-bundles create` — create a new Bigtable schema bundle
+- `gcloud bigtable schema-bundles delete` — delete a Bigtable schema bundle
+- `gcloud bigtable schema-bundles describe` — describe a Bigtable schema bundle
+- `gcloud bigtable schema-bundles get-iam-policy` — get an IAM policy on a Bigtable schema bundle
+- `gcloud bigtable schema-bundles list` — list all schema bundles of a Bigtable table
+- `gcloud bigtable schema-bundles remove-iam-policy-binding` — remove an IAM policy binding from a Bigtable schema bundle
+- `gcloud bigtable schema-bundles set-iam-policy` — set an IAM policy on a Bigtable schema bundle
+- `gcloud bigtable schema-bundles update` — update an existing Bigtable schema bundle
+- `gcloud bigtable tables add-iam-policy-binding` — add an IAM policy binding to a Cloud Bigtable table
+- `gcloud bigtable tables create` — create a new Cloud Bigtable table
+- `gcloud bigtable tables delete` — delete a Cloud Bigtable table
+- `gcloud bigtable tables describe` — retrieve information about a table
+- `gcloud bigtable tables get-iam-policy` — get an IAM policy on a Cloud Bigtable table
+- `gcloud bigtable tables list` — list existing Bigtable instance tables
+- `gcloud bigtable tables remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Bigtable table
+- `gcloud bigtable tables restore` — restore a Cloud Bigtable backup to a new table
+- `gcloud bigtable tables set-iam-policy` — set an IAM policy on a Cloud Bigtable table
+- `gcloud bigtable tables undelete` — undelete a previously deleted Cloud Bigtable table
+- `gcloud bigtable tables update` — update an existing Cloud Bigtable table

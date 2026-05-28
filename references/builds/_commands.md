@@ -1,0 +1,307 @@
+# gcloud builds (top-level commands)
+
+### `gcloud builds cancel`
+
+Cancel an ongoing build
+
+Cancel an ongoing build.
+
+**Synopsis:**
+```
+gcloud builds cancel BUILDS [BUILDS ...] [--region=REGION]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+BUILDS [BUILDS ...]
+   IDs of builds to cancel
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--region` | REGION |  | The region of the Cloud Build Service to use. Must be set to a supported region name (e.g. us-central1). If unset, builds/region, which is the default region to use when working with Cloud Build resources, is used. If builds/region is unset, region is set to global. Note: Region must be specified in 2nd gen repo; global is not supported. |
+
+
+**Examples:**
+```bash
+To cancel a build 123-456-789:
+
+    $ gcloud builds cancel '123-456-789'
+
+You may also cancel multiple builds at the same time:
+
+    $ gcloud builds cancel '123-456-789', '987-654-321'
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/builds/cancel)
+
+---
+### `gcloud builds describe`
+
+Get information about a particular build
+
+Get information about a particular build.
+
+**Synopsis:**
+```
+gcloud builds describe BUILD [--region=REGION] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+BUILD
+   The build to describe. The ID of the build is printed at the end of the
+   build submission process, or in the ID column when listing builds.
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--region` | REGION |  | The region of the Cloud Build Service to use. Must be set to a supported region name (e.g. us-central1). If unset, builds/region, which is the default region to use when working with Cloud Build resources, is used. If builds/region is unset, region is set to global. Note: Region must be specified in 2nd gen repo; global is not supported. |
+
+
+**Examples:**
+```bash
+To describe a build 123-456-789:
+
+    $ gcloud builds describe '123-456-789'
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/builds/describe)
+
+---
+### `gcloud builds get-default-service-account`
+
+Get the default service account for a project
+
+Get the default service account for a project.
+
+**Synopsis:**
+```
+gcloud builds get-default-service-account [--region=REGION]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--region` | REGION |  | The region of the Cloud Build Service to use. Must be set to a supported region name (e.g. us-central1). If unset, builds/region, which is the default region to use when working with Cloud Build resources, is used. If builds/region is unset, region is set to global. Note: Region must be specified in 2nd gen repo; global is not supported. |
+
+
+**Examples:**
+```bash
+To get the default service account for the project:
+
+    $ gcloud builds get-default-service-account
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/builds/get-default-service-account)
+
+---
+### `gcloud builds list`
+
+List builds
+
+List builds.
+
+**Synopsis:**
+```
+gcloud builds list [--ongoing] [--region=REGION] [--filter=EXPRESSION]
+    [--limit=LIMIT; default=50] [--page-size=PAGE_SIZE; default=20]
+    [--sort-by=[FIELD,...]] [--uri] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--ongoing` |  |  | Only list builds that are currently QUEUED or WORKING. |
+| `--region` | REGION |  | The region of the Cloud Build Service to use. Must be set to a supported region name (e.g. us-central1). If unset, builds/region, which is the default region to use when working with Cloud Build resources, is used. If builds/region is unset, region is set to global. Note: Region must be specified in 2nd gen repo; global is not supported. |
+
+
+**Examples:**
+```bash
+To list all completed builds in the current project:
+
+    $ gcloud builds list
+
+To list all builds in the current project in QUEUED or WORKING status.:
+
+    $ gcloud builds list --ongoing
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/builds/list)
+
+---
+### `gcloud builds log`
+
+Stream the logs for a build
+
+Stream the logs for a build.
+
+**Synopsis:**
+```
+gcloud builds log BUILD [--region=REGION] [--stream] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+BUILD
+   The build whose logs shall be printed. The ID of the build is printed
+   at the end of the build submission process, or in the ID column when
+   listing builds.
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--region` | REGION |  | The region of the Cloud Build Service to use. Must be set to a supported region name (e.g. us-central1). If unset, builds/region, which is the default region to use when working with Cloud Build resources, is used. If builds/region is unset, region is set to global. Note: Region must be specified in 2nd gen repo; global is not supported. |
+| `--stream` |  |  | If a build is ongoing, stream the logs to stdout until the build completes. |
+
+
+**Examples:**
+```bash
+To stream logs for in progress build 123-456-789:
+
+    $ gcloud builds log --stream `123-456-789`
+
+To display logs for a completed build 098-765-432:
+
+    $ gcloud builds log `098-765-432`
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/builds/log)
+
+---
+### `gcloud builds submit`
+
+Submit a build using Cloud Build
+
+Submit a build using Cloud Build.
+
+When the builds/use_kaniko property is True, builds submitted with --tag
+will use Kaniko (https://github.com/GoogleContainerTools/kaniko) to execute
+builds. Kaniko executes directives in a Dockerfile, with remote layer
+caching for faster builds. By default, Kaniko will cache layers for 6
+hours. To override this, set the builds/kaniko_cache_ttl property.
+
+**Synopsis:**
+```
+gcloud builds submit [[SOURCE] --no-source] [--async] [--no-cache]
+    [--default-buckets-behavior=DEFAULT_BUCKETS_BEHAVIOR] [--dir=DIR]
+    [--disk-size=DISK_SIZE] [--gcs-log-dir=GCS_LOG_DIR]
+    [--gcs-source-staging-dir=GCS_SOURCE_STAGING_DIR]
+    [--git-source-dir=GIT_SOURCE_DIR]
+    [--git-source-revision=GIT_SOURCE_REVISION] [--ignore-file=IGNORE_FILE]
+    [--machine-type=MACHINE_TYPE]
+    [--polling-interval=POLLING_INTERVAL; default=1] [--region=REGION]
+    [--revision=REVISION] [--service-account=SERVICE_ACCOUNT]
+    [--substitutions=[KEY=VALUE,...]] [--suppress-logs] [--timeout=TIMEOUT]
+    [--worker-pool=WORKER_POOL]
+    [--config=CONFIG; default="cloudbuild.yaml"
+      | --pack=[builder=BUILDER],[env=ENV],[image=IMAGE]
+      | --tag=TAG, -t TAG] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+At most one of these can be specified:
+
+  [SOURCE]
+     The location of the source to build. The location can be a directory
+     on a local disk, an archive file (e.g., .zip, .tar.gz) or a manifest
+     file (.json) in Google Cloud Storage, a Git repo url starting with
+     http:// or https://, a 2nd-gen Cloud Build repository resource, or a
+     Developer Connect GitRepositoryLink resource. If the source is a
+     local directory, this command skips the files specified in the
+     --ignore-file. If --ignore-file is not specified, use.gcloudignore
+     file. If a .gcloudignore file is absent and a .gitignore file is
+     present in the local source directory, gcloud will use a generated
+     Git-compatible .gcloudignore file that respects your .gitignored
+     files. The global .gitignore is not respected. For more information
+     on .gcloudignore, see gcloud topic gcloudignore.
+
+  --no-source
+     Specify that no source should be uploaded with this build.
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+| `--no-cache` |  |  | If set, disable layer caching when building with Kaniko. This has the same effect as setting the builds/kaniko_cache_ttl property to 0 for this build. This can be useful in cases where Dockerfile builds are non-deterministic and a non-deterministic result should not be cached. |
+| `--default-buckets-behavior` | one of: default-logs-bucket-behavior-unspecified, legacy-bucket, regional-user-owned-bucket |  | How default buckets are setup. DEFAULT_BUCKETS_BEHAVIOR must be one of: default-logs-bucket-behavior-unspecified, legacy-bucket, regional-user-owned-bucket. |
+| `--dir` | DIR |  | Directory, relative to the source root, in which to run the build. This is used when the build source is a 2nd-gen Cloud Build repository resource, or a Developer Connect GitRepositoryLink resource. This must be a relative path. If a step's dir is specified and is an absolute path, this value is ignored for that step's execution. |
+| `--disk-size` | DISK_SIZE |  | Machine disk size (GB) to run the build. |
+| `--gcs-log-dir` | GCS_LOG_DIR |  | A directory in Google Cloud Storage to hold build logs. If this field is not set, gs://[PROJECT_NUMBER].cloudbuild-logs.googleusercontent.com/ will be created and used or gs://[PROJECT_NUMBER]-[builds/region]-cloudbuild-logs is used when you set --default-buckets-behavior to REGIONAL_USER_OWNED_BUCKET. |
+| `--gcs-source-staging-dir` | GCS_SOURCE_STAGING_DIR |  | A directory in Google Cloud Storage to copy the source used for staging the build. If the specified bucket does not exist, Cloud Build will create one. If you don't set this field, gs://[PROJECT_ID]_cloudbuild/source is used or gs://[PROJECT_ID]_[builds/region]_cloudbuild/source is used when you set --default-buckets-behavior to REGIONAL_USER_OWNED_BUCKET and builds/region is not global. |
+| `--git-source-dir` | GIT_SOURCE_DIR |  | Directory, relative to the source root, in which to run the build. This must be a relative path. If a step's dir is specified and is an absolute path, this value is ignored for that step's execution. |
+| `--git-source-revision` | GIT_SOURCE_REVISION |  | Revision to fetch from the Git repository such as a branch, a tag, a commit SHA, or any Git ref to run the build. Cloud Build uses git fetch to fetch the revision from the Git repository; therefore make sure that the string you provide for revision is parsable by the command. For information on string values accepted by git fetch, see https://git-scm.com/docs/gitrevisions#_specifying_revisions. For information on git fetch, see https://git-scm.com/docs/git-fetch. |
+| `--ignore-file` | IGNORE_FILE |  | Override the .gcloudignore file and use the specified file instead. |
+| `--machine-type` | one of: e2-highcpu-32, e2-highcpu-8, e2-medium, n1-highcpu-32, n1-highcpu-8 |  | Machine type used to run the build. MACHINE_TYPE must be one of: e2-highcpu-32, e2-highcpu-8, e2-medium, n1-highcpu-32, n1-highcpu-8. |
+| `--polling-interval` | POLLING_INTERVAL | 1 | Amount of time in seconds to wait between polling build status. |
+| `--region` | REGION |  | The region of the Cloud Build Service to use. Must be set to a supported region name (e.g. us-central1). If unset, builds/region, which is the default region to use when working with Cloud Build resources, is used. If builds/region is unset, region is set to global. Note: Region must be specified in 2nd gen repo; global is not supported. |
+| `--revision` | REVISION |  | Revision to fetch from the Git repository such as a branch, a tag, a commit SHA, or any Git ref to run the build. This is used when the build source is a 2nd-gen Cloud Build repository resource, or a Developer Connect GitRepositoryLink resource. Cloud Build uses git fetch to fetch the revision from the Git repository; therefore make sure that the string you provide for revision is parsable by the command. For information on string values accepted by git fetch, see https://git-scm.com/docs/gitrevisions#_specifying_revisions. For information on git fetch, see https://git-scm.com/docs/git-fetch. |
+| `--service-account` | SERVICE_ACCOUNT |  | The service account to use with this build. If unset, the default service account will be used. |
+| `--substitutions` | [KEY=VALUE,...] |  | Parameters to be substituted in the build specification. For example (using some nonsensical substitution keys; all keys must begin with an underscore): $ gcloud builds submit . --config config.yaml \ --substitutions _FAVORITE_COLOR=blue,_NUM_CANDIES=10 This will result in a build where every occurrence of ${_FAVORITE_COLOR} in certain fields is replaced by "blue", and similarly for ${_NUM_CANDIES} and "10". Only the following built-in variables can be specified with the --substitutions flag: REPO_NAME, BRANCH_NAME, TAG_NAME, REVISION_ID, COMMIT_SHA, SHORT_SHA. For more details, see: https://cloud.google.com/cloud-build/docs/api/build-requests#substitutions |
+| `--suppress-logs` |  |  | If set, build logs not streamed to stdout. |
+| `--timeout` | TIMEOUT |  | Maximum time a build is run before it is failed as TIMEOUT. It is specified as a duration; for example, "2h15m5s" is two hours, fifteen minutes, and five seconds. If you don't specify a unit, seconds is assumed. For example, "10" is 10 seconds. Overrides the default builds/timeout property value for this command invocation. |
+
+
+**Examples:**
+```bash
+To submit a build with source located at storage URL
+gs://bucket/object.zip:
+
+    $ gcloud builds submit "gs://bucket/object.zip" \
+       --tag=gcr.io/my-project/image
+
+To submit a build with source located at storage URL gs://bucket/object.zip
+using config file config.yaml:
+
+    $ gcloud builds submit "gs://bucket/object.zip" \
+        --tag=gcr.io/my-project/image --config=config.yaml
+
+To submit a build with source from a source manifest:
+
+    $ gcloud builds submit "gs://bucket/manifest.json" \
+        --tag=gcr.io/my-project/image --config=config.yaml
+
+To submit a build with local source source.tgz asynchronously:
+
+    $ gcloud builds submit "source.tgz" --tag=gcr.io/my-project/image \
+        --async
+
+To submit a build with source from a Git repository
+https://github.com/owner/repo:
+
+    $ gcloud builds submit "https://github.com/owner/repo" \
+        --git-source-revision=main --config=config.yaml
+
+To submit a build with source from a 2nd-gen Cloud Build repository
+resource
+projects/my-project/locations/us-west1/connections/my-conn/repositories/my-repo:
+
+    $ gcloud builds submit \
+        "projects/my-project/locations/us-west1/connections/my-conn/repo\
+    sitories/my-repo" --revision=main
+
+To submit a build with source from a Developer Connect GitRepositoryLink
+resource
+projects/my-project/locations/us-west1/connections/my-conn/gitRepositoryLinks/my-repo-link:
+
+    $ gcloud builds submit \
+        "projects/my-project/locations/us-west1/connections/my-conn/gitR\
+    epositoryLinks/my-repo-link" --revision=main
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/builds/submit)
+
+---

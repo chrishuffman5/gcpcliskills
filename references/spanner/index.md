@@ -1,0 +1,75 @@
+# gcloud spanner — command index
+
+command groups for Cloud Spanner
+
+- `gcloud spanner cli` — an interactive shell for Spanner
+- `gcloud spanner backup-schedules add-iam-policy-binding` — add IAM policy binding to a Cloud Spanner backup schedule
+- `gcloud spanner backup-schedules create` — create a Cloud Spanner backup schedule
+- `gcloud spanner backup-schedules delete` — delete a Cloud Spanner backup schedule
+- `gcloud spanner backup-schedules describe` — describe a Cloud Spanner backup schedule
+- `gcloud spanner backup-schedules get-iam-policy` — get the IAM policy for a Cloud Spanner backup schedule
+- `gcloud spanner backup-schedules list` — list Cloud Spanner backup schedules
+- `gcloud spanner backup-schedules remove-iam-policy-binding` — remove IAM policy binding of a Cloud Spanner backup schedule
+- `gcloud spanner backup-schedules set-iam-policy` — set the IAM policy for a Cloud Spanner backup schedule
+- `gcloud spanner backup-schedules update` — update a Cloud Spanner backup schedule
+- `gcloud spanner backups add-iam-policy-binding` — add IAM policy binding to a Cloud Spanner backup
+- `gcloud spanner backups copy` — copies a backup of a Cloud Spanner database
+- `gcloud spanner backups create` — creates a backup of a Cloud Spanner database
+- `gcloud spanner backups delete` — delete an existing backup
+- `gcloud spanner backups describe` — retrieves information about a backup
+- `gcloud spanner backups get-iam-policy` — get the IAM policy for a Cloud Spanner backup
+- `gcloud spanner backups list` — list existing Cloud Spanner Cloud Spanner backups
+- `gcloud spanner backups remove-iam-policy-binding` — remove IAM policy binding of a Cloud Spanner backup
+- `gcloud spanner backups set-iam-policy` — set the IAM policy for a Cloud Spanner backup
+- `gcloud spanner backups update-metadata` — updates the metadata of a Cloud Spanner a backup
+- `gcloud spanner databases add-iam-policy-binding` — add IAM policy binding to a Cloud Spanner database
+- `gcloud spanner databases change-quorum` — change quorum of a Cloud Spanner database
+- `gcloud spanner databases create` — create a Cloud Spanner database
+- `gcloud spanner databases delete` — delete a Cloud Spanner database
+- `gcloud spanner databases describe` — describe a Cloud Spanner database
+- `gcloud spanner databases execute-sql` — executes a SQL query against a Cloud Spanner database
+- `gcloud spanner databases get-iam-policy` — get the IAM policy for a Cloud Spanner database
+- `gcloud spanner databases list` — list the Cloud Spanner databases contained within the given instance
+- `gcloud spanner databases remove-iam-policy-binding` — remove IAM policy binding of a Cloud Spanner database
+- `gcloud spanner databases restore` — restore a Cloud Spanner database
+- `gcloud spanner databases set-iam-policy` — set the IAM policy for a Cloud Spanner database
+- `gcloud spanner databases update` — update a Cloud Spanner database
+- `gcloud spanner databases ddl describe` — describe the DDL for a Cloud Spanner database
+- `gcloud spanner databases ddl update` — update the DDL for a Cloud Spanner database
+- `gcloud spanner databases roles list` — list the Cloud Spanner database roles defined in the given database
+- `gcloud spanner databases sessions delete` — delete a Cloud Spanner session
+- `gcloud spanner databases sessions list` — list the Cloud Spanner sessions contained within the given database
+- `gcloud spanner databases splits add` — add split points to a Spanner database
+- `gcloud spanner databases splits list` — list split points that are added by a user to a Spanner database
+- `gcloud spanner instance-configs create` — create a Cloud Spanner instance configuration
+- `gcloud spanner instance-configs delete` — delete a Cloud Spanner instance configuration
+- `gcloud spanner instance-configs describe` — describe a Cloud Spanner instance configuration
+- `gcloud spanner instance-configs list` — list the available Cloud Spanner instance configurations
+- `gcloud spanner instance-configs update` — update a Cloud Spanner instance configuration
+- `gcloud spanner instance-partitions create` — create a Spanner instance partition
+- `gcloud spanner instance-partitions delete` — delete a Spanner instance partition. You can't delete the default instance partition using this command
+- `gcloud spanner instance-partitions describe` — describe a Spanner instance partition
+- `gcloud spanner instance-partitions list` — list the Spanner instance partitions contained within the given instance
+- `gcloud spanner instance-partitions update` — update a Spanner instance partition. You can't update the default instance partition using this command
+- `gcloud spanner instances add-iam-policy-binding` — add IAM policy binding to a Cloud Spanner instance
+- `gcloud spanner instances create` — create a Cloud Spanner instance
+- `gcloud spanner instances delete` — delete a Cloud Spanner instance
+- `gcloud spanner instances describe` — describe a Cloud Spanner instance
+- `gcloud spanner instances get-iam-policy` — get the IAM policy for a Cloud Spanner instance
+- `gcloud spanner instances get-locations` — get the location of every replica in a Cloud Spanner instance
+- `gcloud spanner instances list` — list the Cloud Spanner instances in this project
+- `gcloud spanner instances move` — move the Cloud Spanner instance to the specified instance configuration
+- `gcloud spanner instances remove-iam-policy-binding` — remove IAM policy binding of a Cloud Spanner instance
+- `gcloud spanner instances set-iam-policy` — set the IAM policy for a Cloud Spanner instance
+- `gcloud spanner instances update` — update a Cloud Spanner instance
+- `gcloud spanner operations cancel` — cancel a Cloud Spanner operation
+- `gcloud spanner operations describe` — describe a Cloud Spanner operation
+- `gcloud spanner operations list` — list the Cloud Spanner operations
+- `gcloud spanner rows delete` — delete a row in a Cloud Spanner database
+- `gcloud spanner rows insert` — insert a row in a Cloud Spanner database
+- `gcloud spanner rows update` — update a row in a Cloud Spanner database
+- `gcloud spanner samples backend` — run the backend gRPC service for the given Cloud Spanner sample app
+- `gcloud spanner samples init` — initialize a Cloud Spanner sample app
+- `gcloud spanner samples list` — list available sample applications
+- `gcloud spanner samples run` — run the given Cloud Spanner sample app
+- `gcloud spanner samples workload` — generate gRPC traffic for a given sample app's backend service

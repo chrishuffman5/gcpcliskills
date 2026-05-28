@@ -1,0 +1,53 @@
+# gcloud data-catalog — command index
+
+manage Data Catalog resources
+
+- `gcloud data-catalog search` — search Data Catalog for resources that match a query
+- `gcloud data-catalog entries create` — create a Data Catalog entry
+- `gcloud data-catalog entries delete` — delete a Data Catalog entry
+- `gcloud data-catalog entries describe` — describe a Data Catalog entry
+- `gcloud data-catalog entries list` — list all entries in a Data Catalog entry group
+- `gcloud data-catalog entries lookup` — lookup a Data Catalog entry by its target name
+- `gcloud data-catalog entries star` — star a Data Catalog entry
+- `gcloud data-catalog entries unstar` — unstar a Data Catalog entry
+- `gcloud data-catalog entries update` — update a Data Catalog entry
+- `gcloud data-catalog entry-groups add-iam-policy-binding` — add an IAM policy binding to a Data Catalog entry group
+- `gcloud data-catalog entry-groups create` — create a Data Catalog entry group
+- `gcloud data-catalog entry-groups delete` — delete a Data Catalog entry group
+- `gcloud data-catalog entry-groups describe` — describe a Data Catalog entry group
+- `gcloud data-catalog entry-groups get-iam-policy` — get the IAM policy for a Data Catalog entry group
+- `gcloud data-catalog entry-groups list` — list all entry groups in a Data Catalog location
+- `gcloud data-catalog entry-groups remove-iam-policy-binding` — remove an IAM policy binding from a Data Catalog entry group
+- `gcloud data-catalog entry-groups set-iam-policy` — set the IAM policy for a Data Catalog entry group
+- `gcloud data-catalog entry-groups update` — update a Data Catalog entry group
+- `gcloud data-catalog tag-templates add-iam-policy-binding` — add IAM policy binding to a Data Catalog tag template
+- `gcloud data-catalog tag-templates create` — create a Data Catalog tag template
+- `gcloud data-catalog tag-templates delete` — delete a Data Catalog tag template
+- `gcloud data-catalog tag-templates describe` — describe a Data Catalog tag template
+- `gcloud data-catalog tag-templates get-iam-policy` — get the IAM policy for a Data Catalog tag template
+- `gcloud data-catalog tag-templates remove-iam-policy-binding` — remove IAM policy binding from a Data Catalog tag template
+- `gcloud data-catalog tag-templates set-iam-policy` — set the IAM policy for a Data Catalog tag template
+- `gcloud data-catalog tag-templates update` — update a Data Catalog tag template
+- `gcloud data-catalog tag-templates fields create` — create a Data Catalog tag template field
+- `gcloud data-catalog tag-templates fields delete` — delete a Data Catalog tag template field
+- `gcloud data-catalog tag-templates fields rename` — rename a Data Catalog tag template field
+- `gcloud data-catalog tag-templates fields update` — update a Data Catalog tag template field
+- `gcloud data-catalog tag-templates fields enum-values rename` — rename an enum value in Data Catalog tag template enum field
+- `gcloud data-catalog tags create` — create a Data Catalog entry tag
+- `gcloud data-catalog tags delete` — delete a Data Catalog entry tag
+- `gcloud data-catalog tags list` — list Data Catalog entry tags
+- `gcloud data-catalog tags update` — update a Data Catalog entry tag
+- `gcloud data-catalog taxonomies add-iam-policy-binding` — add an IAM policy binding to a Policy Tag Taxonomy
+- `gcloud data-catalog taxonomies describe` — describe a Policy Tag Taxonomy
+- `gcloud data-catalog taxonomies export` — export a list of taxonomies from a certain project
+- `gcloud data-catalog taxonomies get-iam-policy` — get the IAM policy for a Policy Tag Taxonomy
+- `gcloud data-catalog taxonomies import` — export a file with serialized taxonomies to a certain project
+- `gcloud data-catalog taxonomies list` — list Cloud Policy Tag Taxonomies
+- `gcloud data-catalog taxonomies remove-iam-policy-binding` — remove an IAM policy binding from a policy tag taxonomy
+- `gcloud data-catalog taxonomies set-iam-policy` — set the IAM policy for a Policy Tag taxonomy
+- `gcloud data-catalog taxonomies policy-tags add-iam-policy-binding` — add an IAM policy binding to a Data Catalog policy tag
+- `gcloud data-catalog taxonomies policy-tags describe` — describe a Policy Tag Manager Policy tag
+- `gcloud data-catalog taxonomies policy-tags get-iam-policy` — get the IAM policy for a Data Catalog Policy Tag
+- `gcloud data-catalog taxonomies policy-tags list` — list Cloud Policy Tag Manager policy tags
+- `gcloud data-catalog taxonomies policy-tags remove-iam-policy-binding` — remove an IAM policy binding from a Data Catalog policy tag
+- `gcloud data-catalog taxonomies policy-tags set-iam-policy` — set the IAM policy for a Data Catalog Policy Tag

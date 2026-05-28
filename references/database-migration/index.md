@@ -1,0 +1,54 @@
+# gcloud database-migration — command index
+
+manage Database Migration Service resources
+
+- `gcloud database-migration connection-profiles delete` — delete a Database Migration Service connection profile
+- `gcloud database-migration connection-profiles describe` — show details about a Database Migration Service connection profile
+- `gcloud database-migration connection-profiles list` — list Database Migration Service connection profiles
+- `gcloud database-migration connection-profiles test` — test a Database Migration Service connection profile
+- `gcloud database-migration connection-profiles update` — update a Database Migration Service connection profile
+- `gcloud database-migration connection-profiles create alloydb` — create a Database Migration Service connection profile for AlloyDB
+- `gcloud database-migration connection-profiles create cloudsql` — create a Database Migration Service connection profile for Cloud SQL
+- `gcloud database-migration connection-profiles create mysql` — create a Database Migration Service connection profile for MySQL
+- `gcloud database-migration connection-profiles create oracle` — create a Database Migration Service connection profile for Oracle
+- `gcloud database-migration connection-profiles create postgresql` — create a Database Migration Service connection profile for PostgreSQL
+- `gcloud database-migration connection-profiles create sqlserver` — create a Database Migration Service connection profile for SQL Server
+- `gcloud database-migration conversion-workspaces apply` — apply a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces commit` — commit a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces convert` — convert a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces create` — create a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces delete` — delete a Database Migration conversion workspace
+- `gcloud database-migration conversion-workspaces describe` — show details about a database migration conversion workspace
+- `gcloud database-migration conversion-workspaces describe-ddls` — describe DDLs in a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces describe-entities` — describe database entities in a Database Migration conversion workspace
+- `gcloud database-migration conversion-workspaces describe-issues` — describe issues in a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces import-rules` — import mapping rules in a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces list` — list conversion workspaces
+- `gcloud database-migration conversion-workspaces list-background-jobs` — list background jobs in the conversion workspaces
+- `gcloud database-migration conversion-workspaces rollback` — rollback a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces seed` — seed a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces update` — update a Database Migration Service conversion workspace
+- `gcloud database-migration conversion-workspaces mapping-rules list` — list Mapping Rules
+- `gcloud database-migration migration-jobs create` — create a Database Migration Service migration job
+- `gcloud database-migration migration-jobs delete` — delete a Database Migration Service migration job
+- `gcloud database-migration migration-jobs demote-destination` — demote a destination of a Database Migration Service migration job
+- `gcloud database-migration migration-jobs describe` — show details about a Database Migration Service migration job
+- `gcloud database-migration migration-jobs fetch-source-objects` — fetch objects for a Database Migration Service migration job by connection to the source
+- `gcloud database-migration migration-jobs generate-ssh-script` — generate a SSH script for a Database Migration Service migration job
+- `gcloud database-migration migration-jobs list` — list Database Migration Service migration jobs
+- `gcloud database-migration migration-jobs promote` — promote a Database Migration Service migration job
+- `gcloud database-migration migration-jobs restart` — restart a Database Migration Service migration job
+- `gcloud database-migration migration-jobs resume` — resume a Database Migration Service migration job
+- `gcloud database-migration migration-jobs start` — start a Database Migration Service migration job
+- `gcloud database-migration migration-jobs stop` — stop a Database Migration Service migration job
+- `gcloud database-migration migration-jobs update` — update a Database Migration Service migration job
+- `gcloud database-migration migration-jobs verify` — verify a Database Migration Service migration job
+- `gcloud database-migration objects list` — list a DMS migration job objects
+- `gcloud database-migration objects lookup` — lookup a DMS migration job object
+- `gcloud database-migration operations delete` — delete a Database Migration Service operation
+- `gcloud database-migration operations describe` — show details about a operation
+- `gcloud database-migration operations list` — list operations
+- `gcloud database-migration private-connections create` — create a Database Migration private connection
+- `gcloud database-migration private-connections delete` — delete a Database Migration private connection
+- `gcloud database-migration private-connections describe` — show details about a database migration private connection
+- `gcloud database-migration private-connections list` — list private connections

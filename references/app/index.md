@@ -1,0 +1,53 @@
+# gcloud app — command index
+
+manage your App Engine deployments
+
+- `gcloud app browse` — open the current app in a web browser
+- `gcloud app create` — create an App Engine app within the current Google Cloud Project
+- `gcloud app deploy` — deploy the local code and/or configuration of your app to App Engine
+- `gcloud app describe` — display all data about an existing service
+- `gcloud app open-console` — open the App Engine dashboard, or log viewer, in a web browser
+- `gcloud app update` — updates an App Engine application
+- `gcloud app domain-mappings create` — creates a domain mapping
+- `gcloud app domain-mappings delete` — deletes a specified domain mapping
+- `gcloud app domain-mappings describe` — describes a specified domain mapping
+- `gcloud app domain-mappings list` — lists domain mappings
+- `gcloud app domain-mappings update` — updates a domain mapping
+- `gcloud app firewall-rules create` — creates a firewall rule
+- `gcloud app firewall-rules delete` — deletes a specified firewall rule
+- `gcloud app firewall-rules describe` — prints the fields of a specified firewall rule
+- `gcloud app firewall-rules list` — lists the firewall rules
+- `gcloud app firewall-rules test-ip` — display firewall rules that match a given IP
+- `gcloud app firewall-rules update` — updates a firewall rule
+- `gcloud app instances delete` — delete a specified instance
+- `gcloud app instances describe` — display all data about an existing instance
+- `gcloud app instances disable-debug` — disable debug mode for an instance
+- `gcloud app instances enable-debug` — enable debug mode for an instance (only works on the flexible environment)
+- `gcloud app instances list` — list the instances affiliated with the current App Engine project
+- `gcloud app instances scp` — SCP from or to the VM of an App Engine Flexible instance
+- `gcloud app instances ssh` — SSH into the VM of an App Engine Flexible instance
+- `gcloud app logs read` — reads log entries for the current App Engine app
+- `gcloud app logs tail` — streams logs for App Engine apps
+- `gcloud app operations describe` — describes the operation
+- `gcloud app operations list` — list the operations
+- `gcloud app operations wait` — polls an operation until completion
+- `gcloud app regions list` — list the availability of flex and standard environments for each region
+- `gcloud app runtimes list` — list the available runtimes
+- `gcloud app services browse` — open the specified service(s) in a browser
+- `gcloud app services delete` — delete services in the current project
+- `gcloud app services describe` — display all data about an existing service
+- `gcloud app services list` — list your existing services
+- `gcloud app services set-traffic` — set traffic splitting settings
+- `gcloud app services update` — update service-level settings
+- `gcloud app ssl-certificates create` — uploads a new SSL certificate
+- `gcloud app ssl-certificates delete` — deletes an SSL certificate
+- `gcloud app ssl-certificates describe` — describes a specified SSL certificate
+- `gcloud app ssl-certificates list` — lists the SSL certificates
+- `gcloud app ssl-certificates update` — updates an SSL certificate
+- `gcloud app versions browse` — open the specified versions in a browser
+- `gcloud app versions delete` — delete a specified version
+- `gcloud app versions describe` — display all data about an existing version
+- `gcloud app versions list` — list your existing versions
+- `gcloud app versions migrate` — migrate traffic from one version to another for a set of services
+- `gcloud app versions start` — start serving specified versions
+- `gcloud app versions stop` — stop serving specified versions

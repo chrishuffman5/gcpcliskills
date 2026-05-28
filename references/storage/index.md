@@ -1,0 +1,84 @@
+# gcloud storage — command index
+
+create and manage Cloud Storage buckets and objects
+
+- `gcloud storage cat` — outputs the contents of one or more URLs to stdout
+- `gcloud storage cp` — upload, download, and copy Cloud Storage objects
+- `gcloud storage diagnose` — diagnose Google Cloud Storage
+- `gcloud storage du` — displays the amount of space in bytes used by storage resources
+- `gcloud storage hash` — calculates hashes on local or cloud files
+- `gcloud storage ls` — list Cloud Storage buckets and objects
+- `gcloud storage mv` — moves or renames objects
+- `gcloud storage restore` — restore one or more soft-deleted objects
+- `gcloud storage rm` — delete objects and buckets
+- `gcloud storage rsync` — synchronize content of two buckets/directories
+- `gcloud storage service-agent` — manage a project's Cloud Storage service agent, which is used to perform Cloud KMS operations
+- `gcloud storage sign-url` — generate a URL with embedded authentication that can be used by anyone
+- `gcloud storage batch-operations jobs cancel` — cancel a batch-operations job
+- `gcloud storage batch-operations jobs create` — create a new batch operation job
+- `gcloud storage batch-operations jobs delete` — delete a batch-operations job
+- `gcloud storage batch-operations jobs describe` — describe a batch-operations job
+- `gcloud storage batch-operations jobs list` — list batch-operations jobs
+- `gcloud storage buckets add-iam-policy-binding` — add an IAM policy binding to a bucket
+- `gcloud storage buckets create` — create buckets for storing objects
+- `gcloud storage buckets delete` — deletes Cloud Storage buckets
+- `gcloud storage buckets describe` — describes Cloud Storage buckets
+- `gcloud storage buckets get-iam-policy` — get the IAM policy for a bucket
+- `gcloud storage buckets list` — lists Cloud Storage buckets
+- `gcloud storage buckets relocate` — relocates bucket between different locations
+- `gcloud storage buckets remove-iam-policy-binding` — remove an IAM policy binding from a bucket
+- `gcloud storage buckets set-iam-policy` — set the IAM policy for a bucket
+- `gcloud storage buckets update` — update bucket settings
+- `gcloud storage buckets anywhere-caches create` — create Anywhere Cache instances for a bucket
+- `gcloud storage buckets anywhere-caches describe` — returns details of Anywhere Cache instance of a bucket
+- `gcloud storage buckets anywhere-caches disable` — disable Anywhere Cache instances
+- `gcloud storage buckets anywhere-caches list` — list all Anywhere Cache instances of a bucket
+- `gcloud storage buckets anywhere-caches pause` — pause Anywhere Cache instances
+- `gcloud storage buckets anywhere-caches resume` — resume Anywhere Cache instances
+- `gcloud storage buckets anywhere-caches update` — update Anywhere Cache instances
+- `gcloud storage buckets notifications create` — create a notification configuration on a bucket
+- `gcloud storage buckets notifications delete` — delete notification configurations from a bucket
+- `gcloud storage buckets notifications describe` — show metadata for a notification configuration
+- `gcloud storage buckets notifications list` — list the notification configurations belonging to a given bucket
+- `gcloud storage folders create` — create folders for hierarchical namespace bucket
+- `gcloud storage folders delete` — delete folders
+- `gcloud storage folders describe` — describe hierarchical namesapace bucket folders
+- `gcloud storage folders list` — list folders
+- `gcloud storage hmac create` — add a service account HMAC
+- `gcloud storage hmac delete` — remove a service account HMAC
+- `gcloud storage hmac describe` — describes a service account HMAC key
+- `gcloud storage hmac list` — list service account HMAC keys
+- `gcloud storage hmac update` — change the status of a service account HMAC
+- `gcloud storage insights dataset-configs create` — create a new dataset config for Insights
+- `gcloud storage insights dataset-configs create-link` — create a link to a BigQuery instance
+- `gcloud storage insights dataset-configs delete` — delete dataset config for Insights
+- `gcloud storage insights dataset-configs delete-link` — delete a link to a BigQuery instance
+- `gcloud storage insights dataset-configs describe` — describe dataset config for Insights
+- `gcloud storage insights dataset-configs list` — list returns all the Insights dataset configs for given location
+- `gcloud storage insights dataset-configs update` — updates a dataset config for Insights
+- `gcloud storage insights inventory-reports create` — create a new inventory report config
+- `gcloud storage insights inventory-reports delete` — delete an inventory report config
+- `gcloud storage insights inventory-reports describe` — describe an inventory report config
+- `gcloud storage insights inventory-reports list` — lists all inventory report configs
+- `gcloud storage insights inventory-reports update` — update an inventory report config
+- `gcloud storage insights inventory-reports details describe` — describe inventory reports detail
+- `gcloud storage insights inventory-reports details list` — list inventory report details
+- `gcloud storage intelligence-configs describe` — describes storage intelligence configuration
+- `gcloud storage intelligence-configs disable` — disables storage intelligence
+- `gcloud storage intelligence-configs enable` — enables storage intelligence
+- `gcloud storage intelligence-configs update` — updates storage intelligence configuration
+- `gcloud storage managed-folders add-iam-policy-binding` — add an IAM policy binding to a managed folder
+- `gcloud storage managed-folders create` — create managed folders
+- `gcloud storage managed-folders delete` — delete managed folders
+- `gcloud storage managed-folders describe` — describe managed folders
+- `gcloud storage managed-folders get-iam-policy` — get the IAM policy for a managed folder
+- `gcloud storage managed-folders list` — list managed folders
+- `gcloud storage managed-folders remove-iam-policy-binding` — remove an IAM policy binding from a managed folder
+- `gcloud storage managed-folders set-iam-policy` — set the IAM policy for a managed folder
+- `gcloud storage objects compose` — concatenate a sequence of objects into a new composite object
+- `gcloud storage objects describe` — describe a Cloud Storage object
+- `gcloud storage objects list` — lists Cloud Storage objects
+- `gcloud storage objects update` — update Cloud Storage objects
+- `gcloud storage operations cancel` — cancel a storage operation
+- `gcloud storage operations describe` — get configuration and latest storage operation details
+- `gcloud storage operations list` — list storage operations

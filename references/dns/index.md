@@ -1,0 +1,46 @@
+# gcloud dns — command index
+
+manage your Cloud DNS managed-zones and record-sets
+
+- `gcloud dns dns-keys describe` — show details about a DNS key resource
+- `gcloud dns dns-keys list` — list DNS key resources
+- `gcloud dns managed-zones create` — create a Cloud DNS managed-zone
+- `gcloud dns managed-zones delete` — delete an empty Cloud DNS managed-zone
+- `gcloud dns managed-zones describe` — view the details of a Cloud DNS managed-zone
+- `gcloud dns managed-zones get-iam-policy` — get the IAM policy for a Cloud DNS managed-zone
+- `gcloud dns managed-zones list` — view the list of all your managed-zones
+- `gcloud dns managed-zones set-iam-policy` — set the IAM policy for a Cloud DNS managed-zone
+- `gcloud dns managed-zones update` — update an existing Cloud DNS managed-zone
+- `gcloud dns operations describe` — describe an operation
+- `gcloud dns operations list` — list Cloud DNS operations
+- `gcloud dns policies create` — creates a new Cloud DNS policy
+- `gcloud dns policies delete` — deletes a Cloud DNS policy
+- `gcloud dns policies describe` — describes a Cloud DNS policy
+- `gcloud dns policies list` — view the list of all your Cloud DNS policies
+- `gcloud dns policies update` — update an existing Cloud DNS policy
+- `gcloud dns project-info describe` — view Cloud DNS related information for a project
+- `gcloud dns record-sets create` — creates a record-set in a managed-zone
+- `gcloud dns record-sets delete` — delete a record-set in a managed-zone
+- `gcloud dns record-sets describe` — describe a record-set in a managed-zone
+- `gcloud dns record-sets export` — export your record-sets into a file
+- `gcloud dns record-sets import` — import record-sets into your managed-zone
+- `gcloud dns record-sets list` — view the list of record-sets in a managed-zone
+- `gcloud dns record-sets update` — updates a record-set in a managed-zone
+- `gcloud dns record-sets changes describe` — view the details of a change
+- `gcloud dns record-sets changes list` — view the list of changes that have been made to your record-sets
+- `gcloud dns record-sets transaction abort` — abort transaction
+- `gcloud dns record-sets transaction add` — append a record-set addition to the transaction
+- `gcloud dns record-sets transaction describe` — describe the transaction
+- `gcloud dns record-sets transaction execute` — execute the transaction on Cloud DNS
+- `gcloud dns record-sets transaction remove` — append a record-set deletion to the transaction
+- `gcloud dns record-sets transaction start` — start a transaction
+- `gcloud dns response-policies create` — creates a new Cloud DNS response policy
+- `gcloud dns response-policies delete` — deletes a Cloud DNS response policy
+- `gcloud dns response-policies describe` — describes a Cloud DNS response policy
+- `gcloud dns response-policies list` — displays the list of all Cloud DNS response policies in a given project
+- `gcloud dns response-policies update` — updates a Cloud DNS response policy
+- `gcloud dns response-policies rules create` — creates a new Cloud DNS response policy rule
+- `gcloud dns response-policies rules delete` — deletes a Cloud DNS response policy rule
+- `gcloud dns response-policies rules describe` — shows details about a Cloud DNS response policy rule
+- `gcloud dns response-policies rules list` — displays the list of all a Cloud DNS response policy rules
+- `gcloud dns response-policies rules update` — updates a new Cloud DNS response policy rule

@@ -1,0 +1,45 @@
+# gcloud composer — command index
+
+create and manage Cloud Composer Environments
+
+- `gcloud composer environments check-upgrade` — check that upgrading a Cloud Composer environment does not result in PyPI module conflicts
+- `gcloud composer environments create` — create and initialize a Cloud Composer environment
+- `gcloud composer environments database-failover` — run a database failover operation
+- `gcloud composer environments delete` — delete one or more Cloud Composer environments
+- `gcloud composer environments describe` — get details about a Cloud Composer environment
+- `gcloud composer environments fetch-database-properties` — fetch database properties
+- `gcloud composer environments list` — list the Cloud Composer environments under a project and location
+- `gcloud composer environments list-packages` — list all PyPI modules installed in an Airflow worker
+- `gcloud composer environments list-upgrades` — list the Cloud Composer image version upgrades for a specific environment
+- `gcloud composer environments list-workloads` — list Composer workloads, supported in Composer 3 environments or greater
+- `gcloud composer environments restart-web-server` — restart web server for a Cloud Composer environment
+- `gcloud composer environments run` — run an Airflow sub-command remotely in a Cloud Composer environment
+- `gcloud composer environments update` — update properties of a Cloud Composer environment
+- `gcloud composer environments snapshots load` — load a snapshot into the environment
+- `gcloud composer environments snapshots save` — save a snapshot of the environment
+- `gcloud composer environments storage dags delete` — delete DAG files from an Cloud Composer environment's Cloud Storage bucket
+- `gcloud composer environments storage dags export` — export DAGs from an environment into local storage or Cloud Storage
+- `gcloud composer environments storage dags import` — import DAGs from local storage or Cloud Storage into an environment
+- `gcloud composer environments storage dags list` — list the DAG files for a Cloud Composer environment
+- `gcloud composer environments storage data delete` — delete data from an Cloud Composer environment's Cloud Storage bucket
+- `gcloud composer environments storage data export` — export data from an environment into local storage or Cloud Storage
+- `gcloud composer environments storage data import` — import data from local storage or Cloud Storage into an environment
+- `gcloud composer environments storage data list` — list the data for a Cloud Composer environment
+- `gcloud composer environments storage plugins delete` — delete plugins from an Cloud Composer environment's Cloud Storage bucket
+- `gcloud composer environments storage plugins export` — export plugins from an environment into local storage or Cloud Storage
+- `gcloud composer environments storage plugins import` — import plugins from local storage or Cloud Storage into an environment
+- `gcloud composer environments storage plugins list` — list the plugins for a Cloud Composer environment
+- `gcloud composer environments user-workloads-config-maps create` — create a user workloads ConfigMap
+- `gcloud composer environments user-workloads-config-maps delete` — delete a user workloads ConfigMap
+- `gcloud composer environments user-workloads-config-maps describe` — get details about a user workloads ConfigMap
+- `gcloud composer environments user-workloads-config-maps list` — list user workloads ConfigMaps
+- `gcloud composer environments user-workloads-config-maps update` — update a user workloads ConfigMap
+- `gcloud composer environments user-workloads-secrets create` — create a user workloads Secret
+- `gcloud composer environments user-workloads-secrets delete` — delete a user workloads Secret
+- `gcloud composer environments user-workloads-secrets describe` — get details about a user workloads Secret
+- `gcloud composer environments user-workloads-secrets list` — list user workloads Secrets
+- `gcloud composer environments user-workloads-secrets update` — update a user workloads Secret
+- `gcloud composer operations delete` — delete one or more completed Cloud Composer operations
+- `gcloud composer operations describe` — get details about an asynchronous operation
+- `gcloud composer operations list` — lists environment operations
+- `gcloud composer operations wait` — wait for asynchronous operation to complete

@@ -1,0 +1,152 @@
+# gcloud iam — command index
+
+manage IAM service accounts and keys
+
+- `gcloud iam list-grantable-roles` — list IAM grantable roles for a resource
+- `gcloud iam list-testable-permissions` — list IAM testable permissions for a resource
+- `gcloud iam oauth-clients create` — create an OAuth client
+- `gcloud iam oauth-clients delete` — delete an OAuth client
+- `gcloud iam oauth-clients describe` — describe an OAuth client
+- `gcloud iam oauth-clients list` — list OAuth clients
+- `gcloud iam oauth-clients undelete` — undelete an OAuth client
+- `gcloud iam oauth-clients update` — update an OAuth client
+- `gcloud iam oauth-clients credentials create` — create an OAuth client credential
+- `gcloud iam oauth-clients credentials delete` — delete an OAuth client credential
+- `gcloud iam oauth-clients credentials describe` — describe an OAuth client credential
+- `gcloud iam oauth-clients credentials list` — list OAuth client credentials
+- `gcloud iam oauth-clients credentials update` — update an OAuth client credential
+- `gcloud iam policies create` — create a policy on the given attachment point with the given name
+- `gcloud iam policies delete` — delete a policy on the given attachment point with the given name
+- `gcloud iam policies get` — get a policy on the given attachment point with the given name
+- `gcloud iam policies list` — list the policies on the given attachment point
+- `gcloud iam policies update` — update the policy on the given attachment point with the given name
+- `gcloud iam policy-bindings create` — create PolicyBinding instance
+- `gcloud iam policy-bindings delete` — delete PolicyBinding instance
+- `gcloud iam policy-bindings describe` — get PolicyBinding instance
+- `gcloud iam policy-bindings list` — list PolicyBinding instances
+- `gcloud iam policy-bindings search-target-policy-bindings` — search policy bindings by target
+- `gcloud iam policy-bindings update` — update PolicyBinding instance
+- `gcloud iam principal-access-boundary-policies create` — create PrincipalAccessBoundaryPolicy instance
+- `gcloud iam principal-access-boundary-policies delete` — delete PrincipalAccessBoundaryPolicy instance
+- `gcloud iam principal-access-boundary-policies describe` — get PrincipalAccessBoundaryPolicy instance
+- `gcloud iam principal-access-boundary-policies list` — list PrincipalAccessBoundaryPolicy instances
+- `gcloud iam principal-access-boundary-policies search-policy-bindings` — search Principal Access Boundary Policy Bindings
+- `gcloud iam principal-access-boundary-policies update` — update PrincipalAccessBoundaryPolicy instance
+- `gcloud iam roles copy` — create a role from an existing role
+- `gcloud iam roles create` — create a custom role for a project or an organization
+- `gcloud iam roles delete` — delete a custom role from an organization or a project
+- `gcloud iam roles describe` — show metadata for a role
+- `gcloud iam roles list` — list predefined roles, or the custom roles for an organization or project
+- `gcloud iam roles undelete` — undelete a custom role from an organization or a project
+- `gcloud iam roles update` — update an IAM custom role
+- `gcloud iam service-accounts add-iam-policy-binding` — add an IAM policy binding to an IAM service account
+- `gcloud iam service-accounts create` — create a service account for a project
+- `gcloud iam service-accounts delete` — delete a service account from a project
+- `gcloud iam service-accounts describe` — show metadata for a service account from a project
+- `gcloud iam service-accounts disable` — disable an IAM service account
+- `gcloud iam service-accounts enable` — enable an IAM service account
+- `gcloud iam service-accounts get-iam-policy` — get the IAM policy for a service account
+- `gcloud iam service-accounts list` — list all of a project's service accounts
+- `gcloud iam service-accounts remove-iam-policy-binding` — remove IAM policy binding from a service account
+- `gcloud iam service-accounts set-iam-policy` — set IAM policy for a service account
+- `gcloud iam service-accounts sign-blob` — sign a blob with a managed service account key
+- `gcloud iam service-accounts sign-jwt` — sign a JWT with a managed service account key
+- `gcloud iam service-accounts undelete` — undelete a service account for a project
+- `gcloud iam service-accounts update` — update an IAM service account
+- `gcloud iam service-accounts keys create` — create a service account key
+- `gcloud iam service-accounts keys delete` — delete a service account key
+- `gcloud iam service-accounts keys disable` — disable a service account key
+- `gcloud iam service-accounts keys enable` — enable a service account key
+- `gcloud iam service-accounts keys list` — list the keys for a service account
+- `gcloud iam service-accounts keys upload` — upload a public key for an IAM service account
+- `gcloud iam simulator replay-recent-access` — determine affected recent access attempts before IAM policy change deployment
+- `gcloud iam workforce-pools create` — create a new workforce pool under an organization
+- `gcloud iam workforce-pools create-cred-config` — create a configuration file for generated credentials
+- `gcloud iam workforce-pools create-login-config` — create a login configuration file to enable sign-in via a web-based authorization flow using Workforce Identity Federation
+- `gcloud iam workforce-pools delete` — delete a workforce pool
+- `gcloud iam workforce-pools describe` — describe a workforce pool
+- `gcloud iam workforce-pools get-iam-policy` — get the IAM policy for a workforce pool
+- `gcloud iam workforce-pools list` — list the workforce pools for an organization
+- `gcloud iam workforce-pools set-iam-policy` — set the IAM policy for a workforce pool
+- `gcloud iam workforce-pools undelete` — undelete a workforce pool
+- `gcloud iam workforce-pools update` — update a workforce pool
+- `gcloud iam workforce-pools operations describe` — describe a workforce pool operation
+- `gcloud iam workforce-pools providers create-oidc` — create a new OIDC workforce pool provider
+- `gcloud iam workforce-pools providers create-saml` — create a new SAML workforce pool provider
+- `gcloud iam workforce-pools providers delete` — delete a workforce pool provider
+- `gcloud iam workforce-pools providers describe` — describe a workforce pool provider
+- `gcloud iam workforce-pools providers list` — list workforce pool providers
+- `gcloud iam workforce-pools providers undelete` — undelete a workforce pool provider
+- `gcloud iam workforce-pools providers update-oidc` — update an OIDC workforce pool provider
+- `gcloud iam workforce-pools providers update-saml` — update a new SAML workforce pool provider
+- `gcloud iam workforce-pools providers keys create` — create a new workforce pool provider key
+- `gcloud iam workforce-pools providers keys delete` — delete a workforce pool provider key
+- `gcloud iam workforce-pools providers keys describe` — describe a workforce pool provider key
+- `gcloud iam workforce-pools providers keys list` — list workforce pool provider keys
+- `gcloud iam workforce-pools providers keys undelete` — undelete a workforce pool provider key
+- `gcloud iam workforce-pools providers keys operations describe` — describe a workforce pool provider key operation
+- `gcloud iam workforce-pools providers operations describe` — describe a workforce pool provider operation
+- `gcloud iam workforce-pools providers scim-tenants create` — create an IAM workforce identity pool provider SCIM tenant
+- `gcloud iam workforce-pools providers scim-tenants delete` — delete an IAM workforce identity pool provider SCIM tenant
+- `gcloud iam workforce-pools providers scim-tenants describe` — describe an IAM workforce identity pool provider SCIM tenant
+- `gcloud iam workforce-pools providers scim-tenants list` — list IAM workforce identity pool provider SCIM tenants
+- `gcloud iam workforce-pools providers scim-tenants undelete` — undelete an IAM workforce identity pool provider SCIM tenant
+- `gcloud iam workforce-pools providers scim-tenants update` — update an IAM workforce identity pool provider SCIM tenant
+- `gcloud iam workforce-pools providers scim-tenants tokens create` — create an IAM workforce identity pool provider SCIM tenant token
+- `gcloud iam workforce-pools providers scim-tenants tokens delete` — delete an IAM workforce identity pool provider SCIM tenant token
+- `gcloud iam workforce-pools providers scim-tenants tokens describe` — describe an IAM workforce identity pool provider SCIM tenant token
+- `gcloud iam workforce-pools providers scim-tenants tokens list` — list IAM workforce identity pool provider SCIM tenant tokens
+- `gcloud iam workforce-pools providers scim-tenants tokens undelete` — undelete an IAM workforce identity pool provider SCIM tenant token
+- `gcloud iam workforce-pools providers scim-tenants tokens update` — update an IAM workforce identity pool provider SCIM tenant token
+- `gcloud iam workforce-pools subjects delete` — delete a workforce pool subject
+- `gcloud iam workforce-pools subjects undelete` — undelete a workforce pool subject
+- `gcloud iam workforce-pools subjects operations describe` — describe a workforce pool subject operation
+- `gcloud iam workload-identity-pools add-iam-policy-binding` — add IAM policy binding for a workload identity pool
+- `gcloud iam workload-identity-pools create` — create a new workload identity pool
+- `gcloud iam workload-identity-pools create-cred-config` — create a configuration file for generated credentials
+- `gcloud iam workload-identity-pools delete` — delete a workload identity pool
+- `gcloud iam workload-identity-pools describe` — describe a workload identity pool
+- `gcloud iam workload-identity-pools get-iam-policy` — get the IAM policy for a workload identity pool
+- `gcloud iam workload-identity-pools list` — list workload identity pools
+- `gcloud iam workload-identity-pools remove-iam-policy-binding` — remove IAM policy binding from a workload identity pool
+- `gcloud iam workload-identity-pools set-iam-policy` — set the IAM policy for a workload identity pool
+- `gcloud iam workload-identity-pools undelete` — undelete a workload identity pool
+- `gcloud iam workload-identity-pools update` — update a workload identity pool
+- `gcloud iam workload-identity-pools managed-identities add-attestation-rule` — add an attestation rule on a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities create` — create a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities delete` — delete a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities describe` — describe a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities list` — list workload identity pool managed identities
+- `gcloud iam workload-identity-pools managed-identities list-attestation-rules` — list the attestation rules on a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities remove-attestation-rule` — remove an attestation rule on a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities set-attestation-rules` — set attestation rules on a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities undelete` — undelete a workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities update` — update workload identity pool managed identity
+- `gcloud iam workload-identity-pools managed-identities operations describe` — describe a workload identity pool managed identity operation
+- `gcloud iam workload-identity-pools namespaces create` — create a workload identity pool namespace
+- `gcloud iam workload-identity-pools namespaces delete` — delete a workload identity pool namespace
+- `gcloud iam workload-identity-pools namespaces describe` — describe a workload identity pool namespace
+- `gcloud iam workload-identity-pools namespaces list` — list workload identity pool namespaces
+- `gcloud iam workload-identity-pools namespaces undelete` — undelete a workload identity pool namespace
+- `gcloud iam workload-identity-pools namespaces update` — update workload identity pool namespace
+- `gcloud iam workload-identity-pools namespaces operations describe` — describe a workload identity pool namespace operation
+- `gcloud iam workload-identity-pools operations describe` — describe a workload identity pool operation
+- `gcloud iam workload-identity-pools providers create-aws` — create a new AWS workload identity pool provider
+- `gcloud iam workload-identity-pools providers create-oidc` — create a new OIDC workload identity pool provider
+- `gcloud iam workload-identity-pools providers create-saml` — create a new SAML workload identity pool provider
+- `gcloud iam workload-identity-pools providers create-x509` — create a new X.509 workload identity pool provider
+- `gcloud iam workload-identity-pools providers delete` — delete a workload identity pool provider
+- `gcloud iam workload-identity-pools providers describe` — describe a workload identity pool provider
+- `gcloud iam workload-identity-pools providers list` — list workload identity pool providers
+- `gcloud iam workload-identity-pools providers undelete` — undelete a workload identity pool provider
+- `gcloud iam workload-identity-pools providers update-aws` — update an AWS workload identity pool provider
+- `gcloud iam workload-identity-pools providers update-oidc` — update an OIDC workload identity pool provider
+- `gcloud iam workload-identity-pools providers update-saml` — update a SAML workload identity pool provider
+- `gcloud iam workload-identity-pools providers update-x509` — update an X.509 workload identity pool provider
+- `gcloud iam workload-identity-pools providers keys create` — create a new workload identity pool provider key
+- `gcloud iam workload-identity-pools providers keys delete` — delete a workload identity pool provider key
+- `gcloud iam workload-identity-pools providers keys describe` — describe a workload identity pool provider key
+- `gcloud iam workload-identity-pools providers keys list` — list workload identity pool provider keys
+- `gcloud iam workload-identity-pools providers keys undelete` — undelete a workload identity pool provider key
+- `gcloud iam workload-identity-pools providers keys operations describe` — describe a workload identity pool provider key operation
+- `gcloud iam workload-identity-pools providers operations describe` — describe a workload identity pool provider operation

@@ -1,0 +1,83 @@
+# gcloud dataproc — command index
+
+create and manage Google Cloud Dataproc clusters and jobs
+
+- `gcloud dataproc autoscaling-policies delete` — delete an autoscaling policy
+- `gcloud dataproc autoscaling-policies describe` — describe an autoscaling policy
+- `gcloud dataproc autoscaling-policies export` — export an autoscaling policy
+- `gcloud dataproc autoscaling-policies get-iam-policy` — get IAM policy for an autoscaling policy
+- `gcloud dataproc autoscaling-policies import` — import an autoscaling policy
+- `gcloud dataproc autoscaling-policies list` — list autoscaling policies
+- `gcloud dataproc autoscaling-policies set-iam-policy` — set IAM policy for an autoscaling policy
+- `gcloud dataproc batches cancel` — cancel a batch job without removing batch resources
+- `gcloud dataproc batches delete` — delete a batch job
+- `gcloud dataproc batches describe` — describe a batch job
+- `gcloud dataproc batches list` — list batch jobs in a project
+- `gcloud dataproc batches wait` — view the output of a batch as it runs or after it completes
+- `gcloud dataproc batches submit pyspark` — submit a PySpark batch job
+- `gcloud dataproc batches submit spark` — submit a Spark batch job
+- `gcloud dataproc batches submit spark-r` — submit a Spark R batch job
+- `gcloud dataproc batches submit spark-sql` — submit a Spark SQL batch job
+- `gcloud dataproc clusters create` — create a cluster
+- `gcloud dataproc clusters delete` — delete a cluster
+- `gcloud dataproc clusters describe` — view the details of a cluster
+- `gcloud dataproc clusters diagnose` — run a detailed diagnostic on a cluster
+- `gcloud dataproc clusters export` — export a cluster
+- `gcloud dataproc clusters get-iam-policy` — get IAM policy for a cluster
+- `gcloud dataproc clusters import` — import a cluster
+- `gcloud dataproc clusters list` — view a list of clusters in a project
+- `gcloud dataproc clusters set-iam-policy` — set IAM policy for a cluster
+- `gcloud dataproc clusters start` — start a cluster
+- `gcloud dataproc clusters stop` — stop a cluster
+- `gcloud dataproc clusters update` — update labels and/or the number of worker nodes in a cluster
+- `gcloud dataproc clusters gke create` — create a GKE-based virtual cluster
+- `gcloud dataproc jobs delete` — delete the record of an inactive job
+- `gcloud dataproc jobs describe` — view the details of a job
+- `gcloud dataproc jobs get-iam-policy` — get IAM policy for a job
+- `gcloud dataproc jobs kill` — kill an active job
+- `gcloud dataproc jobs list` — list jobs in a project
+- `gcloud dataproc jobs set-iam-policy` — set IAM policy for a job
+- `gcloud dataproc jobs update` — update the labels for a job
+- `gcloud dataproc jobs wait` — view the output of a job as it runs or after it completes
+- `gcloud dataproc jobs submit flink` — submit a Flink job to a cluster
+- `gcloud dataproc jobs submit hadoop` — submit a Hadoop job to a cluster
+- `gcloud dataproc jobs submit hive` — submit a Hive job to a cluster
+- `gcloud dataproc jobs submit pig` — submit a Pig job to a cluster
+- `gcloud dataproc jobs submit presto` — submit a Presto job to a cluster
+- `gcloud dataproc jobs submit pyspark` — submit a PySpark job to a cluster
+- `gcloud dataproc jobs submit spark` — submit a Spark job to a cluster
+- `gcloud dataproc jobs submit spark-r` — submit a SparkR job to a cluster
+- `gcloud dataproc jobs submit spark-sql` — submit a Spark SQL job to a cluster
+- `gcloud dataproc jobs submit trino` — submit a Trino job to a cluster
+- `gcloud dataproc node-groups describe` — describe the node group
+- `gcloud dataproc node-groups resize` — resize the number of nodes in the node group
+- `gcloud dataproc operations cancel` — cancel an active operation
+- `gcloud dataproc operations delete` — delete the record of an inactive operation
+- `gcloud dataproc operations describe` — view the details of an operation
+- `gcloud dataproc operations get-iam-policy` — get IAM policy for an operation
+- `gcloud dataproc operations list` — view the list of all operations
+- `gcloud dataproc operations set-iam-policy` — set IAM policy for an operation
+- `gcloud dataproc workflow-templates create` — create a workflow template
+- `gcloud dataproc workflow-templates delete` — delete a workflow template
+- `gcloud dataproc workflow-templates describe` — describe a workflow template
+- `gcloud dataproc workflow-templates export` — export a workflow template
+- `gcloud dataproc workflow-templates get-iam-policy` — get IAM policy for a workflow template
+- `gcloud dataproc workflow-templates import` — import a workflow template
+- `gcloud dataproc workflow-templates instantiate` — instantiate a workflow template
+- `gcloud dataproc workflow-templates instantiate-from-file` — instantiate a workflow template from a file
+- `gcloud dataproc workflow-templates list` — list workflow templates
+- `gcloud dataproc workflow-templates remove-dag-timeout` — remove DAG timeout from a workflow template
+- `gcloud dataproc workflow-templates remove-job` — remove a job from workflow template
+- `gcloud dataproc workflow-templates set-cluster-selector` — set cluster selector for the workflow template
+- `gcloud dataproc workflow-templates set-dag-timeout` — set DAG timeout on a workflow template
+- `gcloud dataproc workflow-templates set-iam-policy` — set IAM policy for a template
+- `gcloud dataproc workflow-templates set-managed-cluster` — set a managed cluster for the workflow template
+- `gcloud dataproc workflow-templates add-job hadoop` — add a hadoop job to the workflow template
+- `gcloud dataproc workflow-templates add-job hive` — add a Hive job to the workflow template
+- `gcloud dataproc workflow-templates add-job pig` — add a Pig job to the workflow template
+- `gcloud dataproc workflow-templates add-job presto` — add a Presto job to the workflow template
+- `gcloud dataproc workflow-templates add-job pyspark` — add a PySpark job to the workflow template
+- `gcloud dataproc workflow-templates add-job spark` — add a Spark job to the workflow template
+- `gcloud dataproc workflow-templates add-job spark-r` — add a SparkR job to the workflow template
+- `gcloud dataproc workflow-templates add-job spark-sql` — add a SparkSql job to the workflow template
+- `gcloud dataproc workflow-templates add-job trino` — add a Trino job to the workflow template

@@ -1,0 +1,83 @@
+# gcloud kms — command index
+
+manage cryptographic keys in the cloud
+
+- `gcloud kms asymmetric-decrypt` — decrypt an input file using an asymmetric-encryption key version
+- `gcloud kms asymmetric-sign` — sign a user input file using an asymmetric-signing key version
+- `gcloud kms decapsulate` — decapsulate an input file using a key-encapsulation key version
+- `gcloud kms decrypt` — decrypt a ciphertext file using a Cloud KMS key
+- `gcloud kms encrypt` — encrypt a plaintext file using a key
+- `gcloud kms mac-sign` — sign a user input file using a MAC key version
+- `gcloud kms mac-verify` — verify a user signature file using a MAC key version
+- `gcloud kms raw-decrypt` — decrypt a ciphertext file using a raw key
+- `gcloud kms raw-encrypt` — encrypt a plaintext file using a raw key
+- `gcloud kms autokey-config describe` — describe the AutokeyConfig of a folder
+- `gcloud kms autokey-config show-effective-config` — gets the effective Cloud KMS AutokeyConfig for a given project
+- `gcloud kms autokey-config update` — updates the AutokeyConfig for a folder
+- `gcloud kms ekm-config add-iam-policy-binding` — add IAM policy binding to an EkmConfig
+- `gcloud kms ekm-config describe` — describe the EkmConfig
+- `gcloud kms ekm-config get-iam-policy` — get the IAM policy for an EkmConfig
+- `gcloud kms ekm-config remove-iam-policy-binding` — remove IAM policy binding from an EkmConfig
+- `gcloud kms ekm-config set-iam-policy` — set the IAM policy for an EkmConfig
+- `gcloud kms ekm-config update` — update the EkmConfig
+- `gcloud kms ekm-connections add-iam-policy-binding` — add IAM policy binding for a kms ekm connection
+- `gcloud kms ekm-connections create` — create a new ekm connection
+- `gcloud kms ekm-connections describe` — get metadata for an ekmconnection
+- `gcloud kms ekm-connections get-iam-policy` — get the IAM policy for an ekm connection
+- `gcloud kms ekm-connections list` — list ekmconnections within a location
+- `gcloud kms ekm-connections remove-iam-policy-binding` — remove IAM policy binding for a kms ekm connection
+- `gcloud kms ekm-connections set-iam-policy` — set the IAM policy binding for a KMS ekm connection
+- `gcloud kms ekm-connections update` — update an ekmconnection
+- `gcloud kms import-jobs add-iam-policy-binding` — add IAM policy binding to a KMS import job
+- `gcloud kms import-jobs create` — create a new import job
+- `gcloud kms import-jobs describe` — get metadata for a given import job
+- `gcloud kms import-jobs get-iam-policy` — get the IAM policy for an import job
+- `gcloud kms import-jobs list` — lists import jobs within a keyring
+- `gcloud kms import-jobs remove-iam-policy-binding` — remove IAM policy binding for a KMS import job
+- `gcloud kms import-jobs set-iam-policy` — set the IAM policy binding for a KMS import job
+- `gcloud kms inventory get-protected-resources-summary` — gets the protected resources summary
+- `gcloud kms inventory list-keys` — lists the keys in a project
+- `gcloud kms inventory search-protected-resources` — searches the resources protected by a key
+- `gcloud kms key-handles create` — create a new KeyHandle
+- `gcloud kms key-handles describe` — get metadata for a KeyHandle
+- `gcloud kms key-handles list` — list KeyHandle resources within a project and location
+- `gcloud kms keyrings add-iam-policy-binding` — add IAM policy binding for a kms keyring
+- `gcloud kms keyrings create` — create a new keyring
+- `gcloud kms keyrings describe` — get metadata for a keyring
+- `gcloud kms keyrings get-iam-policy` — get the IAM policy for a keyring
+- `gcloud kms keyrings list` — list keyrings within a location
+- `gcloud kms keyrings remove-iam-policy-binding` — remove IAM policy binding for a kms keyring
+- `gcloud kms keyrings set-iam-policy` — set the IAM policy for a keyring
+- `gcloud kms keys add-iam-policy-binding` — add IAM policy binding for a kms key
+- `gcloud kms keys create` — create a new key
+- `gcloud kms keys describe` — get metadata for a given key
+- `gcloud kms keys get-iam-policy` — get the IAM policy for a key
+- `gcloud kms keys list` — list the keys within a keyring
+- `gcloud kms keys remove-iam-policy-binding` — remove IAM policy binding for a kms key
+- `gcloud kms keys remove-rotation-schedule` — remove the rotation schedule for a key
+- `gcloud kms keys set-iam-policy` — set the IAM policy for a key
+- `gcloud kms keys set-primary-version` — set the primary version of a key
+- `gcloud kms keys set-rotation-schedule` — update the rotation schedule for a key
+- `gcloud kms keys update` — update a key
+- `gcloud kms keys versions create` — create a new version
+- `gcloud kms keys versions describe` — get metadata for a given version
+- `gcloud kms keys versions destroy` — schedule a version to be destroyed
+- `gcloud kms keys versions disable` — disable a given version
+- `gcloud kms keys versions enable` — enable a given version
+- `gcloud kms keys versions get-certificate-chain` — get a certificate chain for a given version
+- `gcloud kms keys versions get-public-key` — get the public key for a given version
+- `gcloud kms keys versions import` — import a version into an existing crypto key
+- `gcloud kms keys versions list` — list the versions within a key
+- `gcloud kms keys versions restore` — restore a version scheduled for destruction
+- `gcloud kms keys versions update` — update a key version
+- `gcloud kms locations list` — list the project's locations
+- `gcloud kms operations describe` — view the details of an operation
+- `gcloud kms single-tenant-hsm create` — create a single tenant HSM instance
+- `gcloud kms single-tenant-hsm describe` — get metadata for a single tenant HSM instance
+- `gcloud kms single-tenant-hsm list` — list single tenant HSM instances within a location
+- `gcloud kms single-tenant-hsm proposal approve` — approve a single tenant HSM instance proposal
+- `gcloud kms single-tenant-hsm proposal create` — create a single tenant HSM instance proposal
+- `gcloud kms single-tenant-hsm proposal delete` — delete a single tenant HSM instance proposal
+- `gcloud kms single-tenant-hsm proposal describe` — get metadata for a single tenant HSM instance proposal
+- `gcloud kms single-tenant-hsm proposal execute` — executes a single tenant HSM proposal
+- `gcloud kms single-tenant-hsm proposal list` — list single tenant HSM instance proposals within a single tenant HSM instance

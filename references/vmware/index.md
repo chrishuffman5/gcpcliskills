@@ -1,0 +1,91 @@
+# gcloud vmware — command index
+
+manage Google Cloud VMware Engine resources
+
+- `gcloud vmware announcements list` — list announcements in a Google Cloud VMware Engine
+- `gcloud vmware datastores create` — create a datastore
+- `gcloud vmware datastores delete` — delete a datastore
+- `gcloud vmware datastores describe` — describe a datastore
+- `gcloud vmware datastores list` — list datastores
+- `gcloud vmware datastores update` — update a datastore
+- `gcloud vmware dns-bind-permission describe` — get all users and service accounts having bind permission
+- `gcloud vmware dns-bind-permission grant` — grants a DNS Bind Permission
+- `gcloud vmware dns-bind-permission revoke` — revokes a DNS Bind Permission
+- `gcloud vmware locations list` — list Google Cloud VMware Engine locations
+- `gcloud vmware network-peerings create` — create a VMware Engine VPC network peering
+- `gcloud vmware network-peerings delete` — delete a Google Cloud VMware Engine VPC network peering
+- `gcloud vmware network-peerings describe` — describe a Google Cloud VMware Engine VPC network peering
+- `gcloud vmware network-peerings list` — list Google Cloud VMware Engine VPC network peerings
+- `gcloud vmware network-peerings update` — update a Google Cloud VMware Engine VPC network peering
+- `gcloud vmware network-peerings routes list` — list Google Cloud VMware Engine VPC network peering routes
+- `gcloud vmware network-policies create` — create a VMware Engine network policy
+- `gcloud vmware network-policies delete` — delete a VMware Engine network policy
+- `gcloud vmware network-policies describe` — describe a VMware Engine network policy
+- `gcloud vmware network-policies list` — list VMware Engine network policies
+- `gcloud vmware network-policies update` — update a VMware Engine network policy
+- `gcloud vmware network-policies external-access-rules create` — create a VMware Engine external access firewall rule
+- `gcloud vmware network-policies external-access-rules delete` — delete a VMware Engine external access rule
+- `gcloud vmware network-policies external-access-rules describe` — describe a VMware Engine external access rule
+- `gcloud vmware network-policies external-access-rules list` — list VMware Engine external access rules
+- `gcloud vmware network-policies external-access-rules update` — update a VMware Engine network policy
+- `gcloud vmware networks create` — create a Google Cloud VMware Engine network
+- `gcloud vmware networks delete` — delete a Google Cloud VMware Engine network
+- `gcloud vmware networks describe` — describe a Google Cloud VMware Engine network
+- `gcloud vmware networks list` — list Google Cloud VMware Engine networks
+- `gcloud vmware networks update` — update a Google Cloud VMware Engine network
+- `gcloud vmware node-types describe` — display data associated with a Google Cloud VMware Engine node type
+- `gcloud vmware node-types list` — list supported Google Cloud VMware Engine node types
+- `gcloud vmware operations describe` — describe a Google Cloud VMware Engine operation
+- `gcloud vmware operations list` — list Google Cloud VMware Engine operations
+- `gcloud vmware private-clouds create` — create a VMware Engine private cloud
+- `gcloud vmware private-clouds delete` — delete a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds delete-now` — permanent deletion of a Google Cloud VMware Engine private cloud currently in soft-deleted state
+- `gcloud vmware private-clouds describe` — describe a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds list` — list Google Cloud VMware Engine private clouds
+- `gcloud vmware private-clouds undelete` — cancel deletion of a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds update` — update a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds clusters create` — create a Google Cloud VMware Engine cluster
+- `gcloud vmware private-clouds clusters delete` — delete a Google Cloud VMware Engine cluster
+- `gcloud vmware private-clouds clusters describe` — describe a Google Cloud VMware Engine cluster
+- `gcloud vmware private-clouds clusters list` — list clusters in a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds clusters mount-datastore` — mount a datastore to a Google Cloud VMware Engine cluster
+- `gcloud vmware private-clouds clusters unmount-datastore` — unmount a datastore from a Google Cloud VMware Engine cluster
+- `gcloud vmware private-clouds clusters update` — update a Google Cloud VMware Engine cluster
+- `gcloud vmware private-clouds clusters nodes describe` — describe a Google Cloud VMware Engine node
+- `gcloud vmware private-clouds clusters nodes list` — list nodes in a Google Cloud VMware Engine private cloud's cluster
+- `gcloud vmware private-clouds dns-forwarding describe` — describe a Google Cloud VMware Engine dns-forwarding
+- `gcloud vmware private-clouds dns-forwarding update` — update a Google Cloud VMware Engine dns-forwarding
+- `gcloud vmware private-clouds external-addresses create` — create an external IP address
+- `gcloud vmware private-clouds external-addresses delete` — delete external IP address from a VMware Engine private cloud
+- `gcloud vmware private-clouds external-addresses describe` — describe an external IP address in a VMware Engine private cloud
+- `gcloud vmware private-clouds external-addresses list` — list external IP addresses in a VMware Engine private cloud
+- `gcloud vmware private-clouds external-addresses update` — update an external IP address in a VMware Engine private cloud
+- `gcloud vmware private-clouds hcx activationkeys create` — create a Google Cloud VMware HCX activation key
+- `gcloud vmware private-clouds hcx activationkeys describe` — describe a Google Cloud VMware HCX activation key
+- `gcloud vmware private-clouds hcx activationkeys list` — list HCX activation keys in a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds logging-servers create` — create a Google Cloud VMware Engine logging-server
+- `gcloud vmware private-clouds logging-servers delete` — delete logging-server from a VMware Engine private cloud
+- `gcloud vmware private-clouds logging-servers describe` — describe a Google Cloud VMware Engine logging-server
+- `gcloud vmware private-clouds logging-servers list` — list logging-server in a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds logging-servers update` — update a Google Cloud VMware Engine logging-server
+- `gcloud vmware private-clouds management-dns-zone-bindings create` — create a management DNS zone binding
+- `gcloud vmware private-clouds management-dns-zone-bindings delete` — delete a management DNS zone binding
+- `gcloud vmware private-clouds management-dns-zone-bindings describe` — describe a management DNS zone binding
+- `gcloud vmware private-clouds management-dns-zone-bindings list` — list management DNS zone bindings in a VMware Engine private cloud
+- `gcloud vmware private-clouds management-dns-zone-bindings repair` — repair a management DNS zone binding
+- `gcloud vmware private-clouds management-dns-zone-bindings update` — update a management DNS zone binding
+- `gcloud vmware private-clouds nsx credentials describe` — retrieve VMware NSX sign-in credentials associated with a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds nsx credentials reset` — reset VMware NSX sign-in credentials associated with a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds subnets describe` — describe a subnet in a VMware Engine private cloud
+- `gcloud vmware private-clouds subnets list` — list subnets in a VMware Engine private cloud
+- `gcloud vmware private-clouds subnets update` — update a subnet
+- `gcloud vmware private-clouds upgrades describe` — describe a Google Cloud VMware Engine upgrades
+- `gcloud vmware private-clouds upgrades list` — list upgrades for a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-clouds vcenter credentials describe` — describe Google Cloud VMware Engine vCenter credentials
+- `gcloud vmware private-clouds vcenter credentials reset` — reset VMware vCenter sign-in credentials associated with a Google Cloud VMware Engine private cloud
+- `gcloud vmware private-connections create` — create a Google Cloud Private Connection
+- `gcloud vmware private-connections delete` — delete a Google Cloud Private Connection
+- `gcloud vmware private-connections describe` — describe a Google Cloud Private Connection
+- `gcloud vmware private-connections list` — list Google Cloud Private Connections
+- `gcloud vmware private-connections update` — update a Google Cloud Private Connection
+- `gcloud vmware private-connections routes list` — list Google Cloud private connection peering routes

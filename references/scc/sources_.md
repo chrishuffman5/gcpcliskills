@@ -1,0 +1,56 @@
+# gcloud scc sources
+
+manage Cloud SCC (Security Command Center) finding sources
+
+### `gcloud scc sources describe`
+
+Describe a source given its display name or source id
+
+Describe a source given its display name or source id.
+
+**Synopsis:**
+```
+gcloud scc sources describe [PARENT]
+    (--source=SOURCE | --source-display-name=SOURCE_DISPLAY_NAME)
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Parent resource - parent organization, folder, or project in the Google
+Cloud resource hierarchy to be used for the gcloud scc command. Specify
+the argument as either [RESOURCE_TYPE/RESOURCE_ID] or [RESOURCE_ID], as
+shown in the preceding examples. This represents a Cloud resource.
+
+  [PARENT]
+     ID of the parent or fully qualified identifier for the parent.
+
+     To set the parent attribute:
+     + provide the argument parent on the command line;
+     + Set the parent property in configuration using gcloud config set
+       scc/parent if it is not specified in command line.
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--source` | SOURCE |  | _[Exactly one of these must be specified:]_ Cloud SCC specific source. It's derived from the the source's relative resource name. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name. For Example: For the given source name: "organizations/123/sources/456", 456 represents source id. |
+| `--source-display-name` | SOURCE_DISPLAY_NAME |  | _[Exactly one of these must be specified:]_ Source's display name must be unique amongst its siblings, for example, two sources with the same parent can't share the same display name. Display name must start and end with a letter or digit, may contain letters, digits, spaces, hyphens, and underscores, and can be no longer than 32 characters. This is captured by the regular expression: [\p{L}\p{N}]({\p{L}\p{N}- ]{0,30}[\p{L}\p{N}])?. For example: 'Cloud Security Scanner' is the source display name. |
+
+
+**Examples:**
+```bash
+Describe source with display name Security Scanner:
+
+    $ gcloud scc sources describe 123456 \
+        --source-display-name="Security Scanner"
+
+Describe source with source id '5678':
+
+    $ gcloud scc sources describe 123456 --source=5678
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/scc/sources/describe)
+
+---

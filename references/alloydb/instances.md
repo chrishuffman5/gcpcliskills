@@ -1,0 +1,564 @@
+# gcloud alloydb instances
+
+provide commands for managing AlloyDB instances
+
+### `gcloud alloydb instances create`
+
+Creates a new AlloyDB instance within a given cluster
+
+Creates a new AlloyDB instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances create INSTANCE --cluster=CLUSTER
+    --instance-type=INSTANCE_TYPE --region=REGION
+    [--allocated-ip-range-override=ALLOCATED_IP_RANGE_OVERRIDE]
+    [--allowed-psc-projects=[ALLOWED_PSC_PROJECTS,...]]
+    [--assign-inbound-public-ip=ASSIGN_INBOUND_PUBLIC_IP] [--async]
+    [--authorized-external-networks=[AUTHORIZED_NETWORK,...]]
+    [--availability-type=AVAILABILITY_TYPE]
+    [--connection-pooling-client-connection-idle-timeout=CONNECTION_POOLING_CLIENT_CONNECTION_IDLE_TIMEOUT]
+    [--connection-pooling-ignore-startup-parameters=[STARTUP_PARAMETERS,
+      ...]]
+    [--connection-pooling-max-client-connections=CONNECTION_POOLING_MAX_CLIENT_CONNECTIONS]
+    [--connection-pooling-max-pool-size=CONNECTION_POOLING_MAX_POOL_SIZE]
+    [--connection-pooling-max-prepared-statements=CONNECTION_POOLING_MAX_PREPARED_STATEMENTS]
+    [--connection-pooling-min-pool-size=CONNECTION_POOLING_MIN_POOL_SIZE]
+    [--connection-pooling-pool-mode=CONNECTION_POOLING_POOL_MODE]
+    [--connection-pooling-query-wait-timeout=CONNECTION_POOLING_QUERY_WAIT_TIMEOUT]
+    [--connection-pooling-server-idle-timeout=CONNECTION_POOLING_SERVER_IDLE_TIMEOUT]
+    [--connection-pooling-server-lifetime=CONNECTION_POOLING_SERVER_LIFETIME]
+    [--connection-pooling-stats-users=[STATS_USERS,...]]
+    [--cpu-count=CPU_COUNT] [--database-flags=FLAG=VALUE,[FLAG=VALUE,...]]
+    [--[no-]enable-connection-pooling]
+    [--insights-config-query-plans-per-minute=INSIGHTS_CONFIG_QUERY_PLANS_PER_MINUTE]
+    [--insights-config-query-string-length=INSIGHTS_CONFIG_QUERY_STRING_LENGTH]
+    [--[no-]insights-config-record-application-tags]
+    [--[no-]insights-config-record-client-address]
+    [--machine-type=MACHINE_TYPE] [--[no-]outbound-public-ip]
+    [--psc-auto-connections=[network=NETWORK],[project=PROJECT]]
+    [--psc-network-attachment-uri=PSC_NETWORK_ATTACHMENT_URI]
+    [--read-pool-node-count=READ_POOL_NODE_COUNT]
+    [--[no-]require-connectors]
+    [--ssl-mode=SSL_MODE; default="ENCRYPTED_ONLY"] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--instance-type` | one of: PRIMARY PRIMARY instances support read and write operations |  | Specifies instance type. INSTANCE_TYPE must be one of: PRIMARY PRIMARY instances support read and write operations. READ_POOL READ_POOL instances support read operations only. Each read pool instance consists of one or more homogeneous nodes. * Read pool of size 1 can only have zonal availability. * Read pools with node count of 2 or more can have regional availability (nodes are present in 2 or more zones in a region). |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--allocated-ip-range-override` | ALLOCATED_IP_RANGE_OVERRIDE |  | Name of the allocated IP range for the private IP AlloyDB instance, for example: "google-managed-services-default". If set, the instance IPs will be created from this allocated range and will override the IP range used by the parent cluster. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?. |
+| `--allowed-psc-projects` | [ALLOWED_PSC_PROJECTS,...] |  | Comma-separated list of allowed consumer projects to create endpoints for Private Service Connect (PSC) connectivity for the instance. Only instances in PSC-enabled clusters are allowed to set this field.(e.g., --allowed-psc-projects=project1,12345678,project2) |
+| `--assign-inbound-public-ip` | one of: * NO_PUBLIC_IP + This disables public IP on the instance |  | Specify to enable or disable public IP on an instance. ASSIGN_INBOUND_PUBLIC_IP must be one of: * NO_PUBLIC_IP + This disables public IP on the instance. Updating an instance to disable public IP will clear the list of authorized networks. * ASSIGN_IPV4 + Assign an inbound public IPv4 address for the instance. Public IP is enabled. |
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+| `--authorized-external-networks` | [AUTHORIZED_NETWORK,...] |  | Comma-separated list of authorized external networks to set on the instance. Authorized networks should use CIDR notation (e.g. 1.2.3.4/30). This flag is only allowed to be set for instances with public IP enabled. |
+| `--availability-type` | one of: REGIONAL Provide high availability instances |  | Specifies level of availability. AVAILABILITY_TYPE must be one of: REGIONAL Provide high availability instances. Recommended for production instances; instances automatically fail over to another zone within your selected region. ZONAL Provide zonal availability instances. Not recommended for production instances; instance does not automatically fail over to another zone. |
+| `--connection-pooling-client-connection-idle-timeout` | CONNECTION_POOLING_CLIENT_CONNECTION_IDLE_TIMEOUT |  | The maximum number of seconds a client is allowed to be idle before it is disconnected. |
+| `--connection-pooling-ignore-startup-parameters` | [STARTUP_PARAMETERS,...] |  | Comma-separated list of startup parameters that should be ignored by the connection pool. |
+| `--connection-pooling-max-client-connections` | CONNECTION_POOLING_MAX_CLIENT_CONNECTIONS |  | The max client connections for managed connection pooling. |
+| `--connection-pooling-max-pool-size` | CONNECTION_POOLING_MAX_POOL_SIZE |  | The max pool size for managed connection pooling. |
+| `--connection-pooling-max-prepared-statements` | CONNECTION_POOLING_MAX_PREPARED_STATEMENTS |  | The maximum number of prepared statements allowed. |
+| `--connection-pooling-min-pool-size` | CONNECTION_POOLING_MIN_POOL_SIZE |  | The min pool size for managed connection pooling. |
+| `--connection-pooling-pool-mode` | one of: SESSION Session mode for managed connection pooling |  | The pool mode for managed connection pooling. CONNECTION_POOLING_POOL_MODE must be one of: SESSION Session mode for managed connection pooling. TRANSACTION Transaction mode for managed connection pooling. |
+| `--connection-pooling-query-wait-timeout` | CONNECTION_POOLING_QUERY_WAIT_TIMEOUT |  | The query wait timeout for managed connection pooling. |
+| `--connection-pooling-server-idle-timeout` | CONNECTION_POOLING_SERVER_IDLE_TIMEOUT |  | The server idle timeout for managed connection pooling. |
+| `--connection-pooling-server-lifetime` | CONNECTION_POOLING_SERVER_LIFETIME |  | The lifetime of a server connection in seconds. The pooler will close an unused (not currently linked to any client connection) server connection that has been connected longer than this. Setting it to 0 means the connection is to be used only once, then closed. |
+| `--connection-pooling-stats-users` | [STATS_USERS,...] |  | Comma-separated list of database users to access connection pooling stats. |
+| `--cpu-count` | one of: 1, 2, 4, 8, 14, 16, 22, 32, 44, 48, 64, 72, 88, 96, 128, 144, 192, 288 |  | Whole number value indicating how many vCPUs the machine should contain. If the instance does not have a machine-type, the vCPU count will be used to determine the machine type where each vCPU corresponds to an N2 high-mem machine: (https://cloud.google.com/compute/docs/general-purpose-machines#n2_machine_types). where CPU_COUNT can be one of: 2, 4, 8, 16, 32, 64, 96, 128. If the instance has a machine-type, cpu-count must have the same value as the vCPU count in the machine-type. Eg: if machine-type is c4a-highmem-4-lssd, cpu-count must be 4. CPU_COUNT must be one of: 1, 2, 4, 8, 14, 16, 22, 32, 44, 48, 64, 72, 88, 96, 128, 144, 192, 288. |
+| `--database-flags` | FLAG=VALUE,[FLAG=VALUE,...] |  | Comma-separated list of database flags to set on the instance. Use an equals sign to separate flag name and value. Flags without values, like skip_grant_tables, can be written out without a value after, e.g., skip_grant_tables=. Use on/off for booleans. View the Instance Resource API for allowed flags. (e.g., --database-flags max_allowed_packet=55555,skip_grant_tables=,log_output=1) |
+| `--[no-]enable-connection-pooling` |  |  | Enable connection pooling for the instance. Use --enable-connection-pooling to enable and --no-enable-connection-pooling to disable. |
+| `--insights-config-query-plans-per-minute` | INSIGHTS_CONFIG_QUERY_PLANS_PER_MINUTE |  | Number of query plans to sample every minute. Default value is 5. Allowed range: 0 to 20. |
+| `--insights-config-query-string-length` | INSIGHTS_CONFIG_QUERY_STRING_LENGTH |  | Query string length in bytes to be stored by the query insights feature. Default length is 1024 bytes. Allowed range: 256 to 4500 bytes. |
+| `--[no-]insights-config-record-application-tags` |  |  | Allow application tags to be recorded by the query insights feature. Use --insights-config-record-application-tags to enable and --no-insights-config-record-application-tags to disable. |
+| `--[no-]insights-config-record-client-address` |  |  | Allow the client address to be recorded by the query insights feature. Use --insights-config-record-client-address to enable and --no-insights-config-record-client-address to disable. |
+| `--machine-type` | one of: n2-highmem-2, n2-highmem-4, n2-highmem-8, n2-highmem-16, n2-highmem-32, n2-highmem-64, n2-highmem-96, n2-highmem-128, c4a-highmem-1, c4a-highmem-4-lssd, c4a-highmem-8-lssd, c4a-highmem-16-lssd, c4a-highmem-32-lssd, c4a-highmem-48-lssd, c4a-highmem-64-lssd, c4a-highmem-72-lssd, c4-highmem-4-lssd, c4-highmem-8-lssd, c4-highmem-16-lssd, c4-highmem-24-lssd, c4-highmem-32-lssd, c4-highmem-48-lssd, c4-highmem-96-lssd, c4-highmem-144-lssd, c4-highmem-192-lssd, c4-highmem-288-lssd, z3-highmem-14-standardlssd, z3-highmem-22-standardlssd, z3-highmem-44-standardlssd, z3-highmem-88-standardlssd, z3-highmem-8-highlssd, z3-highmem-16-highlssd, z3-highmem-22-highlssd, z3-highmem-32-highlssd, z3-highmem-44-highlssd |  | Specifies machine type for the instance. MACHINE_TYPE must be one of: n2-highmem-2, n2-highmem-4, n2-highmem-8, n2-highmem-16, n2-highmem-32, n2-highmem-64, n2-highmem-96, n2-highmem-128, c4a-highmem-1, c4a-highmem-4-lssd, c4a-highmem-8-lssd, c4a-highmem-16-lssd, c4a-highmem-32-lssd, c4a-highmem-48-lssd, c4a-highmem-64-lssd, c4a-highmem-72-lssd, c4-highmem-4-lssd, c4-highmem-8-lssd, c4-highmem-16-lssd, c4-highmem-24-lssd, c4-highmem-32-lssd, c4-highmem-48-lssd, c4-highmem-96-lssd, c4-highmem-144-lssd, c4-highmem-192-lssd, c4-highmem-288-lssd, z3-highmem-14-standardlssd, z3-highmem-22-standardlssd, z3-highmem-44-standardlssd, z3-highmem-88-standardlssd, z3-highmem-8-highlssd, z3-highmem-16-highlssd, z3-highmem-22-highlssd, z3-highmem-32-highlssd, z3-highmem-44-highlssd. |
+| `--[no-]outbound-public-ip` |  |  | Add outbound Public IP connectivity to an AlloyDB instance. Use --outbound-public-ip to enable and --no-outbound-public-ip to disable. |
+| `--psc-auto-connections` | [network=NETWORK],[project=PROJECT] |  | Comma-separated list of consumer project and consumer network pairs to create endpoints for Private Service Connect (PSC) connectivity for the instance. Only instances in PSC-enabled clusters are allowed to set this field. Both project and network must be specified. (e.g., --psc-auto-connections=project=project1,network=projects/vpc-host-project1/global/networks/network1 --psc-auto-connections=project=project2,network=projects/vpc-host-project2/global/networks/network2). Sets psc_auto_connections value. network Required, sets network value. project Required, sets project value. Shorthand Example: --psc-auto-connections=network=string,project=string JSON Example: --psc-auto-connections='{"network": "string", "project": "string"}' File Example: --psc-auto-connections=path_to_file.(yaml\|json) |
+| `--psc-network-attachment-uri` | PSC_NETWORK_ATTACHMENT_URI |  | Full URI of the network attachment that is configured to support outbound connectivity from an AlloyDB instance which uses Private Service Connect (PSC). For example, this would be of the form:psc-network-attachment-uri=projects/test-project/regions/us-central1/networkAttachments/my-na |
+| `--read-pool-node-count` | READ_POOL_NODE_COUNT |  | Read capacity, i.e. number of nodes in a read pool instance. |
+| `--[no-]require-connectors` |  |  | Enable or disable enforcing connectors only (ex: AuthProxy) connections to the database. Use --require-connectors to enable and --no-require-connectors to disable. |
+| `--ssl-mode` | one of: ALLOW_UNENCRYPTED_AND_ENCRYPTED SSL connections are optional | ENCRYPTED_ONLY | Specify the SSL mode to use when the instance connects to the database. Default SSL mode is ENCRYPTED_ONLY. SSL_MODE must be one of: ALLOW_UNENCRYPTED_AND_ENCRYPTED SSL connections are optional. CA verification is not enforced. ENCRYPTED_ONLY SSL connections are required. CA verification is not enforced. |
+
+
+**Examples:**
+```bash
+To create a new primary instance, run:
+
+    $ gcloud alloydb instances create my-instance --cluster=my-cluster \
+        --region=us-central1 --instance-type=PRIMARY --cpu-count=4
+
+To create a new read pool instance, run:
+
+    $ gcloud alloydb instances create my-instance --cluster=my-cluster \
+        --region=us-central1 --instance-type=READ_POOL \
+        --read-pool-node-count=1 --cpu-count=4
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/create)
+
+---
+### `gcloud alloydb instances create-secondary`
+
+Creates a new AlloyDB SECONDARY instance within a given cluster
+
+Creates a new AlloyDB SECONDARY instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances create-secondary INSTANCE --cluster=CLUSTER
+    --region=REGION
+    [--allocated-ip-range-override=ALLOCATED_IP_RANGE_OVERRIDE]
+    [--allowed-psc-projects=[ALLOWED_PSC_PROJECTS,...]]
+    [--assign-inbound-public-ip=ASSIGN_INBOUND_PUBLIC_IP] [--async]
+    [--authorized-external-networks=[AUTHORIZED_NETWORK,...]]
+    [--availability-type=AVAILABILITY_TYPE]
+    [--connection-pooling-client-connection-idle-timeout=CONNECTION_POOLING_CLIENT_CONNECTION_IDLE_TIMEOUT]
+    [--connection-pooling-ignore-startup-parameters=[STARTUP_PARAMETERS,
+      ...]]
+    [--connection-pooling-max-client-connections=CONNECTION_POOLING_MAX_CLIENT_CONNECTIONS]
+    [--connection-pooling-max-pool-size=CONNECTION_POOLING_MAX_POOL_SIZE]
+    [--connection-pooling-max-prepared-statements=CONNECTION_POOLING_MAX_PREPARED_STATEMENTS]
+    [--connection-pooling-min-pool-size=CONNECTION_POOLING_MIN_POOL_SIZE]
+    [--connection-pooling-pool-mode=CONNECTION_POOLING_POOL_MODE]
+    [--connection-pooling-query-wait-timeout=CONNECTION_POOLING_QUERY_WAIT_TIMEOUT]
+    [--connection-pooling-server-idle-timeout=CONNECTION_POOLING_SERVER_IDLE_TIMEOUT]
+    [--connection-pooling-server-lifetime=CONNECTION_POOLING_SERVER_LIFETIME]
+    [--connection-pooling-stats-users=[STATS_USERS,...]]
+    [--database-flags=FLAG=VALUE,[FLAG=VALUE,...]]
+    [--[no-]enable-connection-pooling] [--[no-]outbound-public-ip]
+    [--psc-auto-connections=[network=NETWORK],[project=PROJECT]]
+    [--psc-network-attachment-uri=PSC_NETWORK_ATTACHMENT_URI]
+    [--[no-]require-connectors] [--ssl-mode=SSL_MODE]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--allocated-ip-range-override` | ALLOCATED_IP_RANGE_OVERRIDE |  | Name of the allocated IP range for the private IP AlloyDB instance, for example: "google-managed-services-default". If set, the instance IPs will be created from this allocated range and will override the IP range used by the parent cluster. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?. |
+| `--allowed-psc-projects` | [ALLOWED_PSC_PROJECTS,...] |  | Comma-separated list of allowed consumer projects to create endpoints for Private Service Connect (PSC) connectivity for the instance. Only instances in PSC-enabled clusters are allowed to set this field.(e.g., --allowed-psc-projects=project1,12345678,project2) |
+| `--assign-inbound-public-ip` | one of: * NO_PUBLIC_IP + This disables public IP on the instance |  | Specify to enable or disable public IP on an instance. ASSIGN_INBOUND_PUBLIC_IP must be one of: * NO_PUBLIC_IP + This disables public IP on the instance. Updating an instance to disable public IP will clear the list of authorized networks. * ASSIGN_IPV4 + Assign an inbound public IPv4 address for the instance. Public IP is enabled. |
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+| `--authorized-external-networks` | [AUTHORIZED_NETWORK,...] |  | Comma-separated list of authorized external networks to set on the instance. Authorized networks should use CIDR notation (e.g. 1.2.3.4/30). This flag is only allowed to be set for instances with public IP enabled. |
+| `--availability-type` | one of: REGIONAL Provide high availability instances |  | Specifies level of availability. AVAILABILITY_TYPE must be one of: REGIONAL Provide high availability instances. Recommended for production instances; instances automatically fail over to another zone within your selected region. ZONAL Provide zonal availability instances. Not recommended for production instances; instance does not automatically fail over to another zone. |
+| `--connection-pooling-client-connection-idle-timeout` | CONNECTION_POOLING_CLIENT_CONNECTION_IDLE_TIMEOUT |  | The maximum number of seconds a client is allowed to be idle before it is disconnected. |
+| `--connection-pooling-ignore-startup-parameters` | [STARTUP_PARAMETERS,...] |  | Comma-separated list of startup parameters that should be ignored by the connection pool. |
+| `--connection-pooling-max-client-connections` | CONNECTION_POOLING_MAX_CLIENT_CONNECTIONS |  | The max client connections for managed connection pooling. |
+| `--connection-pooling-max-pool-size` | CONNECTION_POOLING_MAX_POOL_SIZE |  | The max pool size for managed connection pooling. |
+| `--connection-pooling-max-prepared-statements` | CONNECTION_POOLING_MAX_PREPARED_STATEMENTS |  | The maximum number of prepared statements allowed. |
+| `--connection-pooling-min-pool-size` | CONNECTION_POOLING_MIN_POOL_SIZE |  | The min pool size for managed connection pooling. |
+| `--connection-pooling-pool-mode` | one of: SESSION Session mode for managed connection pooling |  | The pool mode for managed connection pooling. CONNECTION_POOLING_POOL_MODE must be one of: SESSION Session mode for managed connection pooling. TRANSACTION Transaction mode for managed connection pooling. |
+| `--connection-pooling-query-wait-timeout` | CONNECTION_POOLING_QUERY_WAIT_TIMEOUT |  | The query wait timeout for managed connection pooling. |
+| `--connection-pooling-server-idle-timeout` | CONNECTION_POOLING_SERVER_IDLE_TIMEOUT |  | The server idle timeout for managed connection pooling. |
+| `--connection-pooling-server-lifetime` | CONNECTION_POOLING_SERVER_LIFETIME |  | The lifetime of a server connection in seconds. The pooler will close an unused (not currently linked to any client connection) server connection that has been connected longer than this. Setting it to 0 means the connection is to be used only once, then closed. |
+| `--connection-pooling-stats-users` | [STATS_USERS,...] |  | Comma-separated list of database users to access connection pooling stats. |
+| `--database-flags` | FLAG=VALUE,[FLAG=VALUE,...] |  | Comma-separated list of database flags to set on the instance. Use an equals sign to separate flag name and value. Flags without values, like skip_grant_tables, can be written out without a value after, e.g., skip_grant_tables=. Use on/off for booleans. View the Instance Resource API for allowed flags. (e.g., --database-flags max_allowed_packet=55555,skip_grant_tables=,log_output=1) |
+| `--[no-]enable-connection-pooling` |  |  | Enable connection pooling for the instance. Use --enable-connection-pooling to enable and --no-enable-connection-pooling to disable. |
+| `--[no-]outbound-public-ip` |  |  | Add outbound Public IP connectivity to an AlloyDB instance. Use --outbound-public-ip to enable and --no-outbound-public-ip to disable. |
+| `--psc-auto-connections` | [network=NETWORK],[project=PROJECT] |  | Comma-separated list of consumer project and consumer network pairs to create endpoints for Private Service Connect (PSC) connectivity for the instance. Only instances in PSC-enabled clusters are allowed to set this field. Both project and network must be specified. (e.g., --psc-auto-connections=project=project1,network=projects/vpc-host-project1/global/networks/network1 --psc-auto-connections=project=project2,network=projects/vpc-host-project2/global/networks/network2). Sets psc_auto_connections value. network Required, sets network value. project Required, sets project value. Shorthand Example: --psc-auto-connections=network=string,project=string JSON Example: --psc-auto-connections='{"network": "string", "project": "string"}' File Example: --psc-auto-connections=path_to_file.(yaml\|json) |
+| `--psc-network-attachment-uri` | PSC_NETWORK_ATTACHMENT_URI |  | Full URI of the network attachment that is configured to support outbound connectivity from an AlloyDB instance which uses Private Service Connect (PSC). For example, this would be of the form:psc-network-attachment-uri=projects/test-project/regions/us-central1/networkAttachments/my-na |
+| `--[no-]require-connectors` |  |  | Enable or disable enforcing connectors only (ex: AuthProxy) connections to the database. Use --require-connectors to enable and --no-require-connectors to disable. |
+| `--ssl-mode` | one of: ALLOW_UNENCRYPTED_AND_ENCRYPTED SSL connections are optional |  | Specify the SSL mode to use when the instance connects to the database. Default SSL mode will match what is set on the primary instance. SSL_MODE must be one of: ALLOW_UNENCRYPTED_AND_ENCRYPTED SSL connections are optional. CA verification is not enforced. ENCRYPTED_ONLY SSL connections are required. CA verification is not enforced. |
+
+
+**Examples:**
+```bash
+To create a new secondary instance, run:
+
+    $ gcloud alloydb instances create-secondary my-instance \
+        --cluster=my-cluster --region=us-central1
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/create-secondary)
+
+---
+### `gcloud alloydb instances delete`
+
+Deletes an AlloyDB instance within a given cluster
+
+Deletes an AlloyDB instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances delete INSTANCE --cluster=CLUSTER --region=REGION
+    [--async] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+
+
+**Examples:**
+```bash
+To delete an instance, run:
+
+    $ gcloud alloydb instances delete my-instance --cluster=my-cluster \
+        --region=us-central1
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/delete)
+
+---
+### `gcloud alloydb instances describe`
+
+Describes an AlloyDB instance within a given cluster
+
+Describes an AlloyDB instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances describe INSTANCE --cluster=CLUSTER
+    --region=REGION [--view=VIEW] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--view` | one of: basic, full |  | View of the instance to return. VIEW must be one of: basic, full. |
+
+
+**Examples:**
+```bash
+To describe an instance, run:
+
+    $ gcloud alloydb instances describe my-instance \
+        --cluster=my-cluster --region=us-central1 --view=BASIC/FULL
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/describe)
+
+---
+### `gcloud alloydb instances failover`
+
+Failover an AlloyDB instance within a given cluster
+
+Failover an AlloyDB instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances failover INSTANCE --cluster=CLUSTER
+    --region=REGION [--async] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+
+
+**Examples:**
+```bash
+To failover an instance, run:
+
+    $ gcloud alloydb instances failover my-instance \
+        --cluster=my-cluster --region=us-central1
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/failover)
+
+---
+### `gcloud alloydb instances inject-fault`
+
+Inject fault on an AlloyDB instance within a given cluster
+
+Inject fault on an AlloyDB instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances inject-fault INSTANCE --cluster=CLUSTER
+    --fault-type=FAULT_TYPE --region=REGION [--async]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--fault-type` | FAULT_TYPE |  | Specifies fault type. FAULT_TYPE must be (only one value is supported): stop-vm stop-vm fault type supports stopping the VM. |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+
+
+**Examples:**
+```bash
+To Inject fault on an instance, run:
+
+    $ gcloud alloydb instances inject-fault my-instance \
+        --cluster=my-cluster --region=us-central1 --fault-type=stop-vm
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/inject-fault)
+
+---
+### `gcloud alloydb instances list`
+
+Lists AlloyDB instances in a given cluster
+
+Lists AlloyDB instances in a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances list [--cluster=CLUSTER --region=REGION]
+    [--filter=EXPRESSION] [--limit=LIMIT] [--page-size=PAGE_SIZE]
+    [--sort-by=[FIELD,...]] [--uri] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | _[Cluster]_ AlloyDB cluster ID This flag argument must be specified if any of the other arguments in this group are specified. |
+| `--region` | REGION |  | _[Cluster]_ Regional location (e.g. asia-east1, us-east1) of CLUSTER. See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. Default: list clusters in all regions. This flag argument must be specified if any of the other arguments in this group are specified. |
+
+
+**Examples:**
+```bash
+To list instances, run:
+
+    $ gcloud alloydb instances list --cluster=my-cluster \
+        --region=us-central1
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/list)
+
+---
+### `gcloud alloydb instances restart`
+
+Restarts an AlloyDB instance within a given cluster
+
+Restarts an AlloyDB instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances restart INSTANCE --cluster=CLUSTER --region=REGION
+    [--async] [--node-ids=[NODE_IDS,...]] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+| `--node-ids` | [NODE_IDS,...] |  | Comma-separated list of node IDs. Only supported for read pool instances. (e.g., --node-ids=node-1,node-2,node-3) |
+
+
+**Examples:**
+```bash
+To restart an instance, run:
+
+    $ gcloud alloydb instances restart my-instance \
+        --cluster=my-cluster --region=us-central1
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/restart)
+
+---
+### `gcloud alloydb instances update`
+
+Updates an AlloyDB instance within a given cluster
+
+Updates an AlloyDB instance within a given cluster.
+
+**Synopsis:**
+```
+gcloud alloydb instances update INSTANCE --cluster=CLUSTER --region=REGION
+    [--activation-policy=ACTIVATION_POLICY]
+    [--allowed-psc-projects=[ALLOWED_PSC_PROJECTS,...]]
+    [--assign-inbound-public-ip=ASSIGN_INBOUND_PUBLIC_IP] [--async]
+    [--authorized-external-networks=[AUTHORIZED_NETWORK,...]]
+    [--availability-type=AVAILABILITY_TYPE]
+    [--clear-psc-network-attachment-uri]
+    [--connection-pooling-client-connection-idle-timeout=CONNECTION_POOLING_CLIENT_CONNECTION_IDLE_TIMEOUT]
+    [--connection-pooling-ignore-startup-parameters=[STARTUP_PARAMETERS,
+      ...]]
+    [--connection-pooling-max-client-connections=CONNECTION_POOLING_MAX_CLIENT_CONNECTIONS]
+    [--connection-pooling-max-pool-size=CONNECTION_POOLING_MAX_POOL_SIZE]
+    [--connection-pooling-max-prepared-statements=CONNECTION_POOLING_MAX_PREPARED_STATEMENTS]
+    [--connection-pooling-min-pool-size=CONNECTION_POOLING_MIN_POOL_SIZE]
+    [--connection-pooling-pool-mode=CONNECTION_POOLING_POOL_MODE]
+    [--connection-pooling-query-wait-timeout=CONNECTION_POOLING_QUERY_WAIT_TIMEOUT]
+    [--connection-pooling-server-idle-timeout=CONNECTION_POOLING_SERVER_IDLE_TIMEOUT]
+    [--connection-pooling-server-lifetime=CONNECTION_POOLING_SERVER_LIFETIME]
+    [--connection-pooling-stats-users=[STATS_USERS,...]]
+    [--cpu-count=CPU_COUNT] [--database-flags=FLAG=VALUE,[FLAG=VALUE,...]]
+    [--[no-]enable-connection-pooling]
+    [--insights-config-query-plans-per-minute=INSIGHTS_CONFIG_QUERY_PLANS_PER_MINUTE]
+    [--insights-config-query-string-length=INSIGHTS_CONFIG_QUERY_STRING_LENGTH]
+    [--[no-]insights-config-record-application-tags]
+    [--[no-]insights-config-record-client-address]
+    [--machine-type=MACHINE_TYPE] [--[no-]outbound-public-ip]
+    [--psc-network-attachment-uri=PSC_NETWORK_ATTACHMENT_URI]
+    [--read-pool-node-count=READ_POOL_NODE_COUNT]
+    [--[no-]require-connectors] [--ssl-mode=SSL_MODE]
+    [--clear-psc-auto-connections
+      | --psc-auto-connections=[network=NETWORK],[project=PROJECT]]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+INSTANCE
+   AlloyDB instance ID
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--cluster` | CLUSTER |  | AlloyDB cluster ID |
+| `--region` | REGION |  | Regional location (e.g. asia-east1, us-east1). See the full list of regions at https://cloud.google.com/sql/docs/instance-locations. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--activation-policy` | one of: ALWAYS, NEVER |  | Activation Policy for the instance. Required to START or STOP an instance. ALWAYS - The instance is up and running. NEVER - The instance is stopped. ACTIVATION_POLICY must be one of: ALWAYS, NEVER. |
+| `--allowed-psc-projects` | [ALLOWED_PSC_PROJECTS,...] |  | Comma-separated list of allowed consumer projects to create endpoints for Private Service Connect (PSC) connectivity for the instance. Only instances in PSC-enabled clusters are allowed to set this field.(e.g., --allowed-psc-projects=project1,12345678,project2) |
+| `--assign-inbound-public-ip` | one of: * NO_PUBLIC_IP + This disables public IP on the instance |  | Specify to enable or disable public IP on an instance. ASSIGN_INBOUND_PUBLIC_IP must be one of: * NO_PUBLIC_IP + This disables public IP on the instance. Updating an instance to disable public IP will clear the list of authorized networks. * ASSIGN_IPV4 + Assign an inbound public IPv4 address for the instance. Public IP is enabled. |
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. The default is True. Enabled by default, use --no-async to disable. |
+| `--authorized-external-networks` | [AUTHORIZED_NETWORK,...] |  | Comma-separated list of authorized external networks to set on the instance. Authorized networks should use CIDR notation (e.g. 1.2.3.4/30). This flag is only allowed to be set for instances with public IP enabled. |
+| `--availability-type` | one of: REGIONAL Provide high availability instances |  | Specifies level of availability. AVAILABILITY_TYPE must be one of: REGIONAL Provide high availability instances. Recommended for production instances; instances automatically fail over to another zone within your selected region. ZONAL Provide zonal availability instances. Not recommended for production instances; instance does not automatically fail over to another zone. |
+| `--clear-psc-network-attachment-uri` |  |  | Disable outbound connectivity from an AlloyDB instance which uses Private Service Connect (PSC). |
+| `--connection-pooling-client-connection-idle-timeout` | CONNECTION_POOLING_CLIENT_CONNECTION_IDLE_TIMEOUT |  | The maximum number of seconds a client is allowed to be idle before it is disconnected. |
+| `--connection-pooling-ignore-startup-parameters` | [STARTUP_PARAMETERS,...] |  | Comma-separated list of startup parameters that should be ignored by the connection pool. |
+| `--connection-pooling-max-client-connections` | CONNECTION_POOLING_MAX_CLIENT_CONNECTIONS |  | The max client connections for managed connection pooling. |
+| `--connection-pooling-max-pool-size` | CONNECTION_POOLING_MAX_POOL_SIZE |  | The max pool size for managed connection pooling. |
+| `--connection-pooling-max-prepared-statements` | CONNECTION_POOLING_MAX_PREPARED_STATEMENTS |  | The maximum number of prepared statements allowed. |
+| `--connection-pooling-min-pool-size` | CONNECTION_POOLING_MIN_POOL_SIZE |  | The min pool size for managed connection pooling. |
+| `--connection-pooling-pool-mode` | one of: SESSION Session mode for managed connection pooling |  | The pool mode for managed connection pooling. CONNECTION_POOLING_POOL_MODE must be one of: SESSION Session mode for managed connection pooling. TRANSACTION Transaction mode for managed connection pooling. |
+| `--connection-pooling-query-wait-timeout` | CONNECTION_POOLING_QUERY_WAIT_TIMEOUT |  | The query wait timeout for managed connection pooling. |
+| `--connection-pooling-server-idle-timeout` | CONNECTION_POOLING_SERVER_IDLE_TIMEOUT |  | The server idle timeout for managed connection pooling. |
+| `--connection-pooling-server-lifetime` | CONNECTION_POOLING_SERVER_LIFETIME |  | The lifetime of a server connection in seconds. The pooler will close an unused (not currently linked to any client connection) server connection that has been connected longer than this. Setting it to 0 means the connection is to be used only once, then closed. |
+| `--connection-pooling-stats-users` | [STATS_USERS,...] |  | Comma-separated list of database users to access connection pooling stats. |
+| `--cpu-count` | one of: 1, 2, 4, 8, 14, 16, 22, 32, 44, 48, 64, 72, 88, 96, 128, 144, 192, 288 |  | Whole number value indicating how many vCPUs the machine should contain. If the instance does not have a machine-type, the vCPU count will be used to determine the machine type where each vCPU corresponds to an N2 high-mem machine: (https://cloud.google.com/compute/docs/general-purpose-machines#n2_machine_types). where CPU_COUNT can be one of: 2, 4, 8, 16, 32, 64, 96, 128. If the instance has a machine-type, cpu-count must have the same value as the vCPU count in the machine-type. Eg: if machine-type is c4a-highmem-4-lssd, cpu-count must be 4. CPU_COUNT must be one of: 1, 2, 4, 8, 14, 16, 22, 32, 44, 48, 64, 72, 88, 96, 128, 144, 192, 288. |
+| `--database-flags` | FLAG=VALUE,[FLAG=VALUE,...] |  | Comma-separated list of database flags to set on the instance. Use an equals sign to separate flag name and value. Flags without values, like skip_grant_tables, can be written out without a value after, e.g., skip_grant_tables=. Use on/off for booleans. View the Instance Resource API for allowed flags. (e.g., --database-flags max_allowed_packet=55555,skip_grant_tables=,log_output=1) |
+| `--[no-]enable-connection-pooling` |  |  | Enable connection pooling for the instance. Use --enable-connection-pooling to enable and --no-enable-connection-pooling to disable. |
+| `--insights-config-query-plans-per-minute` | INSIGHTS_CONFIG_QUERY_PLANS_PER_MINUTE |  | Number of query plans to sample every minute. Default value is 5. Allowed range: 0 to 20. |
+| `--insights-config-query-string-length` | INSIGHTS_CONFIG_QUERY_STRING_LENGTH |  | Query string length in bytes to be stored by the query insights feature. Default length is 1024 bytes. Allowed range: 256 to 4500 bytes. |
+| `--[no-]insights-config-record-application-tags` |  |  | Allow application tags to be recorded by the query insights feature. Use --insights-config-record-application-tags to enable and --no-insights-config-record-application-tags to disable. |
+| `--[no-]insights-config-record-client-address` |  |  | Allow the client address to be recorded by the query insights feature. Use --insights-config-record-client-address to enable and --no-insights-config-record-client-address to disable. |
+| `--machine-type` | one of: n2-highmem-2, n2-highmem-4, n2-highmem-8, n2-highmem-16, n2-highmem-32, n2-highmem-64, n2-highmem-96, n2-highmem-128, c4a-highmem-1, c4a-highmem-4-lssd, c4a-highmem-8-lssd, c4a-highmem-16-lssd, c4a-highmem-32-lssd, c4a-highmem-48-lssd, c4a-highmem-64-lssd, c4a-highmem-72-lssd, c4-highmem-4-lssd, c4-highmem-8-lssd, c4-highmem-16-lssd, c4-highmem-24-lssd, c4-highmem-32-lssd, c4-highmem-48-lssd, c4-highmem-96-lssd, c4-highmem-144-lssd, c4-highmem-192-lssd, c4-highmem-288-lssd, z3-highmem-14-standardlssd, z3-highmem-22-standardlssd, z3-highmem-44-standardlssd, z3-highmem-88-standardlssd, z3-highmem-8-highlssd, z3-highmem-16-highlssd, z3-highmem-22-highlssd, z3-highmem-32-highlssd, z3-highmem-44-highlssd |  | Specifies machine type for the instance. MACHINE_TYPE must be one of: n2-highmem-2, n2-highmem-4, n2-highmem-8, n2-highmem-16, n2-highmem-32, n2-highmem-64, n2-highmem-96, n2-highmem-128, c4a-highmem-1, c4a-highmem-4-lssd, c4a-highmem-8-lssd, c4a-highmem-16-lssd, c4a-highmem-32-lssd, c4a-highmem-48-lssd, c4a-highmem-64-lssd, c4a-highmem-72-lssd, c4-highmem-4-lssd, c4-highmem-8-lssd, c4-highmem-16-lssd, c4-highmem-24-lssd, c4-highmem-32-lssd, c4-highmem-48-lssd, c4-highmem-96-lssd, c4-highmem-144-lssd, c4-highmem-192-lssd, c4-highmem-288-lssd, z3-highmem-14-standardlssd, z3-highmem-22-standardlssd, z3-highmem-44-standardlssd, z3-highmem-88-standardlssd, z3-highmem-8-highlssd, z3-highmem-16-highlssd, z3-highmem-22-highlssd, z3-highmem-32-highlssd, z3-highmem-44-highlssd. |
+| `--[no-]outbound-public-ip` |  |  | Add outbound Public IP connectivity to an AlloyDB instance. Use --outbound-public-ip to enable and --no-outbound-public-ip to disable. |
+| `--psc-network-attachment-uri` | PSC_NETWORK_ATTACHMENT_URI |  | Full URI of the network attachment that is configured to support outbound connectivity from an AlloyDB instance which uses Private Service Connect (PSC). For example, this would be of the form:psc-network-attachment-uri=projects/test-project/regions/us-central1/networkAttachments/my-na |
+| `--read-pool-node-count` | READ_POOL_NODE_COUNT |  | Read capacity, i.e. number of nodes in a read pool instance. |
+| `--[no-]require-connectors` |  |  | Enable or disable enforcing connectors only (ex: AuthProxy) connections to the database. Use --require-connectors to enable and --no-require-connectors to disable. |
+| `--ssl-mode` | one of: ALLOW_UNENCRYPTED_AND_ENCRYPTED SSL connections are optional |  | Specify the SSL mode to use when the instance connects to the database. SSL_MODE must be one of: ALLOW_UNENCRYPTED_AND_ENCRYPTED SSL connections are optional. CA verification is not enforced. ENCRYPTED_ONLY SSL connections are required. CA verification is not enforced. |
+
+
+**Examples:**
+```bash
+To update the number of nodes in the read pool, run:
+
+    $ gcloud alloydb instances update my-read-instance \
+        --cluster=my-cluster --region=us-central1 \
+        --read-pool-node-count=3
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/alloydb/instances/update)
+
+---

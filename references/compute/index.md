@@ -1,0 +1,794 @@
+# gcloud compute — command index
+
+create and manipulate Compute Engine resources
+
+- `gcloud compute config-ssh` — populate SSH config files with Host entries from each instance
+- `gcloud compute connect-to-serial-port` — connect to the serial port of an instance
+- `gcloud compute copy-files` — copy files to and from Google Compute Engine virtual machines via scp
+- `gcloud compute reset-windows-password` — reset and return a password for a Windows machine instance
+- `gcloud compute scp` — copy files to and from Google Compute Engine virtual machines via scp
+- `gcloud compute sign-url` — sign specified URL for use with Cloud CDN Signed URLs
+- `gcloud compute ssh` — SSH into a virtual machine instance
+- `gcloud compute start-iap-tunnel` — starts an IAP TCP forwarding tunnel
+- `gcloud compute accelerator-types describe` — describe Compute Engine accelerator types
+- `gcloud compute accelerator-types list` — list Google Compute Engine accelerator types
+- `gcloud compute addresses create` — reserve IP addresses
+- `gcloud compute addresses delete` — release reserved IP addresses
+- `gcloud compute addresses describe` — display detailed information about a reserved static address
+- `gcloud compute addresses list` — list addresses
+- `gcloud compute addresses move` — move an address to another project
+- `gcloud compute advice calendar-mode` — recommends the optimal time window and zone for Future Reservations
+- `gcloud compute backend-buckets add-iam-policy-binding` — add an IAM policy binding to a Compute Engine backend bucket
+- `gcloud compute backend-buckets add-signed-url-key` — add Cloud CDN Signed URL key to a backend bucket
+- `gcloud compute backend-buckets create` — create a backend bucket
+- `gcloud compute backend-buckets delete` — delete backend buckets
+- `gcloud compute backend-buckets delete-signed-url-key` — delete Cloud CDN Signed URL key from a backend bucket
+- `gcloud compute backend-buckets describe` — describe a backend bucket
+- `gcloud compute backend-buckets get-iam-policy` — get the IAM policy for a Compute Engine backend bucket
+- `gcloud compute backend-buckets list` — list Google Compute Engine backend buckets
+- `gcloud compute backend-buckets remove-iam-policy-binding` — remove an IAM policy binding from a Compute Engine backend bucket
+- `gcloud compute backend-buckets set-iam-policy` — set the IAM policy binding for a Compute Engine backend bucket
+- `gcloud compute backend-buckets update` — update a backend bucket
+- `gcloud compute backend-services add-backend` — add a backend to a backend service
+- `gcloud compute backend-services add-iam-policy-binding` — add an IAM policy binding to a Compute Engine backend service
+- `gcloud compute backend-services add-service-bindings` — add service bindings to a backend service
+- `gcloud compute backend-services add-signed-url-key` — add Cloud CDN Signed URL key to a backend service
+- `gcloud compute backend-services create` — create a backend service
+- `gcloud compute backend-services delete` — delete backend services
+- `gcloud compute backend-services delete-signed-url-key` — delete Cloud CDN Signed URL key from a backend service
+- `gcloud compute backend-services describe` — display detailed information about a backend service
+- `gcloud compute backend-services edit` — modify a backend service
+- `gcloud compute backend-services export` — export a backend service
+- `gcloud compute backend-services get-health` — get backend health statuses from a backend service
+- `gcloud compute backend-services get-iam-policy` — get the IAM policy for a Compute Engine backend service
+- `gcloud compute backend-services import` — import a backend service
+- `gcloud compute backend-services list` — list Google Compute Engine backend services
+- `gcloud compute backend-services list-usable` — list usable backend services
+- `gcloud compute backend-services remove-backend` — remove a backend from a backend service
+- `gcloud compute backend-services remove-iam-policy-binding` — remove an IAM policy binding from a Compute Engine backend service
+- `gcloud compute backend-services remove-service-bindings` — remove service bindings from a backend service
+- `gcloud compute backend-services set-iam-policy` — set the IAM policy binding for a Compute Engine backend service
+- `gcloud compute backend-services update` — update a backend service
+- `gcloud compute backend-services update-backend` — update an existing backend of a load balancer or Traffic Director
+- `gcloud compute commitments create` — create Compute Engine commitments
+- `gcloud compute commitments create-license` — create Compute Engine license-based commitments
+- `gcloud compute commitments describe` — describe a Compute Engine commitment
+- `gcloud compute commitments list` — list Compute Engine commitments
+- `gcloud compute commitments update` — update Compute Engine commitments
+- `gcloud compute diagnose export-logs` — triggers instance to gather logs and upload them to a Cloud Storage Bucket
+- `gcloud compute diagnose routes` — routes to/from Compute Engine virtual machine instances
+- `gcloud compute disk-types describe` — describe a Compute Engine disk type
+- `gcloud compute disk-types list` — list Google Compute Engine disk types
+- `gcloud compute disks add-iam-policy-binding` — add IAM policy binding to a Compute Engine disk
+- `gcloud compute disks add-labels` — add labels to Google Compute Engine persistent disks
+- `gcloud compute disks add-resource-policies` — add resource policies to a Compute Engine disk
+- `gcloud compute disks convert` — convert a Compute Engine Persistent Disk volume to a Hyperdisk volume
+- `gcloud compute disks create` — create Compute Engine persistent disks
+- `gcloud compute disks delete` — delete a Compute Engine disk
+- `gcloud compute disks describe` — describe a Compute Engine disk
+- `gcloud compute disks get-iam-policy` — get the IAM policy for a Compute Engine disk
+- `gcloud compute disks list` — list Google Compute Engine disks
+- `gcloud compute disks move` — move a disk between zones
+- `gcloud compute disks remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine disk
+- `gcloud compute disks remove-labels` — remove labels from Google Compute Engine persistent disks
+- `gcloud compute disks remove-resource-policies` — remove resource policies from a Compute Engine disk
+- `gcloud compute disks resize` — resize a disk or disks
+- `gcloud compute disks set-iam-policy` — set the IAM policy for a Compute Engine disk
+- `gcloud compute disks snapshot` — create snapshots of Compute Engine persistent disks
+- `gcloud compute disks start-async-replication` — start asynchronous replication on a Compute Engine persistent disk
+- `gcloud compute disks stop-async-replication` — stop async replication on a Compute Engine persistent disk
+- `gcloud compute disks stop-group-async-replication` — consistently stops a group of asynchronously replicating disks
+- `gcloud compute disks update` — update a Compute Engine persistent disk
+- `gcloud compute disks bulk create` — create multiple Compute Engine disks
+- `gcloud compute external-vpn-gateways create` — create a new Compute Engine external VPN gateway
+- `gcloud compute external-vpn-gateways delete` — delete a Compute Engine external VPN gateway
+- `gcloud compute external-vpn-gateways describe` — describe a Compute Engine external VPN gateway
+- `gcloud compute external-vpn-gateways list` — list Google Compute Engine external VPN gateways
+- `gcloud compute external-vpn-gateways update` — update a Compute Engine external VPN gateway
+- `gcloud compute firewall-policies clone-rules` — replace the rules of a Compute Engine organization firewall policy with rules from another policy
+- `gcloud compute firewall-policies create` — create a Compute Engine organization firewall policy
+- `gcloud compute firewall-policies delete` — delete a Compute Engine organization firewall policy
+- `gcloud compute firewall-policies describe` — describe a Compute Engine organization firewall policy
+- `gcloud compute firewall-policies export-rules` — export Compute Engine organization firewall policy rules
+- `gcloud compute firewall-policies import-rules` — import Compute Engine organization firewall policy rules
+- `gcloud compute firewall-policies list` — list Compute Engine organization firewall policies
+- `gcloud compute firewall-policies list-rules` — list the rules of a Compute Engine organization firewall policy
+- `gcloud compute firewall-policies move` — move a Compute Engine organization firewall policy
+- `gcloud compute firewall-policies update` — update a Compute Engine organization firewall policy
+- `gcloud compute firewall-policies associations create` — create a new association between a firewall policy and an organization or folder resource
+- `gcloud compute firewall-policies associations delete` — delete a Compute Engine organization firewall policy association
+- `gcloud compute firewall-policies associations list` — list the associations of an organization or folder resource
+- `gcloud compute firewall-policies rules create` — creates a Compute Engine firewall policy rule
+- `gcloud compute firewall-policies rules delete` — deletes a Compute Engine organization firewall policy rule
+- `gcloud compute firewall-policies rules describe` — describes a Compute Engine organization firewall policy rule
+- `gcloud compute firewall-policies rules update` — updates a Compute Engine firewall policy rule
+- `gcloud compute firewall-rules create` — create a Compute Engine firewall rule
+- `gcloud compute firewall-rules delete` — delete Compute Engine firewall rules
+- `gcloud compute firewall-rules describe` — describe a Compute Engine firewall rule
+- `gcloud compute firewall-rules list` — list Compute Engine firewall rules
+- `gcloud compute firewall-rules update` — update a firewall rule
+- `gcloud compute forwarding-rules create` — create a forwarding rule to direct network traffic to a load balancer
+- `gcloud compute forwarding-rules delete` — delete forwarding rules
+- `gcloud compute forwarding-rules describe` — display detailed information about a forwarding rule
+- `gcloud compute forwarding-rules export` — export a forwarding rule
+- `gcloud compute forwarding-rules import` — import a forwarding rule
+- `gcloud compute forwarding-rules list` — list Google Compute Engine forwarding rules
+- `gcloud compute forwarding-rules set-target` — modify a forwarding rule to direct network traffic to a new target
+- `gcloud compute forwarding-rules update` — update a Compute Engine forwarding rule
+- `gcloud compute future-reservations cancel` — cancel a Compute Engine future reservation
+- `gcloud compute future-reservations create` — create a Compute Engine reservation
+- `gcloud compute future-reservations delete` — delete a Compute Engine future reservation
+- `gcloud compute future-reservations describe` — show details about a Compute Engine future reservation
+- `gcloud compute future-reservations list` — list Compute Engine future reservations
+- `gcloud compute future-reservations update` — update Compute Engine future reservations
+- `gcloud compute health-checks delete` — delete health checks
+- `gcloud compute health-checks describe` — display detailed information about a health check
+- `gcloud compute health-checks list` — list Google Compute Engine health checks
+- `gcloud compute health-checks create grpc` — create a gRPC health check to monitor load balanced instances
+- `gcloud compute health-checks create grpc-with-tls` — create a gRPC with TLS health check to monitor load balanced instances
+- `gcloud compute health-checks create http` — create a HTTP health check to monitor load balanced instances
+- `gcloud compute health-checks create http2` — create a HTTP2 health check to monitor load balanced instances
+- `gcloud compute health-checks create https` — create a HTTPS health check to monitor load balanced instances
+- `gcloud compute health-checks create ssl` — create a SSL health check to monitor load balanced instances
+- `gcloud compute health-checks create tcp` — create a TCP health check to monitor load balanced instances
+- `gcloud compute health-checks update grpc` — update a gRPC health check
+- `gcloud compute health-checks update grpc-with-tls` — update a gRPC with TLS health check
+- `gcloud compute health-checks update http` — update a HTTP health check
+- `gcloud compute health-checks update http2` — update a HTTP2 health check
+- `gcloud compute health-checks update https` — update a HTTPS health check
+- `gcloud compute health-checks update ssl` — update a SSL health check
+- `gcloud compute health-checks update tcp` — update a TCP health check
+- `gcloud compute http-health-checks create` — create a legacy HTTP health check
+- `gcloud compute http-health-checks delete` — delete HTTP health checks
+- `gcloud compute http-health-checks describe` — display detailed information about an HTTP health check
+- `gcloud compute http-health-checks list` — list Google Compute Engine health checks
+- `gcloud compute http-health-checks update` — update a legacy HTTP health check
+- `gcloud compute https-health-checks create` — create a legacy HTTPS health check
+- `gcloud compute https-health-checks delete` — delete HTTPS health checks
+- `gcloud compute https-health-checks describe` — display detailed information about an HTTPS health check
+- `gcloud compute https-health-checks list` — list Google Compute Engine HTTPS health checks
+- `gcloud compute https-health-checks update` — update a legacy HTTPS health check
+- `gcloud compute images add-iam-policy-binding` — add IAM policy binding to a Compute Engine image
+- `gcloud compute images add-labels` — add labels to Google Compute Engine images
+- `gcloud compute images create` — create Compute Engine images
+- `gcloud compute images delete` — delete Compute Engine images
+- `gcloud compute images deprecate` — manage deprecation status of Compute Engine images
+- `gcloud compute images describe` — describe a Compute Engine image
+- `gcloud compute images describe-from-family` — describe the latest image from an image family
+- `gcloud compute images export` — export a Compute Engine image
+- `gcloud compute images get-iam-policy` — get the IAM policy for a Compute Engine image
+- `gcloud compute images import` — import an image into Compute Engine
+- `gcloud compute images list` — list Google Compute Engine images
+- `gcloud compute images remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine image
+- `gcloud compute images remove-labels` — remove labels from Google Compute Engine images
+- `gcloud compute images set-iam-policy` — set the IAM policy for a Compute Engine image
+- `gcloud compute images update` — update a Compute Engine image
+- `gcloud compute instance-groups describe` — display detailed information about an instance group
+- `gcloud compute instance-groups get-named-ports` — lists the named ports for an instance group resource
+- `gcloud compute instance-groups list` — list Google Compute Engine instance groups
+- `gcloud compute instance-groups list-instances` — list instances present in the instance group
+- `gcloud compute instance-groups set-named-ports` — sets the list of named ports for an instance group
+- `gcloud compute instance-groups managed abandon-instances` — abandon instances owned by a managed instance group
+- `gcloud compute instance-groups managed create` — create a Compute Engine managed instance group
+- `gcloud compute instance-groups managed create-instance` — create a new virtual machine instance in a managed instance group with a defined name and optionally its stateful configuration
+- `gcloud compute instance-groups managed delete` — delete Compute Engine managed instance groups
+- `gcloud compute instance-groups managed delete-instances` — delete instances that are managed by a managed instance group
+- `gcloud compute instance-groups managed describe` — display detailed information about an instance group
+- `gcloud compute instance-groups managed describe-instance` — describe an instance in a managed instance group
+- `gcloud compute instance-groups managed get-named-ports` — lists the named ports for an instance group resource
+- `gcloud compute instance-groups managed list` — list Google Compute Engine managed instance groups
+- `gcloud compute instance-groups managed list-errors` — list errors produced by managed instances in a managed instance group
+- `gcloud compute instance-groups managed list-instances` — list instances present in the managed instance group
+- `gcloud compute instance-groups managed recreate-instances` — recreate instances managed by a managed instance group
+- `gcloud compute instance-groups managed resize` — set managed instance group size
+- `gcloud compute instance-groups managed resume-instances` — resume the suspended instances in a managed instance group
+- `gcloud compute instance-groups managed set-autoscaling` — set autoscaling parameters of a managed instance group
+- `gcloud compute instance-groups managed set-instance-template` — set the instance template for a managed instance group
+- `gcloud compute instance-groups managed set-named-ports` — sets the list of named ports for an instance group
+- `gcloud compute instance-groups managed set-target-pools` — set target pools of managed instance group
+- `gcloud compute instance-groups managed start-instances` — start the stopped instances in a managed instance group
+- `gcloud compute instance-groups managed stop-autoscaling` — stop autoscaling a managed instance group
+- `gcloud compute instance-groups managed stop-instances` — stop instances owned by a managed instance group
+- `gcloud compute instance-groups managed suspend-instances` — suspend instances owned by a managed instance group
+- `gcloud compute instance-groups managed update` — update a Compute Engine managed instance group
+- `gcloud compute instance-groups managed update-autoscaling` — update autoscaling parameters of a managed instance group
+- `gcloud compute instance-groups managed update-instances` — immediately update selected instances in a Compute Engine managed instance group
+- `gcloud compute instance-groups managed wait-until` — wait until the managed instance group reaches the desired state
+- `gcloud compute instance-groups managed wait-until-stable` — waits until state of managed instance group is stable
+- `gcloud compute instance-groups managed all-instances-config delete` — delete values defined in the all-instances configuration of a managed instance group
+- `gcloud compute instance-groups managed all-instances-config update` — update the all-instances configuration of a managed instance group
+- `gcloud compute instance-groups managed instance-configs create` — create a per-instance config for an instance in a managed instance group
+- `gcloud compute instance-groups managed instance-configs delete` — delete per-instance configs from a managed instance group
+- `gcloud compute instance-groups managed instance-configs list` — list per-instance configs of a managed instance group
+- `gcloud compute instance-groups managed instance-configs update` — update per-instance config of a managed instance group
+- `gcloud compute instance-groups managed resize-requests cancel` — cancel a Compute Engine managed instance group resize request
+- `gcloud compute instance-groups managed resize-requests create` — create a Compute Engine managed instance group resize request
+- `gcloud compute instance-groups managed resize-requests delete` — delete a Compute Engine managed instance group resize request
+- `gcloud compute instance-groups managed resize-requests describe` — describe a Compute Engine managed instance group resize request resource
+- `gcloud compute instance-groups managed resize-requests list` — list Compute Engine managed instance group resize requests
+- `gcloud compute instance-groups managed rolling-action replace` — replaces instances in a managed instance group
+- `gcloud compute instance-groups managed rolling-action restart` — restarts instances in a managed instance group
+- `gcloud compute instance-groups managed rolling-action start-update` — updates instances in a managed instance group
+- `gcloud compute instance-groups managed rolling-action stop-proactive-update` — stop the proactive update process of managed instance group
+- `gcloud compute instance-groups unmanaged add-instances` — adds instances to an unmanaged instance group by name
+- `gcloud compute instance-groups unmanaged create` — create a Compute Engine unmanaged instance group
+- `gcloud compute instance-groups unmanaged delete` — delete Compute Engine unmanaged instance groups
+- `gcloud compute instance-groups unmanaged describe` — describe an instance group
+- `gcloud compute instance-groups unmanaged get-named-ports` — lists the named ports for an instance group resource
+- `gcloud compute instance-groups unmanaged list` — list Google Compute Engine unmanaged instance groups
+- `gcloud compute instance-groups unmanaged list-instances` — list instances present in the instance group
+- `gcloud compute instance-groups unmanaged remove-instances` — removes resources from an unmanaged instance group by instance name
+- `gcloud compute instance-groups unmanaged set-named-ports` — sets the list of named ports for an instance group
+- `gcloud compute instance-templates add-iam-policy-binding` — add IAM policy binding to a Compute Engine instance template
+- `gcloud compute instance-templates create` — create a Compute Engine virtual machine instance template
+- `gcloud compute instance-templates create-with-container` — creates a Compute Engine a virtual machine instance template that runs a Docker container
+- `gcloud compute instance-templates delete` — delete Compute Engine virtual machine instance templates
+- `gcloud compute instance-templates describe` — describe a virtual machine instance template
+- `gcloud compute instance-templates get-iam-policy` — get the IAM policy for a Compute Engine instance template
+- `gcloud compute instance-templates list` — list Google Compute Engine instance templates
+- `gcloud compute instance-templates remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine instance template
+- `gcloud compute instance-templates set-iam-policy` — set the IAM policy for a Compute Engine instance template
+- `gcloud compute instances add-access-config` — create a Compute Engine virtual machine access configuration
+- `gcloud compute instances add-iam-policy-binding` — add IAM policy binding to a Compute Engine instance
+- `gcloud compute instances add-labels` — add labels to Google Compute Engine virtual machine instances
+- `gcloud compute instances add-metadata` — add or update instance metadata
+- `gcloud compute instances add-resource-policies` — add resource policies to Compute Engine VM instances
+- `gcloud compute instances add-tags` — add tags to Compute Engine virtual machine instances
+- `gcloud compute instances attach-disk` — attach a disk to an instance
+- `gcloud compute instances create` — create Compute Engine virtual machine instances
+- `gcloud compute instances create-with-container` — creates Compute Engine virtual machine instances running container images
+- `gcloud compute instances delete` — delete Compute Engine virtual machine instances
+- `gcloud compute instances delete-access-config` — delete an access configuration from a virtual machine network interface
+- `gcloud compute instances describe` — describe a virtual machine instance
+- `gcloud compute instances detach-disk` — detach disks from Compute Engine virtual machine instances
+- `gcloud compute instances export` — export a Compute Engine virtual machine instance's configuration to a file
+- `gcloud compute instances get-guest-attributes` — get the Guest Attributes for a compute instance
+- `gcloud compute instances get-iam-policy` — get the IAM policy for a Compute Engine instance
+- `gcloud compute instances get-screenshot` — capture a screenshot (JPEG image) of the virtual machine instance's display
+- `gcloud compute instances get-serial-port-output` — read output from a virtual machine instance's serial port
+- `gcloud compute instances get-shielded-identity` — get the Shielded identity for a Compute Engine instance
+- `gcloud compute instances import` — create Compute Engine virtual machine instances from virtual appliance in OVA/OVF format
+- `gcloud compute instances list` — list Compute Engine instances
+- `gcloud compute instances perform-maintenance` — perform maintenance of Google Compute Engine instance
+- `gcloud compute instances remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine instance
+- `gcloud compute instances remove-labels` — remove labels from Google Compute Engine virtual machine instances
+- `gcloud compute instances remove-metadata` — remove instance metadata
+- `gcloud compute instances remove-resource-policies` — remove resource policies from Compute Engine VM instances
+- `gcloud compute instances remove-tags` — remove tags from Compute Engine virtual machine instances
+- `gcloud compute instances report-host-as-faulty` — report a host as faulty to start the repair process
+- `gcloud compute instances reset` — reset a virtual machine instance
+- `gcloud compute instances resume` — resume a virtual machine instance
+- `gcloud compute instances send-diagnostic-interrupt` — send a diagnostic interrupt to a virtual machine instance
+- `gcloud compute instances set-disk-auto-delete` — set auto-delete behavior for disks
+- `gcloud compute instances set-iam-policy` — set IAM policy for a Compute Engine instance
+- `gcloud compute instances set-machine-type` — set machine type for Compute Engine virtual machines
+- `gcloud compute instances set-name` — set the name of a Compute Engine virtual machine
+- `gcloud compute instances set-scheduling` — set scheduling options for Compute Engine virtual machines
+- `gcloud compute instances set-service-account` — set a service account and access scopes for a Compute Engine VM instance
+- `gcloud compute instances simulate-maintenance-event` — simulate host maintenance of VM instances
+- `gcloud compute instances start` — start a stopped virtual machine instance
+- `gcloud compute instances stop` — stop a virtual machine instance
+- `gcloud compute instances suspend` — suspend a virtual machine instance
+- `gcloud compute instances tail-serial-port-output` — periodically fetch new output from a virtual machine instance's serial port and display it as it becomes available
+- `gcloud compute instances update` — update a Compute Engine virtual machine
+- `gcloud compute instances update-access-config` — update a Compute Engine virtual machine access configuration
+- `gcloud compute instances update-container` — updates Compute Engine virtual machine instances running container images
+- `gcloud compute instances update-from-file` — update a Compute Engine virtual machine instance using a configuration file
+- `gcloud compute instances bulk create` — create multiple Compute Engine virtual machines
+- `gcloud compute instances network-interfaces add` — add a Dynamic Network Interface to a Compute Engine instance
+- `gcloud compute instances network-interfaces delete` — delete a Dynamic Network Interface from a Compute Engine instance
+- `gcloud compute instances network-interfaces get-effective-firewalls` — get the effective firewalls for a Compute Engine virtual machine network interface
+- `gcloud compute instances network-interfaces update` — update a Compute Engine virtual machine network interface
+- `gcloud compute instances ops-agents policies create` — create a Google Cloud Observability agents policy for the Ops Agent
+- `gcloud compute instances ops-agents policies delete` — delete a Google Cloud Observability agents policy for the Ops Agent
+- `gcloud compute instances ops-agents policies describe` — describe a Google Cloud Observability agents policy for the Ops Agent
+- `gcloud compute instances ops-agents policies list` — list a Google Cloud Observability agents policy for the Ops Agent
+- `gcloud compute instances ops-agents policies update` — update a Google Cloud Observability agents policy for the Ops Agent
+- `gcloud compute instances os-inventory describe` — describe a Compute Engine virtual instance's OS inventory data
+- `gcloud compute instances os-inventory list-instances` — list instances with specific OS inventory data values
+- `gcloud compute instant-snapshots add-labels` — add labels to Google Compute Engine instant-snapshotss
+- `gcloud compute instant-snapshots create` — create a Compute Engine instant snapshot
+- `gcloud compute instant-snapshots delete` — delete a Compute Engine instant snapshot
+- `gcloud compute instant-snapshots describe` — describe a Compute Engine instant snapshot
+- `gcloud compute instant-snapshots list` — list Google Compute Engine instant snapshots
+- `gcloud compute interconnects create` — create a Compute Engine interconnect
+- `gcloud compute interconnects delete` — delete Compute Engine interconnects
+- `gcloud compute interconnects describe` — describe a Compute Engine interconnect
+- `gcloud compute interconnects get-diagnostics` — get diagnostics of a Compute Engine interconnect
+- `gcloud compute interconnects list` — list Google Compute Engine interconnects
+- `gcloud compute interconnects update` — update a Compute Engine interconnect
+- `gcloud compute interconnects application-awareness configure-bandwidth-percentage-policy` — configure bandwidth percentage policy for application awareness configuration of a Compute Engine interconnect
+- `gcloud compute interconnects application-awareness configure-shaper-average-percentage` — configure shaper average percentage for application awareness configuration of a Compute Engine interconnect
+- `gcloud compute interconnects application-awareness configure-strict-priority-policy` — configure strict priority policy for application awareness configuration of a Compute Engine interconnect
+- `gcloud compute interconnects application-awareness delete` — delete application awareness configuration of a Compute Engine interconnect
+- `gcloud compute interconnects application-awareness get-config` — get application awareness configuration of a Compute Engine interconnect
+- `gcloud compute interconnects application-awareness update` — updates application awareness configuration of a Compute Engine interconnect
+- `gcloud compute interconnects attachments delete` — delete Compute Engine interconnect attachments
+- `gcloud compute interconnects attachments describe` — describe a Compute Engine interconnect attachment
+- `gcloud compute interconnects attachments list` — list Google Compute Engine interconnect attachments
+- `gcloud compute interconnects attachments dedicated create` — create a Compute Engine dedicated interconnect attachment
+- `gcloud compute interconnects attachments dedicated update` — update a Compute Engine dedicated interconnect attachment
+- `gcloud compute interconnects attachments groups add-members` — add member interconnect attachments to a Compute Engine interconnect attachment group
+- `gcloud compute interconnects attachments groups create` — create a Compute Engine interconnect attachment group
+- `gcloud compute interconnects attachments groups delete` — delete Compute Engine interconnect attachment groups
+- `gcloud compute interconnects attachments groups describe` — describe a Compute Engine interconnect attachment group
+- `gcloud compute interconnects attachments groups get-operational-status` — get the operational status of a Compute Engine interconnect attachment group
+- `gcloud compute interconnects attachments groups list` — list interconnect attachment groups
+- `gcloud compute interconnects attachments groups remove-members` — remove member interconnect attachments from a Compute Engine interconnect attachment group
+- `gcloud compute interconnects attachments groups update` — update a Compute Engine interconnect attachment group
+- `gcloud compute interconnects attachments l2-forwarding add-mapping` — add new vlan to ip mapping rule to an L2-forwarding attachment
+- `gcloud compute interconnects attachments l2-forwarding create` — create a Compute Engine L2 forwarding interconnect attachment
+- `gcloud compute interconnects attachments l2-forwarding describe-mapping` — describe a Compute Engine L2 forwarding interconnect attachment
+- `gcloud compute interconnects attachments l2-forwarding list-mapping` — list Google Compute Engine interconnect attachments
+- `gcloud compute interconnects attachments l2-forwarding remove-mapping` — remove vlan to ip mapping rule to an L2-forwarding attachment
+- `gcloud compute interconnects attachments l2-forwarding update` — update a Compute Engine L2 forwarding interconnect attachment
+- `gcloud compute interconnects attachments l2-forwarding update-mapping` — update vlan to ip mapping rule to an L2-forwarding attachment
+- `gcloud compute interconnects attachments partner create` — create a Compute Engine partner interconnect attachment
+- `gcloud compute interconnects attachments partner update` — update a Compute Engine partner interconnect attachment
+- `gcloud compute interconnects cross-site-networks create` — create a Compute Engine cross site network
+- `gcloud compute interconnects cross-site-networks delete` — delete Compute Engine cross site networks
+- `gcloud compute interconnects cross-site-networks describe` — describe a Compute Engine cross site network
+- `gcloud compute interconnects cross-site-networks list` — list Google Compute Engine cross site networks
+- `gcloud compute interconnects cross-site-networks update` — update a Compute Engine cross site network
+- `gcloud compute interconnects groups add-members` — add member interconnects to a Compute Engine interconnect group
+- `gcloud compute interconnects groups create` — create a Compute Engine interconnect group
+- `gcloud compute interconnects groups create-members` — create new member interconnects in a Compute Engine interconnect group
+- `gcloud compute interconnects groups delete` — delete Compute Engine interconnect groups
+- `gcloud compute interconnects groups describe` — describe a Compute Engine interconnect group
+- `gcloud compute interconnects groups get-operational-status` — get the operational status of a Compute Engine interconnect group
+- `gcloud compute interconnects groups list` — list interconnect groups
+- `gcloud compute interconnects groups remove-members` — remove member interconnects from a Compute Engine interconnect group
+- `gcloud compute interconnects groups update` — update a Compute Engine interconnect group
+- `gcloud compute interconnects locations describe` — describe a Compute Engine interconnect location
+- `gcloud compute interconnects locations list` — list Google Compute Engine interconnect locations
+- `gcloud compute interconnects macsec add-key` — add pre-shared key to a Compute Engine interconnect MACsec configuration
+- `gcloud compute interconnects macsec get-config` — get MACsec configuration of a Compute Engine interconnect
+- `gcloud compute interconnects macsec remove-key` — remove pre-shared key from a Compute Engine interconnect MACsec configuration
+- `gcloud compute interconnects macsec update` — update a Compute Engine interconnect MACsec configuration
+- `gcloud compute interconnects macsec update-key` — update pre-shared key in a Compute Engine interconnect MACsec configuration
+- `gcloud compute interconnects remote-locations describe` — describe a Google Compute Engine interconnect remote location
+- `gcloud compute interconnects remote-locations list` — list Google Compute Engine Cloud Interconnect remote locations
+- `gcloud compute interconnects wire-groups add-endpoint` — add endpoint to a Compute Engine wire group
+- `gcloud compute interconnects wire-groups add-interconnect` — add interconnect to a Compute Engine wire group
+- `gcloud compute interconnects wire-groups create` — create a Compute Engine wire group
+- `gcloud compute interconnects wire-groups delete` — delete Compute Engine wire groups
+- `gcloud compute interconnects wire-groups describe` — describe a Compute Engine wire group
+- `gcloud compute interconnects wire-groups list` — list Google Compute Engine wire groups
+- `gcloud compute interconnects wire-groups remove-endpoint` — remove endpoint from a Compute Engine wire group
+- `gcloud compute interconnects wire-groups remove-interconnect` — remove interconnect from a wire group
+- `gcloud compute interconnects wire-groups update` — update a Compute Engine wire group
+- `gcloud compute machine-images add-iam-policy-binding` — add IAM policy binding to the IAM policy of a Compute Engine machine image
+- `gcloud compute machine-images create` — create a Compute Engine machine image
+- `gcloud compute machine-images delete` — delete a Compute Engine machine image
+- `gcloud compute machine-images describe` — describe a Compute Engine machine image
+- `gcloud compute machine-images get-iam-policy` — get the IAM policy for a Compute Engine machine image
+- `gcloud compute machine-images import` — create a Compute Engine machine image from virtual appliance in OVA/OVF format
+- `gcloud compute machine-images list` — list Google Compute Engine machine images
+- `gcloud compute machine-images remove-iam-policy-binding` — remove IAM policy binding from the IAM policy of a Compute Engine machine image
+- `gcloud compute machine-images set-iam-policy` — set the IAM policy for a Compute Engine machine image
+- `gcloud compute machine-types describe` — describe a Compute Engine machine type
+- `gcloud compute machine-types list` — list Google Compute Engine machine types
+- `gcloud compute migration image-imports create` — import Virtual Disk images to Google Compute Engine
+- `gcloud compute migration image-imports delete` — delete an Image Import resource
+- `gcloud compute migration image-imports describe` — describe an Image Import
+- `gcloud compute migration image-imports list` — list Image Imports
+- `gcloud compute migration machine-image-imports create` — import machine images to Google Compute Engine
+- `gcloud compute migration machine-image-imports delete` — delete an Image Import resource
+- `gcloud compute migration machine-image-imports describe` — describe an Image Import
+- `gcloud compute migration machine-image-imports list` — list Image Imports
+- `gcloud compute migration target-projects list` — list Target Projects
+- `gcloud compute network-attachments create` — create a Google Compute Engine network attachment
+- `gcloud compute network-attachments delete` — delete one or more Google Compute Engine network attachments
+- `gcloud compute network-attachments describe` — describes a Google Compute Engine network attachment
+- `gcloud compute network-attachments list` — list Google Compute Engine network attachments
+- `gcloud compute network-attachments update` — update a Google Compute Engine network attachment
+- `gcloud compute network-edge-security-services create` — create a Compute Engine network edge security service
+- `gcloud compute network-edge-security-services delete` — delete network edge security services
+- `gcloud compute network-edge-security-services describe` — describe a Compute Engine network edge security service
+- `gcloud compute network-edge-security-services list` — list Google Compute Engine network edge security services
+- `gcloud compute network-edge-security-services update` — update a network edge security service
+- `gcloud compute network-endpoint-groups create` — create a Compute Engine network endpoint group
+- `gcloud compute network-endpoint-groups delete` — delete a Compute Engine network endpoint group
+- `gcloud compute network-endpoint-groups describe` — describe a Compute Engine network endpoint group
+- `gcloud compute network-endpoint-groups list` — list Google Compute Engine network endpoint groups
+- `gcloud compute network-endpoint-groups list-network-endpoints` — list network endpoints in a network endpoint group
+- `gcloud compute network-endpoint-groups update` — update a Compute Engine network endpoint group
+- `gcloud compute network-firewall-policies clone-rules` — replace the rules of a Compute Engine network firewall policy with rules from another policy
+- `gcloud compute network-firewall-policies create` — create a Compute Engine Network firewall policy
+- `gcloud compute network-firewall-policies delete` — delete a Compute Engine network firewall policy
+- `gcloud compute network-firewall-policies describe` — describe a Compute Engine network firewall policy
+- `gcloud compute network-firewall-policies export-rules` — export Compute Engine network firewall policy rules
+- `gcloud compute network-firewall-policies get-effective-firewalls` — get the effective firewalls for a network
+- `gcloud compute network-firewall-policies import-rules` — import a Compute Engine network firewall policy rules
+- `gcloud compute network-firewall-policies list` — list Compute Engine network firewall policies
+- `gcloud compute network-firewall-policies update` — update a Compute Engine network firewall policy
+- `gcloud compute network-firewall-policies associations create` — create a new association between a firewall policy and a network
+- `gcloud compute network-firewall-policies associations delete` — delete a new association between a firewall policy and an network or folder resource
+- `gcloud compute network-firewall-policies mirroring-rules create` — creates a Compute Engine network firewall policy packet mirroring rule
+- `gcloud compute network-firewall-policies mirroring-rules delete` — deletes a Compute Engine network firewall policy packet mirroirng rule
+- `gcloud compute network-firewall-policies mirroring-rules describe` — describes a Compute Engine network firewall policy pakcet mirroring rule
+- `gcloud compute network-firewall-policies mirroring-rules update` — updates a Compute Engine network firewall policy packet mirroring rule
+- `gcloud compute network-firewall-policies rules create` — creates a Compute Engine network firewall policy rule
+- `gcloud compute network-firewall-policies rules delete` — deletes a Compute Engine network firewall policy rule
+- `gcloud compute network-firewall-policies rules describe` — describes a Compute Engine network firewall policy rule
+- `gcloud compute network-firewall-policies rules update` — updates a Compute Engine network firewall policy rule
+- `gcloud compute network-profiles describe` — describe a network profile
+- `gcloud compute network-profiles list` — list network profiles
+- `gcloud compute networks create` — create a Compute Engine network
+- `gcloud compute networks delete` — delete Compute Engine networks
+- `gcloud compute networks describe` — describe a Compute Engine network
+- `gcloud compute networks get-effective-firewalls` — get the effective firewalls of a Compute Engine network
+- `gcloud compute networks list` — list Google Compute Engine networks
+- `gcloud compute networks update` — update a Compute Engine network
+- `gcloud compute networks peerings create` — create a Compute Engine network peering
+- `gcloud compute networks peerings delete` — delete a Compute Engine network peering
+- `gcloud compute networks peerings list` — list Google Compute Engine peerings
+- `gcloud compute networks peerings list-routes` — list received or advertised routes for a VPC network peering
+- `gcloud compute networks peerings request-delete` — request deletion of a Compute Engine network peering
+- `gcloud compute networks peerings update` — update a Compute Engine network peering
+- `gcloud compute networks subnets add-iam-policy-binding` — add an IAM policy binding to a Compute Engine subnetwork
+- `gcloud compute networks subnets create` — define a subnet for a network in custom subnet mode
+- `gcloud compute networks subnets delete` — delete Google Cloud subnetworks
+- `gcloud compute networks subnets describe` — describe a Compute Engine subnetwork
+- `gcloud compute networks subnets expand-ip-range` — expand the IP range of a Compute Engine subnetwork
+- `gcloud compute networks subnets get-iam-policy` — get the IAM policy for a Compute Engine subnetwork
+- `gcloud compute networks subnets list` — list Google Compute Engine subnetworks
+- `gcloud compute networks subnets list-usable` — list Compute Engine subnetworks permitted for use
+- `gcloud compute networks subnets remove-iam-policy-binding` — remove an IAM policy binding from a Compute Engine subnetwork
+- `gcloud compute networks subnets set-iam-policy` — set the IAM policy for a Compute Engine subnetwork
+- `gcloud compute networks subnets update` — updates properties of an existing Compute Engine subnetwork
+- `gcloud compute networks vpc-access connectors create` — create a VPC Access connector
+- `gcloud compute networks vpc-access connectors delete` — delete a VPC Access connector
+- `gcloud compute networks vpc-access connectors describe` — show metadata for a VPC Access connector
+- `gcloud compute networks vpc-access connectors list` — list VPC Access connectors
+- `gcloud compute networks vpc-access connectors update` — update a VPC Access connector
+- `gcloud compute networks vpc-access locations list` — list VPC Access Service regions
+- `gcloud compute networks vpc-access operations describe` — show metadata for a VPC Access Service operation
+- `gcloud compute networks vpc-access operations list` — list VPC Access Service operations
+- `gcloud compute operations describe` — describe a Compute Engine operation
+- `gcloud compute operations list` — list Google Compute Engine operations
+- `gcloud compute org-security-policies copy-rules` — replace the rules of a Compute Engine organization security policy with rules from another policy
+- `gcloud compute org-security-policies create` — create a Compute Engine organization security policy
+- `gcloud compute org-security-policies delete` — delete a Compute Engine organization security policy
+- `gcloud compute org-security-policies describe` — describe a Compute Engine organization security policy
+- `gcloud compute org-security-policies list` — list Compute Engine organization security policies
+- `gcloud compute org-security-policies list-rules` — list the rules of a Compute Engine organization security policy
+- `gcloud compute org-security-policies move` — move a Compute Engine organization security policy
+- `gcloud compute org-security-policies update` — update a Compute Engine organization security policy
+- `gcloud compute org-security-policies associations create` — create a new association between a security policy and an organization or folder resource
+- `gcloud compute org-security-policies associations delete` — delete a Compute Engine organization security policy association
+- `gcloud compute org-security-policies associations list` — list the associations of an organization or folder resource
+- `gcloud compute org-security-policies rules add-preconfig-waf-exclusion` — add an exclusion configuration for preconfigured WAF evaluation into a security policy rule
+- `gcloud compute org-security-policies rules create` — create a Compute Engine organizationsecurity policy rule
+- `gcloud compute org-security-policies rules delete` — delete a Compute Engine organization security policy rule
+- `gcloud compute org-security-policies rules describe` — describe a Compute Engine organization security policy rule
+- `gcloud compute org-security-policies rules remove-preconfig-waf-exclusion` — remove an exclusion configuration for preconfigured WAF evaluation from a security policy rule
+- `gcloud compute org-security-policies rules update` — update a Compute Engine security policy rule
+- `gcloud compute os-config troubleshoot` — troubleshoot issues with the setup of VM Manager on a specified VM instance
+- `gcloud compute os-config inventories describe` — describe the inventory data for a Compute Engine VM instance
+- `gcloud compute os-config inventories list` — list inventory data for all Compute Engine VM instances in a specified location
+- `gcloud compute os-config os-policy-assignment-reports describe` — describe an OS policy assignment report
+- `gcloud compute os-config os-policy-assignment-reports list` — list OS policy assignment reports
+- `gcloud compute os-config os-policy-assignments create` — create an OS policy assignment
+- `gcloud compute os-config os-policy-assignments delete` — delete an OS policy assignment
+- `gcloud compute os-config os-policy-assignments describe` — describe an OS policy assignment
+- `gcloud compute os-config os-policy-assignments list` — list OS policy assignments for a specified location
+- `gcloud compute os-config os-policy-assignments list-revisions` — list the revisions of an OS policy assignment
+- `gcloud compute os-config os-policy-assignments update` — update an OS policy assignment
+- `gcloud compute os-config os-policy-assignments operations cancel` — cancel an OS policy assignment operation
+- `gcloud compute os-config os-policy-assignments operations describe` — describe an OS policy assignment operation
+- `gcloud compute os-config patch-deployments create` — create a patch deployment for a project
+- `gcloud compute os-config patch-deployments delete` — delete the specified patch deployment
+- `gcloud compute os-config patch-deployments describe` — describe the specified patch deployment
+- `gcloud compute os-config patch-deployments list` — list patch deployments in a project
+- `gcloud compute os-config patch-deployments pause` — pause patch deployment in a project
+- `gcloud compute os-config patch-deployments resume` — resume patch deployment in a project
+- `gcloud compute os-config patch-deployments update` — update patch deployment in a project
+- `gcloud compute os-config patch-jobs cancel` — cancel a specific OS patch job which must currently be active
+- `gcloud compute os-config patch-jobs describe` — describe a specified OS patch job
+- `gcloud compute os-config patch-jobs execute` — execute an OS patch on the specified VM instances
+- `gcloud compute os-config patch-jobs list` — list ongoing and completed patch jobs
+- `gcloud compute os-config patch-jobs list-instance-details` — list the instance details for an OS patch job
+- `gcloud compute os-config policy-orchestrators create` — create a policy orchestrator
+- `gcloud compute os-config policy-orchestrators delete` — delete a policy orchestrator
+- `gcloud compute os-config policy-orchestrators describe` — describe a policy orchestrator
+- `gcloud compute os-config policy-orchestrators list` — list policy orchestrators
+- `gcloud compute os-config policy-orchestrators update` — update a policy orchestrator
+- `gcloud compute os-config project-feature-settings describe` — get all VM Manager project feature settings
+- `gcloud compute os-config project-feature-settings update` — update VM Manager project feature settings
+- `gcloud compute os-config vulnerability-reports describe` — describe the vulnerability report data for a Compute Engine VM instance
+- `gcloud compute os-config vulnerability-reports list` — list vulnerability report data for all Compute Engine VM instances in a specified location
+- `gcloud compute os-login describe-profile` — describe the OS Login profile for the current user
+- `gcloud compute os-login remove-profile` — remove the posix account information for the current user
+- `gcloud compute os-login ssh-keys add` — add an SSH public key to an OS Login profile
+- `gcloud compute os-login ssh-keys describe` — describe an SSH Public Key from an OS Login Profile
+- `gcloud compute os-login ssh-keys list` — list SSH public keys from an OS Login profile
+- `gcloud compute os-login ssh-keys remove` — remove an SSH public key from an OS Login profile
+- `gcloud compute os-login ssh-keys update` — update an SSH public key in an OS Login profile
+- `gcloud compute packet-mirrorings create` — create a Compute Engine packet mirroring policy
+- `gcloud compute packet-mirrorings delete` — delete a Compute Engine packet mirroring policy
+- `gcloud compute packet-mirrorings describe` — describe a Compute Engine packet mirroring policy
+- `gcloud compute packet-mirrorings list` — list Google Compute Engine packet mirroring policies
+- `gcloud compute packet-mirrorings update` — update a Compute Engine packet mirroring policy
+- `gcloud compute preview-features describe` — describe a preview feature
+- `gcloud compute preview-features list` — view preview features
+- `gcloud compute preview-features update` — update a preview feature's activation status
+- `gcloud compute project-info add-metadata` — add or update project-wide metadata
+- `gcloud compute project-info describe` — describe the Compute Engine project resource
+- `gcloud compute project-info remove-metadata` — remove project-wide metadata entries
+- `gcloud compute project-info set-usage-bucket` — set usage reporting bucket for a project
+- `gcloud compute project-info update` — update a Compute Engine project resource
+- `gcloud compute project-zonal-metadata add` — add or update project zonal metadata
+- `gcloud compute project-zonal-metadata describe` — describe project zonal metadata
+- `gcloud compute project-zonal-metadata remove` — remove project zonal metadata
+- `gcloud compute public-advertised-prefixes create` — creates a Compute Engine public advertised prefix
+- `gcloud compute public-advertised-prefixes delete` — deletes a Compute Engine public advertised prefix
+- `gcloud compute public-advertised-prefixes describe` — describes a Compute Engine public advertised prefix
+- `gcloud compute public-advertised-prefixes list` — list Google Compute Engine public advertised prefixes
+- `gcloud compute public-advertised-prefixes update` — updates a Compute Engine public advertised prefix
+- `gcloud compute public-delegated-prefixes create` — creates a Compute Engine public delegated prefix
+- `gcloud compute public-delegated-prefixes delete` — deletes a Compute Engine public delegated prefix
+- `gcloud compute public-delegated-prefixes describe` — describes a Compute Engine public delegated prefix
+- `gcloud compute public-delegated-prefixes list` — list Google Compute Engine public delegated prefixes
+- `gcloud compute public-delegated-prefixes update` — updates a Compute Engine public delegated prefix
+- `gcloud compute public-delegated-prefixes delegated-sub-prefixes create` — creates a Compute Engine delegated sub prefix
+- `gcloud compute public-delegated-prefixes delegated-sub-prefixes delete` — deletes a Compute Engine delegated sub prefix
+- `gcloud compute regions describe` — describe a Compute Engine region
+- `gcloud compute regions list` — list Google Compute Engine regions
+- `gcloud compute reservations add-iam-policy-binding` — add IAM policy binding to a Compute Engine reservation
+- `gcloud compute reservations create` — create a Compute Engine reservation
+- `gcloud compute reservations delete` — delete a Compute Engine reservation
+- `gcloud compute reservations describe` — show details about a Compute Engine reservation
+- `gcloud compute reservations get-iam-policy` — get the IAM policy for a Compute Engine reservation
+- `gcloud compute reservations list` — list Compute Engine reservations
+- `gcloud compute reservations perform-maintenance` — perform maintenance on a reservation, only applicable to reservations with reservation blocks
+- `gcloud compute reservations remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine reservation
+- `gcloud compute reservations set-iam-policy` — set the IAM policy for a Compute Engine reservation
+- `gcloud compute reservations update` — update Compute Engine reservations
+- `gcloud compute reservations blocks describe` — describe a Compute Engine reservation block
+- `gcloud compute reservations blocks list` — list Compute Engine reservation blocks
+- `gcloud compute reservations blocks perform-maintenance` — perform maintenance on a reservation block within a reservation
+- `gcloud compute reservations sub-blocks describe` — describe a Compute Engine reservation sub-block
+- `gcloud compute reservations sub-blocks list` — list Compute Engine reservation sub-blocks
+- `gcloud compute reservations sub-blocks perform-maintenance` — perform maintenance on a reservation sub-block
+- `gcloud compute reservations sub-blocks report-subblock-as-faulty` — report a sub-block within a reservation as faulty
+- `gcloud compute resource-policies delete` — delete a Compute Engine resource policy
+- `gcloud compute resource-policies describe` — describe a Compute Engine resource policy
+- `gcloud compute resource-policies get-iam-policy` — get the IAM policy for a Compute Engine resource policy
+- `gcloud compute resource-policies list` — list Google Compute Engine resource policies
+- `gcloud compute resource-policies set-iam-policy` — set the IAM policy for a Compute Engine resource policy
+- `gcloud compute resource-policies create disk-consistency-group` — create a Compute Engine Disk Consistency Group resource policy
+- `gcloud compute resource-policies create group-placement` — create a Compute Engine group placement resource policy
+- `gcloud compute resource-policies create instance-schedule` — create a Compute Engine instance schedule resource policy
+- `gcloud compute resource-policies create snapshot-schedule` — create a Compute Engine Snapshot Schedule Resource Policy
+- `gcloud compute resource-policies create workload-policy` — create a Compute Engine workload resource policy
+- `gcloud compute resource-policies update instance-schedule` — update a Compute Engine Instance Schedule Resource Policy
+- `gcloud compute resource-policies update snapshot-schedule` — update a Compute Engine Snapshot Schedule Resource Policy
+- `gcloud compute routers add-bgp-peer` — add a BGP peer to a Compute Engine router
+- `gcloud compute routers add-interface` — add an interface to a Compute Engine router
+- `gcloud compute routers add-route-policy` — add an empty route policy to a Compute Engine router
+- `gcloud compute routers add-route-policy-term` — adds a new term to an existing route policy of a Comute Engine router
+- `gcloud compute routers create` — create a Compute Engine router
+- `gcloud compute routers delete` — delete Compute Engine routers
+- `gcloud compute routers describe` — describe a Compute Engine router
+- `gcloud compute routers download-route-policy` — download a route policy from a Compute Engine router
+- `gcloud compute routers get-nat-ip-info` — display NAT IP information in a router
+- `gcloud compute routers get-nat-mapping-info` — display NAT Mapping information in a router
+- `gcloud compute routers get-route-policy` — get a route policy from a Compute Engine router
+- `gcloud compute routers get-status` — get status of a Compute Engine router
+- `gcloud compute routers list` — list Google Compute Engine routers
+- `gcloud compute routers list-bgp-routes` — list routes advertised and learned on individual BGP sessions, both pre- and post-policy evaluation
+- `gcloud compute routers list-route-policies` — list route policies from a Compute Engine router
+- `gcloud compute routers remove-bgp-peer` — remove a BGP peer from a Compute Engine router
+- `gcloud compute routers remove-interface` — remove an interface from a Compute Engine router
+- `gcloud compute routers remove-route-policy` — remove a route policy from a Compute Engine router
+- `gcloud compute routers remove-route-policy-term` — remove a route policy term of a Compute Engine router
+- `gcloud compute routers update` — update a Compute Engine router
+- `gcloud compute routers update-bgp-peer` — update a BGP peer on a Compute Engine router
+- `gcloud compute routers update-interface` — update an interface on a Compute Engine router
+- `gcloud compute routers update-route-policy-term` — updates a term of an existing route policy of a Comute Engine router
+- `gcloud compute routers upload-route-policy` — upload a route policy into a Compute Engine router
+- `gcloud compute routers nats create` — add a NAT to a Compute Engine router
+- `gcloud compute routers nats delete` — remove a NAT from a Compute Engine router
+- `gcloud compute routers nats describe` — describe a NAT in a Compute Engine router
+- `gcloud compute routers nats list` — lists the NATs on a Compute Engine router
+- `gcloud compute routers nats update` — update a NAT on a Compute Engine router
+- `gcloud compute routers nats rules create` — add a Rule to a Compute Engine NAT
+- `gcloud compute routers nats rules delete` — delete a Rule in a Compute Engine NAT
+- `gcloud compute routers nats rules describe` — describe a Rule in a Compute Engine NAT
+- `gcloud compute routers nats rules list` — lists the NATs on a Compute Engine router
+- `gcloud compute routers nats rules update` — update a Rule in a Compute Engine NAT
+- `gcloud compute routes create` — create a new route
+- `gcloud compute routes delete` — delete routes
+- `gcloud compute routes describe` — describe a route
+- `gcloud compute routes list` — list non-dynamic Google Compute Engine routes
+- `gcloud compute security-policies add-layer7-ddos-defense-threshold-config` — add a layer7 ddos defense threshold config to a Compute Engine security policy
+- `gcloud compute security-policies add-user-defined-field` — add a user defined field to a Compute Engine security policy
+- `gcloud compute security-policies create` — create a Compute Engine security policy
+- `gcloud compute security-policies delete` — delete security policies
+- `gcloud compute security-policies describe` — describe a Compute Engine security policy
+- `gcloud compute security-policies export` — export security policy configs into YAML or JSON files
+- `gcloud compute security-policies import` — import security policy configs into your project
+- `gcloud compute security-policies list` — list Google Compute Engine security policies
+- `gcloud compute security-policies list-preconfigured-expression-sets` — list all available preconfigured expression sets
+- `gcloud compute security-policies remove-layer7-ddos-defense-threshold-config` — remove a layer7 ddos defense threshold config from a Compute Engine security policy
+- `gcloud compute security-policies remove-user-defined-field` — remove a user defined field from a Compute Engine security policy
+- `gcloud compute security-policies update` — update a Compute Engine security policy
+- `gcloud compute security-policies rules add-preconfig-waf-exclusion` — add an exclusion configuration for preconfigured WAF evaluation into a security policy rule
+- `gcloud compute security-policies rules create` — create a Compute Engine security policy rule
+- `gcloud compute security-policies rules delete` — delete Compute Engine security policy rules
+- `gcloud compute security-policies rules describe` — describe a Compute Engine security policy rule
+- `gcloud compute security-policies rules remove-preconfig-waf-exclusion` — remove an exclusion configuration for preconfigured WAF evaluation from a security policy rule
+- `gcloud compute security-policies rules update` — update a Compute Engine security policy rule
+- `gcloud compute service-attachments create` — create a Google Compute Engine service attachment
+- `gcloud compute service-attachments delete` — delete one or more Google Compute Engine service attachments
+- `gcloud compute service-attachments describe` — display details about a Google Compute Engine service attachment
+- `gcloud compute service-attachments list` — list Google Compute Engine service attachments
+- `gcloud compute service-attachments update` — update a Google Compute Engine service attachment
+- `gcloud compute shared-vpc disable` — disable the given project as a shared VPC host
+- `gcloud compute shared-vpc enable` — enable the given project as a shared VPC host
+- `gcloud compute shared-vpc get-host-project` — get the shared VPC host project that the given project is associated with
+- `gcloud compute shared-vpc list-associated-resources` — list the resources associated with the given shared VPC host project
+- `gcloud compute shared-vpc associated-projects add` — associate the given project with a given shared VPC host project
+- `gcloud compute shared-vpc associated-projects list` — list the associated service projects of the given host project
+- `gcloud compute shared-vpc associated-projects remove` — disassociate the given project from the given shared VPC host project
+- `gcloud compute shared-vpc organizations list-host-projects` — list shared VPC host projects in a given organization
+- `gcloud compute snapshot-settings describe` — describe snapshot settings
+- `gcloud compute snapshot-settings update` — update snapshot settings
+- `gcloud compute snapshots add-iam-policy-binding` — add IAM policy binding to a Compute Engine snapshot
+- `gcloud compute snapshots add-labels` — add labels to Google Compute Engine snapshots
+- `gcloud compute snapshots create` — create Compute Engine snapshots
+- `gcloud compute snapshots delete` — delete Compute Engine snapshots
+- `gcloud compute snapshots describe` — describe a Compute Engine snapshot
+- `gcloud compute snapshots get-iam-policy` — get the IAM policy for a Compute Engine snapshot
+- `gcloud compute snapshots list` — list Google Compute Engine snapshots
+- `gcloud compute snapshots remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine snapshot
+- `gcloud compute snapshots remove-labels` — remove labels from Google Compute Engine snapshots
+- `gcloud compute snapshots set-iam-policy` — set the IAM policy for a Compute Engine snapshot
+- `gcloud compute snapshots update` — update a Compute Engine snapshot
+- `gcloud compute sole-tenancy node-groups add-iam-policy-binding` — add IAM policy binding to a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups create` — create a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups delete` — delete a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups describe` — describe a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups get-iam-policy` — get the IAM policy for a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups list` — list Google Compute Engine node groups
+- `gcloud compute sole-tenancy node-groups list-nodes` — list Compute Engine sole-tenant nodes present in a nodegroup
+- `gcloud compute sole-tenancy node-groups perform-maintenance` — perform maintenance on nodes in a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups set-iam-policy` — set the IAM policy for a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups simulate-maintenance-event` — simulate maintenance of a Compute Engine node group
+- `gcloud compute sole-tenancy node-groups update` — update a Compute Engine node group
+- `gcloud compute sole-tenancy node-templates add-iam-policy-binding` — add IAM policy binding to a Compute Engine node template
+- `gcloud compute sole-tenancy node-templates create` — create a Compute Engine node template
+- `gcloud compute sole-tenancy node-templates delete` — delete a Compute Engine node template
+- `gcloud compute sole-tenancy node-templates describe` — describe a Compute Engine node template
+- `gcloud compute sole-tenancy node-templates get-iam-policy` — get the IAM Policy for a Compute Engine node template
+- `gcloud compute sole-tenancy node-templates list` — list Google Compute Engine node templates
+- `gcloud compute sole-tenancy node-templates remove-iam-policy-binding` — remove IAM policy binding from a Compute Engine node template
+- `gcloud compute sole-tenancy node-templates set-iam-policy` — set the IAM policy for a Compute Engine node template
+- `gcloud compute sole-tenancy node-types describe` — describe a Compute Engine node type
+- `gcloud compute sole-tenancy node-types list` — list Google Compute Engine node types
+- `gcloud compute ssl-certificates create` — create a Compute Engine SSL certificate
+- `gcloud compute ssl-certificates delete` — delete Compute Engine SSL certificates
+- `gcloud compute ssl-certificates describe` — describe a Compute Engine SSL certificate
+- `gcloud compute ssl-certificates list` — list Google Compute Engine SSL certificates
+- `gcloud compute ssl-policies create` — create a new Compute Engine SSL policy
+- `gcloud compute ssl-policies delete` — delete Compute Engine SSL policies
+- `gcloud compute ssl-policies describe` — describe a Compute Engine ssl policy
+- `gcloud compute ssl-policies list` — list Google Compute Engine SSL policies
+- `gcloud compute ssl-policies list-available-features` — list available features that can be specified in an SSL policy
+- `gcloud compute ssl-policies update` — update a Compute Engine SSL policy
+- `gcloud compute storage-pool-types describe` — describe a storage pool type
+- `gcloud compute storage-pool-types list` — view storage pools types
+- `gcloud compute storage-pools create` — create a storage pool
+- `gcloud compute storage-pools delete` — delete a storage pool
+- `gcloud compute storage-pools describe` — describe a storage pool
+- `gcloud compute storage-pools get-iam-policy` — get the IAM policy of a storage pool
+- `gcloud compute storage-pools list` — view storage pools
+- `gcloud compute storage-pools list-disks` — view the disks that are in a storage pool
+- `gcloud compute storage-pools set-iam-policy` — set the IAM policy of the given storage pool
+- `gcloud compute storage-pools update` — update a storage pool
+- `gcloud compute target-grpc-proxies create` — create a target gRPC proxy
+- `gcloud compute target-grpc-proxies delete` — delete one or more target gRPC proxy
+- `gcloud compute target-grpc-proxies describe` — display detailed information about a target gRPC proxy
+- `gcloud compute target-grpc-proxies list` — list Google Compute Engine target gRPC proxies
+- `gcloud compute target-http-proxies create` — create a target HTTP proxy
+- `gcloud compute target-http-proxies delete` — delete target HTTP proxies
+- `gcloud compute target-http-proxies describe` — display detailed information about a target HTTP proxy
+- `gcloud compute target-http-proxies export` — export a target HTTP proxy
+- `gcloud compute target-http-proxies import` — import a target HTTP proxy
+- `gcloud compute target-http-proxies list` — list Google Compute Engine target HTTP proxies
+- `gcloud compute target-http-proxies update` — update a target HTTP proxy
+- `gcloud compute target-https-proxies create` — create a target HTTPS proxy
+- `gcloud compute target-https-proxies delete` — delete target HTTPS proxies
+- `gcloud compute target-https-proxies describe` — display detailed information about a target HTTPS proxy
+- `gcloud compute target-https-proxies export` — export a target HTTPS proxy
+- `gcloud compute target-https-proxies import` — import a target HTTPS proxy
+- `gcloud compute target-https-proxies list` — list Google Compute Engine target HTTPS proxies
+- `gcloud compute target-https-proxies update` — update a target HTTPS proxy
+- `gcloud compute target-instances create` — create a target instance for handling traffic from a forwarding rule
+- `gcloud compute target-instances delete` — delete target instances
+- `gcloud compute target-instances describe` — describe a target instance
+- `gcloud compute target-instances list` — list Google Compute Engine target instances
+- `gcloud compute target-instances update` — update a Compute Engine target instance
+- `gcloud compute target-pools add-health-checks` — add a legacy HTTP health check to a target pool
+- `gcloud compute target-pools add-instances` — add instances to a target pool
+- `gcloud compute target-pools create` — define a load-balanced pool of virtual machine instances
+- `gcloud compute target-pools delete` — delete target pools
+- `gcloud compute target-pools describe` — describe a Compute Engine target pool
+- `gcloud compute target-pools get-health` — get the health of instances in a target pool
+- `gcloud compute target-pools list` — list Google Compute Engine target pools
+- `gcloud compute target-pools remove-health-checks` — remove an HTTP health check from a target pool
+- `gcloud compute target-pools remove-instances` — remove instances from a target pool
+- `gcloud compute target-pools set-backup` — set a backup pool for a target pool
+- `gcloud compute target-pools update` — update a Compute Engine target pool
+- `gcloud compute target-ssl-proxies create` — create a target SSL proxy
+- `gcloud compute target-ssl-proxies delete` — delete target SSL proxies
+- `gcloud compute target-ssl-proxies describe` — display detailed information about a target SSL proxy
+- `gcloud compute target-ssl-proxies list` — list Google Compute Engine target SSL proxies
+- `gcloud compute target-ssl-proxies update` — update a target SSL proxy
+- `gcloud compute target-tcp-proxies create` — create a target TCP proxy
+- `gcloud compute target-tcp-proxies delete` — delete target TCP proxies
+- `gcloud compute target-tcp-proxies describe` — display detailed information about a target TCP proxy
+- `gcloud compute target-tcp-proxies list` — list Google Compute Engine target TCP proxies
+- `gcloud compute target-tcp-proxies update` — update a target TCP proxy
+- `gcloud compute target-vpn-gateways create` — create a Cloud VPN Classic Target VPN Gateway
+- `gcloud compute target-vpn-gateways delete` — delete Cloud VPN Classic Target VPN Gateways
+- `gcloud compute target-vpn-gateways describe` — describe a Compute Engine Cloud VPN Classic Target VPN Gateway
+- `gcloud compute target-vpn-gateways list` — list Google Compute Engine Cloud VPN Classic Target VPN Gateways
+- `gcloud compute tpus accelerator-types describe` — describe an accelerator type available for Cloud TPUs
+- `gcloud compute tpus accelerator-types list` — list available accelerator types for Cloud TPUs
+- `gcloud compute tpus locations describe` — describe a Cloud TPU Location
+- `gcloud compute tpus locations list` — list available locations for Cloud TPUs
+- `gcloud compute tpus queued-resources create` — create a Queued Resource
+- `gcloud compute tpus queued-resources delete` — delete a Queued Resource
+- `gcloud compute tpus queued-resources describe` — describe a Queued Resource
+- `gcloud compute tpus queued-resources list` — list Queued Resources
+- `gcloud compute tpus queued-resources reset` — reset a Queued Resource
+- `gcloud compute tpus queued-resources scp` — copy files to and from a Cloud TPU Queued Resource via SCP
+- `gcloud compute tpus queued-resources ssh` — SSH into a Cloud TPU Queued Resource's node(s)
+- `gcloud compute tpus topologies list` — list available topologies for Cloud TPUs
+- `gcloud compute tpus tpu-vm create` — create a new Cloud TPU VM node
+- `gcloud compute tpus tpu-vm delete` — delete a Cloud TPU VM node
+- `gcloud compute tpus tpu-vm describe` — describe a Cloud TPU VM node
+- `gcloud compute tpus tpu-vm get-guest-attributes` — retrieve the Guest Attributes for a Cloud TPU VM
+- `gcloud compute tpus tpu-vm list` — list Cloud TPU VM nodes
+- `gcloud compute tpus tpu-vm scp` — copy files to and from a Cloud TPU VM via SCP
+- `gcloud compute tpus tpu-vm ssh` — SSH into a Cloud TPU VM
+- `gcloud compute tpus tpu-vm start` — start a Cloud TPU VM node
+- `gcloud compute tpus tpu-vm stop` — stop a Cloud TPU VM node
+- `gcloud compute tpus tpu-vm update` — update a Cloud TPU VM node
+- `gcloud compute tpus tpu-vm accelerator-types describe` — describe an accelerator type available for Cloud TPU VM nodes
+- `gcloud compute tpus tpu-vm accelerator-types list` — list available accelerator types for Cloud TPU VM nodes
+- `gcloud compute tpus tpu-vm service-identity create` — create a Cloud TPU VM service identity for a project
+- `gcloud compute tpus tpu-vm versions describe` — describe a runtime version available for Cloud TPU VM nodes
+- `gcloud compute tpus tpu-vm versions list` — list available runtime versions for Cloud TPU VM nodes
+- `gcloud compute tpus versions describe` — describe a Tensorflow version available for Cloud TPUs
+- `gcloud compute tpus versions list` — list available Tensorflow versions
+- `gcloud compute url-maps add-host-rule` — add a rule to a URL map to map hosts to a path matcher
+- `gcloud compute url-maps add-path-matcher` — add a path matcher to a URL map
+- `gcloud compute url-maps create` — create a URL map
+- `gcloud compute url-maps delete` — delete URL maps
+- `gcloud compute url-maps describe` — describe a URL map
+- `gcloud compute url-maps edit` — modify URL maps
+- `gcloud compute url-maps export` — export a URL map
+- `gcloud compute url-maps import` — import a URL map
+- `gcloud compute url-maps invalidate-cdn-cache` — invalidate specified objects for a URL map in Cloud CDN caches
+- `gcloud compute url-maps list` — list Google Compute Engine URL maps
+- `gcloud compute url-maps list-cdn-cache-invalidations` — list Cloud CDN cache invalidations for a URL map
+- `gcloud compute url-maps remove-host-rule` — remove a host rule from a URL map
+- `gcloud compute url-maps remove-path-matcher` — remove a path matcher from a URL map
+- `gcloud compute url-maps set-default-service` — change the default service or default bucket of a URL map
+- `gcloud compute url-maps validate` — validate a URL map
+- `gcloud compute vpn-gateways create` — create a new Compute Engine Highly Available VPN gateway
+- `gcloud compute vpn-gateways delete` — delete Compute Engine Highly Available VPN Gateways
+- `gcloud compute vpn-gateways describe` — describe a Compute Engine Highly Available VPN Gateway
+- `gcloud compute vpn-gateways get-status` — get status of a Compute Engine Highly Available VPN Gateway
+- `gcloud compute vpn-gateways list` — list Google Compute Engine Highly Available VPN Gateways
+- `gcloud compute vpn-gateways update` — update a Compute Engine Highly Available VPN gateway
+- `gcloud compute vpn-tunnels create` — create a VPN tunnel
+- `gcloud compute vpn-tunnels delete` — delete VPN tunnels
+- `gcloud compute vpn-tunnels describe` — describe a Compute Engine VPN tunnel
+- `gcloud compute vpn-tunnels list` — list Google Compute Engine VPN tunnels
+- `gcloud compute zones describe` — describe a Compute Engine zone
+- `gcloud compute zones list` — list Google Compute Engine zones

@@ -1,0 +1,57 @@
+# gcloud edge-cloud — command index
+
+manage edge-cloud resources
+
+- `gcloud edge-cloud container get-server-config` — get server config
+- `gcloud edge-cloud container clusters create` — create an Edge Container cluster
+- `gcloud edge-cloud container clusters delete` — delete an Edge Container cluster
+- `gcloud edge-cloud container clusters describe` — show details about the cluster
+- `gcloud edge-cloud container clusters get-credentials` — get credentials of an edge-container cluster
+- `gcloud edge-cloud container clusters list` — list Edge Container clusters
+- `gcloud edge-cloud container clusters update` — update an Edge Container cluster
+- `gcloud edge-cloud container clusters upgrade` — upgrade an Edge Container cluster
+- `gcloud edge-cloud container clusters node-pools create` — create an Edge Container node pool
+- `gcloud edge-cloud container clusters node-pools delete` — delete an Edge Container nodePool
+- `gcloud edge-cloud container clusters node-pools describe` — show details about the nodePool
+- `gcloud edge-cloud container clusters node-pools list` — list Edge Container nodePools
+- `gcloud edge-cloud container clusters node-pools update` — updates an Edge Container node pool
+- `gcloud edge-cloud container machines describe` — show details about the machine
+- `gcloud edge-cloud container machines list` — list Edge Container machines
+- `gcloud edge-cloud container operations describe` — get description of a long-running edge container operation
+- `gcloud edge-cloud container operations wait` — poll long-running edge container operation until it completes
+- `gcloud edge-cloud container regions describe` — describe an Edge Container region (location)
+- `gcloud edge-cloud container regions list` — list Edge Container regions
+- `gcloud edge-cloud container vpn-connections create` — create a VPN connection between an Edge Container cluster and a VPC network
+- `gcloud edge-cloud container vpn-connections delete` — delete a VPN connection between an Edge Container cluster and a VPC network
+- `gcloud edge-cloud container vpn-connections describe` — show details about a VPN connection
+- `gcloud edge-cloud container vpn-connections list` — list VPN connections
+- `gcloud edge-cloud container zones describe` — describe an Edge Container zone
+- `gcloud edge-cloud container zones list` — list Edge Container zones
+- `gcloud edge-cloud networking interconnects describe` — show details about the Distributed Cloud Edge Network interconnect
+- `gcloud edge-cloud networking interconnects get-diagnostics` — get the diagnostics of a specified Distributed Cloud Edge Network interconnect
+- `gcloud edge-cloud networking interconnects list` — list Distributed Cloud Edge Network interconnects
+- `gcloud edge-cloud networking interconnects attachments delete` — delete a Distributed Cloud Edge Network interconnect attachment
+- `gcloud edge-cloud networking interconnects attachments describe` — show details about a Distributed Cloud Edge Network interconnect attachment
+- `gcloud edge-cloud networking interconnects attachments list` — list Distributed Cloud Edge Network interconnect attachments
+- `gcloud edge-cloud networking interconnects attachments dedicated create` — create a Distributed Cloud Edge Network interconnect attachment
+- `gcloud edge-cloud networking networks create` — create a Distributed Cloud Edge Network network
+- `gcloud edge-cloud networking networks delete` — delete a Distributed Cloud Edge Network network
+- `gcloud edge-cloud networking networks describe` — show details about the Distributed Cloud Edge Network network
+- `gcloud edge-cloud networking networks get-status` — get the status of a specified Distributed Cloud Edge Network network
+- `gcloud edge-cloud networking networks list` — list Distributed Cloud Edge Network networks
+- `gcloud edge-cloud networking operations describe` — get description of a long-running edge network operation
+- `gcloud edge-cloud networking operations wait` — poll long-running edge network operation until it completes
+- `gcloud edge-cloud networking routers add-bgp-peer` — add a BGP peer to a Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking routers add-interface` — add an interface to a Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking routers create` — create a Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking routers delete` — delete a Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking routers describe` — show details about the Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking routers get-status` — get the status of a specified Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking routers list` — list Distributed Cloud Edge Network routers
+- `gcloud edge-cloud networking routers remove-bgp-peer` — remove a BGP peer from a Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking routers remove-interface` — remove an interface on a Distributed Cloud Edge Network router
+- `gcloud edge-cloud networking subnets create` — create a Distributed Cloud Edge Network subnet
+- `gcloud edge-cloud networking subnets delete` — delete a Distributed Cloud Edge Network subnet
+- `gcloud edge-cloud networking subnets describe` — show details about the Distributed Cloud Edge Network subnet
+- `gcloud edge-cloud networking subnets list` — list Distributed Cloud Edge Network subnets
+- `gcloud edge-cloud networking zones init` — initialize a specified Distributed Cloud Edge Network zone

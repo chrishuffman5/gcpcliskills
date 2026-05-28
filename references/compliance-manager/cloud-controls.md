@@ -1,0 +1,269 @@
+# gcloud compliance-manager cloud-controls
+
+manage Cloud Control resources
+
+### `gcloud compliance-manager cloud-controls create`
+
+Create a cloud control
+
+Create a cloud control for a given organization and location.
+
+**Synopsis:**
+```
+gcloud compliance-manager cloud-controls create
+    (CLOUD_CONTROL : --location=LOCATION --organization=ORGANIZATION)
+    [--categories=[CATEGORIES,...]] [--description=DESCRIPTION]
+    [--display-name=DISPLAY_NAME] [--finding-category=FINDING_CATEGORY]
+    [--parameter-spec=[defaultValue=DEFAULTVALUE],[description=DESCRIPTION],
+      [displayName=DISPLAYNAME],[isRequired=ISREQUIRED],[name=NAME],
+      [substitutionRules=SUBSTITUTIONRULES],
+      [validation=VALIDATION],[valueType=VALUETYPE]]
+    [--remediation-steps=REMEDIATION_STEPS]
+    [--rules=[celExpression=CELEXPRESSION],
+      [description=DESCRIPTION],[ruleActionTypes=RULEACTIONTYPES]]
+    [--severity=SEVERITY]
+    [--supported-cloud-providers=[SUPPORTED_CLOUD_PROVIDERS,...]]
+    [--supported-target-resource-types=[SUPPORTED_TARGET_RESOURCE_TYPES,
+      ...]] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+CloudControl resource - Identifier. The name of the cloud control, in the
+format
+organizations/{organization}/locations/{location}/cloudControls/{cloud_control_id}.
+The only supported location is global. The arguments in this group can be
+used to specify the attributes of this resource.
+
+This must be specified.
+
+  CLOUD_CONTROL
+     ID of the cloudControl or fully qualified identifier for the
+     cloudControl.
+
+     To set the cloud_control attribute:
+     + provide the argument cloud_control on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --location=LOCATION
+     The location id of the cloudControl resource.
+
+     To set the location attribute:
+     + provide the argument cloud_control on the command line with a
+       fully specified name;
+     + provide the argument --location on the command line.
+
+  --organization=ORGANIZATION
+     The organization id of the cloudControl resource.
+
+     To set the organization attribute:
+     + provide the argument cloud_control on the command line with a
+       fully specified name;
+     + provide the argument --organization on the command line.
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--categories` | one of: cc-category-artificial-intelligence The artificial intelligence category |  | The categories for the cloud control. CATEGORIES must be one of: cc-category-artificial-intelligence The artificial intelligence category. cc-category-bcdr The business continuity and disaster recovery (BCDR) category. cc-category-data-security The data security category. cc-category-encryption The encryption category. cc-category-hr-admin-and-processes The HR, admin, and processes category. cc-category-identity-and-access-management The identity and access management category. cc-category-incident-management The incident management category. cc-category-infrastructure The infrastructure security category. cc-category-legal-and-disclosures The legal and disclosures category. cc-category-logs-management-and-infrastructure The logs management and infrastructure category. cc-category-network-security The network security category. cc-category-physical-security The physical security category. cc-category-privacy The privacy category. cc-category-third-party-and-sub-processor-management The third-party and sub-processor management category. cc-category-vulnerability-management The vulnerability management category. |
+| `--description` | DESCRIPTION |  | A description of the cloud control. The maximum length is 2000 characters. |
+| `--display-name` | DISPLAY_NAME |  | The friendly name of the cloud control. The maximum length is 200 characters. |
+| `--finding-category` | FINDING_CATEGORY |  | The finding category for the cloud control findings. The maximum length is 255 characters. |
+| `--parameter-spec` | [defaultValue=DEFAULTVALUE],[description=DESCRIPTION],[displayName=DISPLAYNAME],[isRequired=ISREQUIRED],[name=NAME],[substitutionRules=SUBSTITUTIONRULES],[validation=VALIDATION],[valueType=VALUETYPE] |  | The parameter specifications for the cloud control. defaultValue The default value of the parameter. boolValue A boolean value. numberValue A double value. stringListValue A repeated string. values The strings in the list. stringValue A string value. description The description of the parameter. The maximum length is 2000 characters. displayName The friendly name of the parameter. The maximum length is 200 characters. isRequired Whether the parameter is required. name The name of the parameter. substitutionRules The list of parameter substitutions. attributeSubstitutionRule The attribute substitution rule. attribute The fully qualified proto attribute path, in dot notation. For example: rules[0].cel_expression.resource_types_values. placeholderSubstitutionRule The placeholder substitution rule. attribute The fully qualified proto attribute path, in dot notation. validation The permitted set of values for the parameter. allowedValues The permitted set of values for the parameter. values The list of allowed values for the parameter. boolValue A boolean value. numberValue A double value. stringListValue A repeated string. values The strings in the list. stringValue A string value. intRange The permitted range for numeric parameters. max The maximum permitted value for the numeric parameter (inclusive). min The minimum permitted value for the numeric parameter (inclusive). regexpPattern The regular expression for string parameters. pattern The regex pattern to match the values of the parameter with. valueType The parameter value type. Shorthand Example: --parameter-spec=defaultValue={boolValue=boolean,numberValue=float,stringListValue={values=[string]},stringValue=string},description=string,displayName=string,isRequired=boolean,name=string,substitutionRules=[{attributeSubstitutionRule={attribute=string},placeholderSubstitutionRule={attribute=string}}],validation={allowedValues={values=[{boolValue=boolean,numberValue=float,stringListValue={values=[string]},stringValue=string}]},intRange={max=int,min=int},regexpPattern={pattern=string}},valueType=string --parameter-spec=defaultValue={boolValue=boolean,numberValue=float,stringListValue={values=[string]},stringValue=string},description=string,displayName=string,isRequired=boolean,name=string,substitutionRules=[{attributeSubstitutionRule={attribute=string},placeholderSubstitutionRule={attribute=string}}],validation={allowedValues={values=[{boolValue=boolean,numberValue=float,stringListValue={values=[string]},stringValue=string}]},intRange={max=int,min=int},regexpPattern={pattern=string}},valueType=string JSON Example: --parameter-spec='[{"defaultValue": {"boolValue": boolean, "numberValue": float, "stringListValue": {"values": ["string"]}, "stringValue": "string"}, "description": "string", "displayName": "string", "isRequired": boolean, "name": "string", "substitutionRules": [{"attributeSubstitutionRule": {"attribute": "string"}, "placeholderSubstitutionRule": {"attribute": "string"}}], "validation": {"allowedValues": {"values": [{"boolValue": boolean, "numberValue": float, "stringListValue": {"values": ["string"]}, "stringValue": "string"}]}, "intRange": {"max": int, "min": int}, "regexpPattern": {"pattern": "string"}}, "valueType": "string"}]' File Example: --parameter-spec=path_to_file.(yaml\|json) |
+| `--remediation-steps` | REMEDIATION_STEPS |  | The remediation steps for the cloud control findings. The maximum length is 400 characters. |
+| `--rules` | [celExpression=CELEXPRESSION],[description=DESCRIPTION],[ruleActionTypes=RULEACTIONTYPES] |  | The rules that you can enforce to meet your security or compliance intent. celExpression The rule's logic expression in Common Expression Language (CEL). expression The logical expression in CEL. The maximum length of the condition is 1000 characters. For more information, see CEL expression (https://cloud.google.com/security-command-center/docs/compliance-manager-write-cel-expressions). resourceTypesValues The resource instance types on which this expression is defined. The format is <SERVICE_NAME>/<type>. For example: compute.googleapis.com/Instance. values The strings in the list. description The rule description. The maximum length is 2000 characters. ruleActionTypes The functionality that's enabled by the rule. Shorthand Example: --rules=celExpression={expression=string,resourceTypesValues={values=[string]}},description=string,ruleActionTypes=[string] --rules=celExpression={expression=string,resourceTypesValues={values=[string]}},description=string,ruleActionTypes=[string] JSON Example: --rules='[{"celExpression": {"expression": "string", "resourceTypesValues": {"values": ["string"]}}, "description": "string", "ruleActionTypes": ["string"]}]' File Example: --rules=path_to_file.(yaml\|json) |
+| `--severity` | one of: critical A critical vulnerability is easily discoverable by an external actor, exploitable, and results in the direct ability to execute arbitrary code, exfiltrate data, and otherwise gain additional access and privileges to cloud resources and workloads |  | The severity of the findings that are generated by the cloud control. SEVERITY must be one of: critical A critical vulnerability is easily discoverable by an external actor, exploitable, and results in the direct ability to execute arbitrary code, exfiltrate data, and otherwise gain additional access and privileges to cloud resources and workloads. Examples include publicly accessible unprotected user data and public SSH access with weak or no passwords. A critical threat is a threat that can access, modify, or delete data or execute unauthorized code within existing resources. high A high-risk vulnerability can be easily discovered and exploited in combination with other vulnerabilities to gain direct access and the ability to execute arbitrary code, exfiltrate data, and otherwise gain additional access and privileges to cloud resources and workloads. An example is a database with weak or no passwords that is only accessible internally. This database could easily be compromised by an actor that had access to the internal network. A high-risk threat is a threat that can create new computational resources in an environment but can't access data or execute code in existing resources. low A low-risk vulnerability hampers a security organization's ability to detect vulnerabilities or active threats in their deployment, or prevents the root cause investigation of security issues. An example is monitoring and logs being disabled for resource configurations and access. A low-risk threat is a threat that has obtained minimal access to an environment but can't access data, execute code, or create resources. medium A medium-risk vulnerability can be used by an actor to gain access to resources or privileges that enable them to eventually (through multiple steps or a complex exploit) gain access and the ability to execute arbitrary code or exfiltrate data. An example is a service account with access to more projects than it should have. If an actor gains access to the service account, they could potentially use that access to manipulate a project the service account was not intended to. A medium-risk threat can cause operational impact but might not access data or execute unauthorized code. |
+| `--supported-cloud-providers` | one of: aws Amazon Web Services (AWS) |  | The supported cloud providers. SUPPORTED_CLOUD_PROVIDERS must be one of: aws Amazon Web Services (AWS). azure Microsoft Azure. gcp Google Cloud. |
+| `--supported-target-resource-types` | one of: target-resource-crm-type-folder The target resource is a folder |  | The target resource types that are supported by the cloud control. SUPPORTED_TARGET_RESOURCE_TYPES must be one of: target-resource-crm-type-folder The target resource is a folder. target-resource-crm-type-org The target resource is a Google Cloud organization. target-resource-crm-type-project The target resource is a project. target-resource-type-application The target resource is an application in App Hub. |
+
+
+**Examples:**
+```bash
+To create a cloud control my-cloud-control-id in organization
+my-organization-id and location global with a specific rule, run:
+
+    $ gcloud compliance-manager cloud-controls create \
+        my-cloud-control-id --organization=my-organization-id \
+        --location=global \
+        --display-name="My cloud control display name" \
+        --description="My cloud control description" \
+        --rules='[{"description":"VM IP forwarding
+     check","ruleActionTypes":["rule-action-type-detective"],"celExpress\
+    ion":{"expression":"resource.canIpForward ==
+     false","resourceTypesValues":{"values":["compute.googleapis.com/Ins\
+    tance"]}}}]' \
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/compliance-manager/cloud-controls/create)
+
+---
+### `gcloud compliance-manager cloud-controls delete`
+
+Delete a cloud control
+
+Delete a specific cloud control.
+
+**Synopsis:**
+```
+gcloud compliance-manager cloud-controls delete
+    (CLOUD_CONTROL : --location=LOCATION --organization=ORGANIZATION)
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+CloudControl resource - The name of the cloud control to delete, in the
+format
+organizations/{organization}/locations/{location}/CloudControls/{CloudControl}.
+The only supported location is global. The arguments in this group can be
+used to specify the attributes of this resource.
+
+This must be specified.
+
+  CLOUD_CONTROL
+     ID of the cloudControl or fully qualified identifier for the
+     cloudControl.
+
+     To set the cloud_control attribute:
+     + provide the argument cloud_control on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --location=LOCATION
+     The location id of the cloudControl resource.
+
+     To set the location attribute:
+     + provide the argument cloud_control on the command line with a
+       fully specified name;
+     + provide the argument --location on the command line.
+
+  --organization=ORGANIZATION
+     The organization id of the cloudControl resource.
+
+     To set the organization attribute:
+     + provide the argument cloud_control on the command line with a
+       fully specified name;
+     + provide the argument --organization on the command line.
+```
+
+**Examples:**
+```bash
+To delete cloud control my-cloud-control-id in organization
+my-organization-id and location global, run:
+
+    $ gcloud compliance-manager cloud-controls delete \
+        my-cloud-control-id --organization=my-organization-id \
+        --location=global
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/compliance-manager/cloud-controls/delete)
+
+---
+### `gcloud compliance-manager cloud-controls describe`
+
+Get a cloud control
+
+Get the details for a specific cloud control.
+
+**Synopsis:**
+```
+gcloud compliance-manager cloud-controls describe
+    (CLOUD_CONTROL : --location=LOCATION --organization=ORGANIZATION)
+    [--major-revision-id=MAJOR_REVISION_ID] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+CloudControl resource - The name of the cloud control to retrieve, in the
+format
+organizations/{organization}/locations/{location}/cloudControls/{cloud_control}.
+The only supported location is global. The arguments in this group can be
+used to specify the attributes of this resource.
+
+This must be specified.
+
+  CLOUD_CONTROL
+     ID of the cloudControl or fully qualified identifier for the
+     cloudControl.
+
+     To set the cloud_control attribute:
+     + provide the argument cloud_control on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --location=LOCATION
+     The location id of the cloudControl resource.
+
+     To set the location attribute:
+     + provide the argument cloud_control on the command line with a
+       fully specified name;
+     + provide the argument --location on the command line.
+
+  --organization=ORGANIZATION
+     The organization id of the cloudControl resource.
+
+     To set the organization attribute:
+     + provide the argument cloud_control on the command line with a
+       fully specified name;
+     + provide the argument --organization on the command line.
+```
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--major-revision-id` | MAJOR_REVISION_ID |  | The major version of the cloud control to retrieve. If not specified, the most recently updated revision_id is retrieved. |
+
+
+**Examples:**
+```bash
+To get cloud control my-cloud-control-id in organization my-organization-id
+and location global, run:
+
+    $ gcloud compliance-manager cloud-controls describe \
+        my-cloud-control-id --organization=my-organization-id \
+        --location=global
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/compliance-manager/cloud-controls/describe)
+
+---
+### `gcloud compliance-manager cloud-controls list`
+
+List cloud controls
+
+List all cloud controls for a given organization and location.
+
+**Synopsis:**
+```
+gcloud compliance-manager cloud-controls list
+    (--location=LOCATION : --organization=ORGANIZATION)
+    [--filter=EXPRESSION] [--limit=LIMIT] [--page-size=PAGE_SIZE]
+    [--sort-by=[FIELD,...]] [--uri] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--location` | LOCATION |  | _[This must be specified.]_ ID of the location or fully qualified identifier for the location. To set the location attribute: + provide the argument --location on the command line. This flag argument must be specified if any of the other arguments in this group are specified. |
+| `--organization` | ORGANIZATION |  | _[This must be specified.]_ The organization id of the location resource. To set the organization attribute: + provide the argument --location on the command line with a fully specified name; + provide the argument --organization on the command line. |
+
+
+**Examples:**
+```bash
+To list all cloud controls in organization my-organization-id and location
+global, run:
+
+    $ gcloud compliance-manager cloud-controls list \
+        --organization=my-organization-id --location=global
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/compliance-manager/cloud-controls/list)
+
+---

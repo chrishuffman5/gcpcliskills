@@ -1,0 +1,41 @@
+# gcloud managed-kafka — command index
+
+administer Managed Service for Apache Kafka clusters, topics, and consumer groups
+
+- `gcloud managed-kafka acls add-acl-entry` — add an acl entry to a Managed Service for Apache Kafka acl
+- `gcloud managed-kafka acls create` — create a Managed Service for Apache Kafka acl
+- `gcloud managed-kafka acls delete` — delete a Managed Service for Apache Kafka ACL
+- `gcloud managed-kafka acls describe` — describe a Managed Service for Apache Kafka acl
+- `gcloud managed-kafka acls list` — list all Managed Service for Apache Kafka acls in a given cluster
+- `gcloud managed-kafka acls remove-acl-entry` — remove an acl entry from a Managed Service for Apache Kafka acl
+- `gcloud managed-kafka acls update` — update a Managed Service for Apache Kafka acl
+- `gcloud managed-kafka clusters create` — create a Managed Service for Apache Kafka cluster
+- `gcloud managed-kafka clusters delete` — delete a Managed Service for Apache Kafka cluster
+- `gcloud managed-kafka clusters describe` — describe a Managed Service for Apache Kafka cluster
+- `gcloud managed-kafka clusters list` — list all Managed Service for Apache Kafka clusters in a given location
+- `gcloud managed-kafka clusters update` — update a Managed Service for Apache Kafka cluster
+- `gcloud managed-kafka connect-clusters create` — create a Managed Service for Apache Kafka connect cluster
+- `gcloud managed-kafka connect-clusters delete` — delete a Managed Service for Apache Kafka connect cluster
+- `gcloud managed-kafka connect-clusters describe` — describe a Managed Service for Apache Kafka connect cluster
+- `gcloud managed-kafka connect-clusters list` — list all Managed Service for Apache Kafka connect clusters in a given location
+- `gcloud managed-kafka connect-clusters update` — update a Managed Service for Apache Kafka for BigQuery connect cluster
+- `gcloud managed-kafka connectors create` — create a Managed Service for Apache Kafka connector
+- `gcloud managed-kafka connectors delete` — delete a Managed Service for Apache Kafka connector
+- `gcloud managed-kafka connectors describe` — describe a Managed Service for Apache Kafka connector
+- `gcloud managed-kafka connectors list` — list all Managed Service for Apache Kafka connectors for a given connect cluster
+- `gcloud managed-kafka connectors pause` — pauses operation of a Managed Service for Apache Kafka connector
+- `gcloud managed-kafka connectors restart` — restarts a Managed Service for Apache Kafka connector
+- `gcloud managed-kafka connectors resume` — resumes operation of a stopped Managed Service for Apache Kafka connector
+- `gcloud managed-kafka connectors stop` — stops operation of a Managed Service for Apache Kafka connector
+- `gcloud managed-kafka connectors update` — update a Managed Service for Apache Kafka connector
+- `gcloud managed-kafka consumer-groups delete` — delete a Managed Service for Apache Kafka consumer group
+- `gcloud managed-kafka consumer-groups describe` — describe a Managed Service for Apache Kafka consumer group
+- `gcloud managed-kafka consumer-groups list` — list all Managed Service for Apache Kafka consumer groups in a given cluster and location
+- `gcloud managed-kafka consumer-groups update` — update a Managed Service for Apache Kafka consumer group
+- `gcloud managed-kafka operations describe` — describe a Managed Service for Apache Kafka operation
+- `gcloud managed-kafka operations list` — list all Managed Service for Apache Kafka operations in a given location
+- `gcloud managed-kafka topics create` — create a Managed Service for Apache Kafka topic
+- `gcloud managed-kafka topics delete` — delete a Managed Service for Apache Kafka topic
+- `gcloud managed-kafka topics describe` — describe a Managed Service for Apache Kafka topic
+- `gcloud managed-kafka topics list` — list all Managed Service for Apache Kafka topics in a given cluster
+- `gcloud managed-kafka topics update` — update a Managed Service for Apache Kafka topic

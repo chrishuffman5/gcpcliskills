@@ -1,0 +1,67 @@
+# gcloud oracle-database — command index
+
+manage Oracle Database resources
+
+- `gcloud oracle-database autonomous-database-backups list` — list autonomous database backups
+- `gcloud oracle-database autonomous-database-character-sets list` — list all AutonomousDatabaseCharacterSets
+- `gcloud oracle-database autonomous-databases create` — create a new AutonomousDatabase
+- `gcloud oracle-database autonomous-databases delete` — delete an AutonomousDatabase
+- `gcloud oracle-database autonomous-databases describe` — get details of an AutonomousDatabase
+- `gcloud oracle-database autonomous-databases failover` — failovers a standby AutonomousDatabase to a new primary
+- `gcloud oracle-database autonomous-databases generate-wallet` — generate wallet for an AutonomousDatabase
+- `gcloud oracle-database autonomous-databases list` — list all AutonomousDatabases
+- `gcloud oracle-database autonomous-databases restart` — restarts an AutonomousDatabase
+- `gcloud oracle-database autonomous-databases restore` — restore an AutonomousDatabase
+- `gcloud oracle-database autonomous-databases start` — starts an AutonomousDatabase
+- `gcloud oracle-database autonomous-databases stop` — stops an AutonomousDatabase
+- `gcloud oracle-database autonomous-databases switchover` — switchovers an AutonomousDatabase to a new primary
+- `gcloud oracle-database autonomous-databases update` — update an AutonomousDatabase
+- `gcloud oracle-database autonomous-db-versions list` — list all AutonomousDbVersions
+- `gcloud oracle-database cloud-exadata-infrastructures create` — create a new ExadataInfrastructure
+- `gcloud oracle-database cloud-exadata-infrastructures delete` — delete an ExadataInfrastructure
+- `gcloud oracle-database cloud-exadata-infrastructures describe` — get details of a ExadataInfrastructure
+- `gcloud oracle-database cloud-exadata-infrastructures list` — list all ExadataInfrastructures
+- `gcloud oracle-database cloud-exadata-infrastructures db-servers list` — list all DbServers
+- `gcloud oracle-database cloud-vm-clusters create` — create a new CloudVmCluster
+- `gcloud oracle-database cloud-vm-clusters delete` — delete a CloudVmCluster
+- `gcloud oracle-database cloud-vm-clusters describe` — describe cloudVmClusters
+- `gcloud oracle-database cloud-vm-clusters list` — list all CloudVmClusters
+- `gcloud oracle-database cloud-vm-clusters db-nodes list` — list all DbNodes
+- `gcloud oracle-database database-character-sets list` — list all DatabaseCharacterSets
+- `gcloud oracle-database databases describe` — get details of a Database
+- `gcloud oracle-database databases list` — list all Databases
+- `gcloud oracle-database db-system-initial-storage-sizes list` — list all DbSystemInitialStorageSizes
+- `gcloud oracle-database db-system-shapes list` — list all DbSystemShapes
+- `gcloud oracle-database db-systems create` — create a new DbSystem
+- `gcloud oracle-database db-systems delete` — delete a DbSystem
+- `gcloud oracle-database db-systems describe` — get details of a DbSystem
+- `gcloud oracle-database db-systems list` — list all DbSystems
+- `gcloud oracle-database db-versions list` — list all DbVersions
+- `gcloud oracle-database entitlements list` — list all Entitlements
+- `gcloud oracle-database exadb-vm-clusters create` — create exadbVmClusters
+- `gcloud oracle-database exadb-vm-clusters delete` — delete exadbVmClusters
+- `gcloud oracle-database exadb-vm-clusters describe` — describe exadbVmClusters
+- `gcloud oracle-database exadb-vm-clusters list` — list exadbVmClusters
+- `gcloud oracle-database exadb-vm-clusters remove-virtual-machine` — remove exadbVmClusters
+- `gcloud oracle-database exadb-vm-clusters update` — update exadbVmClusters
+- `gcloud oracle-database exascale-db-storage-vaults create` — create exascaleDbStorageVaults
+- `gcloud oracle-database exascale-db-storage-vaults delete` — delete exascaleDbStorageVaults
+- `gcloud oracle-database exascale-db-storage-vaults describe` — describe exascaleDbStorageVaults
+- `gcloud oracle-database exascale-db-storage-vaults list` — list exascaleDbStorageVaults
+- `gcloud oracle-database gi-versions list` — list all GiVersions
+- `gcloud oracle-database gi-versions minor-versions list` — list minorVersions
+- `gcloud oracle-database odb-networks create` — create a new OdbNetwork
+- `gcloud oracle-database odb-networks delete` — delete an OdbNetwork
+- `gcloud oracle-database odb-networks describe` — get details of an OdbNetwork
+- `gcloud oracle-database odb-networks list` — list all OdbNetworks
+- `gcloud oracle-database odb-networks odb-subnets create` — create a new OdbSubnet
+- `gcloud oracle-database odb-networks odb-subnets delete` — delete an OdbSubnet
+- `gcloud oracle-database odb-networks odb-subnets describe` — get details of an OdbSubnet
+- `gcloud oracle-database odb-networks odb-subnets list` — list all OdbSubnets
+- `gcloud oracle-database operations cancel` — cancel operations
+- `gcloud oracle-database operations delete` — delete operations
+- `gcloud oracle-database operations describe` — describe operations
+- `gcloud oracle-database operations list` — list operations
+- `gcloud oracle-database operations wait` — wait operations
+- `gcloud oracle-database pluggable-databases describe` — get details of a PluggableDatabase
+- `gcloud oracle-database pluggable-databases list` — list pluggableDatabases

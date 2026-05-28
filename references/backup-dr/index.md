@@ -1,0 +1,44 @@
+# gcloud backup-dr — command index
+
+manage Backup and DR resources
+
+- `gcloud backup-dr backup-plan-associations create` — create a new backup plan association
+- `gcloud backup-dr backup-plan-associations delete` — delete the specified backup plan association
+- `gcloud backup-dr backup-plan-associations describe` — show details of the backup plan association
+- `gcloud backup-dr backup-plan-associations fetch-for-resource-type` — fetch Backup Plan Associations for a given resource type and location
+- `gcloud backup-dr backup-plan-associations list` — list Backup and DR backup plan associations
+- `gcloud backup-dr backup-plan-associations trigger-backup` — create an on-demand backup for a resource
+- `gcloud backup-dr backup-plan-associations update` — update a specific backup plan within a backup plan association
+- `gcloud backup-dr backup-plan-revisions describe` — show details of the backup plan revision
+- `gcloud backup-dr backup-plan-revisions list` — list backup plan revisions
+- `gcloud backup-dr backup-plans create` — creates a new Backup Plan
+- `gcloud backup-dr backup-plans delete` — deletes a Backup Plan
+- `gcloud backup-dr backup-plans describe` — show details of the backup plan
+- `gcloud backup-dr backup-plans list` — list backup plans in the project
+- `gcloud backup-dr backup-plans update` — update a specific backup plan
+- `gcloud backup-dr backup-vaults create` — create a Backup and DR backup vault
+- `gcloud backup-dr backup-vaults delete` — delete the specified Backup Vault
+- `gcloud backup-dr backup-vaults describe` — show the metadata for a Backup and DR backup vault
+- `gcloud backup-dr backup-vaults list` — list Backup and DR backup vaults
+- `gcloud backup-dr backup-vaults update` — update a Backup and DR backup vault
+- `gcloud backup-dr backups delete` — delete the specified Backup
+- `gcloud backup-dr backups describe` — show details of the backup
+- `gcloud backup-dr backups fetch-for-resource-type` — fetch Backups for a given resource type and location
+- `gcloud backup-dr backups list` — list Backups
+- `gcloud backup-dr backups update` — update the specified Backup
+- `gcloud backup-dr backups restore compute` — restores a Compute Engine VM Backup
+- `gcloud backup-dr backups restore disk` — restores a Compute Disk Backup
+- `gcloud backup-dr data-source-references describe` — show details of the data source reference
+- `gcloud backup-dr data-source-references fetch-for-resource-type` — fetch Data Source References for a given resource type and location
+- `gcloud backup-dr data-source-references list` — list Backup and DR data source references
+- `gcloud backup-dr data-sources describe` — show details of the data source
+- `gcloud backup-dr data-sources list` — list Data Sources
+- `gcloud backup-dr locations list` — list available Backup and DR locations
+- `gcloud backup-dr management-servers create` — create a new management server in the project
+- `gcloud backup-dr management-servers delete` — delete the specified Management Server
+- `gcloud backup-dr management-servers describe` — show details of the management server
+- `gcloud backup-dr management-servers list` — list management servers in the project
+- `gcloud backup-dr operations describe` — describe an operation
+- `gcloud backup-dr operations list` — list all operations
+- `gcloud backup-dr resource-backup-config list` — show backup configuration metadata associated with specified resources in a particular location for the project
+- `gcloud backup-dr service-config init` — initialize a Backup and DR Service configuration

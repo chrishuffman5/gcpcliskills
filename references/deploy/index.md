@@ -1,0 +1,63 @@
+# gcloud deploy — command index
+
+create and manage Cloud Deploy resources
+
+- `gcloud deploy apply` — applies a yaml configuration containing Delivery Pipeline(s), Target(s), Custom Target Type(s), Deploy Policy(ies), and Automation(s) declarative definitions
+- `gcloud deploy delete` — deletes Delivery Pipeline(s), Target(s), Custom Target Type(s), and Automation(s) in a yaml configuration
+- `gcloud deploy get-config` — get the Cloud Deploy config for the provided region and project
+- `gcloud deploy automation-runs cancel` — cancels a Cloud Deploy Automation Run
+- `gcloud deploy automation-runs describe` — show details for an Automation Run
+- `gcloud deploy automation-runs list` — list the Automation Runs
+- `gcloud deploy automations delete` — deletes a Cloud Deploy Automation
+- `gcloud deploy automations describe` — show details for an Automation
+- `gcloud deploy automations export` — returns the YAML definition of the specified Automation
+- `gcloud deploy automations list` — list the Automations
+- `gcloud deploy custom-target-types add-iam-policy-binding` — add IAM policy binding for a Cloud Deploy Custom Target Type
+- `gcloud deploy custom-target-types delete` — delete a custom target type
+- `gcloud deploy custom-target-types describe` — show details for a custom target type
+- `gcloud deploy custom-target-types export` — returns the .yaml definition of the specified custom target type
+- `gcloud deploy custom-target-types get-iam-policy` — get the IAM policy for a Cloud Deploy Custom Target Type
+- `gcloud deploy custom-target-types list` — list the custom target types
+- `gcloud deploy custom-target-types remove-iam-policy-binding` — remove an IAM policy binding for a Cloud Deploy Custom Target Type
+- `gcloud deploy custom-target-types set-iam-policy` — set the IAM policy for a Cloud Deploy Custom Target Type
+- `gcloud deploy delivery-pipelines add-iam-policy-binding` — add IAM policy binding for a Cloud Deploy delivery pipeline
+- `gcloud deploy delivery-pipelines delete` — delete a delivery pipeline
+- `gcloud deploy delivery-pipelines describe` — show details about a delivery pipeline
+- `gcloud deploy delivery-pipelines export` — returns the .yaml definition of the specified delivery pipeline
+- `gcloud deploy delivery-pipelines get-iam-policy` — get the IAM policy for a Cloud Deploy delivery pipeline
+- `gcloud deploy delivery-pipelines list` — list Cloud Deploy delivery pipelines
+- `gcloud deploy delivery-pipelines remove-iam-policy-binding` — remove an IAM policy binding for a Cloud Deploy delivery pipeline
+- `gcloud deploy delivery-pipelines set-iam-policy` — set the IAM policy for a Cloud Deploy delivery pipeline
+- `gcloud deploy deploy-policies add-iam-policy-binding` — add IAM policy binding for a Cloud Deploy Policy
+- `gcloud deploy deploy-policies delete` — delete a deploy policy
+- `gcloud deploy deploy-policies describe` — show details about a deploy policy
+- `gcloud deploy deploy-policies export` — returns the .yaml definition of the specified deploy policy
+- `gcloud deploy deploy-policies get-iam-policy` — get the IAM policy for a Cloud Deploy Policy
+- `gcloud deploy deploy-policies remove-iam-policy-binding` — remove an IAM policy binding for a Cloud Deploy Policy
+- `gcloud deploy deploy-policies set-iam-policy` — set the IAM policy for a Cloud Deploy Policy
+- `gcloud deploy job-runs describe` — show details for a job run
+- `gcloud deploy job-runs list` — list the job runs
+- `gcloud deploy job-runs terminate` — terminates a Cloud Deploy job run
+- `gcloud deploy releases abandon` — abandons a release
+- `gcloud deploy releases create` — creates a new release, delivery pipeline qualified
+- `gcloud deploy releases describe` — show details about a release
+- `gcloud deploy releases list` — list releases
+- `gcloud deploy releases promote` — promotes a release from one target (source), to another (destination)
+- `gcloud deploy rollouts advance` — advances a rollout
+- `gcloud deploy rollouts approve` — approves a rollout having an Approval state of "Required"
+- `gcloud deploy rollouts cancel` — cancel a Rollout
+- `gcloud deploy rollouts describe` — show details for a rollout
+- `gcloud deploy rollouts ignore-job` — ignores a specified job and phase combination on a rollout
+- `gcloud deploy rollouts list` — list the rollouts
+- `gcloud deploy rollouts reject` — rejects a rollout having an Approval state of "Required"
+- `gcloud deploy rollouts retry-job` — retries a specified job, phase combination on a rollout
+- `gcloud deploy targets add-iam-policy-binding` — add IAM policy binding for a Cloud Deploy target
+- `gcloud deploy targets delete` — deletes a Cloud Deploy target
+- `gcloud deploy targets describe` — describes details specific to the individual target, delivery pipeline qualified
+- `gcloud deploy targets export` — returns the .yaml definition of the specified target
+- `gcloud deploy targets get-iam-policy` — get the IAM policy for a Cloud Deploy target
+- `gcloud deploy targets list` — list Cloud Deploy targets
+- `gcloud deploy targets redeploy` — redeploy the last release to a target
+- `gcloud deploy targets remove-iam-policy-binding` — remove an IAM policy binding for a Cloud Deploy target
+- `gcloud deploy targets rollback` — rollbacks a target to a prior rollout
+- `gcloud deploy targets set-iam-policy` — set the IAM policy for a Cloud Deploy target

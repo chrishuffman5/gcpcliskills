@@ -1,0 +1,301 @@
+# gcloud bigtable logical-views
+
+manage Bigtable logical views
+
+### `gcloud bigtable logical-views create`
+
+Create a new Bigtable logical view
+
+Create a new Bigtable logical view.
+
+**Synopsis:**
+```
+gcloud bigtable logical-views create (LOGICAL_VIEW : --instance=INSTANCE)
+    --query=QUERY [--async] [--deletion-protection=DELETION_PROTECTION]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Logical view resource - The logical view to create. The arguments in this
+group can be used to specify the attributes of this resource. (NOTE) Some
+attributes are not given arguments in this group but can be set in other
+ways.
+
+To set the project attribute:
+ * provide the argument logical_view on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  LOGICAL_VIEW
+     ID of the logical view or fully qualified identifier for the logical
+     view.
+
+     To set the name attribute:
+     + provide the argument logical_view on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --instance=INSTANCE
+     Bigtable instance for the logical view.
+
+     To set the instance attribute:
+     + provide the argument logical_view on the command line with a
+       fully specified name;
+     + provide the argument --instance on the command line.
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--query` | QUERY |  | The query of the view. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+| `--deletion-protection` | DELETION_PROTECTION |  | Whether the view is protected from deletion. |
+
+
+**Examples:**
+```bash
+To create a logical view, run:
+
+    $ gcloud bigtable logical-views create my-logical-view-id \
+        --instance=my-instance-id \
+        --query="SELECT my-column-family FROM my-table"
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/bigtable/logical-views/create)
+
+---
+### `gcloud bigtable logical-views delete`
+
+Delete a Bigtable logical view
+
+Delete a Bigtable logical view.
+
+**Synopsis:**
+```
+gcloud bigtable logical-views delete (LOGICAL_VIEW : --instance=INSTANCE)
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Logical view resource - The logical view to delete. The arguments in this
+group can be used to specify the attributes of this resource. (NOTE) Some
+attributes are not given arguments in this group but can be set in other
+ways.
+
+To set the project attribute:
+ * provide the argument logical_view on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  LOGICAL_VIEW
+     ID of the logical view or fully qualified identifier for the logical
+     view.
+
+     To set the name attribute:
+     + provide the argument logical_view on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --instance=INSTANCE
+     Bigtable instance for the logical view.
+
+     To set the instance attribute:
+     + provide the argument logical_view on the command line with a
+       fully specified name;
+     + provide the argument --instance on the command line.
+```
+
+**Examples:**
+```bash
+To delete a logical view, run:
+
+    $ gcloud bigtable logical-views delete my-logical-view-id \
+        --instance=my-instance-id
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/bigtable/logical-views/delete)
+
+---
+### `gcloud bigtable logical-views describe`
+
+Describe an existing Bigtable logical view
+
+Describe an existing Bigtable logical view.
+
+**Synopsis:**
+```
+gcloud bigtable logical-views describe (LOGICAL_VIEW : --instance=INSTANCE)
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Logical view resource - The logical view to describe. The arguments in
+this group can be used to specify the attributes of this resource. (NOTE)
+Some attributes are not given arguments in this group but can be set in
+other ways.
+
+To set the project attribute:
+ * provide the argument logical_view on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  LOGICAL_VIEW
+     ID of the logical view or fully qualified identifier for the logical
+     view.
+
+     To set the name attribute:
+     + provide the argument logical_view on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --instance=INSTANCE
+     Bigtable instance for the logical view.
+
+     To set the instance attribute:
+     + provide the argument logical_view on the command line with a
+       fully specified name;
+     + provide the argument --instance on the command line.
+```
+
+**Examples:**
+```bash
+To view a logical view's description, run:
+
+    $ gcloud bigtable logical-views describe my-logical-view-id \
+        --instance=my-instance-id
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/bigtable/logical-views/describe)
+
+---
+### `gcloud bigtable logical-views list`
+
+List existing Bigtable logical views
+
+List existing Bigtable logical views.
+
+**Synopsis:**
+```
+gcloud bigtable logical-views list --instance=INSTANCE
+    [--filter=EXPRESSION] [--limit=LIMIT] [--page-size=PAGE_SIZE]
+    [--sort-by=[FIELD,...]] [--uri] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--instance` | INSTANCE |  | _[This must be specified.]_ ID of the instance or fully qualified identifier for the instance. To set the instance attribute: + provide the argument --instance on the command line. |
+
+
+**Examples:**
+```bash
+To list all logical views for an instance, run:
+
+    $ gcloud bigtable logical-views list --instance=my-instance-id
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/bigtable/logical-views/list)
+
+---
+### `gcloud bigtable logical-views update`
+
+Update a Bigtable logical view
+
+Update a Bigtable logical view.
+
+**Synopsis:**
+```
+gcloud bigtable logical-views update (LOGICAL_VIEW : --instance=INSTANCE)
+    (--deletion-protection=DELETION_PROTECTION --query=QUERY) [--async]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+Logical view resource - The logical view to update. The arguments in this
+group can be used to specify the attributes of this resource. (NOTE) Some
+attributes are not given arguments in this group but can be set in other
+ways.
+
+To set the project attribute:
+ * provide the argument logical_view on the command line with a fully
+   specified name;
+ * provide the argument --project on the command line;
+ * set the property core/project.
+
+This must be specified.
+
+  LOGICAL_VIEW
+     ID of the logical view or fully qualified identifier for the logical
+     view.
+
+     To set the name attribute:
+     + provide the argument logical_view on the command line.
+
+     This positional argument must be specified if any of the other
+     arguments in this group are specified.
+
+  --instance=INSTANCE
+     Bigtable instance for the logical view.
+
+     To set the instance attribute:
+     + provide the argument logical_view on the command line with a
+       fully specified name;
+     + provide the argument --instance on the command line.
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--deletion-protection` | DELETION_PROTECTION |  | _[At least one of these must be specified:]_ Whether the view is protected from deletion. |
+| `--query` | QUERY |  | _[At least one of these must be specified:]_ The query of the view. |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--async` |  |  | Return immediately, without waiting for the operation in progress to complete. |
+
+
+**Examples:**
+```bash
+To update a logical view to a new query, run:
+
+    $ gcloud bigtable logical-views update my-logical-view-id \
+        --instance=my-instance-id \
+        --query="SELECT my-column-family2 FROM my-table"
+
+To enable deletion protection on a logical view, run:
+
+    $ gcloud bigtable logical-views update my-logical-view-id \
+        --instance=my-instance-id --deletion-protection
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/bigtable/logical-views/update)
+
+---

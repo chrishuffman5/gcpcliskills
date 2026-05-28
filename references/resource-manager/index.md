@@ -1,0 +1,50 @@
+# gcloud resource-manager — command index
+
+manage Cloud Resources
+
+- `gcloud resource-manager capabilities describe` — show whether a Capability is enabled
+- `gcloud resource-manager capabilities update` — update a folder capability
+- `gcloud resource-manager folders add-iam-policy-binding` — add IAM policy binding for a folder
+- `gcloud resource-manager folders create` — create a new folder
+- `gcloud resource-manager folders delete` — delete a folder
+- `gcloud resource-manager folders describe` — show metadata for a folder
+- `gcloud resource-manager folders get-ancestors-iam-policy` — get IAM policies for a folder and its ancestors
+- `gcloud resource-manager folders get-iam-policy` — get IAM policy for a folder
+- `gcloud resource-manager folders list` — list folders accessible by the active account
+- `gcloud resource-manager folders move` — move a folder to a new position within the same organization
+- `gcloud resource-manager folders remove-iam-policy-binding` — remove IAM policy binding for a folder
+- `gcloud resource-manager folders set-iam-policy` — set IAM policy for a folder
+- `gcloud resource-manager folders undelete` — undelete a folder
+- `gcloud resource-manager folders update` — update the display name of a folder
+- `gcloud resource-manager org-policies allow` — add values to an Organization Policy allowed_values list policy
+- `gcloud resource-manager org-policies delete` — delete an Organization Policy
+- `gcloud resource-manager org-policies deny` — add values to an Organization Policy denied_values list policy
+- `gcloud resource-manager org-policies describe` — describe an Organization Policy
+- `gcloud resource-manager org-policies disable-enforce` — turns off enforcement of boolean Organization Policy constraint
+- `gcloud resource-manager org-policies enable-enforce` — turns on enforcement of boolean Organization Policy constraint
+- `gcloud resource-manager org-policies list` — list Organization Policies associated with the specified resource
+- `gcloud resource-manager org-policies set-policy` — set Organization Policy
+- `gcloud resource-manager tags bindings create` — creates a TagBinding resource
+- `gcloud resource-manager tags bindings delete` — deletes a TagBinding
+- `gcloud resource-manager tags bindings list` — lists TagBindings bound to the specified resource
+- `gcloud resource-manager tags holds create` — create a TagHold resource
+- `gcloud resource-manager tags holds delete` — delete a TagHold
+- `gcloud resource-manager tags holds list` — list TagHolds under the specified TagValue
+- `gcloud resource-manager tags keys add-iam-policy-binding` — adds a policy binding to the IAM policy of a TagKey
+- `gcloud resource-manager tags keys create` — creates a TagKey resource under the specified tag parent
+- `gcloud resource-manager tags keys delete` — deletes the specified TagKey resource
+- `gcloud resource-manager tags keys describe` — describes a TagKey resource
+- `gcloud resource-manager tags keys get-iam-policy` — gets the IAM policy for a TagKey resource
+- `gcloud resource-manager tags keys list` — lists TagKeys under the specified parent resource
+- `gcloud resource-manager tags keys remove-iam-policy-binding` — removes a policy binding from the IAM policy of a TagKey
+- `gcloud resource-manager tags keys set-iam-policy` — sets IAM policy for a TagKey resource
+- `gcloud resource-manager tags keys update` — updates the specified TagKey resource's description
+- `gcloud resource-manager tags values add-iam-policy-binding` — adds a policy binding to the IAM policy of a TagValue
+- `gcloud resource-manager tags values create` — creates a TagValue resource
+- `gcloud resource-manager tags values delete` — deletes the specified TagValue resource
+- `gcloud resource-manager tags values describe` — describes a TagValue resource
+- `gcloud resource-manager tags values get-iam-policy` — gets the IAM policy for a TagValue resource
+- `gcloud resource-manager tags values list` — lists TagValues under the specified parent resource
+- `gcloud resource-manager tags values remove-iam-policy-binding` — removes a policy binding from the IAM policy of a TagValue
+- `gcloud resource-manager tags values set-iam-policy` — sets IAM policy for a TagValue resource
+- `gcloud resource-manager tags values update` — updates the specified TagValue resource's description

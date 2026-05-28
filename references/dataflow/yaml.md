@@ -1,0 +1,59 @@
+# gcloud dataflow yaml
+
+a group of subcommands for launching Beam YAML jobs on Dataflow
+
+### `gcloud dataflow yaml run`
+
+Runs a job from the specified path
+
+Runs a job from the specified YAML description or Cloud Storage path.
+
+**Synopsis:**
+```
+gcloud dataflow yaml run JOB_NAME
+    (--yaml-pipeline=YAML_PIPELINE
+      | --yaml-pipeline-file=YAML_PIPELINE_FILE)
+    [--jinja-variables=JSON_OBJECT] [--network=NETWORK]
+    [--pipeline-options=[OPTIONS=VALUE;OPTION=VALUE,...]]
+    [--region=REGION_ID] [--subnetwork=SUBNETWORK]
+    [--template-file-gcs-location=TEMPLATE_FILE_GCS_LOCATION]
+    [GCLOUD_WIDE_FLAG ...]
+```
+
+**Positional arguments:**
+```
+JOB_NAME
+   Unique name to assign to the job.
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--yaml-pipeline` | YAML_PIPELINE |  | _[Exactly one of these must be specified:]_ Inline definition of the YAML pipeline to run. |
+| `--yaml-pipeline-file` | YAML_PIPELINE_FILE |  | _[Exactly one of these must be specified:]_ Path of a file defining the YAML pipeline to run. (Must be a local file or a URL beginning with 'gs://'.) |
+
+
+**Optional flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--jinja-variables` | JSON_OBJECT |  | Jinja2 variables to be used in reifying the yaml. |
+| `--network` | NETWORK |  | Compute Engine network for launching worker instances to run the pipeline. If not set, the default network is used. |
+| `--pipeline-options` | [OPTIONS=VALUE;OPTION=VALUE,...] |  | Pipeline options to pass to the job. |
+| `--region` | REGION_ID |  | Region ID of the job's regional endpoint. Defaults to 'us-central1'. |
+| `--subnetwork` | SUBNETWORK |  | Compute Engine subnetwork for launching worker instances to run the pipeline. If not set, the default subnetwork is used. |
+| `--template-file-gcs-location` | TEMPLATE_FILE_GCS_LOCATION |  | Google Cloud Storage location of the YAML template to run. (Must be a URL beginning with 'gs://'.) |
+
+
+**Examples:**
+```bash
+To run a job from YAML, run:
+
+    $ gcloud dataflow yaml run my-job \
+        --yaml-pipeline-file=gs://yaml-path --region=europe-west1
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/dataflow/yaml/run)
+
+---

@@ -1,0 +1,45 @@
+# gcloud firestore — command index
+
+manage your Cloud Firestore resources
+
+- `gcloud firestore bulk-delete` — bulk delete Cloud Firestore documents
+- `gcloud firestore export` — export Cloud Firestore documents to Google Cloud Storage
+- `gcloud firestore import` — import Cloud Firestore documents from Google Cloud Storage
+- `gcloud firestore backups delete` — deletes a Cloud Firestore backup
+- `gcloud firestore backups describe` — retrieves information about a Cloud Firestore backup
+- `gcloud firestore backups list` — list backups available to Cloud Firestore
+- `gcloud firestore backups schedules create` — creates a Cloud Firestore backup schedule
+- `gcloud firestore backups schedules delete` — deletes a Cloud Firestore backup schedule
+- `gcloud firestore backups schedules describe` — describes a Cloud Firestore backup schedule
+- `gcloud firestore backups schedules list` — lists backup schedules under a Cloud Firestore database
+- `gcloud firestore backups schedules update` — updates a Cloud Firestore backup schedule
+- `gcloud firestore databases clone` — clone a Google Cloud Firestore database from another
+- `gcloud firestore databases connection-string` — prints the mongo connection string for the given Firestore database
+- `gcloud firestore databases create` — create a Google Cloud Firestore database via Firestore API
+- `gcloud firestore databases delete` — delete a Google Cloud Firestore database
+- `gcloud firestore databases describe` — describes information about a Cloud Firestore database
+- `gcloud firestore databases list` — lists all Firestore databases under the project
+- `gcloud firestore databases ping` — times the connection and ping time for a Firestore with MongoDB compatibility database
+- `gcloud firestore databases restore` — restores a Cloud Firestore database from a backup
+- `gcloud firestore databases update` — update the database configuration of a Cloud Firestore database
+- `gcloud firestore fields ttls list` — list all fields used as a Time To Live expiration setting
+- `gcloud firestore fields ttls update` — update the TTL configuration of the given field
+- `gcloud firestore indexes composite create` — create a new composite index
+- `gcloud firestore indexes composite delete` — delete the given composite index
+- `gcloud firestore indexes composite describe` — describe the given composite index
+- `gcloud firestore indexes composite list` — list composite indexes
+- `gcloud firestore indexes fields describe` — describe the index configuration of the given field
+- `gcloud firestore indexes fields list` — list fields with non-default index settings
+- `gcloud firestore indexes fields update` — update the index configuration of the given field
+- `gcloud firestore locations list` — list locations available to Google Cloud Firestore
+- `gcloud firestore operations cancel` — cancel a currently-running Cloud Firestore admin operation
+- `gcloud firestore operations delete` — delete a completed Cloud Firestore admin operation
+- `gcloud firestore operations describe` — retrieves information about a Cloud Firestore admin operation
+- `gcloud firestore operations list` — list pending Cloud Firestore admin operations and their status
+- `gcloud firestore user-creds create` — creates a Cloud Firestore user creds
+- `gcloud firestore user-creds delete` — deletes a Cloud Firestore user creds
+- `gcloud firestore user-creds describe` — describes a Cloud Firestore user creds
+- `gcloud firestore user-creds disable` — disables a Cloud Firestore user creds
+- `gcloud firestore user-creds enable` — enables a Cloud Firestore user creds
+- `gcloud firestore user-creds list` — lists user creds under a Cloud Firestore database
+- `gcloud firestore user-creds reset-password` — resets a Cloud Firestore user creds

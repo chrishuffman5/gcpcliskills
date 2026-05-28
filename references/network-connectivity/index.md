@@ -1,0 +1,77 @@
+# gcloud network-connectivity — command index
+
+manage Network Connectivity resources
+
+- `gcloud network-connectivity hubs accept-spoke` — accept a spoke into a hub
+- `gcloud network-connectivity hubs accept-spoke-update` — accept a proposal to update a spoke in a hub
+- `gcloud network-connectivity hubs add-iam-policy-binding` — add an IAM policy binding to the IAM policy of a hub resource
+- `gcloud network-connectivity hubs create` — create a new hub
+- `gcloud network-connectivity hubs delete` — delete a hub
+- `gcloud network-connectivity hubs describe` — describe a hub
+- `gcloud network-connectivity hubs get-iam-policy` — get the IAM policy for a hub resource
+- `gcloud network-connectivity hubs list` — list hubs
+- `gcloud network-connectivity hubs list-spokes` — list hub spokes
+- `gcloud network-connectivity hubs query-status` — query the status of Private Service Connect propagation for a hub
+- `gcloud network-connectivity hubs reject-spoke` — reject a spoke from a hub
+- `gcloud network-connectivity hubs reject-spoke-update` — reject a proposal to update a spoke in a hub
+- `gcloud network-connectivity hubs remove-iam-policy-binding` — remove an IAM policy binding from the IAM policy of a hub resource
+- `gcloud network-connectivity hubs set-iam-policy` — set the IAM policy of a hub resource
+- `gcloud network-connectivity hubs update` — update a hub
+- `gcloud network-connectivity hubs groups add-iam-policy-binding` — add an IAM policy binding to the IAM policy of a group resource
+- `gcloud network-connectivity hubs groups describe` — describe a group
+- `gcloud network-connectivity hubs groups get-iam-policy` — get the IAM policy for a group resource
+- `gcloud network-connectivity hubs groups list` — list groups
+- `gcloud network-connectivity hubs groups remove-iam-policy-binding` — remove an IAM policy binding from the IAM policy of a group resource
+- `gcloud network-connectivity hubs groups set-iam-policy` — set the IAM policy of a group resource
+- `gcloud network-connectivity hubs groups update` — update a group
+- `gcloud network-connectivity hubs route-tables describe` — describe a route table
+- `gcloud network-connectivity hubs route-tables list` — list route tables
+- `gcloud network-connectivity hubs route-tables routes describe` — describe a route
+- `gcloud network-connectivity hubs route-tables routes list` — list routes
+- `gcloud network-connectivity internal-ranges create` — create a new internal range
+- `gcloud network-connectivity internal-ranges delete` — delete an internal range
+- `gcloud network-connectivity internal-ranges describe` — describe an internal range
+- `gcloud network-connectivity internal-ranges list` — list internal ranges
+- `gcloud network-connectivity internal-ranges update` — update an internal range
+- `gcloud network-connectivity locations describe` — describe a Network Connectivity Center location
+- `gcloud network-connectivity locations list` — list Network Connectivity Center locations
+- `gcloud network-connectivity multicloud-data-transfer-configs create` — create a multicloudDataTransferConfig
+- `gcloud network-connectivity multicloud-data-transfer-configs delete` — delete a multicloudDataTransferConfig
+- `gcloud network-connectivity multicloud-data-transfer-configs describe` — describe a multicloudDataTransferConfig
+- `gcloud network-connectivity multicloud-data-transfer-configs list` — list multicloudDataTransferConfigs
+- `gcloud network-connectivity multicloud-data-transfer-configs update` — update a multicloudDataTransferConfig
+- `gcloud network-connectivity multicloud-data-transfer-configs destinations create` — create a destination
+- `gcloud network-connectivity multicloud-data-transfer-configs destinations delete` — delete a destination
+- `gcloud network-connectivity multicloud-data-transfer-configs destinations describe` — describe a destination
+- `gcloud network-connectivity multicloud-data-transfer-configs destinations list` — list destinations
+- `gcloud network-connectivity multicloud-data-transfer-configs destinations update` — update a destination
+- `gcloud network-connectivity multicloud-data-transfer-supported-services describe` — describe multicloudDataTransferSupportedService
+- `gcloud network-connectivity multicloud-data-transfer-supported-services list` — list multicloudDataTransferSupportedServices
+- `gcloud network-connectivity operations describe` — describe a Network Connectivity Center operation
+- `gcloud network-connectivity operations list` — list Network Connectivity Center operations
+- `gcloud network-connectivity policy-based-routes create` — create a new policy-based route
+- `gcloud network-connectivity policy-based-routes delete` — delete a policy-based route
+- `gcloud network-connectivity policy-based-routes describe` — describe a policy-based route
+- `gcloud network-connectivity policy-based-routes list` — list policy-based routes
+- `gcloud network-connectivity regional-endpoints create` — create a new regional endpoint
+- `gcloud network-connectivity regional-endpoints delete` — delete a regional endpoint
+- `gcloud network-connectivity regional-endpoints describe` — describe a regional endpoint
+- `gcloud network-connectivity regional-endpoints list` — list regional endpoints
+- `gcloud network-connectivity service-connection-policies create` — create a new Service Connection Policy
+- `gcloud network-connectivity service-connection-policies delete` — delete a service connection policy
+- `gcloud network-connectivity service-connection-policies describe` — describe a service connection policy
+- `gcloud network-connectivity service-connection-policies list` — list service connection policies
+- `gcloud network-connectivity service-connection-policies update` — update a service connection policy
+- `gcloud network-connectivity spokes delete` — delete a spoke
+- `gcloud network-connectivity spokes describe` — describe a spoke
+- `gcloud network-connectivity spokes list` — list spokes
+- `gcloud network-connectivity spokes linked-interconnect-attachments create` — create a new VLAN attachment spoke
+- `gcloud network-connectivity spokes linked-interconnect-attachments update` — update a VLAN attachment spoke
+- `gcloud network-connectivity spokes linked-producer-vpc-network create` — create a new Producer VPC spoke
+- `gcloud network-connectivity spokes linked-producer-vpc-network update` — update a Producer VPC spoke
+- `gcloud network-connectivity spokes linked-router-appliances create` — create a new Router appliance spoke
+- `gcloud network-connectivity spokes linked-router-appliances update` — update a Router appliance spoke
+- `gcloud network-connectivity spokes linked-vpc-network create` — create a new VPC spoke
+- `gcloud network-connectivity spokes linked-vpc-network update` — update a VPC spoke
+- `gcloud network-connectivity spokes linked-vpn-tunnels create` — create a new VPN spoke
+- `gcloud network-connectivity spokes linked-vpn-tunnels update` — update a VPN spoke

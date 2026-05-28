@@ -1,0 +1,68 @@
+# gcloud healthcare — command index
+
+manage Cloud Healthcare resources
+
+- `gcloud healthcare consent-stores add-iam-policy-binding` — add an IAM policy binding to a Cloud Healthcare API consent store
+- `gcloud healthcare consent-stores check-data-access` — check the consent for a particular data ID
+- `gcloud healthcare consent-stores create` — create a Cloud Healthcare API consent store
+- `gcloud healthcare consent-stores delete` — delete a Cloud Healthcare API consent store
+- `gcloud healthcare consent-stores describe` — describe a Cloud Healthcare API consent store
+- `gcloud healthcare consent-stores evaluate-user-consents` — check the consents for a particular user's data
+- `gcloud healthcare consent-stores get-iam-policy` — retrieve the IAM policy for a Cloud Healthcare API consent store
+- `gcloud healthcare consent-stores list` — list Cloud Healthcare API consent stores
+- `gcloud healthcare consent-stores query-accessible-data` — queries all accessible data IDs
+- `gcloud healthcare consent-stores remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Healthcare API consent store
+- `gcloud healthcare consent-stores set-iam-policy` — set the IAM policy for a Cloud Healthcare API consent store
+- `gcloud healthcare consent-stores update` — update a Cloud Healthcare API consent store
+- `gcloud healthcare datasets add-iam-policy-binding` — add an IAM policy binding to a Cloud Healthcare API dataset
+- `gcloud healthcare datasets create` — create a Cloud Healthcare API dataset
+- `gcloud healthcare datasets deidentify` — create a new Cloud Healthcare API dataset containing de-identified data from the source dataset
+- `gcloud healthcare datasets delete` — delete a Cloud Healthcare API dataset
+- `gcloud healthcare datasets describe` — describe a Cloud Healthcare API dataset
+- `gcloud healthcare datasets get-iam-policy` — retrieve the IAM policy for a Cloud Healthcare API dataset
+- `gcloud healthcare datasets list` — list Cloud Healthcare API datasets
+- `gcloud healthcare datasets remove-iam-policy-binding` — remove an IAM policy binding to a Cloud Healthcare API dataset
+- `gcloud healthcare datasets set-iam-policy` — set the IAM policy for a Cloud Healthcare API dataset
+- `gcloud healthcare datasets update` — update a Cloud Healthcare API dataset
+- `gcloud healthcare dicom-stores add-iam-policy-binding` — add an IAM policy binding to a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores create` — create a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores deidentify` — de-identify data from the source store and write it to the destination store
+- `gcloud healthcare dicom-stores delete` — delete a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores describe` — describe a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores get-iam-policy` — retrieve the IAM policy for a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores list` — list Cloud Healthcare API DICOM stores
+- `gcloud healthcare dicom-stores metrics` — get the metrics for a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores set-iam-policy` — set the IAM policy for a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores update` — update a Cloud Healthcare API DICOM store
+- `gcloud healthcare dicom-stores export bq` — export a Cloud Healthcare API API DICOM store to BigQuery
+- `gcloud healthcare dicom-stores export gcs` — export a Cloud Healthcare API DICOM store to Google Cloud Storage
+- `gcloud healthcare dicom-stores import gcs` — import DICOM objects into a Cloud Healthcare API DICOM store
+- `gcloud healthcare fhir-stores add-iam-policy-binding` — add an IAM policy binding to a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores create` — create a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores deidentify` — de-identify data from the source store and write it to the destination store
+- `gcloud healthcare fhir-stores delete` — delete a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores describe` — describe a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores get-iam-policy` — retrieve the IAM policy for a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores list` — list Cloud Healthcare API FHIR stores
+- `gcloud healthcare fhir-stores metrics` — gets the metrics for a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores set-iam-policy` — set the IAM policy for a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores update` — update a Cloud Healthcare API FHIR store
+- `gcloud healthcare fhir-stores export bq` — export Cloud Healthcare API FHIR resources to BigQuery
+- `gcloud healthcare fhir-stores export gcs` — export Cloud Healthcare API FHIR resources to Google Cloud Storage
+- `gcloud healthcare fhir-stores import gcs` — import FHIR resources from Google Cloud Storage into a Cloud Healthcare API FHIR store
+- `gcloud healthcare hl7v2-stores add-iam-policy-binding` — add an IAM policy binding to a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores create` — create a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores delete` — delete a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores describe` — describe a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores get-iam-policy` — retrieve the IAM policy for a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores list` — list Cloud Healthcare API HL7v2 stores
+- `gcloud healthcare hl7v2-stores metrics` — gets the metrics for a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores remove-iam-policy-binding` — remove an IAM policy binding from a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores set-iam-policy` — set the IAM policy for a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores update` — update a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare hl7v2-stores export gcs` — export Cloud Healthcare API HL7v2 messages to Google Cloud Storage
+- `gcloud healthcare hl7v2-stores import gcs` — import HL7v2 messages from Google Cloud Storage into a Cloud Healthcare API HL7v2 store
+- `gcloud healthcare operations describe` — describe a Cloud Healthcare API operation
+- `gcloud healthcare operations list` — list Cloud Healthcare API operations

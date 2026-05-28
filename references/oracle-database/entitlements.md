@@ -1,0 +1,34 @@
+# gcloud oracle-database entitlements
+
+manage Entitlement resources
+
+### `gcloud oracle-database entitlements list`
+
+List all Entitlements
+
+List all Entitlements.
+
+**Synopsis:**
+```
+gcloud oracle-database entitlements list --location=LOCATION
+    [--filter=EXPRESSION] [--limit=LIMIT] [--page-size=PAGE_SIZE]
+    [--sort-by=[FIELD,...]] [--uri] [GCLOUD_WIDE_FLAG ...]
+```
+
+**Required flags:**
+
+| Flag | Value | Default | Description |
+|------|-------|---------|-------------|
+| `--location` | LOCATION |  | _[This must be specified.]_ ID of the location or fully qualified identifier for the location. To set the location attribute: + provide the argument --location on the command line. |
+
+
+**Examples:**
+```bash
+To list all Entitlements in the location us-east4, run:
+
+    $ gcloud oracle-database entitlements list --location=us-east4
+```
+
+[Official reference](https://cloud.google.com/sdk/gcloud/reference/oracle-database/entitlements/list)
+
+---

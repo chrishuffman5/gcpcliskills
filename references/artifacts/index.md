@@ -1,0 +1,80 @@
+# gcloud artifacts — command index
+
+manage Artifact Registry resources
+
+- `gcloud artifacts apt import` — import one or more Debian packages into an artifact repository
+- `gcloud artifacts apt upload` — upload a Debian package to an artifact repository
+- `gcloud artifacts attachments create` — creates an Artifact Registry attachment in a repository
+- `gcloud artifacts attachments delete` — delete an Artifact Registry attachment
+- `gcloud artifacts attachments describe` — describe an Artifact Registry attachment
+- `gcloud artifacts attachments download` — download an Artifact Registry attachment from a repository
+- `gcloud artifacts attachments list` — list Artifact Registry attachments
+- `gcloud artifacts docker images delete` — delete an Artifact Registry container image
+- `gcloud artifacts docker images describe` — describe an Artifact Registry container image
+- `gcloud artifacts docker images get-operation` — get an On-Demand Scanning operation
+- `gcloud artifacts docker images list` — list Artifact Registry container images
+- `gcloud artifacts docker images list-vulnerabilities` — list On-Demand Scanning vulnerabilities
+- `gcloud artifacts docker images scan` — perform a vulnerability scan on a container image
+- `gcloud artifacts docker tags add` — add a tag to a container image in Artifact Registry
+- `gcloud artifacts docker tags delete` — delete a tag from a container image in Artifact Registry
+- `gcloud artifacts docker tags list` — list all tags associated with a container image in Artifact Registry
+- `gcloud artifacts docker upgrade migrate` — migrate projects from Container Registry to Artifact Registry
+- `gcloud artifacts files delete` — delete an Artifact Registry file
+- `gcloud artifacts files describe` — describe an Artifact Registry file
+- `gcloud artifacts files download` — download an Artifact Registry file
+- `gcloud artifacts files list` — list Artifact Registry files
+- `gcloud artifacts files update` — update annotations on an Artifact Registry file
+- `gcloud artifacts generic download` — download a generic artifact from a generic artifact repository
+- `gcloud artifacts generic upload` — uploads an artifact to a generic repository
+- `gcloud artifacts go auth` — print authentication commands for the GOAUTH environment variable
+- `gcloud artifacts go upload` — upload a Go module to an artifact repository
+- `gcloud artifacts locations list` — list all Artifact Registry supported locations
+- `gcloud artifacts operations describe` — describe an Artifact Registry operation
+- `gcloud artifacts packages delete` — delete an Artifact Registry package
+- `gcloud artifacts packages describe` — describe an Artifact Registry package
+- `gcloud artifacts packages list` — list Artifact Registry packages
+- `gcloud artifacts packages update` — update annotations on an Artifact Registry package
+- `gcloud artifacts print-settings gradle` — print a snippet to add a repository to the Gradle build.gradle file
+- `gcloud artifacts print-settings mvn` — print a snippet to add a Maven repository to the pom.xml file
+- `gcloud artifacts print-settings npm` — print credential settings to add to the .npmrc file
+- `gcloud artifacts print-settings python` — print credential settings to add to the .pypirc and pip.conf files
+- `gcloud artifacts repositories add-iam-policy-binding` — add an IAM policy binding to the IAM policy of an Artifact Registry repository
+- `gcloud artifacts repositories create` — create an Artifact Registry repository
+- `gcloud artifacts repositories delete` — delete an Artifact Registry repository
+- `gcloud artifacts repositories delete-cleanup-policies` — delete cleanup policies from an Artifact Registry repository
+- `gcloud artifacts repositories describe` — describe an Artifact Registry repository
+- `gcloud artifacts repositories get-iam-policy` — get IAM policy for an Artifact Registry repository
+- `gcloud artifacts repositories list` — list repositories in the specified project
+- `gcloud artifacts repositories list-cleanup-policies` — list cleanup policies of an Artifact Registry repository
+- `gcloud artifacts repositories remove-iam-policy-binding` — remove an IAM policy binding from the IAM policy of an Artifact Registry repository
+- `gcloud artifacts repositories set-cleanup-policies` — set or update cleanup policies for an Artifact Registry repository
+- `gcloud artifacts repositories set-iam-policy` — set the IAM policy for an Artifact Registry repository
+- `gcloud artifacts repositories update` — update an Artifact Registry repository
+- `gcloud artifacts rules create` — create an Artifact Registry rule
+- `gcloud artifacts rules delete` — delete an Artifact Registry rule
+- `gcloud artifacts rules describe` — describe an Artifact Registry rule
+- `gcloud artifacts rules list` — list Artifact Registry rules
+- `gcloud artifacts rules update` — update an Artifact Registry rule
+- `gcloud artifacts sbom export` — export SBOM files to Google Cloud Storage
+- `gcloud artifacts sbom list` — list SBOM file references
+- `gcloud artifacts sbom load` — upload an SBOM file and create a reference occurrence
+- `gcloud artifacts settings describe` — list all Artifact Registry project settings
+- `gcloud artifacts settings disable-upgrade-redirection` — disables redirection from Container Registry to Artifact Registry
+- `gcloud artifacts settings enable-upgrade-redirection` — enables redirection from Container Registry to Artifact Registry
+- `gcloud artifacts tags create` — create an Artifact Registry tag
+- `gcloud artifacts tags delete` — delete an Artifact Registry tag
+- `gcloud artifacts tags export` — export an Artifact Registry package version by tag
+- `gcloud artifacts tags list` — list Artifact Registry tags
+- `gcloud artifacts tags update` — update an Artifact Registry tag
+- `gcloud artifacts versions delete` — delete an Artifact Registry package version
+- `gcloud artifacts versions describe` — describe an Artifact Registry package version
+- `gcloud artifacts versions export` — export an Artifact Registry package version
+- `gcloud artifacts versions list` — list Artifact Registry package versions
+- `gcloud artifacts versions update` — update annotations on an Artifact Registry package version
+- `gcloud artifacts vpcsc-config allow` — allow Artifact Registry remote repositories inside a service perimeter to retrieve data from their upstream sources outside of the perimeter
+- `gcloud artifacts vpcsc-config deny` — deny access to upstream sources outside the service perimeter for Artifact Registry remote repositories inside the perimeter
+- `gcloud artifacts vpcsc-config describe` — describe the current Artifact Registry configuration for VPC Service Controls
+- `gcloud artifacts vulnerabilities list` — command for listing vulnerabilities. To see all fields, use --format=json
+- `gcloud artifacts vulnerabilities load-vex` — load VEX data from a CSAF file into Artifact Analysis
+- `gcloud artifacts yum import` — import one or more RPM packages into an artifact repository
+- `gcloud artifacts yum upload` — upload an RPM package to an artifact repository

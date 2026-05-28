@@ -1,0 +1,146 @@
+# gcloud dataplex — command index
+
+manage Dataplex resources
+
+- `gcloud dataplex aspect-types add-iam-policy-binding` — add IAM policy binding to a Dataplex Aspect Type
+- `gcloud dataplex aspect-types create` — create a Dataplex Aspect Type
+- `gcloud dataplex aspect-types delete` — delete a Dataplex Aspect Type
+- `gcloud dataplex aspect-types describe` — describe a Dataplex Aspect Type
+- `gcloud dataplex aspect-types get-iam-policy` — retrieve a Dataplex Aspect Type IAM policy
+- `gcloud dataplex aspect-types list` — list Dataplex Aspect Types
+- `gcloud dataplex aspect-types remove-iam-policy-binding` — remove IAM policy binding from a Dataplex Aspect Type
+- `gcloud dataplex aspect-types set-iam-policy` — set an IAM policy binding for a Dataplex Aspect Type as defined in a JSON or YAML file
+- `gcloud dataplex aspect-types update` — update a Dataplex Aspect Type
+- `gcloud dataplex assets add-iam-policy-binding` — adds IAM policy binding to a Dataplex asset resource
+- `gcloud dataplex assets create` — create a Dataplex asset resource
+- `gcloud dataplex assets delete` — delete a Dataplex asset resource
+- `gcloud dataplex assets describe` — describe a Dataplex asset resource
+- `gcloud dataplex assets get-iam-policy` — get the IAM policy for a Dataplex asset resource
+- `gcloud dataplex assets list` — list Dataplex asset resources
+- `gcloud dataplex assets remove-iam-policy-binding` — remove IAM policy binding from a Dataplex asset resource
+- `gcloud dataplex assets set-iam-policy` — set the IAM policy to a Dataplex asset as defined in a JSON or YAML file
+- `gcloud dataplex assets update` — update a Dataplex asset resource
+- `gcloud dataplex assets actions list` — list Dataplex asset actions
+- `gcloud dataplex content add-iam-policy-binding` — adds IAM policy binding to a Dataplex Content
+- `gcloud dataplex content create` — creating a content
+- `gcloud dataplex content delete` — delete a Dataplex Content Resource
+- `gcloud dataplex content describe` — retrieve a Dataplex Content Resource
+- `gcloud dataplex content get-iam-policy` — retrieve the IAM policy for a Dataplex Content
+- `gcloud dataplex content list` — list Dataplex Content Resources
+- `gcloud dataplex content remove-iam-policy-binding` — removes IAM policy binding from a Dataplex Content
+- `gcloud dataplex content set-iam-policy` — set the IAM policy to a Dataplex Content as defined in a JSON or YAML file
+- `gcloud dataplex content update` — update a Dataplex Content Resource with the given configurations
+- `gcloud dataplex datascans delete` — delete a Dataplex Datascan resource
+- `gcloud dataplex datascans describe` — describe a Dataplex datascan resource
+- `gcloud dataplex datascans get-iam-policy` — get the IAM policy for a Dataplex datascan resource
+- `gcloud dataplex datascans list` — list Dataplex Datascan resources under a project
+- `gcloud dataplex datascans run` — run a Dataplex DataScan resource
+- `gcloud dataplex datascans set-iam-policy` — set the IAM policy to a Dataplex datascan as defined in a JSON or YAML file
+- `gcloud dataplex datascans create data-discovery` — create a Dataplex data discovery scan job
+- `gcloud dataplex datascans create data-documentation` — create a Dataplex data documentation scan job
+- `gcloud dataplex datascans create data-profile` — create a Dataplex data profile scan job
+- `gcloud dataplex datascans create data-quality` — create a Dataplex data quality scan job
+- `gcloud dataplex datascans jobs describe` — describe a Dataplex datascan job
+- `gcloud dataplex datascans jobs list` — list job runs of a Dataplex datascan resource
+- `gcloud dataplex datascans update data-discovery` — update a Dataplex data discovery scan job
+- `gcloud dataplex datascans update data-documentation` — update a Dataplex data documentation scan job
+- `gcloud dataplex datascans update data-profile` — update a Dataplex data profile scan job
+- `gcloud dataplex datascans update data-quality` — update a Dataplex data quality scan job
+- `gcloud dataplex encryption-config create` — create a Dataplex encryption config resource
+- `gcloud dataplex encryption-config describe` — describe an EncryptionConfig
+- `gcloud dataplex encryption-config update` — update an Encryption Config
+- `gcloud dataplex entries create` — create a Dataplex Entry resource
+- `gcloud dataplex entries delete` — delete a Dataplex entry
+- `gcloud dataplex entries describe` — describe a Dataplex entry
+- `gcloud dataplex entries list` — list Dataplex entries
+- `gcloud dataplex entries lookup` — lookup a Dataplex entry
+- `gcloud dataplex entries remove-aspects` — remove aspects from a Dataplex Entry
+- `gcloud dataplex entries search` — searches for Dataplex entries
+- `gcloud dataplex entries update` — update a Dataplex Entry
+- `gcloud dataplex entries update-aspects` — add or update aspects for a Dataplex Entry
+- `gcloud dataplex entry-groups add-iam-policy-binding` — add IAM policy binding to a Dataplex Entry Group
+- `gcloud dataplex entry-groups create` — create a Dataplex Entry Group
+- `gcloud dataplex entry-groups delete` — delete a Dataplex Entry Group
+- `gcloud dataplex entry-groups describe` — describe a Dataplex Entry Group
+- `gcloud dataplex entry-groups get-iam-policy` — retrieve a Dataplex Entry Group IAM policy
+- `gcloud dataplex entry-groups list` — list Dataplex Entry Groups
+- `gcloud dataplex entry-groups remove-iam-policy-binding` — remove IAM policy binding from a Dataplex Entry Group
+- `gcloud dataplex entry-groups set-iam-policy` — set an IAM policy binding for a Dataplex Entry Group as defined in a JSON or YAML file
+- `gcloud dataplex entry-groups update` — update a Dataplex Entry Group
+- `gcloud dataplex entry-types add-iam-policy-binding` — add IAM policy binding to a Dataplex Entry Type
+- `gcloud dataplex entry-types create` — create a Dataplex Entry Type
+- `gcloud dataplex entry-types delete` — delete a Dataplex Entry Type
+- `gcloud dataplex entry-types describe` — describe a Dataplex Entry Type
+- `gcloud dataplex entry-types get-iam-policy` — retrieve a Dataplex Entry Type IAM policy
+- `gcloud dataplex entry-types list` — list Dataplex Entry Types
+- `gcloud dataplex entry-types remove-iam-policy-binding` — remove IAM policy binding from a Dataplex Entry Type
+- `gcloud dataplex entry-types set-iam-policy` — set an IAM policy binding for a Dataplex Entry Type as defined in a JSON or YAML file
+- `gcloud dataplex entry-types update` — update a Dataplex Entry Type
+- `gcloud dataplex environments add-iam-policy-binding` — adds IAM policy binding to a Dataplex Environment
+- `gcloud dataplex environments create` — create a Dataplex Environment
+- `gcloud dataplex environments delete` — delete a Dataplex Environment
+- `gcloud dataplex environments describe` — retrieve a Dataplex Environment
+- `gcloud dataplex environments get-iam-policy` — retrieve a Dataplex Environment IAM policy
+- `gcloud dataplex environments list` — list Dataplex Environments
+- `gcloud dataplex environments remove-iam-policy-binding` — removes IAM policy binding from a Dataplex Environment
+- `gcloud dataplex environments set-iam-policy` — set an IAM policy binding for a Dataplex Environment as defined in a JSON or YAML file
+- `gcloud dataplex environments update` — update a Dataplex Environment with the given configurations
+- `gcloud dataplex environments sessions list` — list Sessions associated with a Environment
+- `gcloud dataplex glossaries add-iam-policy-binding` — add IAM policy binding to a Dataplex Glossary
+- `gcloud dataplex glossaries create` — create a Dataplex Glossary resource
+- `gcloud dataplex glossaries delete` — delete a Dataplex Glossary
+- `gcloud dataplex glossaries describe` — describe a Glossary
+- `gcloud dataplex glossaries get-iam-policy` — retrieve a Dataplex Glossary IAM policy
+- `gcloud dataplex glossaries list` — list Glossaries
+- `gcloud dataplex glossaries remove-iam-policy-binding` — removes IAM policy binding from a Dataplex Glossary
+- `gcloud dataplex glossaries set-iam-policy` — set an IAM policy binding for a Dataplex Glossary as defined in a JSON or YAML file
+- `gcloud dataplex glossaries update` — updates a Dataplex Glossary
+- `gcloud dataplex glossaries categories create` — creates a glossary category
+- `gcloud dataplex glossaries categories delete` — deletes a glossary category
+- `gcloud dataplex glossaries categories describe` — describes a glossary category
+- `gcloud dataplex glossaries categories list` — list glossary categories
+- `gcloud dataplex glossaries categories update` — updates a glossary category
+- `gcloud dataplex glossaries terms create` — creates a glossary term
+- `gcloud dataplex glossaries terms delete` — deletes a glossary term
+- `gcloud dataplex glossaries terms describe` — describes a glossary term
+- `gcloud dataplex glossaries terms list` — list glossary terms
+- `gcloud dataplex glossaries terms update` — updates a glossary term
+- `gcloud dataplex lakes add-iam-policy-binding` — add IAM policy binding to a Dataplex lake resource
+- `gcloud dataplex lakes authorize` — authorize a service agent to manage resources
+- `gcloud dataplex lakes create` — create a Dataplex lake resource
+- `gcloud dataplex lakes deauthorize` — deauthorize a service agent from managing resources
+- `gcloud dataplex lakes delete` — delete a Dataplex lake resource
+- `gcloud dataplex lakes describe` — describe a Dataplex lake resource
+- `gcloud dataplex lakes get-iam-policy` — get the IAM policy for a Dataplex lake resource
+- `gcloud dataplex lakes list` — list Dataplex lake resources under a project
+- `gcloud dataplex lakes remove-iam-policy-binding` — remove IAM policy binding from a Dataplex lake resource
+- `gcloud dataplex lakes set-iam-policy` — set the IAM policy to a Dataplex lake as defined in a JSON or YAML file
+- `gcloud dataplex lakes update` — update a Dataplex lake resource
+- `gcloud dataplex lakes actions list` — list Dataplex lake actions
+- `gcloud dataplex metadata-jobs cancel` — cancel a Metadata Job run
+- `gcloud dataplex metadata-jobs create` — create a Dataplex Metadata Job
+- `gcloud dataplex metadata-jobs describe` — describe a Metadata Job
+- `gcloud dataplex metadata-jobs list` — list Metadata Job resources under a project
+- `gcloud dataplex tasks add-iam-policy-binding` — add IAM policy binding to a Dataplex task resource
+- `gcloud dataplex tasks create` — create a Dataplex task resource
+- `gcloud dataplex tasks delete` — delete a Dataplex task resource
+- `gcloud dataplex tasks describe` — describe a Dataplex task resource
+- `gcloud dataplex tasks get-iam-policy` — get the IAM policy for a Dataplex task resource
+- `gcloud dataplex tasks list` — list Dataplex task resources under a lake
+- `gcloud dataplex tasks remove-iam-policy-binding` — remove IAM policy binding from a Dataplex task resource
+- `gcloud dataplex tasks run` — trigger one-time run of a Dataplex task
+- `gcloud dataplex tasks set-iam-policy` — set the IAM policy to a Dataplex task as defined in a JSON or YAML file
+- `gcloud dataplex tasks update` — update a Dataplex task resource
+- `gcloud dataplex tasks jobs cancel` — cancel a Dataplex Job running a particular task
+- `gcloud dataplex tasks jobs describe` — describe a Dataplex job running a particular task
+- `gcloud dataplex tasks jobs list` — list job runs of a Dataplex task resource
+- `gcloud dataplex zones add-iam-policy-binding` — add IAM policy binding to a Dataplex zone resource
+- `gcloud dataplex zones create` — create a zone
+- `gcloud dataplex zones delete` — delete a Dataplex zone resource
+- `gcloud dataplex zones describe` — describe a Dataplex zone resource
+- `gcloud dataplex zones get-iam-policy` — get the IAM policy for a Dataplex zone resource
+- `gcloud dataplex zones list` — list Dataplex zone resources under a lake
+- `gcloud dataplex zones remove-iam-policy-binding` — remove IAM policy binding from a Dataplex zone resource
+- `gcloud dataplex zones set-iam-policy` — set the IAM policy to a Dataplex zone as defined in a JSON or YAML file
+- `gcloud dataplex zones update` — update a Dataplex zone resource
+- `gcloud dataplex zones actions list` — list Dataplex zone actions
