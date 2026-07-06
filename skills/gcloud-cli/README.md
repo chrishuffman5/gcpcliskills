@@ -1,8 +1,9 @@
 # gcpcliskills — gcloud CLI Skill
 
 A comprehensive [Claude](https://claude.com/claude-code) **skill** providing a complete `gcloud`
-command reference for **121 Google Cloud services** and **5,090 GA commands**. It is the GCP
-counterpart to [`awscliskills`](https://github.com/chrishuffman5/awscliskills).
+command reference for **128 Google Cloud services** and **5,261 GA commands**, plus the standalone
+**`bq`** BigQuery CLI. It is the GCP counterpart to
+[`awscliskills`](https://github.com/chrishuffman5/awscliskills).
 
 The root [`SKILL.md`](SKILL.md) is a **router**: it indexes every service and routes a request to
 the right per-service reference, which contains exhaustive command documentation.
@@ -43,8 +44,11 @@ reference.
 All command and flag data is generated directly from the gcloud CLI's own help system
 (`gcloud <command> --help`), which is the canonical source Google publishes at
 `cloud.google.com/sdk/gcloud/reference`. The content was generated against **Google Cloud SDK
-552.0.0**. Per-service conceptual docs, quickstarts, and how-to guides are linked from each
-service's `overview.md` / `sources.md` (official Google sources only).
+552.0.0** and the service index re-audited against **SDK 575.0.0** (June 30, 2026): services new
+to GA since 552 (`agent-registry`, `apihub`, `biglake`, `datalineage`, `service-health`,
+`vector-search`, `workload-identity`) are documented from the current published reference, and
+`immersive-stream` is flagged as removed. Per-service conceptual docs, quickstarts, and how-to
+guides are linked from each service's `overview.md` / `sources.md` (official Google sources only).
 
 Coverage is the **GA** command surface; each service notes where important capabilities are only
 available under `gcloud beta` / `gcloud alpha`.

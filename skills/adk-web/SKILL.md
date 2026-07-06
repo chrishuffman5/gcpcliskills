@@ -26,7 +26,7 @@ There are two ways to run it. Pick the path that matches your goal:
 
 No Angular or Node.js required. Install the package and point it at an agents directory.
 
-Prerequisites: Python 3.11+.
+Prerequisites: Python 3.10+.
 
 ```bash
 # 1. Install the ADK Python package

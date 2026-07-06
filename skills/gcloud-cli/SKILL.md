@@ -16,7 +16,7 @@ description: >-
 
 # gcloud CLI Reference
 
-Complete `gcloud` command reference covering **121 Google Cloud services** and **5090 GA commands**. Every command is documented from the gcloud CLI's own help system (version-pinned, official) with full flags, value types, choices, defaults, synopses, and examples.
+Complete `gcloud` command reference covering **128 Google Cloud services** and **5,261 GA commands**, plus the standalone **`bq`** BigQuery CLI. Every command is documented from the gcloud CLI's own help system (version-pinned, official) with full flags, value types, choices, defaults, synopses, and examples.
 
 ## How to use this skill
 
@@ -33,12 +33,14 @@ Complete `gcloud` command reference covering **121 Google Cloud services** and *
 | `access-approval` | [`access-approval/overview.md`](references/access-approval/overview.md) | manage Access Approval requests and settings — requests, service-account, settings | [docs](https://docs.cloud.google.com/assured-workloads/access-approval/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/access-approval) |
 | `access-context-manager` | [`access-context-manager/overview.md`](references/access-context-manager/overview.md) | manage Access Context Manager resources — authorized-orgs, cloud-bindings, levels, perimeters, policies, supported-services | [docs](https://cloud.google.com/access-context-manager/docs/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/access-context-manager) |
 | `active-directory` | [`active-directory/overview.md`](references/active-directory/overview.md) | manage Managed Microsoft AD resources — domains, operations, peerings | [docs](https://cloud.google.com/managed-microsoft-ad/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/active-directory) |
+| `agent-registry` | [`agent-registry/overview.md`](references/agent-registry/overview.md) | manage Agent Registry resources — agents, bindings, endpoints, mcp-servers, operations, services | [docs](https://docs.cloud.google.com/agent-registry/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/agent-registry) |
 | `ai` | [`ai/overview.md`](references/ai/overview.md) | manage entities in Vertex AI — custom-jobs, endpoints, hp-tuning-jobs, index-endpoints, indexes, model-garden, model-monitoring-jobs, models | [docs](https://cloud.google.com/vertex-ai/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/ai) |
 | `ai-platform` | [`ai-platform/overview.md`](references/ai-platform/overview.md) | manage AI Platform jobs and models — jobs, local, models, operations, versions | [docs](https://cloud.google.com/ai-platform/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/ai-platform) |
 | `alloydb` | [`alloydb/overview.md`](references/alloydb/overview.md) | create and manage AlloyDB databases — backups, clusters, instances, operations, users | [docs](https://cloud.google.com/alloydb/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/alloydb) |
 | `anthos` | [`anthos/overview.md`](references/anthos/overview.md) | anthos command Group — auth, config | [docs](https://cloud.google.com/kubernetes-engine/enterprise/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/anthos) |
 | `api-gateway` | [`api-gateway/overview.md`](references/api-gateway/overview.md) | manage Cloud API Gateway resources — api-configs, apis, gateways, operations | [docs](https://cloud.google.com/api-gateway/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/api-gateway) |
 | `apigee` | [`apigee/overview.md`](references/apigee/overview.md) | manage Apigee resources — apis, applications, deployments, developers, environments, organizations, products | [docs](https://cloud.google.com/apigee/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/apigee) |
+| `apihub` | [`apihub/overview.md`](references/apihub/overview.md) | manage Apihub resources — apis, api-hub-instances, plugins, deployments, curations, dependencies, attributes, operations | [docs](https://docs.cloud.google.com/apigee/docs/apihub/what-is-api-hub) · [ref](https://cloud.google.com/sdk/gcloud/reference/apihub) |
 | `app` | [`app/overview.md`](references/app/overview.md) | manage your App Engine deployments — domain-mappings, firewall-rules, instances, logs, operations, regions, runtimes, services | [docs](https://cloud.google.com/appengine/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/app) |
 | `apphub` | [`apphub/overview.md`](references/apphub/overview.md) | manage App Hub resources — applications, boundary, discovered-services, discovered-workloads, locations, operations, service-projects | [docs](https://cloud.google.com/app-hub/docs/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/apphub) |
 | `artifacts` | [`artifacts/overview.md`](references/artifacts/overview.md) | manage Artifact Registry resources — apt, attachments, docker, files, generic, go, locations, operations | [docs](https://cloud.google.com/artifact-registry/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/artifacts) |
@@ -49,6 +51,7 @@ Complete `gcloud` command reference covering **121 Google Cloud services** and *
 | `backup-dr` | [`backup-dr/overview.md`](references/backup-dr/overview.md) | manage Backup and DR resources — backup-plan-associations, backup-plan-revisions, backup-plans, backup-vaults, backups, data-source-references, data-sources, locations | [docs](https://cloud.google.com/backup-disaster-recovery/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/backup-dr) |
 | `batch` | [`batch/overview.md`](references/batch/overview.md) | manage Batch resources — jobs, tasks | [docs](https://cloud.google.com/batch/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/batch) |
 | `beyondcorp` | [`beyondcorp/overview.md`](references/beyondcorp/overview.md) | manage Beyondcorp resources — operations, security-gateways | [docs](https://cloud.google.com/beyondcorp-enterprise/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/beyondcorp) |
+| `biglake` | [`biglake/overview.md`](references/biglake/overview.md) | create and manage Google Cloud BigLake resources — iceberg catalogs, iceberg namespaces, iceberg tables | [docs](https://docs.cloud.google.com/lakehouse/docs/lakehouse-iceberg-rest-catalog) · [ref](https://cloud.google.com/sdk/gcloud/reference/biglake) |
 | `bigtable` | [`bigtable/overview.md`](references/bigtable/overview.md) | manage your Cloud Bigtable storage — app-profiles, authorized-views, backups, clusters, hot-tablets, instances, logical-views, materialized-views | [docs](https://cloud.google.com/bigtable/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/bigtable) |
 | `billing` | [`billing/overview.md`](references/billing/overview.md) | manage billing accounts and associate them with projects — accounts, budgets, projects | [docs](https://cloud.google.com/billing/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/billing) |
 | `bms` | [`bms/overview.md`](references/bms/overview.md) | manage Bare Metal Solution resources — instances, networks, nfs-shares, operations, os-images, ssh-keys, volumes | [docs](https://cloud.google.com/bare-metal/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/bms) |
@@ -67,6 +70,7 @@ Complete `gcloud` command reference covering **121 Google Cloud services** and *
 | `data-catalog` | [`data-catalog/overview.md`](references/data-catalog/overview.md) | manage Data Catalog resources — entries, entry-groups, tag-templates, tags, taxonomies | [docs](https://cloud.google.com/data-catalog/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/data-catalog) |
 | `database-migration` | [`database-migration/overview.md`](references/database-migration/overview.md) | manage Database Migration Service resources — connection-profiles, conversion-workspaces, migration-jobs, objects, operations, private-connections | [docs](https://cloud.google.com/database-migration/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/database-migration) |
 | `dataflow` | [`dataflow/overview.md`](references/dataflow/overview.md) | manage Google Cloud Dataflow resources — flex-template, jobs, snapshots, yaml | [docs](https://cloud.google.com/dataflow/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/dataflow) |
+| `datalineage` | [`datalineage/overview.md`](references/datalineage/overview.md) | track the flow of data within Google Cloud — config, processes | [docs](https://docs.cloud.google.com/dataplex/docs/about-data-lineage) · [ref](https://cloud.google.com/sdk/gcloud/reference/datalineage) |
 | `dataplex` | [`dataplex/overview.md`](references/dataplex/overview.md) | manage Dataplex resources — aspect-types, assets, content, datascans, encryption-config, entries, entry-groups, entry-types | [docs](https://cloud.google.com/dataplex/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/dataplex) |
 | `dataproc` | [`dataproc/overview.md`](references/dataproc/overview.md) | create and manage Google Cloud Dataproc clusters and jobs — autoscaling-policies, batches, clusters, jobs, node-groups, operations, workflow-templates | [docs](https://cloud.google.com/dataproc/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/dataproc) |
 | `datastore` | [`datastore/overview.md`](references/datastore/overview.md) | manage your Cloud Datastore resources — indexes, operations | [docs](https://cloud.google.com/datastore/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/datastore) |
@@ -93,7 +97,7 @@ Complete `gcloud` command reference covering **121 Google Cloud services** and *
 | `iap` | [`iap/overview.md`](references/iap/overview.md) | manage IAP policies — oauth-brands, oauth-clients, settings, tcp, web | [docs](https://cloud.google.com/iap/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/iap) |
 | `identity` | [`identity/overview.md`](references/identity/overview.md) | manage Cloud Identity Groups and Memberships resources | [docs](https://cloud.google.com/identity/docs/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/identity) |
 | `ids` | [`ids/overview.md`](references/ids/overview.md) | manage Cloud IDS — endpoints | [docs](https://cloud.google.com/intrusion-detection-system/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/ids) |
-| `immersive-stream` | [`immersive-stream/overview.md`](references/immersive-stream/overview.md) | manage Immersive Stream resources — xr | [docs](https://cloud.google.com/immersive-stream/xr/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/immersive-stream) |
+| `immersive-stream` | [`immersive-stream/overview.md`](references/immersive-stream/overview.md) | ⚠️ removed from the GA and beta reference as of SDK ~575 (mid-2026); present in SDK 552 and earlier — xr | [docs](https://cloud.google.com/immersive-stream/xr/docs) |
 | `infra-manager` | [`infra-manager/overview.md`](references/infra-manager/overview.md) | manage Infra Manager resources — automigrationconfig, deployments, previews, resource-changes, resource-drifts, resources, revisions, terraform-versions | [docs](https://docs.cloud.google.com/infrastructure-manager/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/infra-manager) |
 | `kms` | [`kms/overview.md`](references/kms/overview.md) | manage cryptographic keys in the cloud — autokey-config, ekm-config, ekm-connections, import-jobs, inventory, key-handles, keyrings, keys | [docs](https://cloud.google.com/kms/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/kms) |
 | `logging` | [`logging/overview.md`](references/logging/overview.md) | manage Cloud Logging — buckets, links, locations, logs, metrics, operations, resource-descriptors, scopes | [docs](https://cloud.google.com/logging/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/logging) |
@@ -135,6 +139,7 @@ Complete `gcloud` command reference covering **121 Google Cloud services** and *
 | `secrets` | [`secrets/overview.md`](references/secrets/overview.md) | manage secrets on Google Cloud — locations, replication, versions | [docs](https://cloud.google.com/secret-manager/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/secrets) |
 | `service-directory` | [`service-directory/overview.md`](references/service-directory/overview.md) | command groups for Service Directory — endpoints, locations, namespaces, services | [docs](https://cloud.google.com/service-directory/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/service-directory) |
 | `service-extensions` | [`service-extensions/overview.md`](references/service-extensions/overview.md) | manage Service Extensions resources — authz-extensions, lb-edge-extensions, lb-route-extensions, lb-traffic-extensions, wasm-plugin-versions, wasm-plugins | [docs](https://cloud.google.com/service-extensions/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/service-extensions) |
+| `service-health` | [`service-health/overview.md`](references/service-health/overview.md) | request events that are relevant to your project or organization (Personalized Service Health, read-only) — events, organization-events, organization-impacts | [docs](https://docs.cloud.google.com/service-health/docs/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/service-health) |
 | `services` | [`services/overview.md`](references/services/overview.md) | list, enable and disable APIs and services — api-keys, operations, peered-dns-domains, vpc-peerings | [docs](https://cloud.google.com/service-usage/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/services) |
 | `source` | [`source/overview.md`](references/source/overview.md) | cloud git repository commands — project-configs, repos | [docs](https://cloud.google.com/source-repositories/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/source) |
 | `source-manager` | [`source-manager/overview.md`](references/source-manager/overview.md) | manage Secure Source Manager resources — instances, locations, operations, repos | [docs](https://cloud.google.com/secure-source-manager/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/source-manager) |
@@ -146,9 +151,11 @@ Complete `gcloud` command reference covering **121 Google Cloud services** and *
 | `topic` | [`topic/overview.md`](references/topic/overview.md) | gcloud supplementary help | [docs](https://cloud.google.com/sdk/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/topic) |
 | `transcoder` | [`transcoder/overview.md`](references/transcoder/overview.md) | manage Transcoder jobs and job templates — jobs, templates | [docs](https://cloud.google.com/transcoder/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/transcoder) |
 | `transfer` | [`transfer/overview.md`](references/transfer/overview.md) | manage Transfer Service jobs, operations, and agents — agent-pools, agents, jobs, operations | [docs](https://cloud.google.com/storage-transfer/docs/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/transfer) |
+| `vector-search` | [`vector-search/overview.md`](references/vector-search/overview.md) | manage Vector Search data objects (Agent Retrieval / Vector Search 2.0 — NOT the classic `gcloud ai` indexes) — collections, collections data-objects, collections indexes, operations | [docs](https://docs.cloud.google.com/vertex-ai/docs/vector-search-2/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/vector-search) |
 | `vmware` | [`vmware/overview.md`](references/vmware/overview.md) | manage Google Cloud VMware Engine resources — announcements, datastores, dns-bind-permission, locations, network-peerings, network-policies, networks, node-types | [docs](https://cloud.google.com/vmware-engine/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/vmware) |
 | `workbench` | [`workbench/overview.md`](references/workbench/overview.md) | workbench Command Group — instances | [docs](https://cloud.google.com/vertex-ai/docs/workbench/overview) · [ref](https://cloud.google.com/sdk/gcloud/reference/workbench) |
 | `workflows` | [`workflows/overview.md`](references/workflows/overview.md) | manage your Cloud Workflows resources — executions | [docs](https://cloud.google.com/workflows/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/workflows) |
+| `workload-identity` | [`workload-identity/overview.md`](references/workload-identity/overview.md) | manage Workload Identity — service-agents | [docs](https://docs.cloud.google.com/iam/docs/create-service-agents) · [ref](https://cloud.google.com/sdk/gcloud/reference/workload-identity) |
 | `workspace-add-ons` | [`workspace-add-ons/overview.md`](references/workspace-add-ons/overview.md) | manage Google Workspace Add-ons resources — deployments | [docs](https://developers.google.com/workspace/add-ons) · [ref](https://cloud.google.com/sdk/gcloud/reference/workspace-add-ons) |
 | `workstations` | [`workstations/overview.md`](references/workstations/overview.md) | manage Cloud Workstations resources — clusters, configs | [docs](https://cloud.google.com/workstations/docs) · [ref](https://cloud.google.com/sdk/gcloud/reference/workstations) |
 
@@ -162,14 +169,34 @@ These manage the CLI itself rather than cloud resources:
 - `gcloud auth` — manage credentials. See [`auth/overview.md`](references/auth/overview.md).
 - `gcloud config` — view/set CLI properties (project, region, zone, account). See [`config/overview.md`](references/config/overview.md).
 - `gcloud components` — install/update/remove CLI components. See [`components/overview.md`](references/components/overview.md).
-- `gcloud info` — show CLI environment/diagnostics.  `gcloud version` — show component versions.
+- `gcloud info` — show CLI environment/diagnostics (`gcloud info --run-diagnostics` checks network/auth issues).  `gcloud version` — show component versions.
+
+## Companion CLIs bundled with the Google Cloud SDK
+
+Not everything on GCP is a `gcloud` command. These separate tools install alongside gcloud
+(via `gcloud components install <id>` where noted):
+
+- **`bq`** — the day-to-day **BigQuery** CLI (`bq query`, `bq load`, `bq mk`, `bq extract`, …),
+  invoked as plain `bq ...`. This is NOT `gcloud bq` (which covers only BigQuery *Migration
+  Service* workflows). All 26 commands are documented in
+  [`bq-cli/overview.md`](references/bq-cli/overview.md) — including global flags, workflows, and
+  the legacy-SQL default gotcha (always pass `--nouse_legacy_sql` for GoogleSQL).
+- **`gsutil`** — the **legacy** Cloud Storage CLI. Prefer `gcloud storage` (faster, actively
+  developed); see [`storage/overview.md`](references/storage/overview.md) for the gsutil→gcloud
+  storage transition notes.
+- **`kubectl`** — Kubernetes operations on GKE clusters. Install with
+  `gcloud components install kubectl gke-gcloud-auth-plugin`, then bridge auth with
+  `gcloud container clusters get-credentials CLUSTER --region REGION`. See
+  [`container/overview.md`](references/container/overview.md).
+- **`cbt`** — Bigtable CLI (`gcloud components install cbt`).
 
 ---
 
 ## General gcloud conventions
 
 These behaviors apply across every `gcloud` command. (Run `gcloud topic <name>` locally for
-the authoritative deep-dive on any of these — e.g. `gcloud topic formats`, `gcloud topic filters`.)
+the authoritative deep-dive on any of these — e.g. `gcloud topic formats`, `gcloud topic filters`;
+the full topic list is in [`topic/index.md`](references/topic/index.md).)
 
 ### Global flags (available on every command)
 
@@ -270,7 +297,7 @@ gcloud services list --enabled
 
 Each service `overview.md` notes the API to enable.
 
-### Scripting tips
+### Scripting and automation (agent-relevant)
 
 ```bash
 set -euo pipefail
@@ -278,10 +305,44 @@ PROJECT=$(gcloud config get-value project)
 gcloud ... --quiet --format='value(...)'        # no prompts, parseable output
 ```
 
-- `gcloud` exits non-zero on error — check `$?` or rely on `set -e`.
-- Use `--quiet` to auto-confirm destructive operations in automation.
+Google's official scripting guidance (`cloud.google.com/sdk/docs/scripting-gcloud`) distilled:
+
+- **The exit status is the only reliable error signal.** Non-zero means an error occurred and
+  output may be incomplete — check `$?` or rely on `set -e`.
+- **Never parse stderr** — human-readable message wording can change between SDK versions.
+- **Never parse the default (unformatted) stdout** — it can also change. Always pin the shape
+  with `--format=json|yaml|csv|text|value(...)` when a script or agent consumes the output.
+- **Disable prompts in non-interactive runs.** `--quiet` auto-accepts defaults; equivalently set
+  the property `gcloud config set disable_prompts true` or the env var
+  `CLOUDSDK_CORE_DISABLE_PROMPTS=1`. Prompts that *require* input then raise an error instead of
+  hanging.
+- **Do not run multiple `gcloud` commands in parallel** — officially unsupported (shared
+  config/credential state can corrupt). Serialize calls; if concurrent invocations are
+  unavoidable, give each process its own config directory via the `CLOUDSDK_CONFIG` env var.
+- **Every property has an env-var form**: `CLOUDSDK_<SECTION>_<PROPERTY>` — e.g.
+  `CLOUDSDK_CORE_PROJECT`, `CLOUDSDK_COMPUTE_REGION`, `CLOUDSDK_CORE_DISABLE_PROMPTS`. Useful for
+  per-invocation overrides in CI without touching the active configuration.
+- **Production automation should authenticate as a service account**
+  (`gcloud auth activate-service-account --key-file=KEY` or, better, workload identity /
+  `--impersonate-service-account`) rather than a user login.
 - Many long-running commands accept `--async` (return immediately with an operation) and have a
   matching `operations` subgroup or `--wait`/`wait` command to poll for completion.
+
+### Troubleshooting common failures
+
+- **`PERMISSION_DENIED` / 403 mentioning the API** (e.g. "API has not been used in project …" /
+  `SERVICE_DISABLED`): enable it — `gcloud services enable <api>.googleapis.com`. Each service
+  `overview.md` names the API to enable.
+- **`PERMISSION_DENIED` on a resource**: wrong project or missing IAM role. Check
+  `gcloud config get-value project`, then inspect with `gcloud projects get-iam-policy PROJECT`
+  or diagnose with `gcloud policy-intelligence troubleshoot-policy iam` (see
+  [`policy-intelligence/overview.md`](references/policy-intelligence/overview.md)).
+- **`RESOURCE_EXHAUSTED` / quota exceeded**: regional/project quota. List usage with
+  `gcloud compute regions describe REGION` (compute) or the console Quotas page; request
+  increases there.
+- **Auth/env problems**: `gcloud info --run-diagnostics` checks network reachability and config;
+  `gcloud auth list` shows which account is active.
+- **Debugging any request**: add `--log-http` (full HTTP traffic) and/or `--verbosity=debug`.
 
 ### Release tracks: GA / beta / alpha
 
@@ -299,3 +360,5 @@ overview says so; prepend `beta` or `alpha` to the command (install the componen
 ## Sourcing & accuracy
 
 All command and flag data is generated directly from the gcloud CLI's own help system (`gcloud <command> --help`, the canonical source Google publishes at `cloud.google.com/sdk/gcloud/reference`), pinned to the installed SDK version. Per-service conceptual docs, quickstarts, and how-to guides are linked from each service's `overview.md` and `sources.md` (official `cloud.google.com` sources only).
+
+**Version pinning:** the bulk of the reference was generated against **Google Cloud SDK 552.0.0** (January 2026). The service index was re-audited against **SDK 575.0.0** (June 30, 2026): services new to GA since 552 — `agent-registry`, `apihub`, `biglake`, `datalineage`, `service-health`, `vector-search`, `workload-identity` — are documented from the current published reference at `docs.cloud.google.com/sdk/gcloud/reference`, and `immersive-stream` is flagged as removed. For any flag-level question where exactness matters, `gcloud <command> --help` on the user's installed SDK is always the final authority — prefer it over this reference if they disagree.
