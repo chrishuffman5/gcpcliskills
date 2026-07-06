@@ -1,6 +1,6 @@
 {
   "name": "gcpcliskills",
-  "description": "Command-reference skills for Google's CLIs: gcloud (120+ GCP services, 5,090 GA commands), the Python Agent Development Kit CLI (adk), the TypeScript ADK dev tools (@google/adk-devtools), and the ADK developer web UI.",
+  "description": "Command-reference skills for Google's CLIs: gcloud (120+ GCP services, 5,261 GA commands), the Python Agent Development Kit CLI (adk), the TypeScript ADK dev tools (@google/adk-devtools), and the ADK developer web UI.",
   "version": "0.1.0",
   "author": {
     "name": "chrishuffman5",

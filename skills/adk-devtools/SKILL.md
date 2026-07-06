@@ -19,7 +19,7 @@ into two npm packages:
 - **`@google/adk`** — the runtime SDK your agent code imports from (`LlmAgent`, `BaseAgent`, etc.). Ships ESM, CommonJS, and browser bundles.
 - **`@google/adk-devtools`** — the dev-only CLI (banner: `ADK CLI`, bin name: `adk`) for scaffolding, running, serving, and deploying agents.
 
-This skill covers CLI v1.1.0. Every command and flag below is taken from the `--help` output of
+This skill covers CLI v1.3.0. Every command and flag below is taken from the `--help` output of
 that version — none are invented.
 
 ## Install
@@ -34,8 +34,9 @@ npm install -D @google/adk-devtools
 
 Yarn: `yarn add @google/adk` and `yarn add -D @google/adk-devtools`.
 
-**Prerequisites:** Node.js 24 (24.13.0+) and npm 11.8.0+. The full version/compatibility matrix
-lives in the repo README (https://github.com/google/adk-js#readme).
+**Prerequisites:** Node.js 24 (24.13.0+) and npm 11.8.0+, per the official TypeScript
+getting-started guide (https://adk.dev/get-started/typescript); the packages declare no
+`engines` constraint in their npm metadata.
 
 ### CRITICAL: invoke via `npx`, not bare `adk`
 
@@ -111,6 +112,7 @@ npx @google/adk-devtools run [options] <agent>
 - `--compile [boolean]` — compile TS agent file to JS before execution (default: `true`).
 - `--bundle [boolean]` — bundle the agent before execution (default: `true`).
 - `--file_type <string>` — `cjs` or `esm`.
+- `--reload_agents [boolean]` — watch agent files for changes and automatically reload them (default: `false`; changes take effect on the next agent run).
 
 Example:
 
@@ -139,6 +141,7 @@ npx @google/adk-devtools web [options] [agents_dir]
 - `--bundle [boolean]` — bundle before execution (default: `true`).
 - `--file_type <string>` — `cjs` or `esm`.
 - `--a2a [boolean]` — enable A2A (Agent-to-Agent) for the web/api server (default: `false`).
+- `--reload_agents [boolean]` — watch agent files for changes and automatically reload them (default: `false`; changes take effect on the next agent run).
 
 Example:
 
@@ -156,7 +159,7 @@ npx @google/adk-devtools api_server [options] [agents_dir]
 
 Options are identical to `web`: `-h, --host`, `-p, --port` (default `8000`), `--allow_origins`,
 `-v, --verbose`, `--log_level`, `--session_service_uri`, `--artifact_service_uri`,
-`--otel_to_cloud`, `--compile`, `--bundle`, `--file_type`, `--a2a`.
+`--otel_to_cloud`, `--compile`, `--bundle`, `--file_type`, `--a2a`, `--reload_agents`.
 
 Example:
 
@@ -166,7 +169,8 @@ npx @google/adk-devtools api_server ./agents --session_service_uri memory:// --a
 
 ### deploy cloud_run — deploy to Google Cloud Run
 
-`deploy` has one subcommand, `cloud_run`.
+`deploy` has three subcommands: `cloud_run`, `agent_engine`, and `reasoning_engine` (the latter
+two take identical options — Agent Engine's underlying resource type is "Reasoning Engine").
 
 ```bash
 npx @google/adk-devtools deploy cloud_run [options] [agents_dir]
@@ -196,6 +200,33 @@ Example:
 npx @google/adk-devtools deploy cloud_run ./agents --service_name my-adk-service --with_ui --project my-gcp-project --region us-central1
 ```
 
+### deploy agent_engine — deploy to Vertex AI Agent Engine
+
+```bash
+npx @google/adk-devtools deploy agent_engine [options] [agents_dir]
+```
+
+- `agents_dir` — agent file or directory to serve (same layout/`rootAgent` requirement as `web`).
+- `--project [string]` — Google Cloud project to deploy to; defaults to `gcloud` config project.
+- `--region [string]` — Google Cloud region; defaults to `gcloud` `run/region` config.
+- `--display_name [string]` — display name for the Reasoning Engine (default: agent directory name).
+- `--description [string]` — description for the Reasoning Engine.
+- `--repository [string]` — Artifact Registry repository name to push docker images; required for agent_engine deploy.
+- `--temp_folder [string]` — temp folder for generated source files (default: a timestamped folder in the system temp dir).
+- `--adk_version [string]` — ADK version to use (default: `latest`).
+- `--with_ui [boolean]` — deploy the ADK Web UI too (default: API server only).
+- Plus the same server/build flags as `cloud_run`: `--allow_origins`, `-v, --verbose`, `--log_level`,
+  `--session_service_uri`, `--artifact_service_uri`, `--compile`, `--bundle`, `--file_type`, `--a2a`.
+  Note: no `-p, --port` flag here (unlike `cloud_run`).
+
+`deploy reasoning_engine` accepts exactly the same options.
+
+Example:
+
+```bash
+npx @google/adk-devtools deploy agent_engine ./agents --project my-gcp-project --region us-central1 --repository my-ar-repo --display_name my-agent
+```
+
 ### integration — run integration and conformance tests
 
 Runs ADK integration and conformance tests. Has one subcommand, `conformance` (run ADK conformance
@@ -205,7 +236,11 @@ tests), plus `help [command]`.
 npx @google/adk-devtools integration conformance [options]
 ```
 
-Run `npx @google/adk-devtools integration conformance --help` for its specific options.
+- `-v, --verbose [boolean]` — verbose level (default: `false`).
+- `--log_level <string>` — log level (default: `info`).
+- `--agents_dir [dir]` — directory of conformance test agent definitions; recursively searched for `.yaml` files (default: current directory).
+- `--tests_dir [dir]` — directory of conformance test definitions; recursively searched for `.yaml` files (default: current directory).
+- `--force` — force run skipped tests.
 
 ## Common workflows
 
@@ -256,7 +291,7 @@ npx @google/adk-devtools deploy cloud_run ./agents \
   --with_ui \
   --project my-gcp-project \
   --region us-central1 \
-  --adk_version 1.1.0
+  --adk_version 1.3.0
 ```
 
 ## Official documentation

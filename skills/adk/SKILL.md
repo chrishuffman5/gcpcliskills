@@ -13,7 +13,7 @@ description: >-
 
 # ADK CLI (Python)
 
-The **Agent Development Kit (ADK)** is Google's open-source, code-first Python framework for building, evaluating, and deploying AI agents — supporting multi-agent workflows, tool use, evaluation, and deployment to Cloud Run, GKE, or Vertex AI Agent Engine. The `adk` CLI scaffolds new agents (`create`), runs them locally in the terminal (`run`) or a browser dev UI (`web`) or a headless API server (`api_server`), evaluates them (`eval`, `eval_set`), optimizes prompts (`optimize`), runs conformance/pytest checks (`conformance`, `test`), migrates session databases (`migrate`), and deploys to hosted environments (`deploy`). This skill documents `adk` v2.1.0.
+The **Agent Development Kit (ADK)** is Google's open-source, code-first Python framework for building, evaluating, and deploying AI agents — supporting multi-agent workflows, tool use, evaluation, and deployment to Cloud Run, GKE, or Vertex AI Agent Engine. The `adk` CLI scaffolds new agents (`create`), runs them locally in the terminal (`run`) or a browser dev UI (`web`) or a headless API server (`api_server`), evaluates them (`eval`, `eval_set`), optimizes prompts (`optimize`), runs conformance/pytest checks (`conformance`, `test`), migrates session databases (`migrate`), and deploys to hosted environments (`deploy`). This skill documents `adk` v2.3.0.
 
 ## Install
 
@@ -21,7 +21,7 @@ The **Agent Development Kit (ADK)** is Google's open-source, code-first Python f
 pip install google-adk          # installed CLI entry-point: `adk`
 ```
 
-Requires **Python 3.11+** (the user runs 3.13, fully supported). Optional extras exist (e.g. `"google-adk[extensions]"`, `"google-adk[all]"`, plus `a2a`, `db`, `eval`, `gcp`, `mcp`, `tools`, …); the fuller version/extras matrix is in the repo README and PyPI page.
+Requires **Python 3.10+** (the user runs 3.13, fully supported). Optional extras exist (e.g. `"google-adk[extensions]"`, `"google-adk[all]"`, plus `a2a`, `db`, `eval`, `gcp`, `mcp`, `tools`, …); the fuller version/extras matrix is in the repo README and PyPI page.
 
 ## Authentication
 
@@ -84,6 +84,7 @@ Key options:
 - `--state TEXT` — initial state as a JSON string.
 - `--timeout TEXT` — per-turn timeout (e.g. `30s`, `5m`).
 - `--jsonl` — emit structured JSONL instead of human-readable text.
+- `-v, --verbose` (DEBUG logging) / `--log_level [debug|info|warning|error|critical]`.
 - `--enable_features` / `--disable_features TEXT` — comma-separated experimental feature toggles.
 - Plus the service-URI flags listed above.
 
@@ -131,6 +132,8 @@ adk api_server [OPTIONS] [AGENTS_DIR]
 Same flag family as `web` (`--host`, `--port`, `-v`/`--log_level`, `--reload`, `--a2a`, `--reload_agents`, `--allow_origins`, `--eval_storage_uri`, `--extra_plugins`, `--trace_to_cloud`, `--otel_to_cloud`, `--url_prefix`, `--trigger_sources`, `--enable_features`/`--disable_features`, and the service-URI flags). Additional:
 - `--auto_create_session` — auto-create a session if missing when calling `/run`.
 - `--with_ui` — also serve the ADK Web UI.
+- `--gemini_enterprise_app_name TEXT` — the app_name to register with Gemini Enterprise.
+- `--express_mode` — initialize the server in express mode (only supported when `--gemini_enterprise_app_name` is set; default false).
 
 ```bash
 adk api_server path/to/agents_dir --port=8000
@@ -227,7 +230,7 @@ One-line: ADK migration commands. Subcommand: `session`.
 ```
 adk migrate session --source_db_url <url> --dest_db_url <url>
 ```
-Migrates a session database to the latest schema version. Required: `--source_db_url TEXT` and `--dest_db_url TEXT` (SQLAlchemy URLs, e.g. `sqlite:///source.db`). Optional: `--log_level [...]`.
+Migrates a session database to the latest schema version. Required: `--source_db_url TEXT` and `--dest_db_url TEXT` (SQLAlchemy URLs, e.g. `sqlite:///source.db`). Optional: `--log_level [...]`, `--allow_unsafe_unpickling` (allow unsafe pickle loading for trusted legacy session databases; also spelled `--allow-unsafe-unpickling`).
 
 ```bash
 adk migrate session \
@@ -245,15 +248,15 @@ One-line: deploys an agent. Subcommands: `agent_engine`, `cloud_run`, `gke`.
 adk deploy agent_engine [OPTIONS] AGENT
 ```
 Key options:
-- `--api_key TEXT` — Express Mode key (used only if `GOOGLE_GENAI_USE_VERTEXAI` is true; overrides `GOOGLE_API_KEY`).
+- `--api_key TEXT` — Express Mode key (used only if `GOOGLE_GENAI_USE_ENTERPRISE` is true; overrides `GOOGLE_API_KEY`).
 - `--project TEXT` / `--region TEXT` — Vertex Mode target (ignored if `--api_key` is set).
 - `--agent_engine_id TEXT` — update an existing instance instead of creating one (resource ID with project/region; full resource name with `--api_key`).
 - `--display_name TEXT`, `--description TEXT`.
-- `--adk_app TEXT` (Python file defining the app; default `agent_engine_app.py`), `--adk_app_object TEXT` (`root_agent` or `app`; default `root_agent`).
-- `--env_file TEXT`, `--requirements_file TEXT`, `--agent_engine_config_file TEXT`, `--temp_folder TEXT`.
-- `--trace_to_cloud / --no-trace_to_cloud`, `--otel_to_cloud`.
-- `--validate-agent-import / --no-validate-agent-import` (or `--skip-agent-import-validation`, the default).
-- (`--staging_bucket` and `--absolutize_imports` are deprecated.)
+- `--agent_engine_config_file TEXT` (default: the `.agent_engine_config.json` in the agent directory, if any), `--temp_folder TEXT`.
+- `--adk_version TEXT` (default: the ADK version in the dev environment, i.e. `2.3.0`).
+- `--trigger_sources TEXT` (`pubsub,eventarc`), `--otel_to_cloud`.
+- Plus the service-URI flags (here `--use_local_storage` defaults to **off**).
+- (`--staging_bucket`, `--absolutize_imports`, `--adk_app`, `--adk_app_object`, `--env_file`, `--requirements_file`, `--trace_to_cloud`, and the agent-import-validation flags are deprecated.)
 
 ```bash
 # Express Mode (API key, no GCP project)
@@ -277,7 +280,7 @@ Use `--` to separate gcloud args from adk args. Key options:
 - `--project TEXT` (required; falls back to gcloud config), `--region TEXT` (required; otherwise `gcloud run deploy` prompts).
 - `--service_name TEXT` (default `adk-default-service-name`), `--app_name TEXT`, `--port INTEGER` (default `8000`).
 - `--with_ui` — also deploy the Web UI (dev/test only — not for production).
-- `--a2a`, `--allow_origins TEXT`, `--trigger_sources TEXT`, `--adk_version TEXT` (default `2.1.0`), `--temp_folder TEXT`, `--log_level [...]`.
+- `--a2a`, `--allow_origins TEXT`, `--trigger_sources TEXT`, `--adk_version TEXT` (default: the ADK version in the dev environment, i.e. `2.3.0`), `--temp_folder TEXT`, `--log_level [...]`.
 - `--trace_to_cloud`, `--otel_to_cloud`.
 - Plus the service-URI flags (here `--use_local_storage` defaults to **off**).
 
@@ -298,7 +301,7 @@ adk deploy gke [OPTIONS] AGENT
 Same family as `cloud_run`, plus GKE-specific:
 - `--project TEXT` (required), `--region TEXT` (required), `--cluster_name TEXT` (**required**).
 - `--service_type [ClusterIP|LoadBalancer]` (default `ClusterIP`; use `LoadBalancer` for a public IP).
-- `--service_name`, `--app_name`, `--port` (default `8000`), `--with_ui`, `--adk_version` (default `2.1.0`), `--temp_folder`, `--log_level`, `--trace_to_cloud`, `--otel_to_cloud`, `--trigger_sources`, and the service-URI flags.
+- `--service_name`, `--app_name`, `--port` (default `8000`), `--with_ui`, `--adk_version` (default: the ADK version in the dev environment, i.e. `2.3.0`), `--temp_folder`, `--log_level`, `--trace_to_cloud`, `--otel_to_cloud`, `--trigger_sources`, and the service-URI flags.
 
 ```bash
 adk deploy gke --project=my-project --region=us-central1 \

@@ -1,0 +1,87 @@
+# gcloud apihub — command index
+
+manage Apihub resources
+
+- `gcloud apihub addons describe` — describe an Addon
+- `gcloud apihub addons list` — list Addons
+- `gcloud apihub addons manage-config` — manage the Config of an Addon
+- `gcloud apihub api-hub-instances create` — create an Api Hub Instance
+- `gcloud apihub api-hub-instances delete` — delete an Api Hub Instance
+- `gcloud apihub api-hub-instances describe` — describe an Api Hub Instance
+- `gcloud apihub api-hub-instances lookup` — lookup apiHubInstances
+- `gcloud apihub apis create` — create apis
+- `gcloud apihub apis delete` — delete an Api
+- `gcloud apihub apis describe` — describe an Api
+- `gcloud apihub apis list` — list Apis
+- `gcloud apihub apis update` — update apis
+- `gcloud apihub apis versions create` — create a Version
+- `gcloud apihub apis versions delete` — delete a Version
+- `gcloud apihub apis versions describe` — describe a Version
+- `gcloud apihub apis versions list` — list Versions
+- `gcloud apihub apis versions update` — update versions
+- `gcloud apihub apis versions operations create` — create apiOperations
+- `gcloud apihub apis versions operations delete` — delete apiOperations
+- `gcloud apihub apis versions operations describe` — describe apiOperations
+- `gcloud apihub apis versions operations list` — list apiOperations
+- `gcloud apihub apis versions operations update` — update apiOperations
+- `gcloud apihub apis versions specs create` — create a Spec
+- `gcloud apihub apis versions specs delete` — delete a Spec
+- `gcloud apihub apis versions specs describe` — describe a Spec
+- `gcloud apihub apis versions specs get-contents` — get the contents of a spec
+- `gcloud apihub apis versions specs lint` — lint a Spec
+- `gcloud apihub apis versions specs list` — list Specs
+- `gcloud apihub apis versions specs update` — update specs
+- `gcloud apihub attributes create` — create an Attribute
+- `gcloud apihub attributes delete` — delete an Attribute
+- `gcloud apihub attributes describe` — describe an Attribute
+- `gcloud apihub attributes list` — list Attributes
+- `gcloud apihub attributes update` — update an Attribute
+- `gcloud apihub curations create` — create a Curation
+- `gcloud apihub curations delete` — delete a Curation
+- `gcloud apihub curations describe` — describe a Curation
+- `gcloud apihub curations list` — list Curations
+- `gcloud apihub curations update` — update a Curation
+- `gcloud apihub dependencies create` — create a Dependency
+- `gcloud apihub dependencies delete` — delete a Dependency
+- `gcloud apihub dependencies describe` — describe a Dependency
+- `gcloud apihub dependencies list` — list Dependencies
+- `gcloud apihub dependencies update` — update a Dependency
+- `gcloud apihub deployments create` — create a Deployment
+- `gcloud apihub deployments delete` — delete a Deployment
+- `gcloud apihub deployments describe` — describe a Deployment
+- `gcloud apihub deployments list` — list Deployments
+- `gcloud apihub deployments update` — update deployments
+- `gcloud apihub discovered-api-observations describe` — describe a Discovered Api Observation
+- `gcloud apihub discovered-api-observations list` — list Discovered Api Observations
+- `gcloud apihub discovered-api-observations discovered-api-operations describe` — describe a Discovered Api Operation
+- `gcloud apihub discovered-api-observations discovered-api-operations list` — list Discovered Api Operations
+- `gcloud apihub external-apis create` — create an External Api
+- `gcloud apihub external-apis delete` — delete an External Api
+- `gcloud apihub external-apis describe` — describe an External Api
+- `gcloud apihub external-apis list` — list External Apis
+- `gcloud apihub external-apis update` — update an External Api
+- `gcloud apihub host-project-registrations create` — create a Host Project Registration
+- `gcloud apihub host-project-registrations describe` — describe a Host Project Registration
+- `gcloud apihub host-project-registrations list` — list Host Project Registrations
+- `gcloud apihub operations cancel` — cancel operations
+- `gcloud apihub operations delete` — delete operations
+- `gcloud apihub operations describe` — describe operations
+- `gcloud apihub operations list` — list operations
+- `gcloud apihub operations wait` — wait operations
+- `gcloud apihub plugins create` — create a Plugin
+- `gcloud apihub plugins delete` — delete a Plugin
+- `gcloud apihub plugins describe` — describe a Plugin
+- `gcloud apihub plugins disable` — disable a Plugin
+- `gcloud apihub plugins enable` — enable a Plugin
+- `gcloud apihub plugins list` — list Plugins
+- `gcloud apihub plugins instances create` — create a Plugin Instance
+- `gcloud apihub plugins instances delete` — delete a Plugin Instance
+- `gcloud apihub plugins instances describe` — describe a Plugin Instance
+- `gcloud apihub plugins instances list` — list Plugin Instances
+- `gcloud apihub plugins instances manage-source-data` — manage pluginInstances
+- `gcloud apihub plugins instances update` — update a Plugin Instance
+- `gcloud apihub runtime-project-attachments create` — create a Runtime Project Attachment
+- `gcloud apihub runtime-project-attachments delete` — delete a Runtime Project Attachment
+- `gcloud apihub runtime-project-attachments describe` — describe a Runtime Project Attachment
+- `gcloud apihub runtime-project-attachments list` — list Runtime Project Attachments
+- `gcloud apihub runtime-project-attachments lookup` — lookup a runtime project attachment
