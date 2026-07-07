@@ -5,19 +5,24 @@ command reference for **128 Google Cloud services** and **5,261 GA commands**, p
 **`bq`** BigQuery CLI. It is the GCP counterpart to
 [`awscliskills`](https://github.com/chrishuffman5/awscliskills).
 
-The root [`SKILL.md`](SKILL.md) is a **router**: it indexes every service and routes a request to
-the right per-service reference, which contains exhaustive command documentation.
+The root [`SKILL.md`](SKILL.md) is a **lean router**: gcloud conventions plus a routing protocol.
+Each service is a self-contained **sub-skill** in its own folder (named after its `gcloud`
+command group) that is read on demand — the full catalog never loads up front, which keeps
+context small. This mirrors the structure of the sibling
+[`awscliskills`](https://github.com/chrishuffman5/awscliskills) plugin.
 
 ## Structure
 
 ```
-SKILL.md                       # Router: service index + official doc links + gcloud conventions
-references/<service>/
-  overview.md                  # Product summary, common-workflow recipes, tips, beta/alpha notes, citations
+SKILL.md                       # Lean router: routing protocol, name→folder mappings, gcloud conventions
+service-index.md               # Full service table (read only when the group name isn't known)
+<service>/
+  SKILL.md                     # Sub-skill: product summary, workflows, tips, beta/alpha notes (frontmatter: gcloud-<service>)
   index.md                     # One-line index of every command in the service
   sources.md                   # Verified official cloud.google.com documentation URLs
   <command-group>.md           # Exhaustive per-command reference: synopsis + every flag
                                #   (type, choices, default, description) + examples
+bq-cli/                        # Companion sub-skill: the standalone bq BigQuery CLI
 ```
 
 Each command page mirrors the style of the AWS CLI skill: synopsis, a full flags table, positional

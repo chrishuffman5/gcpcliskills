@@ -6,7 +6,7 @@ documentation sourced from each tool's own `--help` and official Google docs.
 
 | Skill | Tool | Scope |
 |-------|------|-------|
-| [`gcloud-cli`](skills/gcloud-cli/) | `gcloud` | 120+ GCP services, **5,090 GA commands** — exhaustive per-command flag tables, workflows, and official doc links |
+| [`gcloud-cli`](skills/gcloud-cli/) | `gcloud` + `bq` | 128 GCP services, **5,261 GA commands** (plus the standalone `bq` BigQuery CLI) — exhaustive per-command flag tables, workflows, and official doc links |
 | [`adk`](skills/adk/) | `adk` (Python) | Agent Development Kit CLI: create/run/eval/deploy AI agents; launch the dev web UI |
 | [`adk-devtools`](skills/adk-devtools/) | `@google/adk-devtools` (TS/JS) | TypeScript ADK SDK + dev-tools CLI (`npx @google/adk-devtools`) |
 | [`adk-web`](skills/adk-web/) | ADK Web UI | The Angular developer UI — built-in `adk web` and the standalone `google/adk-web` app |
@@ -18,7 +18,7 @@ Repository layout (Claude Code plugin):
   plugin.json          # plugin manifest
   marketplace.json     # lets the repo be added as a plugin marketplace
 skills/
-  gcloud-cli/          # SKILL.md (router) + references/<service>/...
+  gcloud-cli/          # SKILL.md (lean router) + service-index.md + <service>/SKILL.md sub-skills
   adk/                 # SKILL.md
   adk-devtools/        # SKILL.md
   adk-web/             # SKILL.md
@@ -58,15 +58,15 @@ winget install Google.CloudSDK
 # or download the installer: https://cloud.google.com/sdk/docs/install
 gcloud init        # first-time auth + default project/region
 ```
-Built against **Google Cloud SDK 552.0.0**.
+Built against **Google Cloud SDK 552.0.0**; service index audited against **575.0.0** (June 2026).
 
 ### adk — Agent Development Kit (Python)
-On PyPI. Requires Python 3.11+ (3.13 supported).
+On PyPI. Requires Python 3.10+ (3.13 supported).
 ```powershell
 pip install google-adk
 adk --version      # provides the `adk` command
 ```
-Built against **google-adk 2.1.0**. Auth: either an AI Studio key (`GOOGLE_API_KEY`) or Vertex AI
+Built against **google-adk 2.3.0**. Auth: either an AI Studio key (`GOOGLE_API_KEY`) or Vertex AI
 (`gcloud auth application-default login` + `GOOGLE_GENAI_USE_VERTEXAI=TRUE`).
 
 ### adk-devtools — ADK for TypeScript / JavaScript
@@ -80,7 +80,7 @@ npx @google/adk-devtools --help    # run it via npx
 > ⚠️ `@google/adk-devtools` registers a bin named **`adk`**, which collides with the Python `adk`
 > command. Always invoke the TypeScript CLI via `npx @google/adk-devtools …` (or
 > `./node_modules/.bin/adk`) — never a bare `adk` — so it doesn't clash on PATH.
-Built against **@google/adk / @google/adk-devtools 1.1.0**.
+Built against **@google/adk / @google/adk-devtools 1.3.0**.
 
 ### ADK Web UI
 Two paths:
