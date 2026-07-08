@@ -1,17 +1,11 @@
 ---
 name: gcloud-cli
 description: >-
-  Comprehensive gcloud CLI command reference for 120+ Google Cloud (GCP) services — Compute
-  Engine, GKE/Kubernetes, Cloud Storage, IAM, Cloud SQL, Cloud Run, Cloud Functions,
-  Pub/Sub, BigQuery, Spanner, Firestore, networking, KMS, Secret Manager, logging,
-  monitoring, and many more. Every GA command is documented with its exhaustive flags, value
-  types, choices, defaults, and examples, plus gcloud conventions (--format, --filter,
-  --project, auth, config, output). Use this skill whenever the user works with Google Cloud
-  via the command line: creating, listing, describing, updating, or deleting any GCP
-  resource; writing or debugging gcloud scripts; authenticating or configuring gcloud; or
-  asking how to accomplish something in GCP with the CLI. Trigger even when the user says
-  only 'GCP' or 'Google Cloud', names a product (GKE, Cloud Run, BigQuery, Cloud SQL,
-  Pub/Sub, etc.), or pastes a `gcloud` command, without explicitly saying 'gcloud'.
+  gcloud CLI reference: 128 GCP services, all GA commands with full flags, plus the
+  standalone bq CLI. Use for any Google Cloud / GCP command-line task — managing
+  resources, debugging gcloud commands, auth/config/scripting — or whenever a GCP
+  product is named (GKE, Cloud Run, BigQuery, Cloud SQL, Pub/Sub...), even without
+  'gcloud'.
 ---
 
 # gcloud CLI Reference

@@ -9,7 +9,7 @@
     {
       "name": "gcpcliskills",
       "description": "Command-reference skills for gcloud (120+ GCP services, 5,261 GA commands), the Python ADK CLI, the TypeScript ADK dev tools, and the ADK web UI.",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "source": "./",
       "author": {
         "name": "chrishuffman5",
